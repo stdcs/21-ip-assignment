@@ -8,8 +8,8 @@ package ip.syssrc.conditional;
  * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
+import java.util.Scanner;
 public class Cashier {
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Total Belanja : ");
