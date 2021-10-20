@@ -14,5 +14,6 @@ public class RoleAccess {
         int menuIndex = 0;
         int subMenuIndex = 0;
         boolean isValidRole = false;
+        
     }
 }
