@@ -15,6 +15,7 @@ public class RoleAccess {
         int subMenuIndex = 0;
         boolean isValidRole = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         if (args.length == 0) {
             System.out.println("What role you want to see ?");
@@ -68,5 +69,8 @@ public class RoleAccess {
         }
 =======
 >>>>>>> e74f85d (feat(conditional/RoleAccess): add int menuIndex = 0;)
+=======
+        
+>>>>>>> 22c0e13 (feat(conditional/RoleAccess): add 'MenuIndex' 'subMenuIndex' 'isValidRole' as variable)
     }
 }
