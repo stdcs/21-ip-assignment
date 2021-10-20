@@ -1,4 +1,5 @@
 package ip.syssrc.conditional;
+
 import java.util.Scanner;
 
 /**
@@ -13,5 +14,7 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        scan.close();
     }
 }
