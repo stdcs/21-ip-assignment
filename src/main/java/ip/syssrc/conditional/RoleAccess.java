@@ -5,12 +5,14 @@ package ip.syssrc.conditional;
  *
  * Assignment 1.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
- *
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+ *  
  */
 public class RoleAccess {
 
     public static void main(String[] args) {
-
+        int menuIndex = 0;
+        int subMenuIndex = 0;
+        boolean isValidRole = false;
     }
 }
