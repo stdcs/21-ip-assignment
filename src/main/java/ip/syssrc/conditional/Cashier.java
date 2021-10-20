@@ -103,7 +103,7 @@ public class Cashier {
         System.out.printf("Berapa total harga belanja anda ? " );
         int total = in.nextInt();
         System.out.printf("Berapa total uang yang anda bayarkan ? ");
-        int bayar = in.nextInt();
+        int bayar = in.nextInt(); 
         int kembalian = bayar - total;
         
             // jika uang mencukupi //
