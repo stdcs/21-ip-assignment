@@ -14,7 +14,12 @@ public class RoleAccess {
         int menuIndex = 0;
         int subMenuIndex = 0;
         boolean isValidRole = false;
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+
+>>>>>>> 6cd1c3e (feat(conditional/RoleAccess): add int menuIndex = 0;)
         if (args.length == 0) {
           System.out.println("What role you want to see ?");
           System.out.println("For example, try 'Admin'.");
@@ -82,5 +87,7 @@ public class RoleAccess {
         } else {
             System.out.println("Too many argument");
         }
+=======
+>>>>>>> e74f85d (feat(conditional/RoleAccess): add int menuIndex = 0;)
     }
 }
