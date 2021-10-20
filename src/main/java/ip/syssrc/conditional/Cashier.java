@@ -9,6 +9,7 @@ import java.util.Scanner;
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
  *
  */
+import java.util.Scanner;
 public class Cashier {
 
     public static void main(String[] args) {
@@ -16,6 +17,9 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
         // output dan variabel //
         int total = 0;
         int bayar = 0;
@@ -110,6 +114,7 @@ public class Cashier {
         }
         in.close();
 =======
+<<<<<<< HEAD
 =======
         // output dan variabel //
 <<<<<<< HEAD
@@ -120,6 +125,13 @@ public class Cashier {
         int bayar = in.nextInt(); 
         int kembalian = bayar - total;
 <<<<<<< HEAD
+=======
+        System.out.printf("Berapa total harga belanja anda ? " );
+        int total = in.nextInt();
+        System.out.printf("Berapa total uang yang anda bayarkan ? ");
+        int bayar = in.nextInt();
+        int kembalian = bayar - total;
+>>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
         
             // jika uang mencukupi //
         if (bayar > total){
@@ -190,6 +202,7 @@ public class Cashier {
         }
     in.close();
 >>>>>>> f8ee011 (feat(conditional/Cashier): add 'java.util.Scanner' object)
+<<<<<<< HEAD
     }
 }
          
@@ -292,6 +305,8 @@ public class Cashier {
             System.out.println("Maaf, pembayaran anda belum mencukupi");
         }
         in.close();
+=======
+>>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
     }
 }
          
