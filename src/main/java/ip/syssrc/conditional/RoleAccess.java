@@ -8,8 +8,8 @@ package ip.syssrc.conditional;
  * @author H071211065- Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
-public class RoleAccess {
-
+import java.util.Scanner;
+ public class RoleAccess {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
                 int menuIndex = 0;
