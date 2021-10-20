@@ -112,6 +112,8 @@ public class Cashier {
                 System.out.println("Uang Anda Pas");
                 }else if(jumlahpembayaran<totalbelanja) {
                 System.out.println("Maaf, Pembayaran Tidak Mencukupi");
+                }else{
+                    System.out.println("Masukkan Angka");
                 }
         In.close();
 
