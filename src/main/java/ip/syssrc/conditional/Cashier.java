@@ -1,5 +1,6 @@
 package ip.syssrc.conditional;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 /**
  * Cashier
  *
@@ -15,5 +16,15 @@ public class Cashier {
 
         int totalBelanja, totalBayar, totalKembalian;
         
+        try {
+            System.out.print("Berapa harga total belanja anda ? ");
+            totalBelanja = scan.nextInt();
+            System.out.print("Berapa total uang yang anda bayarkan ? ");
+            totalBayar= scan.nextInt();
+        } catch (InputMismatchException e) {
+            //TODO: handle exception
+            System.out.print("Maaf, pastikan inputan anda adalah angka");
+            return;
+        }
     }
 }
