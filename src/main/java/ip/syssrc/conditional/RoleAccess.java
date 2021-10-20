@@ -20,7 +20,20 @@ public class RoleAccess {
             System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
             // Your magic is here
-            if (/* Magic ??? */) {
+            switch (args[0]) {
+                case "Super Admin":
+                    isValidRole = true;
+                    break;
+                case "Admin":
+                    isValidRole = true;
+                    break;
+                case "User":
+                    isValidRole = true;
+                    break;
+                default:
+                    break;  
+            }
+            if ( ) {
                 // Another magic
             } else {
                 System.out.println("Invalid Role");
