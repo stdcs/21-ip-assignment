@@ -18,8 +18,11 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
+=======
+>>>>>>> 498354b (feat(conditional/Cashier): add 'java.util.Scanner' object)
         // output dan variabel //
         int total = 0;
         int bayar = 0;
@@ -310,4 +313,10 @@ public class Cashier {
     }
 }
          
+<<<<<<< HEAD
 >>>>>>> 2e9fae7 (feat(conditional/Cashier): add if else condition)
+=======
+=======
+        
+>>>>>>> 7fa6cda (feat(conditional/Cashier): add 'java.util.Scanner' object)
+>>>>>>> 498354b (feat(conditional/Cashier): add 'java.util.Scanner' object)
