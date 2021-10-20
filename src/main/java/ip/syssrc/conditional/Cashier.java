@@ -19,10 +19,13 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 >>>>>>> 498354b (feat(conditional/Cashier): add 'java.util.Scanner' object)
+=======
+>>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
         // output dan variabel //
         int total = 0;
         int bayar = 0;
@@ -118,6 +121,7 @@ public class Cashier {
         in.close();
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // output dan variabel //
 <<<<<<< HEAD
@@ -129,12 +133,21 @@ public class Cashier {
         int kembalian = bayar - total;
 <<<<<<< HEAD
 =======
+=======
+=======
+        // output dan variabel //
+>>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
+>>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
         System.out.printf("Berapa total harga belanja anda ? " );
         int total = in.nextInt();
         System.out.printf("Berapa total uang yang anda bayarkan ? ");
         int bayar = in.nextInt();
         int kembalian = bayar - total;
+<<<<<<< HEAD
 >>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
+=======
+<<<<<<< HEAD
+>>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
         
             // jika uang mencukupi //
         if (bayar > total){
@@ -319,4 +332,11 @@ public class Cashier {
 =======
         
 >>>>>>> 7fa6cda (feat(conditional/Cashier): add 'java.util.Scanner' object)
+<<<<<<< HEAD
 >>>>>>> 498354b (feat(conditional/Cashier): add 'java.util.Scanner' object)
+=======
+=======
+
+
+>>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
+>>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
