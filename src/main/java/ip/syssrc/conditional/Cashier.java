@@ -1,6 +1,8 @@
 package ip.syssrc.conditional;
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
+
 /**
  * Cashier
  *
@@ -96,5 +98,13 @@ public class Cashier {
             System.out.println("Terima kasih telah membayar dengan uang pas");
         }
 
+
+        
     }
 }
+
+
+                                                  
+            
+
+        
