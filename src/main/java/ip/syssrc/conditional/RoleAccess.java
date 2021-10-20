@@ -15,8 +15,11 @@ public class RoleAccess {
         int subMenuIndex = 0;
         boolean isValidRole = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> 3a64fa5 (feat(conditional/RoleAccess): add 'MenuIndex' 'subMenuIndex' 'isValidRole' as variable)
 <<<<<<< HEAD
 
 >>>>>>> 6cd1c3e (feat(conditional/RoleAccess): add int menuIndex = 0;)
@@ -89,5 +92,8 @@ public class RoleAccess {
         }
 =======
 >>>>>>> e74f85d (feat(conditional/RoleAccess): add int menuIndex = 0;)
+=======
+        
+>>>>>>> 22c0e13 (feat(conditional/RoleAccess): add 'MenuIndex' 'subMenuIndex' 'isValidRole' as variable)
     }
 }
