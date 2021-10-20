@@ -15,6 +15,7 @@ public class Cashier {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
         // output dan variabel //
         int total = 0;
         int bayar = 0;
@@ -185,3 +186,6 @@ public class Cashier {
     }
 }
          
+=======
+        
+>>>>>>> 7fa6cda (feat(conditional/Cashier): add 'java.util.Scanner' object)
