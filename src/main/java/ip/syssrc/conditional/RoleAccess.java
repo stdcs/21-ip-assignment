@@ -5,7 +5,7 @@ package ip.syssrc.conditional;
  *
  * Assignment 1.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211076 - Hasan Azyumardi Azra <hasanazyumardiazra@gmail.com>
  *
  */
 public class RoleAccess {
