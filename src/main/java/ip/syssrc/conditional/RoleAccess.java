@@ -51,6 +51,20 @@ public class RoleAccess {
                         System.out.printf("%2d.%d. Edit\n", menuIndex, ++subMenuIndex);
                 }
             if (/* Magic ??? */) {
+            switch (args[0]) {
+                case "Super Admin":
+                    isValidRole = true;
+                    break;
+                case "Admin":
+                    isValidRole = true;
+                    break;
+                case "User":
+                    isValidRole = true;
+                    break;
+                default:
+                    break;  
+            }
+            if ( ) {
                 // Another magic
             } else {
                 System.out.println("Invalid Role");

@@ -1,9 +1,7 @@
 package ip.syssrc.conditional;
 
 import java.util.Scanner;
-import java.util.InputMismatchException;<<<<<<<HEAD
-
-=======>>>>>>>9431 b4b(feat(conditional/Cashier):add'java.util.InputMismatchException' and try_catch to select input)
+import java.util.InputMismatchException;
 
 /**
  * Cashier
@@ -110,3 +108,4 @@ public class Cashier {
            
     
     
+
