@@ -5,7 +5,7 @@ package ip.syssrc.conditional;
  *
  * Assignment 1.1
  *
- * @author H071211064 - Agung Kartika Ardhiyanda <agungardhiyanda25@gmail.com>
+ * @author H071211064 - Agung Kartika Ardhiyanda < agungardhiyanda25@gmail.com >
  *
  */
 import java.util.Scanner;
