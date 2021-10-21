@@ -17,9 +17,9 @@ public class Cashier {
         int uang, totalBelanja;
         try {
             System.out.print("Berapakah total harga belanja anda ? ");
-            totalBelanja = nanda.next();
+            totalBelanja = nanda.nextInt();
             System.out.print("Berapakah total uang anda bayaran ? ");
-            uang = nanda.next();
+            uang = nanda.nextInt();
         } catch (Exception e) {
             System.out.println("Maaf, pastikan inputan anda adalah angka");
             return;
