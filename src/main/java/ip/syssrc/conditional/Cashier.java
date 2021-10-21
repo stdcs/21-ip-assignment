@@ -90,5 +90,15 @@ public class Cashier {
                 kembalian = kembalian - 100;
                 j = j + 1;
             }
+
+            if (a > 0) {
+                System.out.println(a + " lembar uang Rp. 100000");
+            }
+            if (b > 0) {
+                System.out.println(b + " lembar uang Rp. 50000");
+            }
+            if (c > 0) {
+                System.out.println(c + " lembar uang Rp. 20000");
+            }
     }
 }
