@@ -131,6 +131,11 @@ public class Cashier {
             if (j > 0) {
                 System.out.println(j + " lembar uang Rp. 100");
             }
-        }    
+            if (kembalian > 0) {
+                System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
+            }
+        }
+        
+        in.close();    
     }
 }
