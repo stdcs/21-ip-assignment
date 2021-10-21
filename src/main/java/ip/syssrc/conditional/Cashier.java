@@ -92,7 +92,15 @@ public class Cashier {
                 kembalian = kembalian - 200;
                 i = i + 1;
             }
-            
+            if (kembalian >= 200) {
+                kembalian = kembalian - 200;
+                i = i + 1;
+            }
+            if (kembalian >= 100) {
+                kembalian = kembalian - 100;
+                j = j + 1;
+            }
+
         }    
     }
 }
