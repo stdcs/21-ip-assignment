@@ -1,5 +1,7 @@
 package ip.syssrc.conditional;
 
+import java.util.Scanner;
+
 /**
  * Cashier
  *
@@ -8,7 +10,6 @@ package ip.syssrc.conditional;
  * @author H071211072 - Dewa Rescue Virgiawansyah <dr3scu2003@gmail.com>
  *
  */
-import java.util.*;
 public class Cashier {
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
