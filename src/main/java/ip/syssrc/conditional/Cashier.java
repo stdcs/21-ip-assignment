@@ -23,5 +23,9 @@ public class Cashier {
         } else if (pembayaran < totalBelanja) {
             System.out.println("Maaf, pembayaran Anda belum mencukupi");   
         } else {
+            int kembalian = pembayaran - totalBelanja;
+            System.out.println("Total kembalian Anda : " + kembalian);
+            System.out.println("Dengan rincian sebagai berikut : ");
+            int a,b,c,d,e,f,g,h,i,j;
     }
 }
