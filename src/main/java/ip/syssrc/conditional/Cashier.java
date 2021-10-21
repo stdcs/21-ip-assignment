@@ -32,6 +32,7 @@ public class Cashier {
     System.out.print("Masukkan Uang Anda = ");
     jumlahuangyangdimiliki= sc.nextInt();
     int kembalian = jumlahuangyangdimiliki-jumlahbelanja;
+    System.out.println("Total Kembalian Rp"+kembalian);
 
     if (jumlahuangyangdimiliki>jumlahbelanja){
      a = (kembalian/100000);
