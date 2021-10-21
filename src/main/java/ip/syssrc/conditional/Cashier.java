@@ -27,5 +27,15 @@ public class Cashier {
             System.out.println("Total kembalian Anda : " + kembalian);
             System.out.println("Dengan rincian sebagai berikut : ");
             int a,b,c,d,e,f,g,h,i,j;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            e = 0;
+            f = 0;
+            g = 0;
+            h = 0;
+            i = 0;
+            j = 0;
     }
 }
