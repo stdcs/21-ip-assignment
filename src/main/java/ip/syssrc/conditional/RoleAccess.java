@@ -64,7 +64,11 @@ public class RoleAccess {
                     System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
                     break;
                 }
+            } else {
+                System.out.println("Invalid Role");
+                System.out.println("Valid Role : Super Admin, Admin, User");
                 
+            }    
         }
     }
 }
