@@ -18,5 +18,10 @@ public class Cashier {
 
         System.out.print("Berapa total uang yang Anda bayarkan? ");
         int pembayaran = in.nextInt();
+        if (totalBelanja == pembayaran) {
+            System.out.println("Terima kasih telah membayar dengan uang pas");
+        } else if (pembayaran < totalBelanja) {
+            System.out.println("Maaf, pembayaran Anda belum mencukupi");   
+        } else {
     }
 }
