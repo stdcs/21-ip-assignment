@@ -14,4 +14,16 @@ public class Cashier {
         Scanner in = new Scanner(System.in);
         int totalHarga = 0;
         int uangYangdiBayarkan = 0;
+
+        try {
+            System.out.println("Berapa total harga belanja Anda?");
+            totalHarga = in.nextInt();
+            System.out.println("Berapa total uang yang Anda bayarkan?");
+            uangYangdiBayarkan = in.nextInt();   
+        } catch (InputMismatchException ime) {
+            System.out.println("Maaf pastikan inputan Anda adalah angka");
+            System.out.println(ime.toString());
+        } finally {
+            in.close();
+        }
 }
