@@ -22,6 +22,10 @@ public class Cashier {
             totalBelanja = in.nextInt();
             System.out.print("Berapa total uang yang Anda bayarkan? ");
             pembayaran = in.nextInt();
-        } 
+        } catch (InputMismatchException e) {
+            System.out.println("Maaf, pastikan inputan Anda adalah angka");
+            in.close();
+            return;
+        }
     }
 }
