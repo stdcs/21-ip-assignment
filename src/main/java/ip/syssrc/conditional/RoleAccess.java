@@ -8,7 +8,6 @@ package ip.syssrc.conditional;
  * @author H071211065- Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
-import java.util.Scanner;
  public class RoleAccess {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -17,6 +16,8 @@ import java.util.Scanner;
                 boolean isValidRole = false;
             
                 if (args.length == 0) {
+
+                    
                   System.out.println("What role you want to see ?");
                   System.out.println("For example, try 'Admin'.");
                 } else if (args.length == 1) {
