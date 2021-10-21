@@ -74,5 +74,17 @@ public class Cashier {
                 kembalian = kembalian - 1000;
                 g = g + 1;
             }
+            if (kembalian >= 500) {
+                kembalian = kembalian - 500;
+                h = h + 1;
+            }
+            if (kembalian >= 200) {
+                kembalian = kembalian - 200;
+                i = i + 1;
+            }
+            if (kembalian >= 200) {
+                kembalian = kembalian - 200;
+                i = i + 1;
+            }
     }
 }
