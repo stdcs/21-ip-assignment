@@ -25,5 +25,10 @@ public class Cashier {
             System.out.println(ime.toString());
         } finally {
             in.close();
+ 
+        int kembalian, jumlah, sisa;
+
+        kembalian = uangYangdiBayarkan - totalHarga;
+        sisa = kembalian;
         }
 }
