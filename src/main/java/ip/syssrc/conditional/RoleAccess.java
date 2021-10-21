@@ -14,5 +14,10 @@ public class RoleAccess {
         int menuIndex = 0;
         int subMenuIndex = 0;
         boolean isValidRole = false;
+
+        if (args.length == 0) {
+            System.out.println("What role you want to see ?");
+            System.out.println("For example, try 'Admin'.");
+          } else if (args.length == 1) {
     }
 }
