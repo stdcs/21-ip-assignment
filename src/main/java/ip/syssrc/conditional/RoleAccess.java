@@ -33,7 +33,9 @@ public class RoleAccess {
             default:
                 isValidRole = false;
                 break;
-          } if (isValidRole) {
+          } 
+          
+          if (isValidRole) {
             switch (args[0]) {
                 case "Super Admin":
                     System.out.printf("%d. Super Admin\n", ++menuIndex);
