@@ -91,5 +91,7 @@ public class RoleAccess {
             }
         } else {
             System.out.println("Too many argument");
+        }
+        in.close();
     }
 }
