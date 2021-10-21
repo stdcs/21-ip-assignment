@@ -13,19 +13,22 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner nanda = new Scanner(System.in);
-        
-        System.out.print("Berapakah total harga belanja anda ? ");
-        String totalBelanja = nanda.next();
-        System.out.print("Berapakah total uang anda bayaran ? ");
-        String uang = nanda.next();
-        if (totalBelanja.equals(uang)) {
-        }else {
+
+        int uang, totalBelanja;
+        try {
+            System.out.print("Berapakah total harga belanja anda ? ");
+            totalBelanja = nanda.next();
+            System.out.print("Berapakah total uang anda bayaran ? ");
+            uang = nanda.next();
+        } catch (Exception e) {
             System.out.println("Maaf, pastikan inputan anda adalah angka");
+            return;
         }
+      
         
         
         
-        int kembalian = Integer.parseInt(uang) - Integer.parseInt(totalBelanja);
+        int kembalian = uang - totalBelanja;
         if (kembalian == 0) {
             System.out.println("Terimakasih telah membayar dengan uang pas");
         }else if (kembalian < 0){
