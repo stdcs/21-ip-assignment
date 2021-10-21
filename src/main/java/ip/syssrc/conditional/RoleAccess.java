@@ -67,8 +67,10 @@ public class RoleAccess {
             } else {
                 System.out.println("Invalid Role");
                 System.out.println("Valid Role : Super Admin, Admin, User");
-                
+
             }    
+        } else {
+            System.out.println("Too many argument");
         }
     }
 }
