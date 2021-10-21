@@ -32,6 +32,10 @@ public class Cashier {
             System.out.println("Terima kasih telah membayar dengan uang pas");
         } else if (pembayaran < totalBelanja) {
             System.out.println("Maaf, pembayaran Anda belum mencukupi");   
-        }
+        } else {
+            int kembalian = pembayaran - totalBelanja;
+            System.out.println("Total kembalian Anda : " + kembalian);
+            System.out.println("Dengan rincian sebagai berikut : ");
+        }    
     }
 }
