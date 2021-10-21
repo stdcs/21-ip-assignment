@@ -110,7 +110,15 @@ public class Cashier {
             if (c > 0) {
                 System.out.println(c + " lembar uang Rp. 20000");
             }
-
+            if (d > 0) {
+                System.out.println(d + " lembar uang Rp. 10000");
+            }
+            if (e > 0) {
+                System.out.println(e + " lembar uang Rp. 5000");
+            }
+            if (f > 0) {
+                System.out.println(f + " lembar uang Rp. 2000");
+            }
         }    
     }
 }
