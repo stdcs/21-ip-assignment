@@ -9,7 +9,8 @@ package ip.syssrc.conditional;
  *
  */
 public class Cashier {
-
+      
+    
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
         System.out.println("Berapa total harga belanja anda ? ");
