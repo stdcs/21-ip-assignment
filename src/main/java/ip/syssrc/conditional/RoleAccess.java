@@ -13,5 +13,9 @@ public class RoleAccess {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
+        int menuIndex = 0;
+        int subMenuIndex = 0;
+        boolean isValidRole = false;
     }
 }
