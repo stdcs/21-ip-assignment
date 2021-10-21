@@ -8,6 +8,7 @@ package ip.syssrc.conditional;
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail.com>
  *
  */
+import java.util.Scanner;
 public class Cashier {
 
     public static void main(String[] args) {
