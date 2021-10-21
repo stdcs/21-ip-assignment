@@ -11,14 +11,14 @@ package ip.syssrc.conditional;
 public class Cashier {
 
     public static void main(String[] args) {
-        Scanner san = new Scanner(System.in);
+        Scanner In = new Scanner(System.in);
         System.out.println("Berapa total harga belanja anda ? ");
 
-        int totalBelanja = san.nextInt();
+        int totalBelanja = In.nextInt();
         
         System.out.println("Berapa total uang anda bayarkan ? ");
 
-        int pembayaran = san.nextInt();
+        int pembayaran = In.nextInt();
 
         if (totalBelanja > pembayaran) {
             System.out.println("Uang Anda Kurang");
@@ -124,6 +124,6 @@ public class Cashier {
                 System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
             }
         }
-        san.close();
+        In.close();
     }
 }
