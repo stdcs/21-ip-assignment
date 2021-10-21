@@ -16,5 +16,12 @@ public class Cashier {
 
         int totalBelanja = 0;
         int pembayaran = 0;
+
+        try {
+            System.out.print("Berapa total harga belanja Anda? ");
+            totalBelanja = in.nextInt();
+            System.out.print("Berapa total uang yang Anda bayarkan? ");
+            pembayaran = in.nextInt();
+        } 
     }
 }
