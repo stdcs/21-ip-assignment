@@ -13,6 +13,8 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        
+
+        int totalBelanja = 0;
+        int pembayaran = 0;
     }
 }
