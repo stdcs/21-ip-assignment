@@ -82,5 +82,6 @@ public class Cashier {
                 System.out.println("Dan sisanya Rp. " +sisa+ " didonasikan");
             }
             }
+            in.close();
     }
 }
