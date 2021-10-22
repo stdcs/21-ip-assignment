@@ -20,20 +20,13 @@ public class RoleAccess {
           System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
             switch (args[0]) {
-                case "Super Admin":
-                    isValidRole = true;
-                    break;
-                case "Admin":
-                    isValidRole = true;
-                    break;
-                case "User":
-                    isValidRole = true;
-                    break;
-                default:
-                    isValidRole = false;
-                    break;
+                case "Super Admin":                  
+                case "Admin":                   
+                case "User":                   
+                isValidRole = !isValidRole;
+                    
             }
-            if (isValidRole == true) {
+            if (isValidRole) {
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
