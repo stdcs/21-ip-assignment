@@ -38,53 +38,53 @@ public class Cashier {
             System.out.println();
 
             if (totalKembalian >= 100000) {
-                int pecahan = (totalKembalian/100000);
-                totalKembalian -= (100000*pecahan);
+                int pecahan = (totalKembalian / 100000);
+                totalKembalian -= (100000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 100.000");
             }
             if (totalKembalian >= 50000) {
-                int pecahan = (totalKembalian/50000);
-                totalKembalian -= (50000*pecahan);
+                int pecahan = (totalKembalian / 50000);
+                totalKembalian -= (50000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 50.000");
             }
             if (totalKembalian >= 20000) {
-                int pecahan = (totalKembalian/20000);
-                totalKembalian -= (20000*pecahan);
+                int pecahan = (totalKembalian / 20000);
+                totalKembalian -= (20000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 20.000");
             }
             if (totalKembalian >= 10000) {
-                int pecahan = (totalKembalian/10000);
-                totalKembalian -= (10000*pecahan);
+                int pecahan = (totalKembalian / 10000);
+                totalKembalian -= (10000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 10.000");
             }
             if (totalKembalian >= 5000) {
-                int pecahan = (totalKembalian/5000);
-                totalKembalian -= (5000*pecahan);
+                int pecahan = (totalKembalian / 5000);
+                totalKembalian -= (5000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 5.000");
             }
             if (totalKembalian >= 2000) {
-                int pecahan = (totalKembalian/2000);
-                totalKembalian -= (2000*pecahan);
+                int pecahan = (totalKembalian / 2000);
+                totalKembalian -= (2000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 2.000");
             }
             if (totalKembalian >= 1000) {
-                int pecahan = (totalKembalian/1000);
-                totalKembalian -= (1000*pecahan);
+                int pecahan = (totalKembalian / 1000);
+                totalKembalian -= (1000 * pecahan);
                 System.out.println(pecahan + " lembar uang Rp. 1.000");
             }
             if (totalKembalian >= 500) {
-                int pecahan = (totalKembalian/500);
-                totalKembalian -= (500*pecahan);
+                int pecahan = (totalKembalian / 500);
+                totalKembalian -= (500 * pecahan);
                 System.out.println(pecahan + " buah uang Rp. 500");
             }
             if (totalKembalian >= 200) {
-                int pecahan = (totalKembalian/200);
-                totalKembalian -= (200*pecahan);
+                int pecahan = (totalKembalian / 200);
+                totalKembalian -= (200 * pecahan);
                 System.out.println(pecahan + " buah uang Rp. 200");
             }
             if (totalKembalian >= 100) {
-                int pecahan = (totalKembalian/100);
-                totalKembalian -= (100*pecahan);
+                int pecahan = (totalKembalian / 100);
+                totalKembalian -= (100 * pecahan);
                 System.out.println(pecahan + " buah uang Rp. 100");
             } 
             if (totalKembalian > 0) {
