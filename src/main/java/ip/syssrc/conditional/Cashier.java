@@ -9,7 +9,6 @@ import java.util.Scanner;
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
  *
  */
-import java.util.Scanner;
 public class Cashier {
 
     public static void main(String[] args) {
@@ -136,6 +135,7 @@ public class Cashier {
 =======
 =======
         // output dan variabel //
+<<<<<<< HEAD
 >>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
 >>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
         System.out.printf("Berapa total harga belanja anda ? " );
@@ -345,6 +345,23 @@ public class Cashier {
 
 >>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
 =======
+=======
+        int total = 0;
+        int bayar = 0;
+        // try catch
+         try {
+            System.out.printf("Berapa total harga belanja anda ? " );
+            total = in.nextInt();
+            System.out.printf("Berapa total uang yang anda bayarkan ? ");
+            bayar = in.nextInt(); 
+             
+        } catch (InputMismatchException e) {
+            System.out.println("Maaf, pastikan inputan anda adalah angka");
+            in.close();
+            return;
+        }
+        int kembalian = bayar - total; 
+>>>>>>> 5de2db6 (feat(conditional/Cashier): add 'java.util.InputMismatchException' and Try Catch statement)
          // jika uang mencukupi //
         if (bayar > total){
         System.out.printf("\nTotal kembalian anda : Rp %d\n", kembalian);
