@@ -19,6 +19,7 @@ public class RoleAccess {
           System.out.println("What role you want to see ?");
           System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
+
             switch (args[0]) {
                 case "Super Admin":
                     isValidRole = true;
@@ -29,9 +30,7 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
-                default:
-                    isValidRole = false;
-                    break;
+                
             }
             if (isValidRole == true) {
                 switch (args[0] ) {
@@ -71,4 +70,3 @@ public class RoleAccess {
             System.out.println("Too many argument");
         }
     }
-}
