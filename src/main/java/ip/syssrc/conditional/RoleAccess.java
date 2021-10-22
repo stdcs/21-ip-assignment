@@ -21,19 +21,12 @@ public class RoleAccess {
         } else if (args.length == 1) {
             switch (args[0]) {
                 case "Super Admin":
-                    isValidRole = true;
-                    break;
                 case "Admin":
-                    isValidRole = true;
-                    break;
                 case "User":
-                    isValidRole = true;
-                    break;
-                default:
-                    isValidRole = false;
-                    break;
+                isValidRole = !isValidRole;
+                
             }
-            if (isValidRole == true) {
+            if (isValidRole) {
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
