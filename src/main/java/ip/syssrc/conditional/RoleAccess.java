@@ -30,10 +30,7 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
-                default:
-                    isValidRole = false;
-                    break;
-            }
+        }
             if (isValidRole == true) {
                 switch (args[0] ) {
                 case "Super Admin":
