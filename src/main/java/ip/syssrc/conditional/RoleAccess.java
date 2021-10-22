@@ -21,11 +21,10 @@ public class RoleAccess {
         } else if (args.length == 1) {
             // Your magic is here
             switch (args[0]) { /* mengecek apakah role valid atau tidak */
-                case "Super Admin", "Admin", "User":
+                case "Super Admin":
+                case "Admin":
+                case "User":
                     isValidRole = true;
-                    break;
-                default:
-                    break;  
             }
             
             if (isValidRole) { 
