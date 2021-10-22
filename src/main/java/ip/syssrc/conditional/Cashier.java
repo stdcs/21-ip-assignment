@@ -1,6 +1,3 @@
-// NAMA : MUHAMMAD SOFYAN DAUD PUJAS
-// NIM : H071211045
-
 package ip.syssrc.conditional;
 
 import java.util.InputMismatchException;
