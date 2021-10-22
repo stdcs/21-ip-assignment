@@ -1,6 +1,5 @@
 package ip.syssrc.conditional;
-import java.util.Scanner;
-import java.util.InputMismatchException;
+import java.util.*;
 /**
  * Cashier
  *
@@ -27,8 +26,7 @@ public class Cashier {
             scan.close();
             return;
         }
-        scan.close();
-
+           
         int kembalian = pembayaran - harga;      
         
         if (kembalian < 0){
@@ -37,7 +35,7 @@ public class Cashier {
         else if(kembalian == 0){ 
             System.out.println("Terima kasih telah membayar dengan uang pas");        
         }    
-        else { 
+        else if(kembalian >= 0){ 
             System.out.println("Total kembalian anda : Rp." + kembalian);
             System.out.printf("Dengan dengan rincian sebagai berikut : %n");
         
@@ -85,5 +83,10 @@ public class Cashier {
               System.out.println("Dan sebanyak Rp." + kembalian + " didonasikan");
           }
         }       
+        
+        scan.close();
     }
-}    
+}
+       
+        
+             
