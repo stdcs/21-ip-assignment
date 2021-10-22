@@ -1,6 +1,3 @@
-// NAMA : MUHAMMAD SOFYAN DAUD PUJAS
-// NIM : H071211045
-
 package ip.syssrc.conditional;
 
 /**
@@ -8,10 +5,9 @@ package ip.syssrc.conditional;
  *
  * Assignment 1.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211045 - MUHAMMAD SOFYAN DAUD PUJAS <gaero38@gmail.com>
  *
  */
-
 
 public class RoleAccess {
     public static void main(String[] args) {
@@ -25,7 +21,7 @@ public class RoleAccess {
           System.out.println("What role you want to see ?");
           System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
-            if (args[0].equals("Super Admin") || args[0].equals("Admin") || args[0].equals("User")) {
+            if (args[0].contentEquals("Super Admin") || args[0].contentEquals("Admin") || args[0].contentEquals("User")) {
                 isValidRole = true;
             }
             if (isValidRole == true) {
