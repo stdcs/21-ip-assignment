@@ -30,25 +30,25 @@ public class RoleAccess {
             if (isValidRole) {
                 // Another magic
                 switch (args[0]) { /* print output sesuai role */
-                case "Super Admin":
-                    menuIndex++;
-                    subMenuIndex++;
-                    System.out.printf("%d. Super Admin\n", menuIndex);
-                    System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, subMenuIndex);
-                    System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex++);
-                    System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex++);
-                case "Admin":
-                    menuIndex++;
-                    subMenuIndex = 1;
-                    System.out.printf("%d. Admin\n", menuIndex);
-                    System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
-                    System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex++);
-                default:
-                    menuIndex++;
-                    subMenuIndex = 1;
-                    System.out.printf("%d. User\n", menuIndex);
-                    System.out.printf("%2d.%d. View\n", menuIndex, subMenuIndex);
-                    System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex++);
+                    case "Super Admin":
+                        menuIndex++;
+                        subMenuIndex++;
+                        System.out.printf("%d. Super Admin\n", menuIndex);
+                        System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, subMenuIndex);
+                        System .out.printf("%2d.%d. CRUD Admin\n", menuIndex, ++subMenuIndex);
+                        System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, ++subMenuIndex);
+                    case "Admin":
+                        menuIndex++;
+                        subMenuIndex = 1;
+                        System.out.printf("%d. Admin\n", menuIndex);
+                        System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
+                        System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, ++subMenuIndex);
+                    default:
+                        menuIndex++;
+                        subMenuIndex = 1;
+                        System.out.printf("%d. User\n", menuIndex);
+                        System.out.printf("%2d.%d. View\n", menuIndex, subMenuIndex);
+                        System.out.printf("%2d.%d. Edit\n", menuIndex, ++subMenuIndex);
                 }
             } else {
                 System.out.println("Invalid Role");
