@@ -13,14 +13,23 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
+        int totalBelanja,pembayaran,kembalian;
+        pembayaran = 0;
+        totalBelanja = 0;
 
-        System.out.print("Berapa total harga belanja anda ? ");
-        int totalBelanja = In.nextInt();
-        System.out.print("Berapa total uang anda bayarkan ? ");
-        int pembayaran = In.nextInt();
-        System.out.println();
-        
-        int kembalian = pembayaran - totalBelanja;
+        try {
+            System.out.print("Berapa total harga belanja anda ? ");
+            totalBelanja = In.nextInt();
+            System.out.print("Berapa total uang anda bayarkan ? ");
+            pembayaran = In.nextInt();
+            System.out.println();
+        } catch (Exception e) {
+            System.out.println("Maaf, pastikan inputan anda adalah angka");
+            In.close();
+            return;
+        }
+                
+        kembalian = pembayaran - totalBelanja;
 
         if(pembayaran > totalBelanja){
             System.out.println("Total kembalian anda = " + kembalian);
@@ -103,11 +112,12 @@ public class Cashier {
             }if (kembalian > 0) {
             System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
             }
-        }else if (pembayaran == totalBelanja ){
+
+        }else if (pembayaran == totalBelanja){
             System.out.println("Pembayaran yang dilakukan menggunakan uang pas");
-        }else 
+        }else
         System.out.println("Uang pembeli belum cukup");
-              
+        
         In.close();
 
     }
