@@ -19,7 +19,7 @@ public class RoleAccess {
       System.out.println("What role you want to see ?");
       System.out.println("For example, try 'Admin'.");
       } else if (args.length == 1) {
-        switch (args[0]) {
+        switch (args[0]) { 
             case "Super Admin", "Admin", "User":
               isValidRole = true; break;
             default:
