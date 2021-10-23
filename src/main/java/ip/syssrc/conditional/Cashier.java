@@ -9,15 +9,23 @@ package ip.syssrc.conditional;
  *
  */
 import java.util.*;
+import java.util.InputMismatchException;
  public class Cashier {
 
     public static void main(String[] args) {
         Scanner Dz = new Scanner(System.in);
-        System.out.println("Berapa total harga belanja anda ? ");
-        int totalBelanja = Dz.nextInt();
+
+        try {
+            System.out.println("Berapa total harga belanja anda ? ");
+            int totalBelanja = Dz.nextInt();
+            
+            System.out.println("Berapa total uang anda bayarkan ? ");
+            int pembayaran = Dz.nextInt();   
+        } catch (InputMismatch Exception e) {
+            System.out.println("maaf pastikan inputan anda adalah angka");
+            return;
+        }
         
-        System.out.println("Berapa total uang anda bayarkan ? ");
-        int pembayaran = Dz.nextInt();
         int kembalian = pembayaran - totalBelanja;
         System.out.println("Total kembalian anda = " + kembalian);
         System.out.println("Dengan dengan rincian sebagai berikut :");
