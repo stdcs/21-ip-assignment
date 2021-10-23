@@ -75,8 +75,8 @@ public class RoleAccess {
               case "Super Admin":
               case "Admin":
               case "User":
-              isValidRole = true;
-              break;
+                  isValidRole = true;
+                  break;
           } 
           
         if (isValidRole) {
