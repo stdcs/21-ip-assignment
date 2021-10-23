@@ -22,17 +22,11 @@ public class RoleAccess {
 
             switch (args[0]) {
                 case "Super Admin":
-                    isValidRole = true;
-                    break;
-                case "Admin":
-                    isValidRole = true;
-                    break;
+                case "Admin":    
                 case "User":
                     isValidRole = true;
                     break;
-                default:
-                    isValidRole = false;
-                    break;
+                
             }
             if (isValidRole == true) {
                 switch (args[0] ) {
