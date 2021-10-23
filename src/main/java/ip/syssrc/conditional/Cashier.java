@@ -9,6 +9,7 @@ package ip.syssrc.conditional;
  *
  */
 import java.util.Scanner;
+import java.util.InputMismatchException;
 public class Cashier {
 
     public static void main(String[] args) {
