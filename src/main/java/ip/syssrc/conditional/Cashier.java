@@ -1,6 +1,6 @@
 package ip.syssrc.conditional;
-import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 /**
  * Cashier
  *
