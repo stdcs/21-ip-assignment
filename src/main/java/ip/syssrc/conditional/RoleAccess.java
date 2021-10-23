@@ -29,14 +29,11 @@ public class RoleAccess {
             if (isValidRole == true) {
                 switch (args[0] ) {
                 case "Super Admin":
-                    menuIndex = menuIndex +  1 ;
-                    System.out.printf( " %d. Admin Super \n " , menuIndex);
-                    subMenuIndex = subMenuIndex +  1 ;
-                    System.out.printf( " %2d.%d. CRUD Super Admin \n " , menuIndex, subMenuIndex);
-                    subMenuIndex = subMenuIndex + 1;
-                    System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
-                    subMenuIndex = subMenuIndex + 1;
-                    System.out.printf("%2d.%d. CRUD User\n", menuIndex, subMenuIndex);
+                    menuIndex = menuIndex + 1;
+                    System.out.printf("%d. Super Admin\n", ++menuIndex);
+                    System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, ++subMenuIndex);
+                    System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, ++subMenuIndex);
+                    System.out.printf("%2d.%d. CRUD User\n", menuIndex, ++subMenuIndex);
                     System.out.println();
 
                 case "Admin":
