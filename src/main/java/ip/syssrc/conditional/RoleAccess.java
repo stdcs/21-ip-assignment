@@ -18,13 +18,22 @@ public class RoleAccess {
         if (args.length == 0) {
             System.out.println("What role you want to see ?");
             System.out.println("For example, try 'Admin'.");
-          } else if (args.length == 1) {
-              if (args[0] == "Super Admin" || args[0] == "Admin" || args[0] == "User") {
-                  isValidRole = true;
-              }
-              if (isValidRole == true) {
-                  switch (args[0] ) {
-                  case "Super Admin":
+        } else if (args.length == 1) {
+
+            switch (args[0]) {
+                case "Super Admin":
+                    isValidRole = true;
+                case "Admin" :
+                    isValidRole = true;
+                case "User" :
+                    isValidRole = true;            
+                default:
+                    break;
+            }
+            
+            if (isValidRole == true) {
+                switch (args[0]) {
+                    case "Super Admin":
                       menuIndex = menuIndex + 1;
                       System.out.printf("%d. Super Admin\n", menuIndex);
                       subMenuIndex = subMenuIndex + 1;
@@ -34,7 +43,7 @@ public class RoleAccess {
                       subMenuIndex = subMenuIndex + 1;
                       System.out.printf("%2d.%d. CRUD User\n", menuIndex, subMenuIndex);
                       System.out.println();
-                  case "Admin":
+                    case "Admin":
                       menuIndex = menuIndex + 1;
                       subMenuIndex = 0;
                       System.out.printf("%d. Admin\n", menuIndex);
@@ -42,7 +51,7 @@ public class RoleAccess {
                       System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
                       subMenuIndex = subMenuIndex + 1;
                       System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex);
-                  default:
+                    default:
                       menuIndex = menuIndex + 1;
                       subMenuIndex = 0;
                       System.out.printf("%d. User\n", menuIndex);
@@ -51,14 +60,14 @@ public class RoleAccess {
                       subMenuIndex = subMenuIndex + 1;
                       System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
                       break;
-                  }
-              } else {
+                }
+            } else {
                   System.out.println("Invalid Role");
                   System.out.println("Valid Role : Super Admin, Admin, User");
-              }
-          } else {
+            }
+        } else {
               System.out.println("Too many argument");
-          }
+        }
   
     }
 }
