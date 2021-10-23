@@ -50,55 +50,55 @@ public class Cashier {
 
             if (kembalian >= 100000) {
                 kembalian = kembalian - 100000;
-                a = a + 1;
+                seratusRibu = seratusRibu + 1;
             }
             if (kembalian >= 50000) {
                 kembalian = kembalian - 50000;
-                b = b + 1;
+                limaPuluhRibu = limaPuluhRibu + 1;
             }
             if (kembalian >= 20000) {
                 kembalian = kembalian - 20000;
-                c = c + 1;
+                duaPuluhRibu = duaPuluhRibu + 1;
             }
             if (kembalian >= 20000) {
                 kembalian = kembalian - 20000;
-                c = c + 1;
+                duaPuluhRibu = duaPuluhRibu + 1;
             }
             if (kembalian >= 10000) {
                 kembalian = kembalian - 10000;
-                d = d + 1;
+                sepuluhRibu = sepuluhRibu + 1;
             }
             if (kembalian >= 5000) {
                 kembalian = kembalian - 5000;
-                e = e + 1;
+                limaRibu = limaRibu + 1;
             }
             if (kembalian >= 2000) {
                 kembalian = kembalian - 2000;
-                f = f + 1;
+                duaRibu = duaRibu + 1;
             }
             if (kembalian >= 2000) {
                 kembalian = kembalian - 2000;
-                f = f + 1;
+                duaRibu = duaRibu + 1;
             }
             if (kembalian >= 1000) {
                 kembalian = kembalian - 1000;
-                g = g + 1;
+                seribu = seribu + 1;
             }
             if (kembalian >= 500) {
                 kembalian = kembalian - 500;
-                h = h + 1;
+                limaRatusRupiah = limaRatusRupiah + 1;
             }
             if (kembalian >= 200) {
                 kembalian = kembalian - 200;
-                i = i + 1;
+                duaRatusRupiah = duaRatusRupiah + 1;
             }
             if (kembalian >= 200) {
                 kembalian = kembalian - 200;
-                i = i + 1;
+                duaRatusRupiah = duaRatusRupiah + 1;
             }
             if (kembalian >= 100) {
                 kembalian = kembalian - 100;
-                j = j + 1;
+                seratusRupiah = seratusRupiah + 1;
             }
 
             if (a > 0) {
