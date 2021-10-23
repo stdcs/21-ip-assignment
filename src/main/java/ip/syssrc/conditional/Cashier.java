@@ -101,35 +101,35 @@ public class Cashier {
                 seratusRupiah = seratusRupiah + 1;
             }
 
-            if (a > 0) {
-                System.out.println(a + " lembar uang Rp. 100000");
+            if (seratusRibu > 0) {
+                System.out.println(seratusRibu + " lembar uang Rp. 100000");
             }
-            if (b > 0) {
-                System.out.println(b + " lembar uang Rp. 50000");
+            if (limaPuluhRibu > 0) {
+                System.out.println(limaPuluhRibu + " lembar uang Rp. 50000");
             }
-            if (c > 0) {
-                System.out.println(c + " lembar uang Rp. 20000");
+            if (duaPuluhRibu > 0) {
+                System.out.println(duaPuluhRibu + " lembar uang Rp. 20000");
             }
-            if (d > 0) {
-                System.out.println(d + " lembar uang Rp. 10000");
+            if (sepuluhRibu > 0) {
+                System.out.println(sepuluhRibu + " lembar uang Rp. 10000");
             }
-            if (e > 0) {
-                System.out.println(e + " lembar uang Rp. 5000");
+            if (limaRibu > 0) {
+                System.out.println(limaRibu + " lembar uang Rp. 5000");
             }
-            if (f > 0) {
-                System.out.println(f + " lembar uang Rp. 2000");
+            if (duaRibu > 0) {
+                System.out.println(duaRibu + " lembar uang Rp. 2000");
             }
-            if (g > 0) {
-                System.out.println(g + " lembar uang Rp. 1000");
+            if (seribu > 0) {
+                System.out.println(seribu + " lembar uang Rp. 1000");
             }
-            if (h > 0) {
-                System.out.println(h + " lembar uang Rp. 500");
+            if (limaRatusRupiah > 0) {
+                System.out.println(limaRatusRupiah + " lembar uang Rp. 500");
             }
-            if (i > 0) {
-                System.out.println(i + " lembar uang Rp. 200");
+            if (duaRatusRupiah > 0) {
+                System.out.println(duaRatusRupiah + " lembar uang Rp. 200");
             }
-            if (j > 0) {
-                System.out.println(j + " lembar uang Rp. 100");
+            if (seratusRupiah > 0) {
+                System.out.println(seratusRupiah + " lembar uang Rp. 100");
             }
             if (kembalian > 0) {
                 System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
