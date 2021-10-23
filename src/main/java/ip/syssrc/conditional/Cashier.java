@@ -12,6 +12,8 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
+        
+        try {
         System.out.println("Berapa total harga belanja anda ? ");
 
         int totalBelanja = In.nextInt();
@@ -19,6 +21,9 @@ public class Cashier {
         System.out.println("Berapa total uang anda bayarkan ? ");
 
         int pembayaran = In.nextInt();
+        } catch (Exception e) {
+            System.out.println("Maaf, pastikan inputan anda adalah angka");
+        }
 
         if (totalBelanja > pembayaran) {
             System.out.println("Uang Anda Kurang");
