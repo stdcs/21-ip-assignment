@@ -84,7 +84,7 @@ public class Cashier {
             } else if (sisa <= 100){
                 System.out.println("Dan sisanya Rp. " +sisa+ " didonasikan");
             }
-            }
-            in.close();
+        }
+        in.close();
     }
 }
