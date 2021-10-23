@@ -17,16 +17,6 @@ public class Cashier {
     int jumlahuangyangdimiliki;
     int sisa;
     int a,b,c,d,e,f,g,h,i,j;
-      //a=100000
-      //b= 50000
-      //c= 20000
-     //d = 10000
-     //e = 5000
-    //f = 2000
-      //g =1000
-     //h = 500
-    //i = 200
-     //j = 100
     System.out.print("Masukkan Total Belanja Anda = ");
     jumlahbelanja = sc.nextInt();
     System.out.print("Masukkan Uang Anda = ");
