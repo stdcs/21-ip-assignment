@@ -11,17 +11,22 @@ import java.util.Scanner;
 public class Cashier {
 
     public static void main(String[] args) {
+        
         Scanner in = new Scanner(System.in);
         int totalbelanja;
         int totaluang;
         int totalkembalian;
         
-        System.out.print("Berapa total uang belanja anda ? ");
-        totalbelanja = in.nextInt();
-        System.out.println();
-        System.out.print("Berapa total uang yang anda bayarkan ? ");
-        totaluang = in.nextInt();
-        System.out.println();
+        try{
+            System.out.print("Berapa total uang belanja anda ? ");
+            totalbelanja = in.nextInt();
+            System.out.println();
+            System.out.print("Berapa total uang yang anda bayarkan ? ");
+            totaluang = in.nextInt();
+        } catch (Exception e){
+            System.out.println("Maaf, Pastikan inputan anda berupa angka");
+            return;
+        } 
 
         totalkembalian = totaluang - totalbelanja;
         
@@ -35,7 +40,7 @@ public class Cashier {
             System.out.println("Maaf, Pastikan inputan anda berupa angka");
         }
         System.out.println();
-        System.out.println("Dengan dengan rincian sebagai berikut :");
+        System.out.println("Dengan rincian sebagai berikut :");
         int a, b, c, d, e, f, g, h, i, j;
         a = 0;
         b = 0;
