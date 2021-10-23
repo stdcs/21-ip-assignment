@@ -45,18 +45,39 @@ public class Cashier {
      sisa = (sisa % 200);
      j = (sisa / 100);
      sisa = (sisa % 100);
-   
-if(a>0) System.out.println(a+" Lembar Rp100.000");
-if(b>0) System.out.println(b+" Lembar Rp50.000");
-if (c>0)System.out.println(c+" Lembar Rp20.000");
-if (d>0) System.out.println(d+" Lembar Rp10.000");
-if (e>0) System.out.println(e+" Lembar Rp5.000");
-if(f>0) System.out.println(f+" Lembar Rp2.000");
-if(g>0) System.out.println(g+" Lembar Rp1.000");
-if(h>0) System.out.println(h+" Lembar Rp500");
-if(i>0) System.out.println(i+" Lembar Rp200");
-if(j>0) System.out.println(j+" Lembar Rp100");
-if(sisa<100) System.out.println("Rp"+sisa+" Akan Didonasikan");
+    if(a>0) {
+    System.out.println(a+" Lembar Rp100.000");
+    }
+    if(b>0) { 
+    System.out.println(b+" Lembar Rp50.000");
+    }
+    if (c>0) {
+    System.out.println(c+" Lembar Rp20.000");
+    }
+    if (d>0) {
+    System.out.println(d+" Lembar Rp10.000");
+    }
+    if (e>0) { 
+    System.out.println(e+" Lembar Rp5.000");
+    }
+    if(f>0) {
+    System.out.println(f+" Lembar Rp2.000");
+    }
+    if(g>0) { 
+    System.out.println(g+" Lembar Rp1.000");
+    }
+    if(h>0) { 
+    System.out.println(h+" Lembar Rp500");
+    }
+    if(i>0) {
+    System.out.println(i+" Lembar Rp200");
+    }
+    if(j>0) { 
+    System.out.println(j+" Lembar Rp100");
+    }
+    if(sisa<100) {
+    System.out.println("Rp"+sisa+" Akan Didonasikan");
+    }
  }else if (jumlahuangyangdimiliki<jumlahbelanja){
      System.out.println("Mohon Maaf Uang Anda Tidak Cukup");
  } else if (jumlahuangyangdimiliki==jumlahbelanja){
