@@ -36,6 +36,7 @@ public class Cashier {
         if (bayar > total){
             System.out.printf("\nTotal kembalian anda : Rp %d", kembalian);
             System.out.printf("\nDengan rincian sebagai berikut : \n\n");
+<<<<<<< HEAD
         }
         if (kembalian >= 100000){
             int seratus = kembalian / 100000;
@@ -214,9 +215,12 @@ public class Cashier {
         if (bayar > total){
         System.out.printf("\nTotal kembalian anda : Rp %d\n", kembalian);
         System.out.printf("Dengan rincian sebagai berikut : \n");
+=======
+
+>>>>>>> e6def3e (feat(conditional/Cashier.java): fix the print condition)
         if (kembalian >= 100000){
             int seratus = kembalian / 100000;
-            System.out.printf("\n%d Lembar uang Rp. 100.000\n", seratus);
+            System.out.printf("%d Lembar uang Rp. 100.000\n", seratus);
             kembalian = kembalian % 100000;
         }
         
