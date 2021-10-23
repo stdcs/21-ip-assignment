@@ -37,11 +37,15 @@ public class RoleAccess {
             switch (args[0]) {
                 case "Super Admin":
 <<<<<<< HEAD
+<<<<<<< HEAD
                     isValidRole = true;
                     break;
 =======
 <<<<<<< HEAD
 >>>>>>> 942d9dd (feat(conditional/RoleAccess): add if else conditional and add switch)
+=======
+<<<<<<< HEAD
+>>>>>>> d460b85 (feat(conditional/RoleAccess.java): fix switch case)
                 case "Admin":
                     isValidRole = true;
                     break;
@@ -97,9 +101,9 @@ public class RoleAccess {
 =======
                     isValidRole = true;
                     break;
+=======
+>>>>>>> ebf6ea2 (feat(conditional/RoleAccess.java): fix switch case)
                 case "Admin":
-                    isValidRole = true;
-                    break;
                 case "User":
                     isValidRole = true;
                     break;
