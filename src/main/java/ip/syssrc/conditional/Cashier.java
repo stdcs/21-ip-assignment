@@ -282,7 +282,7 @@ public class Cashier {
         if (bayar < total){
             System.out.println("Maaf, pembayaran anda belum mencukupi");
         }
-    in.close();
+        in.close();
     }
 }
          
