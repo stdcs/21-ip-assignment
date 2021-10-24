@@ -110,7 +110,7 @@ public class Cashier {
                 }
                 
             } 
-            
+        
         In.close();
     }
 }
