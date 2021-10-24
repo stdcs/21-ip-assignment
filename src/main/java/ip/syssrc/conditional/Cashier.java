@@ -12,18 +12,28 @@ import java.util.*;
 public class Cashier {
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
-        System.out.println("Berapa total harga belanja anda ? ");
-        try {
-            int totalBelanja = In.nextInt();
-        
-            System.out.println("Berapa total uang anda bayarkan ? ");
+
+            int kembalian = 0;
+            int totalBelanja = 0;
+            int pembayaran = 0;
     
-            int pembayaran = In.nextInt();
+            try {
     
+                System.out.println("Berapa total harga belanja anda ? ");
+    
+                totalBelanja = In.nextInt();
+    
+                System.out.println("Berapa total uang anda bayarkan ? ");
+    
+                pembayaran = In.nextInt();
+            } catch (Exception e) {
+                System.out.println("Maaf, pastikan inputan anda adalah angka");
+            }
             if (totalBelanja > pembayaran) {
                 System.out.println("Uang Anda Kurang");
             } else {
-                int kembalian = pembayaran - totalBelanja;
+                kembalian = pembayaran - totalBelanja;
+
                 System.out.println("Total kembalian anda = " + kembalian);
                 System.out.println("Dengan dengan rincian sebagai berikut :");
                 int UangA,UangB,UangC,UangD,UangE,UangF,UangG,UangH,UangI,UangJ;
@@ -100,12 +110,7 @@ public class Cashier {
                 }
                 
             } 
-                  
-        } catch (Exception e){
-            System.out.println("maaf, pastikan inputan anda adalah angka");
-        }
-
-        
+            
         In.close();
     }
 }
