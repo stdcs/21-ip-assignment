@@ -113,13 +113,13 @@ public class Cashier {
                     System.out.println(UangG + " lembar uang Rp.1000");
                 } 
                 if (UangH > 0) {
-                    System.out.println(UangH + " lembar uang Rp.500");
+                    System.out.println(UangH + " buah uang Rp.500");
                 } 
                 if (UangI > 0) {
-                    System.out.println(UangI + " lembar uang Rp.200");
+                    System.out.println(UangI + " buah uang Rp.200");
                 } 
                 if (UangJ > 0) {
-                    System.out.println(UangJ + " lembar uang Rp.100");
+                    System.out.println(UangJ + " buah uang Rp.100");
                 }
                 if (kembalian > 0) {
                     System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
