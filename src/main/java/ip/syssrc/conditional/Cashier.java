@@ -37,6 +37,7 @@ public class Cashier {
             System.out.printf("\nTotal kembalian anda : Rp %d", kembalian);
             System.out.printf("\nDengan rincian sebagai berikut : \n\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
         if (kembalian >= 100000){
             int seratus = kembalian / 100000;
@@ -225,6 +226,9 @@ public class Cashier {
 =======
 
 >>>>>>> e6def3e (feat(conditional/Cashier.java): fix the print condition)
+=======
+        }
+>>>>>>> aaa69ec (feat(conditional/Cashier.java):fix if else format)
         if (kembalian >= 100000){
             int seratus = kembalian / 100000;
 <<<<<<< HEAD
@@ -234,57 +238,92 @@ public class Cashier {
             kembalian = kembalian % 100000;
 >>>>>>> d36d5ab (feat(conditional/Cashier.java): fix the print condition)
         }
+<<<<<<< HEAD
         kembalian = kembalian % 100000;
         if (kembalian >= 50000 & kembalian <= 100000){
+=======
+        if (kembalian >= 50000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int limaPuluh = kembalian / 50000;
             System.out.printf("%d Lembar uang Rp. 50.000\n", limaPuluh);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 50000;
         if (kembalian >= 20000 & kembalian <= 50000){
+=======
+        if (kembalian >= 20000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int duaPuluh = kembalian / 20000;
             System.out.printf("%d Lembar uang Rp. 20.000\n", duaPuluh);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 20000;
         if (kembalian >= 10000 & kembalian <= 20000){
+=======
+        if (kembalian >= 10000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int sepuluh = kembalian / 10000;
             System.out.printf("%d Lembar uang Rp. 10.000\n", sepuluh);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 10000;
         if (kembalian >= 5000 & kembalian <= 10000){
+=======
+        if (kembalian >= 5000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int limaRibu = kembalian / 5000;
             System.out.printf("%d Lembar uang Rp. 5.000\n", limaRibu);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 5000;
         if (kembalian >= 2000& kembalian <= 5000){
+=======
+        if (kembalian >= 2000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int duaRibu = kembalian / 2000;
             System.out.printf("%d Lembar uang Rp. 2.000\n", duaRibu);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 2000;
         if (kembalian >= 1000& kembalian <= 2000){
+=======
+        if (kembalian >= 1000 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int seribu = kembalian / 1000;
             System.out.printf("%d Lembar uang Rp. 1.000\n", seribu);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 1000;
         if (kembalian >= 500 & kembalian <= 1000){
+=======
+        if (kembalian >= 500 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int limaBuah = kembalian / 500;
             System.out.printf("%d buah uang Rp. 500\n", limaBuah);
+            kembalian = kembalian % 500;
         }
-        kembalian = kembalian % 500;
-        if (kembalian >= 200 & kembalian <= 500){
+        if (kembalian >= 200 ){
             int duaBuah = kembalian / 200 ;
             System.out.printf("%d buah uang Rp. 200\n", duaBuah);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 200;
         if (kembalian >= 100 & kembalian <= 200){
+=======
+        if (kembalian >= 100 ){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int satuBuah = kembalian / 100;
             System.out.printf("%d buah uang Rp. 100\n", satuBuah);
         }
+<<<<<<< HEAD
         kembalian = kembalian % 100;
         if (kembalian > 0 & kembalian <= 100){
+=======
+        if (kembalian <100 && kembalian > 0){
+>>>>>>> 9eceb02 (feat(conditional/Cashier.java):fix if else format)
             int donasi = kembalian;
             System.out.printf("Dan sebanyak Rp. %d didonasikan\n", donasi);
         }
-    }
         // jika uang pas // 
         if (bayar == total){
             System.out.println("Terima kasih telah membayar dengan uang pas");
