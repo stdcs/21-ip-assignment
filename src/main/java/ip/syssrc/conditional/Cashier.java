@@ -87,7 +87,4 @@ public class Cashier {
         
         scan.close();
     }
-}
-       
-        
-             
+}      
