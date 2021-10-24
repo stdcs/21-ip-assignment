@@ -23,8 +23,7 @@ public class RoleAccess {
                 case "Super Admin":
                 case "Admin":
                 case "User":
-                isValidRole = !isValidRole;
-                
+                isValidRole = !isValidRole;    
             }
             if (isValidRole) {
                 switch (args[0] ) {
