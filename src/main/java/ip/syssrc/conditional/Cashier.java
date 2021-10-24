@@ -40,92 +40,68 @@ public class Cashier {
                 UangJ = 0;
     
                 if (kembalian >= 100000) {
-                    kembalian = kembalian - 100000;
-                    UangA = UangA + 1;
+                    int pecahan = (kembalian / 100000);
+                    UangA = pecahan;
+                    kembalian -= (100000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 100.000");
                 }
                 if (kembalian >= 50000) {
-                    kembalian = kembalian - 50000;
-                    UangB = UangB + 1;
+                    int pecahan = (kembalian / 50000);
+                    UangB = pecahan;
+                    kembalian -= (50000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 50.000");
                 }
                 if (kembalian >= 20000) {
-                    kembalian = kembalian - 20000;
-                    UangC = UangC + 1;
-                }
-                if (kembalian >= 20000) {
-                    kembalian = kembalian - 20000;
-                    UangC = UangC + 1;
+                    int pecahan = (kembalian / 20000);
+                    UangC = pecahan;
+                    kembalian -= (20000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 20.000");
                 }
                 if (kembalian >= 10000) {
-                    kembalian = kembalian - 10000;
-                    UangD = UangD + 1;
+                    int pecahan = (kembalian / 10000);
+                    UangD = pecahan;
+                    kembalian -= (10000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 10.000");
                 }
                 if (kembalian >= 5000) {
-                    kembalian = kembalian - 5000;
-                    UangE = UangE + 1;
+                    int pecahan = (kembalian / 5000);
+                    UangE = pecahan;
+                    kembalian -= (5000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 5000");
                 }   
                 if (kembalian >= 2000) {
-                    kembalian = kembalian - 2000;
-                    UangF = UangF + 1;
-                }
-                if (kembalian >= 2000) {
-                    kembalian = kembalian - 2000;
-                    UangF = UangF + 1;
+                    int pecahan = (kembalian / 2000);
+                    UangF = pecahan;
+                    kembalian -= (2000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 2000");
                 }
                 if (kembalian >= 1000) {
-                    kembalian = kembalian - 1000;
-                    UangG = UangG + 1;
+                    int pecahan = (kembalian / 1000);
+                    UangG = pecahan;
+                    kembalian -= (1000 * pecahan);
+                    System.out.println(pecahan + " lembar uang Rp. 1000");
                 }
                 if (kembalian >= 500) {
-                    kembalian = kembalian - 500;
-                    UangH = UangH + 1;
+                    int pecahan = (kembalian / 500);
+                    UangH = pecahan;
+                    kembalian -= (500 * pecahan);
+                    System.out.println(pecahan + " buah uang Rp. 500");
                 }
                 if (kembalian >= 200) {
-                    kembalian = kembalian - 200;
-                    UangI = UangI + 1;
-                }
-                if (kembalian >= 200) {
-                    kembalian = kembalian - 200;
-                    UangI = UangI + 1;
+                    int pecahan = (kembalian / 200);
+                    UangI = pecahan;
+                    kembalian -= (200 * pecahan); 
+                    System.out.println(pecahan + " buah uang Rp. 200");
                 }
                 if (kembalian >= 100) {
-                    kembalian = kembalian - 100;
-                    UangJ = UangJ + 1;
-                }
-                if (UangA > 0) {
-                    System.out.println(UangA + " lembar uang Rp.100000");
-                } 
-                if (UangB > 0) {
-                    System.out.println(UangB + " lembar uang Rp.50000");
-                } 
-                if (UangC > 0) {
-                    System.out.println(UangC + " lembar uang Rp.20000");
-                } 
-                if (UangD > 0) {
-                    System.out.println(UangD + " lembar uang Rp.10000");
-                } 
-                if (UangE > 0) {
-                    System.out.println(UangE + " lembar uang Rp.5000");
-                } 
-                if (UangF > 0) {
-                    System.out.println(UangF + " lembar uang Rp.2000");
-                } 
-                if (UangG > 0) {
-                    System.out.println(UangG + " lembar uang Rp.1000");
-                } 
-                if (UangH > 0) {
-                    System.out.println(UangH + " buah uang Rp.500");
-                } 
-                if (UangI > 0) {
-                    System.out.println(UangI + " buah uang Rp.200");
-                } 
-                if (UangJ > 0) {
-                    System.out.println(UangJ + " buah uang Rp.100");
-                }
-                if (kembalian > 0) {
-                    System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
+                    int pecahan = (kembalian / 100);
+                    UangJ = pecahan;
+                    kembalian -= (100 * pecahan);
+                    System.out.println(pecahan + " buah uang Rp. 100");
                 }
                 
-            }        
+            } 
+                  
         } catch (Exception e){
             System.out.println("maaf, pastikan inputan anda adalah angka");
         }
