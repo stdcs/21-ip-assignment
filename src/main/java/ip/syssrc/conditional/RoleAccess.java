@@ -35,8 +35,12 @@ public class RoleAccess {
             }
 =======
         }
+<<<<<<< HEAD
 >>>>>>> 7cbdb32 (fix(conditional/RoleAccess.java))
             if (isValidRole == true) {
+=======
+            if (isValidRole) {
+>>>>>>> 6a503c4 (feat(conditional/RoleAccess.java): fix git status)
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
