@@ -40,7 +40,7 @@ public class Cashier {
             kembalian = kembalian % 100000;
         }
         
-        if (kembalian >= 50000 & kembalian <= 100000){
+        if (kembalian >= 50000 ){
             int limaPuluh = kembalian / 50000;
             System.out.printf("%d Lembar uang Rp. 50.000\n", limaPuluh);
             kembalian = kembalian % 50000;
