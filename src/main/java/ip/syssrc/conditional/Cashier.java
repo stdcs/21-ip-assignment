@@ -99,7 +99,8 @@ public class Cashier {
                     System.out.println(pecahan + " buah uang Rp. 100");
                 }
                 
-            }        
+            } 
+                  
         } catch (Exception e){
             System.out.println("maaf, pastikan inputan anda adalah angka");
         }
