@@ -50,14 +50,16 @@ public class RoleAccess {
         } else if (args.length == 1) {
 
             switch (args[0]) {
-                case "Super Admin", "Admin", "User":
+                case "Super Admin";
+                case "Admin";
+                case "User";
                     isValidRole = true;
                     break;
                 default:
                     isValidRole = false;
                     break;
             }
-            if (isValidRole == true) {
+            if (isValidRole) {
                 switch (args[0] ) {
                 case "Super Admin":
                     System.out.printf("%2d.%d. CRUD Super Admin\n", ++menuIndex, ++subMenuIndex);
