@@ -8,18 +8,26 @@ package ip.syssrc.conditional;
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
  *
  */
-import java.util.Scanner;
+import java.util.*;
+import java.util.InputMismatchException;
 public class Cashier {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Total Belanja : ");
-        int totalBelanja = in.nextInt();
-        System.out.println("Jumlah yang dibayarkan : ");
-        int jumlahBayar = in.nextInt();
+        int totalBelanja, jumlahBayar;
+        try {
+            System.out.println("Total Belanja : ");
+            totalBelanja = in.nextInt();
+            System.out.println("Jumlah yang dibayarkan : ");
+            jumlahBayar = in.nextInt();
+            in.close();
+        } catch (InputMismatchException e) {
+            System.out.println("Maaf, pastikan inputan anda adalah angka");
+            return;
+        } 
+        
         int kembalian = jumlahBayar - totalBelanja;
-
-        System.out.println("Total Kembalian : " +kembalian);
+        System.out.println("Total Kembalian : " + kembalian);
         System.out.println("Dengan rincian sebagai berikut : ");
         int a,b,c,d,e,f,g,h,i,j;
 
