@@ -5,7 +5,7 @@ package ip.syssrc.conditional;
  *
  * Assignment 1.2
  *
- * @author H071211069 - Muhammad Faiz Fatwa Syarifuddin <faizfatwa030206@gmail.com> <syarifuddinmff21h@student.unhas.ac.id>
+ * @author H071211069 - Muhammad Faiz Fatwa Syarifuddin <faizfatwa030206@gmail.com>
  *
  */
 public class RoleAccess {
