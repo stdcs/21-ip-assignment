@@ -1,10 +1,14 @@
 package ip.syssrc.loop;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.InputMismatchException;
 import java.util.Scanner;
 =======
 
 >>>>>>> 1411adb (feat(loop):add new java file)
+=======
+import java.util.Scanner;
+>>>>>>> 40ad29a (feat(conditional/MatricesPad.java): add 'import java.util.Scanner' object)
 /**
  * MatricesPad
  *
@@ -21,6 +25,7 @@ import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         int start = in.nextInt();
@@ -128,6 +133,10 @@ public class MatricesPad {
             }
         }
         in.close();
+=======
+        Scanner in = new Scanner(System.in);
+        
+>>>>>>> 40ad29a (feat(conditional/MatricesPad.java): add 'import java.util.Scanner' object)
     }
 }
 =======
