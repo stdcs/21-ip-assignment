@@ -22,7 +22,8 @@ public class MatricesPad {
             start = scan.nextInt();
             end = scan.nextInt();
             size = scan.nextInt();
-
+            scan.close();
+            
             if (start < 0 || end < 0 || size < 0) {
                 throw new Exception();
             }
