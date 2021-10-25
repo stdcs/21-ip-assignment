@@ -1,5 +1,6 @@
 package ip.syssrc.loop;
 
+import java.util.Scanner;
 /**
  * Eyes
  *
@@ -11,6 +12,7 @@ package ip.syssrc.loop;
 public class Eyes {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
     }
 }
