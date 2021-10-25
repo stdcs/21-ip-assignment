@@ -11,40 +11,5 @@ package ip.syssrc.loop;
 public class FactorialSequence {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-        Scanner scan = new Scanner(System.in);
-
-        int number, sum;
-        sum = 1;
-
-        try {
-            number = scan.nextInt();
-            scan.close();
-
-            if (number < 0) {
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            System.out.print("Pastikan input adalah bilangan bulat >= 0");
-            return;
-        }
-
-        System.out.printf("%d!", number);
-        if (number != 0) {
-            for (int i = number; i >= 1; i--) {
-                sum *= i;
-                if (i == number) {
-                    System.out.printf(" = %d", i);
-                } else {
-                    System.out.printf(" x %d", i);
-                }
-            }
-        } else {
-            sum = 1;
-        }
-        System.out.printf(" = %d", sum);
-=======
-
->>>>>>> 5d5e406 (feat(loop): add assignment 2.2, `FactorialSequence.java`)
     }
 }
