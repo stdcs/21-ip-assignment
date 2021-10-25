@@ -8,35 +8,41 @@ package ip.syssrc.conditional;
  * @author H071171512 - Adelia puspita <adhepuspita123@gmail.com>
  *
  */
-import java.util.*;
+import java.util.Scanner;
 public class Cashier {
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
+        int totalBelanja = 0;
+        int pembayaran = 0;
+        int kembalian = 0;
+        try{
         System.out.println("Berapa total harga belanja anda ? ");
 
-        int totalBelanja = In.nextInt();
+        totalBelanja = int.nextInt();
         
         System.out.println("Berapa total uang anda bayarkan ? ");
 
-        int pembayaran = In.nextInt();
+        pembayaran = In.nextInt();
+        } catch(Exception e){
+            System.out.println("maaf,pastikan inputan anda adalah angka");
+        }
 
         if (totalBelanja > pembayaran) {
             System.out.println("Uang Anda Kurang");
         } else {
-            int kembalian = pembayaran - totalBelanja;
+            kembalian = pembayaran - totalBelanja;
             System.out.println("Total kembalian anda = " + kembalian);
             System.out.println("Dengan dengan rincian sebagai berikut :");
-            int a,b,c,d,e,f,g,h,i,j;
-            a = 0;
-            b = 0;
-            c = 0;
-            d = 0;
-            e = 0;
-            f = 0;
-            g = 0;
-            h = 0;
-            i = 0;
-            j = 0;
+           int a = 0;
+           int b = 0;
+           int c = 0;
+           int d = 0;
+           int e = 0;
+           int f = 0;
+           int g = 0;
+           int h = 0;
+           int i = 0;
+           int j = 0;
 
             if (kembalian >= 100000) {
                 kembalian = kembalian - 100000;
@@ -112,13 +118,13 @@ public class Cashier {
                 System.out.println(g + " lembar uang Rp.1000");
             } 
             if (h > 0) {
-                System.out.println(h + " lembar uang Rp.500");
+                System.out.println(h + " buah uang Rp.500");
             } 
             if (i > 0) {
-                System.out.println(i + " lembar uang Rp.200");
+                System.out.println(i + " buah uang Rp.200");
             } 
             if (j > 0) {
-                System.out.println(j + " lembar uang Rp.100");
+                System.out.println(j + " buah uang Rp.100");
             }
             if (kembalian > 0) {
                 System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
