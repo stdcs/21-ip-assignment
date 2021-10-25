@@ -14,6 +14,7 @@ public class RoleAccess {
         int subMenuIndex = 0;
         boolean isValidRole = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (args.length == 0) {
             System.out.println("What role you want to see ?");
             System.out.println("For example, try 'Admin'.");
@@ -44,34 +45,32 @@ public class RoleAccess {
                     System.out.printf("%2d.%d. Edit\n", menuIndex, ++subMenuIndex);
 =======
     
+=======
+>>>>>>> 8c618e1 (Update RoleAccess.java)
         if (args.length == 0) {
-          System.out.println("What role you want to see ?");
-          System.out.println("For example, try 'Admin'.");
+            System.out.println("What role you want to see ?");
+            System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
-
             switch (args[0]) {
                 case "Super Admin":
                 case "Admin":
                 case "User":
-                    isValidRole = true;
-                    break;
-                default:
-                    isValidRole = false;
-                    break;
+                isValidRole = true;
+                break;
             }
             if (isValidRole) {
                 switch (args[0] ) {
-                case "Super Admin":
+                    case "Super Admin":
                     System.out.printf("%2d.%d. CRUD Super Admin\n", ++menuIndex, ++subMenuIndex);
                     System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, ++subMenuIndex);
                     System.out.printf("%2d.%d. CRUD User\n", menuIndex, ++subMenuIndex);
                     System.out.println();
-                case "Admin":
+                    case "Admin":
                     subMenuIndex = 0;
                     System.out.printf("%d. Admin\n", ++menuIndex);
                     System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, ++subMenuIndex);
                     System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, ++subMenuIndex);
-                default:
+                    default:
                     subMenuIndex = 0;
 <<<<<<< HEAD
                     System.out.printf("%d. User\n", menuIndex);
