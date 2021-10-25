@@ -22,7 +22,7 @@ public class MatricesPad {
             start = scan.nextInt();
             end = scan.nextInt();
             size = scan.nextInt();
-            
+
             if (start < 0 || end < 0 || size < 0) {
                 throw new Exception();
             }
@@ -31,7 +31,12 @@ public class MatricesPad {
             return;
         }
 
-
+        int biggest = (start > end) ? start : end;
+        int leadingZero = 0;
+        while (biggest > 0) {
+            biggest /= 10;
+            leadingZero++;
+        }
 
     }
 }
