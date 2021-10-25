@@ -18,11 +18,20 @@ public class MatricesPad {
 
         int start, end, size;
 
-        start = scan.nextInt();
-        end = scan.nextInt();
-        size = scan.nextInt();
+        try {
+            start = scan.nextInt();
+            end = scan.nextInt();
+            size = scan.nextInt();
+            
+            if (start < 0 || end < 0 || size < 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Masukkan bilangan bulat >= 0");
+            return;
+        }
 
-        
+
 
     }
 }
