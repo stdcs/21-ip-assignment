@@ -20,11 +20,15 @@ public class RoleAccess {
         if (args.length == 0) {
           System.out.println("What role you want to see ?");
           System.out.println("For example, try 'Admin'.");
+
         } else if (args.length == 1) {
-            if (args[0].contentEquals("Super Admin") || args[0].contentEquals("Admin") || args[0].contentEquals("User")) {
+            switch (args[0] ) { // Mengecek pilihan role
+                case "Super Admin":
+                case "Admin":
+                case "User":
                 isValidRole = true;
-            }
-            if (isValidRole == true) {
+            } // beralih pengecekan ke kondisi Boolean
+            if (isValidRole) {
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
