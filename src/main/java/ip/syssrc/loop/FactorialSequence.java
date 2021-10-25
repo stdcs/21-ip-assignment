@@ -1,5 +1,6 @@
 package ip.syssrc.loop;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import java.util.Scanner;
 
@@ -8,11 +9,18 @@ import java.util.Scanner;
 =======
 import java.util.Scanner;
 >>>>>>> 837fe87 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
+=======
+import java.util.Scanner;
+=======
+
+>>>>>>> 1411adb (feat(loop):add new java file)
+>>>>>>> c536015 (feat(loop):add new java file)
 /**
  * FactorialSequence
  *
  * Assignment 2.2
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  *
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
@@ -21,11 +29,18 @@ import java.util.Scanner;
 =======
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 >>>>>>> 837fe87 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
+=======
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 1411adb (feat(loop):add new java file)
+>>>>>>> c536015 (feat(loop):add new java file)
  *
  */
 public class FactorialSequence {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,6 +66,7 @@ public class FactorialSequence {
         }
         in.close();
 =======
+<<<<<<< HEAD
 =======
 
         long factorial = 1;
@@ -79,5 +95,9 @@ public class FactorialSequence {
         }
         in.close();
 >>>>>>> 7017a14 (feat(loop/FactorialSequence.java): add if else statement with loop)
+=======
+
+>>>>>>> 1411adb (feat(loop):add new java file)
+>>>>>>> c536015 (feat(loop):add new java file)
     }
 }
