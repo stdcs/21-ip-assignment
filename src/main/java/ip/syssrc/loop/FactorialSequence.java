@@ -16,5 +16,17 @@ public class FactorialSequence {
 
         int n, sum;
         sum = 1;
+
+        try {
+            n = scan.nextInt();
+            
+            if (n < 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.print("Pastikan input adalah bilangan bulat >= 0");
+        }
+
+        
     }
 }
