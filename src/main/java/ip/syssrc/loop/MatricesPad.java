@@ -17,6 +17,9 @@ public class MatricesPad {
 
 
         Scanner in = new Scanner(System.in);
+        int start = in.nextInt();
+        int end = in.nextInt();
+        int size = in.nextInt();
         
         int start, size, end;
 
