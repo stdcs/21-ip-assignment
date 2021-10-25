@@ -191,10 +191,16 @@ public class MatricesPad {
 =======
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
         int start = in.nextInt();
         int end = in.nextInt();
         int size = in.nextInt();
 =======
+=======
+        int start = in.nextInt();
+        int end = in.nextInt();
+        int size = in.nextInt();
+>>>>>>> 781958d (feat(loop/MatricesPad.java): add 'start' 'end' 'size' as int variabel)
         
         int start, size, end;
 >>>>>>> bcf11fe (feat(loop\MatricesPad.java): add try catch statement)
