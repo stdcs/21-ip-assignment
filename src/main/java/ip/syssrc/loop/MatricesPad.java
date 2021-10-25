@@ -18,6 +18,11 @@ public class MatricesPad {
 
         int start, end, size;
 
+        start = scan.nextInt();
+        end = scan.nextInt();
+        size = scan.nextInt();
+
         
+
     }
 }
