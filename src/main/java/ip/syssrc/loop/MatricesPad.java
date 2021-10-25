@@ -180,6 +180,9 @@ public class MatricesPad {
 =======
 =======
         Scanner in = new Scanner(System.in);
+        int start = in.nextInt();
+        int end = in.nextInt();
+        int size = in.nextInt();
         
 >>>>>>> 40ad29a (feat(conditional/MatricesPad.java): add 'import java.util.Scanner' object)
 >>>>>>> caaf5d9 (feat(conditional/MatricesPad.java): add 'import java.util.Scanner')
