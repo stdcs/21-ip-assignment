@@ -18,6 +18,9 @@ public class MatricesPad {
 
 =======
         Scanner scan = new Scanner(System.in);
+
+        int start, end, size;
+
         
 >>>>>>> f2ee0d0 (feat(loop/MatricesPad): add `java.util.Scanner` object)
     }
