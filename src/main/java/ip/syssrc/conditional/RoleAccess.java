@@ -50,9 +50,9 @@ public class RoleAccess {
         } else if (args.length == 1) {
 
             switch (args[0]) {
-                case "Super Admin";
-                case "Admin";
-                case "User";
+                case "Super Admin":
+                case "Admin":
+                case "User":
                     isValidRole = true;
                     break;
                 default:
