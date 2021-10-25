@@ -26,7 +26,8 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
-        }
+            }
+            
             if (isValidRole) {
                 switch (args[0] ) {
                     case "Super Admin":
