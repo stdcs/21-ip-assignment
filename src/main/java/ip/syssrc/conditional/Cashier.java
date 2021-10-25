@@ -30,6 +30,7 @@ public class Cashier {
                 System.out.println("Total kembalian anda = " + kembalian);
                 System.out.println("Dengan dengan rincian sebagai berikut :");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 int a,b,c,d,e,f,g,h,i,j;
                 a = 0;
                 b = 0;
@@ -42,6 +43,8 @@ public class Cashier {
                 i = 0;
                 j = 0;
     
+=======
+>>>>>>> 60c52b2 (Update Cashier.java)
                 if (kembalian >= 100000) {
                     kembalian = kembalian - 100000;
                     a = a + 1;
@@ -186,6 +189,7 @@ public class Cashier {
         
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (Exception e) {
             System.out.println("Maaf, pastikan input anda adalah angka");
             //TODO: handle exception
@@ -195,5 +199,8 @@ public class Cashier {
 =======
 
 >>>>>>> 8830c68 (Update Cashier.java)
+=======
+
+>>>>>>> 60c52b2 (Update Cashier.java)
     }
 }
