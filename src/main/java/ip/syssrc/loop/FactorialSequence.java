@@ -19,6 +19,7 @@ public class FactorialSequence {
 
         try {
             number = scan.nextInt();
+            scan.close();
             
             if (number < 0) {
                 throw new Exception();
