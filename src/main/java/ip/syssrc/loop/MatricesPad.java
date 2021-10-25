@@ -15,6 +15,7 @@ import java.util.Scanner;
  * Assignment 2.1
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 <<<<<<< HEAD
  * 
@@ -22,7 +23,13 @@ import java.util.Scanner;
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 >>>>>>> 1411adb (feat(loop):add new java file)
+<<<<<<< HEAD
 >>>>>>> c536015 (feat(loop):add new java file)
+=======
+=======
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+>>>>>>> f63244b (feat(loop/MatricesPad.java):rename the author)
+>>>>>>> 8496dd1 (feat(loop/MatricesPad.java):rename the author)
  *
  */
 
