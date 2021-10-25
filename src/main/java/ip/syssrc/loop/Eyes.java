@@ -18,7 +18,8 @@ public class Eyes {
 
         try {
             size = scan.nextInt();
-
+            scan.close();
+            
             if (size <= 0) {
                 throw new Exception();
             }
