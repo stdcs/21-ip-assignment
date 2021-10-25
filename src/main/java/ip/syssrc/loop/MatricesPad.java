@@ -1,8 +1,6 @@
 package ip.syssrc.loop;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 /**
  * MatricesPad
  *
@@ -16,6 +14,7 @@ import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
+
 
         Scanner in = new Scanner(System.in);
         
@@ -120,6 +119,9 @@ public class MatricesPad {
             }
         }
         in.close();
+        
+        
+
     }
 }
 
