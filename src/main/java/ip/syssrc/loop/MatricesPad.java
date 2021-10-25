@@ -1,18 +1,27 @@
 package ip.syssrc.loop;
+<<<<<<< HEAD
 import java.util.InputMismatchException;
 import java.util.Scanner;
+=======
+
+>>>>>>> 1411adb (feat(loop):add new java file)
 /**
  * MatricesPad
  *
  * Assignment 2.1
  *
+<<<<<<< HEAD
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 1411adb (feat(loop):add new java file)
  *
  */
 
 public class MatricesPad {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         int start = in.nextInt();
         int end = in.nextInt();
@@ -121,3 +130,8 @@ public class MatricesPad {
         in.close();
     }
 }
+=======
+
+    }
+}
+>>>>>>> 1411adb (feat(loop):add new java file)

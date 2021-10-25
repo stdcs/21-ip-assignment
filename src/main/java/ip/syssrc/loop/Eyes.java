@@ -1,16 +1,25 @@
 package ip.syssrc.loop;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+>>>>>>> 1411adb (feat(loop):add new java file)
 /**
  * Eyes
  *
  * Assignment 2.3
  *
+<<<<<<< HEAD
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+>>>>>>> 1411adb (feat(loop):add new java file)
  *
  */
 public class Eyes {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         int n;
 
@@ -36,4 +45,8 @@ public class Eyes {
             System.out.println();
         }
     }   
+=======
+
+    }
+>>>>>>> 1411adb (feat(loop):add new java file)
 }
