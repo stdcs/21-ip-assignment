@@ -1,7 +1,5 @@
 package ip.syssrc.loop;
 
-import java.util.Scanner;
-
 /**
  * FactorialSequence
  *
@@ -13,6 +11,7 @@ import java.util.Scanner;
 public class FactorialSequence {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner scan = new Scanner(System.in);
 
         int number, sum;
@@ -44,5 +43,8 @@ public class FactorialSequence {
             sum = 1;
         }
         System.out.printf(" = %d", sum);
+=======
+
+>>>>>>> 5d5e406 (feat(loop): add assignment 2.2, `FactorialSequence.java`)
     }
 }
