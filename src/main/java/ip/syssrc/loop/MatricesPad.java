@@ -21,7 +21,15 @@ public class MatricesPad {
 
         int start, end, size;
 
+        start = scan.nextInt();
+        end = scan.nextInt();
+        size = scan.nextInt();
+
         
+<<<<<<< HEAD
 >>>>>>> f2ee0d0 (feat(loop/MatricesPad): add `java.util.Scanner` object)
+=======
+
+>>>>>>> 1255b9f (feat(loop/MatricesPad): assign values of `start`, `end`, `size`)
     }
 }
