@@ -73,12 +73,19 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
+<<<<<<< HEAD
                 default:
                     isValidRole = false;
                     break;
             }
             if (isValidRole == true) {
+=======
+            }
+            
+            if (isValidRole) {
+>>>>>>> 6c9e8a9 (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
                 switch (args[0] ) {
+<<<<<<< HEAD
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
                     System.out.printf("%d. Super Admin\n", menuIndex);
@@ -107,6 +114,35 @@ public class RoleAccess {
                     System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
                     break;
 >>>>>>> 1202a78 (feat(conditional/RoleAccess): add if else conditional and add switch)
+=======
+                    case "Super Admin":
+                        menuIndex = menuIndex + 1;
+                        System.out.printf("%d. Super Admin\n", menuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, subMenuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. CRUD User\n", menuIndex, subMenuIndex);
+                        System.out.println();
+                    case "Admin":
+                        menuIndex = menuIndex + 1;
+                        subMenuIndex = 0;
+                        System.out.printf("%d. Admin\n", menuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex);
+                    default:
+                        menuIndex = menuIndex + 1;
+                        subMenuIndex = 0;
+                        System.out.printf("%d. User\n", menuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. View\n", menuIndex, subMenuIndex);
+                        subMenuIndex = subMenuIndex + 1;
+                        System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
+                        break;
+>>>>>>> 27afa1b (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
                 }
             } else {
                 System.out.println("Invalid Role");
