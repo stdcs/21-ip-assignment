@@ -31,6 +31,7 @@ public class RoleAccess {
                     isValidRole = true;
                     break;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
             }
 =======
@@ -39,6 +40,10 @@ public class RoleAccess {
 >>>>>>> 7cbdb32 (fix(conditional/RoleAccess.java))
             if (isValidRole == true) {
 =======
+=======
+            }
+            
+>>>>>>> 30803eb (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
             if (isValidRole) {
 >>>>>>> 6a503c4 (feat(conditional/RoleAccess.java): fix git status)
                 switch (args[0] ) {
