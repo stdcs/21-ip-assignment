@@ -7,6 +7,7 @@ import java.util.Scanner;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
@@ -14,6 +15,9 @@ import java.util.Scanner;
 =======
  * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
 >>>>>>> aca5ce6 (Update FactorialSequence.java)
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
  *
  */
 public class FactorialSequence {

@@ -7,6 +7,7 @@ import java.util.Scanner;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
@@ -14,6 +15,9 @@ import java.util.Scanner;
 =======
  * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
 >>>>>>> 800fcc6 (Update Eyes.java)
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+>>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
  *
  */
 public class Eyes {
@@ -21,6 +25,7 @@ public class Eyes {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         int n;
@@ -56,38 +61,28 @@ public class Eyes {
 =======
         int n;
 >>>>>>> 0955c9c (fix(loop/Eyes): fix condition of if block from printing spaces)
+=======
+        int n = in.nextInt();
+>>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
 
-        try {
-            n = in.nextInt();
-            in.close();
-
-            if (n <= 0){
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            System.out.println("Input Error");
-            return;
-            //TODO: handle exception
-        }
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (j == i) {
-                    System.out.printf("%d", 1); 
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == j) {
+                    System.out.print(1 + " ");
                 } else {
-                    System.out.printf("%d", 0);
-                }
-                
-                if ( j < (n - 1)){
-                    System.out.print(" ");
+                    System.out.print(0 + " ");
                 }
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
             System.out.println();
 >>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
 =======
             System.out.printf("\n");
 >>>>>>> 0955c9c (fix(loop/Eyes): fix condition of if block from printing spaces)
+=======
+            System.out.println();
+>>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
         }
     }
 }
