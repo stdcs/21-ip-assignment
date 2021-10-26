@@ -8,6 +8,7 @@ import java.util.Scanner;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
@@ -18,6 +19,20 @@ import java.util.Scanner;
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
 >>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+>>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
+>>>>>>> 800fcc6 (Update Eyes.java)
+>>>>>>> 9ef5a78 (Update Eyes.java)
+>>>>>>> e305609 (Update Eyes.java)
  *
  */
 public class Eyes {
