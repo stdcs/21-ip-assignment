@@ -5,7 +5,11 @@ package ip.syssrc.loop;
  *
  * Assignment 2.2
  *
+<<<<<<< HEAD
  * @author H071211041 - Fathur Rachman Alamsyag <sembarangm135@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 3455b10 (feat(loop): add assignment)
  *
  */
 import java.util.Scanner;

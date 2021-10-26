@@ -5,7 +5,7 @@ package ip.syssrc.loop;
  *
  * Assignment 2.3
  *
- * @author H071211041 - Fathur Rachman Alamsyah <sembarangm135@gmail.com>
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
  *
  */
 import java.util.Scanner;
@@ -18,20 +18,16 @@ public class Eyes {
 
         int n = t2.nextInt();
 
+<<<<<<< HEAD
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - 1; j++) {
                 if (i == j) {
-                    System.out.print("1 ");
                 } else {
-                    System.out.print("0 ");
+                    System.out.print(0 + " ");
                 }
             }
-            if (i == n - 1) {
-                System.out.print("1\n");
-            } else {
-                System.out.print("0\n");
-            }
+            System.out.println();
         }
-        t2.close();
     }
 }
+>>>>>>> 3455b10 (feat(loop): add assignment)
