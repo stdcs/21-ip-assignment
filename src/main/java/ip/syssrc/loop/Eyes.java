@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 2.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
  *
  */
 public class Eyes {
