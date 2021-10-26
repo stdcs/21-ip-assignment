@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * Assignment 2.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
  *
  */
 public class MatricesPad {
