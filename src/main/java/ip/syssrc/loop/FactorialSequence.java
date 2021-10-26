@@ -11,7 +11,7 @@ package ip.syssrc.loop;
 public class FactorialSequence {
 
     public static void main(String[] args) {
-        Scanner t2 = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         long fact = 1;
         int n = t2.nextInt();
@@ -34,6 +34,6 @@ public class FactorialSequence {
             System.out.println("Error");
         }
 
-        t2.close();
+        in.close();
     }
 }
