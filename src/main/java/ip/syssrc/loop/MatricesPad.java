@@ -32,6 +32,7 @@ public class MatricesPad {
             return;
         }
 
+         /** Menghitung leading zero */
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         while (biggest > 0) {
@@ -39,13 +40,14 @@ public class MatricesPad {
             leadingZero++;
         }
 
+        /** OUTPUT */
         for (int i = start; (start < end ? i <= end : i >= end); ) {
             if (((i - start) % size == 0 || (start - i) % size == 0) 
                     && (i != start)) {
                 System.out.printf("\n");
             }
 
-            System.out.printf("%0" + leadingZero+ "d ", i);
+            System.out.printf("%0" + leadingZero + "d ", i);
             if (start < end) {
                 i++;
             } else {
