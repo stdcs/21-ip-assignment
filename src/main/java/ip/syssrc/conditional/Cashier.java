@@ -24,20 +24,12 @@ public class Cashier {
             System.out.println("Maaf, pastikan inputan anda adalah angka");
             return;
         }
-      
-        
-        
-        
         int kembalian = uang - totalBelanja;
         if (uang > totalBelanja) {
             System.out.println("Total kembalian anda: Rp. " +kembalian);
             System.out.println("Dengan rincian sebagai berikut:");
             System.out.println();
-            System.out.println();
-           
-       
-
-         
+            System.out.println();        
             int pecahan;
             if (kembalian >= 100000) {
                 pecahan = (kembalian / 100000);
@@ -92,9 +84,9 @@ public class Cashier {
             if (kembalian > 0) {
                 System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
             }
-        }else if (uang < totalBelanja){
+        } else if (uang < totalBelanja) {
             System.out.println("Maaf, pembayaran anda belum mencukupi");
-        }else {
+        } else {
             System.out.println("Terimakasih telah membayar dengan uang pas");
         }
     }
