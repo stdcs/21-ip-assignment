@@ -5,7 +5,19 @@ import java.util.Scanner;
  *
  * Assignment 2.3
  *
+<<<<<<< HEAD
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+>>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
+>>>>>>> 800fcc6 (Update Eyes.java)
+>>>>>>> 9ef5a78 (Update Eyes.java)
  *
  */
 public class Eyes {
