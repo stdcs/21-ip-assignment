@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 2.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
  *
  */
 public class FactorialSequence {
