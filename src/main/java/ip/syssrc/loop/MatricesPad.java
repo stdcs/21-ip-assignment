@@ -12,11 +12,11 @@ package ip.syssrc.loop;
 public class MatricesPad {
 
     public static void main(String[] args) {
-        Scanner lio = new Scanner(System.in);
+        Scanner li = new Scanner(System.in);
 
-        int start = lio.nextInt();
-        int end = lio.nextInt();
-        int size = lio.nextInt();
+        int start = li.nextInt();
+        int end = li.nextInt();
+        int size = li.nextInt();
 
         int range = end - start;
         int temp = start;
@@ -101,7 +101,7 @@ public class MatricesPad {
             }
         }
 
-        lio.close();
+        li.close();
     }
     
     }
