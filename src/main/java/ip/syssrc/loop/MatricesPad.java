@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 2.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211061 - St. Alya Ardani Aries <stalyaardaniaries@gmail.com>
  *
  */
 
