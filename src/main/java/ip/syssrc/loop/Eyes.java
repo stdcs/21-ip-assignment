@@ -1,24 +1,33 @@
 package ip.syssrc.loop;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Scanner;
 =======
 
 >>>>>>> 1411adb (feat(loop):add new java file)
+=======
+import java.util.Scanner;
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 /**
  * Eyes
  *
  * Assignment 2.3
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
 >>>>>>> 1411adb (feat(loop):add new java file)
+=======
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
  *
  */
 public class Eyes {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         int n;
@@ -47,6 +56,10 @@ public class Eyes {
     }   
 =======
 
+=======
+        Scanner in = new Scanner(System.in);
+        
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
     }
 >>>>>>> 1411adb (feat(loop):add new java file)
 }
