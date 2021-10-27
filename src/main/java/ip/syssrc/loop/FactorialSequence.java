@@ -17,6 +17,20 @@ public class FactorialSequence {
         int n = in.nextInt();
         long factorial = 1;
 
-        
+        if (n > 0) {
+            System.out.print(n + "! = ");
+
+            for (int i = n; i >= 2; i--) {
+                System.out.print(i + " x ");
+                factorial = factorial * i;
+            }
+
+            System.out.print("1 = " + factorial);
+
+        } else if (n == 0) {
+            System.out.print(n + "! = ");
+
+            System.out.println("1");
+        }
     }
 }
