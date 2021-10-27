@@ -32,9 +32,13 @@ public class Eyes {
         for (int i = 0; i < size ; i++) {
             for (int j = 0; j < size ; j++) {
                 if (j == i) {
-                    System.out.printf("1 ");
+                    System.out.printf("%d", 1);
                 } else {
-                    System.out.printf("0 ");
+                    System.out.printf("%d", 0);
+                }
+
+                if (j != (size - 1)) {
+                    System.out.print(" ");
                 }
             }
 
