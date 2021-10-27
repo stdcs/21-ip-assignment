@@ -28,6 +28,7 @@ public class FactorialSequence {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         long factorial = 1;
         int n = in.nextInt();
@@ -50,6 +51,11 @@ public class FactorialSequence {
         }
         in.close();
 =======
+=======
+
+        long factorial = 1;
+        int n = in.nextInt();
+>>>>>>> 69e510c (feat(loop/FactorialSequence.java): add variabel)
         
 >>>>>>> 837fe87 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
     }
