@@ -32,7 +32,7 @@ public class FactorialSequence {
         System.out.printf("%d!", number);
         if (number != 0) {
             for (int i = number; i >= 1; i--) {
-                sum*=i;
+                sum *= i;
                 if (i == number) {
                     System.out.printf(" = %d", i);
                 } else {
