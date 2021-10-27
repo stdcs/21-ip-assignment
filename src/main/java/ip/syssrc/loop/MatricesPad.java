@@ -12,15 +12,15 @@ package ip.syssrc.loop;
 public class MatricesPad {
 
     public static void main(String[] args) {
-        Scanner bk = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        int start = bk.nextInt();
-        int end = bk.nextInt();
-        int size = bk.nextInt();
+        int start = in.nextInt();
+        int end = in.nextInt();
+        int size = in.nextInt();
 
         int range = end - start;
         int temp = start;
-        bk.close();
+        in.close();
         if (start <= 9 && end <= 9) {
             if (range >= 0) {
                 for (int i = 1; i <= range / size; i++) {
