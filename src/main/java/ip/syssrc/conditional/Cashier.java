@@ -60,10 +60,6 @@ public class Cashier {
                 kembalian = kembalian - 20000;
                 duaPuluhRibu = duaPuluhRibu + 1;
             }
-            if (kembalian >= 20000) {
-                kembalian = kembalian - 20000;
-                duaPuluhRibu = duaPuluhRibu + 1;
-            }
             if (kembalian >= 10000) {
                 kembalian = kembalian - 10000;
                 sepuluhRibu = sepuluhRibu + 1;
@@ -76,10 +72,6 @@ public class Cashier {
                 kembalian = kembalian - 2000;
                 duaRibu = duaRibu + 1;
             }
-            if (kembalian >= 2000) {
-                kembalian = kembalian - 2000;
-                duaRibu = duaRibu + 1;
-            }
             if (kembalian >= 1000) {
                 kembalian = kembalian - 1000;
                 seribu = seribu + 1;
@@ -87,10 +79,6 @@ public class Cashier {
             if (kembalian >= 500) {
                 kembalian = kembalian - 500;
                 limaRatusRupiah = limaRatusRupiah + 1;
-            }
-            if (kembalian >= 200) {
-                kembalian = kembalian - 200;
-                duaRatusRupiah = duaRatusRupiah + 1;
             }
             if (kembalian >= 200) {
                 kembalian = kembalian - 200;
