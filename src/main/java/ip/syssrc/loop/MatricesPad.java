@@ -98,7 +98,7 @@ public class MatricesPad {
                     System.out.println(" ");
                 }
                 for (int k = 0; k <= range % size; k++){
-                    System.out.printf("%03d", temp);
+                    System.out.printf("%03d ", temp);
                     temp++;
                 }
             } else if (range <= 0){
@@ -111,6 +111,7 @@ public class MatricesPad {
                 }
                 for (int k = 0; k <= -range % size; k++){
                     System.out.printf("%03d ", temp);
+                    temp--;
                 }
             }
         }
