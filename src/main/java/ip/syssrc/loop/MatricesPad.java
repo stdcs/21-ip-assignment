@@ -43,5 +43,10 @@ public class MatricesPad {
                     }
                     System.out.println("");
                 }
+                for (int k = 0; k <= -range % size; k++) {
+                    System.out.printf("%01d ", temp);
+                    temp--;
+                }
+            }
     }
 }
