@@ -14,7 +14,13 @@ public class FactorialSequence {
         Scanner in = new Scanner (System.in);
         int n = in.nextInt();
         int x = 1;
-        
 
+        if (n > 0) {
+            System.out.print(n + "! = ");
+
+            for (int i = n; i >= 2; i--) {
+                System.out.print(i + " × ");
+                x = x * i;
+            }   System.out.print("1 = " + x);
     }
 }
