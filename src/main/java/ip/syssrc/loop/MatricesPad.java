@@ -17,5 +17,8 @@ public class MatricesPad {
         int start = in.nextInt();
         int end = in.nextInt();
         int size = in.nextInt();
+
+        int range = end - start;
+        int mulai = start;
     }
 }
