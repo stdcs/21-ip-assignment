@@ -5,17 +5,17 @@ package ip.syssrc.loop;
  *
  * Assignment 2.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
 public class FactorialSequence {
 
     public static void main(String[] args) {
-        Scanner t2 = new Scanner(System.in);
+        Scanner bk = new Scanner(System.in);
         
         long fact = 1;
-        int n = t2.nextInt();
-        t2.close();
+        int n = in.nextInt();
+        in.close();
         if (n > 0) {
             System.out.print(n + "! = ");
 
