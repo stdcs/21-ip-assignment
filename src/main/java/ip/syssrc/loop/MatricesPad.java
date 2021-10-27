@@ -23,7 +23,7 @@ public class MatricesPad {
             end = scan.nextInt();
             size = scan.nextInt();
             scan.close();
-            
+
             if (start < 0 || end < 0 || size < 0) {
                 throw new Exception();
             }
@@ -32,7 +32,7 @@ public class MatricesPad {
             return;
         }
 
-         /** Menghitung leading zero */
+        /** Menghitung leading zero */
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         while (biggest > 0) {
@@ -41,9 +41,8 @@ public class MatricesPad {
         }
 
         /** OUTPUT */
-        for (int i = start; (start < end ? i <= end : i >= end); ) {
-            if (((i - start) % size == 0 || (start - i) % size == 0) 
-                    && (i != start)) {
+        for (int i = start; (start < end ? i <= end : i >= end);) {
+            if (((i - start) % size == 0 || (start - i) % size == 0) && (i != start)) {
                 System.out.printf("\n");
             }
 

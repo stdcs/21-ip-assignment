@@ -1,6 +1,7 @@
 package ip.syssrc.loop;
 
 import java.util.Scanner;
+
 /**
  * FactorialSequence
  *
@@ -20,7 +21,7 @@ public class FactorialSequence {
         try {
             number = scan.nextInt();
             scan.close();
-            
+
             if (number < 0) {
                 throw new Exception();
             }
