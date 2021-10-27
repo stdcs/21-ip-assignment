@@ -17,11 +17,11 @@ public class Eyes {
         try{
             n = in.nextInt();
 
-            if (n < 0){
+            if (n < 1){
                 throw new Exception();
             }
         } catch (Exception e){
-            System.out.println("Inputan harus lebih besar dari nol ( < 0 ) ");
+            System.out.println("Inputan harus lebih besar dari nol! ");
             return;
         }
         
