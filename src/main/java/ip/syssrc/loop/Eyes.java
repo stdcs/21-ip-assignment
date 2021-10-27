@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Eyes {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner sc = new Scanner (System.in);
         
         int n;
@@ -27,3 +28,11 @@ public class Eyes {
     }
  }
        
+=======
+        Scanner sc = new Scanner(System.in);
+
+        
+
+    }
+}
+>>>>>>> ef38dbc (feature(looping/Eyes): Add Scanner object)

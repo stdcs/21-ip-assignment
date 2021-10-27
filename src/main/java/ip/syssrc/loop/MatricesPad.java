@@ -5,6 +5,7 @@ package ip.syssrc.loop;
  *
  * Assignment 2.1
  *
+<<<<<<< HEAD
  * @author H071211064 - Agung Kartika Ardhiyanda <agungardhiyanda25@gmail.com>
  *
  */
@@ -41,5 +42,15 @@ public class MatricesPad {
                 i--;
             }
         }
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ *
+ */
+
+public class MatricesPad {
+
+    public static void main(String[] args) {
+
+>>>>>>> ef38dbc (feature(looping/Eyes): Add Scanner object)
     }
 }
