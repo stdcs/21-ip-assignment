@@ -12,6 +12,9 @@ public class FactorialSequence {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
+        long factorial = 1;
+        int n = in.nextInt();
         
     }
 }
