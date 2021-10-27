@@ -69,5 +69,10 @@ public class MatricesPad {
                     }
                     System.out.println("");
                 }
+                for (int k = 0; k <= -range % size; k++) {
+                    System.out.printf("%02d ", temp);
+                    temp--;
+                }
+            }
     }
 }
