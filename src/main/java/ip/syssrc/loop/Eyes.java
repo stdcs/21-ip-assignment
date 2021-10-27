@@ -34,14 +34,15 @@ public class Eyes {
 
         for (int i = 0; i < number; i++) {
             // The loop length for limit of a number
-            for (int t = 0; t < number ; t++) { 
+            for (int t = 0; t < number; t++) { 
                 if (t == i) {
-                    System.out.print("1 ");
+                    System.out.print("1");
                 } else {
-                    System.out.print("0 ");
+                    System.out.print("0");
                 }
+                System.out.print(" ");
             }
-            System.out.println(); // print limitation
+            System.out.printf("\n");
         }
     }
 }
