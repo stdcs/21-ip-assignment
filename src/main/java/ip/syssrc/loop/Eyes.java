@@ -15,6 +15,7 @@ public class Eyes {
         Scanner sc = new Scanner (System.in);
         
         int n;
+        int i;
         System.out.print("Input N = ");
         n = sc.nextInt();
 
@@ -27,8 +28,8 @@ public class Eyes {
                     System.out.print("0 ");
                 }
             }
+            System.out.print("\n");
+            sc.close();
         }
-        System.out.print("\n");
-        sc.close();
     }
 }
