@@ -30,6 +30,7 @@ public class MatricesPad {
             terbesar /=10;
             leadingZero++;
         }
+        
         for (i = start; (start < end ? i <= end : i >= end);) {
             if (((start - i ) % size == 0 || (i - start) % size == 0)
             && (i != start)) {
