@@ -12,7 +12,7 @@ public class FactorialSequence {
 
     public static void main(String[] args) {
         long fact = 1;
-        int n = lio.nextInt();
+        int n = li.nextInt();
 
         if (n > 0) {
             System.out.print(n + "! = ");
@@ -32,7 +32,7 @@ public class FactorialSequence {
             System.out.println("Error");
         }
 
-        lio.close();
+        li.close();
     }
 
     }
