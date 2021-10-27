@@ -15,5 +15,11 @@ public class FactorialSequence {
         
         Scanner sc = new Scanner(System.in);
 
+        int angka,jumlah,i;
+        jumlah = 1;
+
+        System.out.print("Masukkan Angka = ");
+        angka = sc.nextInt();
+        i = angka;
     }
 }
