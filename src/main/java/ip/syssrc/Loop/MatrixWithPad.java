@@ -41,7 +41,7 @@ public class MatrixWithPad {
                         System.out.printf("%01d ", temp);
                         temp--;
                     }
-                    //okey
+                    //okeyyy
                     System.out.println("");
                 }
                 for (int n = 0; n <= -range % size; n++) {
