@@ -18,10 +18,10 @@ public class RoleAccess {
                 boolean isValidRole = false;
             
                 if (args.length == 0) {
-                  System.out.println("What role you want to see ?");
-                  System.out.println("For example, try 'Admin'.");
-                } else if (args.length == 1) {
-        
+                    System.out.println("What role you want to see ?");
+                    System.out.println("For example, try 'Admin'.");
+                } 
+                else if (args.length == 1) {
                     switch (args[0]) {
                         case "Super Admin":
                             
@@ -32,7 +32,7 @@ public class RoleAccess {
                             break;
                         
                     }
-                    if (isValidRole == true) {
+                    if (isValidRole) {
                         switch (args[0] ) {
                         case "Super Admin":
                             menuIndex++;
@@ -69,7 +69,3 @@ public class RoleAccess {
                 } else {
                     System.out.println("Too many argument");
                 }
-            }
-        }
-    }
-}
