@@ -1,6 +1,9 @@
 package ip.syssrc.loop;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9666785 (feat(loop\MatricesPad.java): add try catch statement)
 import java.util.InputMismatchException;
 import java.util.Scanner;
 =======
@@ -139,10 +142,31 @@ public class MatricesPad {
         in.close();
 =======
         Scanner in = new Scanner(System.in);
+<<<<<<< HEAD
         int start = in.nextInt();
         int end = in.nextInt();
         int size = in.nextInt();
+=======
+        
+        int start, size, end;
+>>>>>>> bcf11fe (feat(loop\MatricesPad.java): add try catch statement)
 
+        try{
+            System.out.println("Input nilai awal");
+            start = in.nextInt();
+            System.out.println("Input nilai akhir");
+            end = in.nextInt();
+            System.out.println("Input panjang baris");
+            size = in.nextInt();
+            
+            if (start < 0 || end < 0 || size < 0){
+                throw new Exception();
+            }
+        } catch (Exception e){
+            System.out.println("Input bilangan positif atau 0!");
+            return;
+        }
+        
         int range = end - start;
         int temp = start;
         
@@ -185,6 +209,10 @@ public class MatricesPad {
         }
         in.close();
     }
+<<<<<<< HEAD
 }
 
 >>>>>>> 9bed9be (feat(loop\MatricesPad.java):add if else statement)
+=======
+}
+>>>>>>> 9666785 (feat(loop\MatricesPad.java): add try catch statement)
