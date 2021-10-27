@@ -61,5 +61,13 @@ public class MatricesPad {
                     System.out.printf("%02d ", temp);
                     temp++;
                 }
+            } else if (range <= 0) {
+                for (int i = 1; i <= -range / size; i++) {
+                    for (int j = 1; j <= size; j++) {
+                        System.out.printf("%02d ", temp);
+                        temp--;
+                    }
+                    System.out.println("");
+                }
     }
 }
