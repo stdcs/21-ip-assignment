@@ -55,7 +55,20 @@ public class Eyes {
     }   
 =======
         Scanner in = new Scanner(System.in);
+        int n;
+
+        try{
+            n = in.nextInt();
+
+            if (n > 0){
+                throw new Exception();
+            }
+        } catch (Exception e){
+            System.out.println("Inputan harus lebih besar dari nol ( > 0 )");
+            return;
+        }
         
+
     }
 >>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 }
