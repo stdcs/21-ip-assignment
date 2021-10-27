@@ -99,6 +99,7 @@ public class MatricesPad {
                 }
                 for (int k = 0; k <= range % size; k++){
                     System.out.printf("%03d", temp);
+                    temp++;
                 }
             } else if (range <= 0){
                 for (int i = 1; i <= -range / size; i++){
