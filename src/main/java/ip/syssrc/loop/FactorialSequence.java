@@ -122,6 +122,9 @@ public class FactorialSequence {
 =======
 =======
         Scanner in = new Scanner(System.in);
+
+        long factorial = 1;
+        int n = in.nextInt();
         
 >>>>>>> 837fe87 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
 >>>>>>> 6380848 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
