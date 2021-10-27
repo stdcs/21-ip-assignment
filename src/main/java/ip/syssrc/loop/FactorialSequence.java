@@ -22,5 +22,11 @@ public class FactorialSequence {
                 System.out.print(i + " × ");
                 x = x * i;
             }   System.out.print("1 = " + x);
+        
+        } else if (n == 0) {
+            System.out.print(n + "! = ");
+            System.out.print("1");
+        }
+        in.close();
     }
 }
