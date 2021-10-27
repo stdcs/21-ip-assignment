@@ -125,8 +125,31 @@ public class FactorialSequence {
 
         long factorial = 1;
         int n = in.nextInt();
+
+        if (n > 0){
+            System.out.print(n + "! = ");
+
+            for (int i = n ; i >= 2; i--){
+                System.out.print(i + " x ");
+                factorial = factorial * i;
+            }
+            System.out.print("1 = " + factorial);
         
+<<<<<<< HEAD
 >>>>>>> 837fe87 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
+<<<<<<< HEAD
 >>>>>>> 6380848 (feat(loop\FactorialSequence.java): add 'java.util.Scanner' object)
+=======
+=======
+        } else if (n == 0){
+            System.out.print(n + "! = ");
+
+            System.out.println("1");
+        } else {
+            System.out.println("Error!");
+        }
+        in.close();
+>>>>>>> 7017a14 (feat(loop/FactorialSequence.java): add if else statement with loop)
+>>>>>>> 63f79c3 (feat(loop/FactorialSequence.java): add if else statement with loop)
     }
 }
