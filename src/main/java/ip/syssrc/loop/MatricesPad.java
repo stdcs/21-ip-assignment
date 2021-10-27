@@ -122,10 +122,14 @@ public class MatricesPad {
                 }
                 for (int k = 0; k <= range % size; k++){
 <<<<<<< HEAD
+<<<<<<< HEAD
                     System.out.printf("%03d ", temp);
 =======
                     System.out.printf("%03d", temp);
 >>>>>>> a6a6760 (feat(conditional\MatricesPad.java): fix some error)
+=======
+                    System.out.printf("%03d ", temp);
+>>>>>>> f06c23d (feat(loop\MatricesPad.java):fix if else statement problem)
                     temp++;
                 }
             } else if (range <= 0){
