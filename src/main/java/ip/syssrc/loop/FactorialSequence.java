@@ -21,5 +21,22 @@ public class FactorialSequence {
         System.out.print("Masukkan Angka = ");
         angka = sc.nextInt();
         i = angka;
+
+        if(i !=0) {
+            System.out.printf("%d", angka);
+            while ( i >= 1) {
+                jumlah *=i;
+                if(i == angka){
+                    System.out.printf(" = %d", i);
+                } else {
+                    System.out.printf(" x %d", i);
+                }
+                i--;
+            }
+        } else {
+            jumlah = 1;
+            sc.close();
+        }
+        System.out.printf(" = %d", jumlah);
     }
 }
