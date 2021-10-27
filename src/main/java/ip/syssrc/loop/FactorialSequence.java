@@ -12,9 +12,9 @@ import java.util.Scanner;
 public class FactorialSequence {
 
     public static void main(String[] args) {
-        Scanner nanda = new Scanner (System.in);
+        Scanner dede = new Scanner (System.in);
         long fact = 1;
-        int n = nanda.nextInt();
+        int n = dede.nextInt();
 
         if (n > 0) {
             System.out.print(n + "! = ");
