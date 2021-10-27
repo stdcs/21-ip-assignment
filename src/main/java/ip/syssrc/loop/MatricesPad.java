@@ -25,7 +25,7 @@ public class MatricesPad {
             size = sc.nextInt();
             sc.close();
             
-            // Filtering output
+            // Filtering input
             if (start < 0 || end < 0 || size < 0) {
                 throw new Exception();
             }
