@@ -24,7 +24,7 @@ public class FactorialSequence {
                 System.out.print(i + " x ");
                 fact = fact * i;
             }
-            //error 
+            //errorr
             System.out.print("1 = " + fact);
 
         } else if (n == 0) {
