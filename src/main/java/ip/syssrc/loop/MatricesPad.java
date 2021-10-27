@@ -5,13 +5,16 @@ package ip.syssrc.loop;
  *
  * Assignment 2.1
  *
- * @author H071211056 - Muhammad Fikri <mufik2002@gmail.com>
+ * @author H071211056 - Muhammad Muhammad Fikri <mufik2002@gmail.com>
  *
  */
+
+import java.util.Scanner;
 
 public class MatricesPad {
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
 
         int start = in.nextInt();
