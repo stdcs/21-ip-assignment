@@ -25,7 +25,7 @@ public class FactorialSequence {
             }
 
             System.out.print("1 = " + fact);
-            
+
         } else if (n == 0) {
             System.out.print(n + "! = ");
 
@@ -33,5 +33,7 @@ public class FactorialSequence {
         } else {
             System.out.println("Error");
         }
+
+        in.close(); 
     }
 }
