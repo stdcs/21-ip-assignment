@@ -129,8 +129,24 @@ public class Eyes {
 
 =======
         Scanner in = new Scanner(System.in);
+        int n;
+
+        try{
+            n = in.nextInt();
+
+            if (n > 0){
+                throw new Exception();
+            }
+        } catch (Exception e){
+            System.out.println("Inputan harus lebih besar dari nol ( > 0 )");
+            return;
+        }
         
+<<<<<<< HEAD
 >>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
+=======
+
+>>>>>>> 0c0afac (feat(loop/Eyes.java): add 'try catch' statement)
     }
 >>>>>>> 1411adb (feat(loop):add new java file)
 >>>>>>> c536015 (feat(loop):add new java file)
