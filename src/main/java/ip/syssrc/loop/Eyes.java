@@ -1,23 +1,32 @@
 package ip.syssrc.loop;
+<<<<<<< HEAD
 
 import java.util.Scanner;
 
 
 
+=======
+import java.util.Scanner;
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 /**
  * Eyes
  *
  * Assignment 2.3
  *
+<<<<<<< HEAD
 
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 
 
+=======
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
  *
  */
 public class Eyes {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 
         Scanner in = new Scanner(System.in);
         int n;
@@ -44,6 +53,11 @@ public class Eyes {
             System.out.println();
         }
     }   
+=======
+        Scanner in = new Scanner(System.in);
+        
+    }
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 }
 
 
