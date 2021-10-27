@@ -20,7 +20,7 @@ public class Eyes {
         try {
             size = scan.nextInt();
             scan.close();
-            
+
             if (size <= 0) {
                 throw new Exception();
             }
@@ -29,8 +29,8 @@ public class Eyes {
             return;
         }
 
-        for (int i = 0; i < size ; i++) {
-            for (int j = 0; j < size ; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
                 if (j == i) {
                     System.out.printf("%d", 1);
                 } else {
