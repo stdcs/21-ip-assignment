@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
-        Scanner nanda = new Scanner (System.in);
-        int start = nanda.nextInt();
-        int end = nanda.nextInt();
-        int size = nanda.nextInt();
+        Scanner dede = new Scanner (System.in);
+        int start = dede.nextInt();
+        int end = dede.nextInt();
+        int size = dede.nextInt();
 
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
