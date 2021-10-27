@@ -15,6 +15,7 @@ public class Eyes {
 <<<<<<< HEAD
 <<<<<<< HEAD
         Scanner sc = new Scanner (System.in);
+<<<<<<< HEAD
         
 <<<<<<< HEAD
         int n;
@@ -48,13 +49,28 @@ public class Eyes {
                     System.out.print("1 ");
                 }
                 else {
+=======
+        int n;
+        System.out.print("Input N = ");
+        n = sc.nextInt();
+      
+        for(int i = 0; i<n; i++) {
+            for(int j = 0; j<n; j++) {
+                if( i == j) {
+                    System.out.print("1 ");
+                }
+                else { 
+>>>>>>> 25a8219 (feature(loop/Eyes): Initialize Variable And Scanner object)
                     System.out.print("0 ");
                 }
             }
             System.out.print("\n");
             sc.close();
         }
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 25a8219 (feature(loop/Eyes): Initialize Variable And Scanner object)
        
 >>>>>>> 6213df7 (feature(loop/Eyes): deleting all codes and reset)
     }
