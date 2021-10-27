@@ -34,15 +34,13 @@ public class Cashier {
 
         int bil1;
 
-        // besar 100000
+        // besar 100000 dan 50000
         if (c >= 100000) {
             bil1 = c / 100000;
             System.out.println(" uang Rp 100000 sebanyak " + bil1 + "lembar");
+            c = c % 100000;
         }
-
-        // antara 50000-100000
-        c = c % 100000;
-        if ((c >= 50000) && (c < 100000)) {
+        if ((c >= 50000)) {
             bil1 = c / 50000;
             System.out.println("uang Rp 50000 sebanyak " + bil1 + "lembar");
         }
