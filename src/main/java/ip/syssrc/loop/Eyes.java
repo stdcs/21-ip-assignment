@@ -16,6 +16,7 @@ public class Eyes {
 <<<<<<< HEAD
         Scanner sc = new Scanner (System.in);
         
+<<<<<<< HEAD
         int n;
         int i;
         System.out.print("Input N = ");
@@ -53,6 +54,9 @@ public class Eyes {
             System.out.print("\n");
             sc.close();
         }
+=======
+       
+>>>>>>> 6213df7 (feature(loop/Eyes): deleting all codes and reset)
     }
 }
 >>>>>>> ef38dbc (feature(looping/Eyes): Add Scanner object)
