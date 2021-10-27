@@ -1,5 +1,5 @@
 package ip.syssrc.loop;
-
+import java.util.Scanner; 
 /**
  * FactorialSequence
  *
@@ -11,6 +11,10 @@ package ip.syssrc.loop;
 public class FactorialSequence {
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
+        long fact = 1;
+        int n = in.nextInt();
+    
     }
 }
