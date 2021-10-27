@@ -21,5 +21,15 @@ public class MatricesPad {
 
         int range = end - start;
         int temp = start;
+
+        if (start <= 9 && end <= 9) {
+            if (range >= 0) {
+                for (int i = 1; i <= range / size; i++) {
+                    for (int j = 1; j <= size; j++) {
+                        System.out.printf("%01d ", temp);
+                        temp++;
+                    }
+                    System.out.println("");
+                }
     }
 }
