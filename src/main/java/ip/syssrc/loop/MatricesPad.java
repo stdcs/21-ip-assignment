@@ -100,5 +100,6 @@ public class MatricesPad {
                 }
             }
         }
+        in.close();
     }
 }
