@@ -20,6 +20,7 @@ public class MatricesPad {
         int start = in.nextInt();
         int end = in.nextInt();
         int size = in.nextInt();
+        System.out.println(" ");
 
         int range = end - start;
         int temp = start;
