@@ -74,5 +74,14 @@ public class MatricesPad {
                     temp--;
                 }
             }
+        } else if (start <= 999 && end <= 999) {
+            if (range >= 0) {
+                for (int i = 1; i <= range / size; i++) {
+                    for (int j = 1; j <= size; j++) {
+                        System.out.printf("%03d ", temp);
+                        temp++;
+                    }
+                    System.out.println("");
+                }
     }
 }
