@@ -14,6 +14,7 @@ public class Cashier {
         Scanner in = new Scanner(System.in);
         int cost = 0;
         int price = 0;
+      
     
         System.out.print("Berapa total harga belanja anda ? ");
         String harga = in.nextLine();
