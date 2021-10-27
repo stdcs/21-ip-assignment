@@ -16,6 +16,7 @@ public class Eyes {
 <<<<<<< HEAD
         Scanner sc = new Scanner (System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 <<<<<<< HEAD
         int n;
@@ -50,12 +51,15 @@ public class Eyes {
                 }
                 else {
 =======
+=======
+        
+>>>>>>> b29787e (feature(loop/Eyes): add for loop and if else statement)
         int n;
         System.out.print("Input N = ");
         n = sc.nextInt();
       
-        for(int i = 0; i<n; i++) {
-            for(int j = 0; j<n; j++) {
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
                 if( i == j) {
                     System.out.print("1 ");
                 }
