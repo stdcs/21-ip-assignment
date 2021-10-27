@@ -134,14 +134,15 @@ public class Eyes {
         try{
             n = in.nextInt();
 
-            if (n > 0){
+            if (n < 0){
                 throw new Exception();
             }
         } catch (Exception e){
-            System.out.println("Inputan harus lebih besar dari nol ( > 0 )");
+            System.out.println("Inputan harus lebih besar dari nol ( < 0 ) ");
             return;
         }
         
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 =======
@@ -149,7 +150,23 @@ public class Eyes {
 >>>>>>> 0c0afac (feat(loop/Eyes.java): add 'try catch' statement)
     }
 >>>>>>> 1411adb (feat(loop):add new java file)
+<<<<<<< HEAD
 >>>>>>> c536015 (feat(loop):add new java file)
+=======
+=======
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n; j++){
+                if (i == j){
+                    System.out.print(1 + " ");
+                } else {
+                    System.out.print(0 + " ");
+                }
+            }
+            System.out.println();
+        }
+    }   
+>>>>>>> 58fbd47 (feat(loop/Eyes.java): add 'if else' stament with for loop  and fix 'try catch' statement)
+>>>>>>> a1f96a5 (feat(loop/Eyes.java): add 'if else' stament with for loop)
 }
 
 
