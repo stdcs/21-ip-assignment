@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 2.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  *
  */
 public class FactorialSequence {
@@ -15,6 +15,15 @@ public class FactorialSequence {
 
         long fact = 1;
         int n = in.nextInt();
-    
+        
+        if (n > 0) {
+            System.out.print(n + "! = ");
+
+            for (int i = n; i >= 2; i--) {
+                System.out.print(i + " x ");
+                fact = fact * i;
+            }
+
+            System.out.print("1 = " + fact);
     }
 }
