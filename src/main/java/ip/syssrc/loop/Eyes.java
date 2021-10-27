@@ -26,4 +26,5 @@ public class Eyes {
             System.out.println();
         }
     }
+    in.close();
 }
