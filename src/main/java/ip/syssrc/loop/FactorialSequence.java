@@ -5,7 +5,7 @@ package ip.syssrc.loop;
  *
  * Assignment 2.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211064 - Agung Kartika Ardhiyanda <agungardhiyanda25@gmail.com>
  *
  */
 import java.util.Scanner;
@@ -38,5 +38,6 @@ public class FactorialSequence {
             sc.close();
         }
         System.out.printf(" = %d", jumlah);
+
     }
 }
