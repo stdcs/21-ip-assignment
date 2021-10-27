@@ -1,6 +1,7 @@
 package ip.syssrc.loop;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import java.util.Scanner;
 
@@ -10,11 +11,19 @@ import java.util.Scanner;
 import java.util.Scanner;
 >>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 =======
+=======
+>>>>>>> 2761c00 (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 import java.util.Scanner;
 =======
 
 >>>>>>> 1411adb (feat(loop):add new java file)
+<<<<<<< HEAD
 >>>>>>> c536015 (feat(loop):add new java file)
+=======
+=======
+import java.util.Scanner;
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
+>>>>>>> 2761c00 (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 /**
  * Eyes
  *
@@ -22,6 +31,7 @@ import java.util.Scanner;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 
@@ -30,16 +40,25 @@ import java.util.Scanner;
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 >>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
 =======
+=======
+>>>>>>> 2761c00 (feat(loop/Eyes.java): add 'java.util.Scanner' object)
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
 >>>>>>> 1411adb (feat(loop):add new java file)
+<<<<<<< HEAD
 >>>>>>> c536015 (feat(loop):add new java file)
+=======
+=======
+ * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
+>>>>>>> 2761c00 (feat(loop/Eyes.java): add 'java.util.Scanner' object)
  *
  */
 public class Eyes {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -71,6 +90,8 @@ public class Eyes {
 =======
 =======
 >>>>>>> c536015 (feat(loop):add new java file)
+=======
+>>>>>>> 2761c00 (feat(loop/Eyes.java): add 'java.util.Scanner' object)
         Scanner in = new Scanner(System.in);
         int n;
 
@@ -106,6 +127,10 @@ public class Eyes {
 =======
 =======
 
+=======
+        Scanner in = new Scanner(System.in);
+        
+>>>>>>> d8441de (feat(loop/Eyes.java): add 'java.util.Scanner' object)
     }
 >>>>>>> 1411adb (feat(loop):add new java file)
 >>>>>>> c536015 (feat(loop):add new java file)
