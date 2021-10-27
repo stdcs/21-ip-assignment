@@ -11,10 +11,10 @@ package ip.syssrc.loop;
 public class Eyes {
 
     public static void main(String[] args) {
-        Scanner bk = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        int n = bk.nextInt();
-        bk.close();
+        int n = in.nextInt();
+        in.close();
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 if (i == j) {
