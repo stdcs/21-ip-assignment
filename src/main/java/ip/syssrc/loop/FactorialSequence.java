@@ -13,7 +13,7 @@ public class FactorialSequence {
 
     public static void main(String[] args) {
         Scanner bk = new Scanner(System.in);
-
+        
         long fact = 1;
         int n = bk.nextInt();
         bk.close();
