@@ -37,7 +37,7 @@ public class Eyes {
                     System.out.printf("%d", 0);
                 }
 
-                if (j != (size - 1)) {
+                if (j < (size - 1)) {
                     System.out.print(" ");
                 }
             }
