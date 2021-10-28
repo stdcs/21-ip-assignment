@@ -22,9 +22,9 @@ public class Eyes {
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 =======
                 if (i == j) {
-                    System.out.print(1 + " ");
+                    System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.printf("%d%s", (i != j) ? 0 : 1, (j <= n) ? " " : "\n");;
                 }
 >>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
             }
