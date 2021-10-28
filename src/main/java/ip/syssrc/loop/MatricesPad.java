@@ -8,18 +8,17 @@ package ip.syssrc.loop;
  * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
-
 public class MatricesPad {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner bk = new Scanner(System.in);
 
-        int start = in.nextInt();
-        int end = in.nextInt();
-        int size = in.nextInt();
+        int start = bk.nextInt();
+        int end = bk.nextInt();
+        int size = bk.nextInt();
         int range = end - start;
         int temp = start;
-        in.close();
+        bk.close();
         if (start <= 9 && end <= 9) {
             if (range >= 0) {
                 for (int i = 1; i <= range / size; i++) {
