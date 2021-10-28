@@ -13,7 +13,7 @@ public class MatricesPad {
 
     public static void main(String[] args) {
         Scanner bk = new Scanner(System.in);
-
+        
         int start = bk.nextInt();
         int end = bk.nextInt();
         int size = bk.nextInt();
