@@ -45,9 +45,9 @@ public class Eyes {
 >>>>>>> 4e7114f (fix(loop/Eyes): delete space)
 =======
                 if (i == j) {
-                    System.out.print(1 + " ");
+                    System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.printf("%d%s", (i != j) ? 0 : 1, (j <= n) ? " " : "\n");;
                 }
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
 >>>>>>> 5562406 (delete)
