@@ -5,9 +5,10 @@ package ip.syssrc.loop;
  *
  * Assignment 2.1
  *
- * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
+ * @author H071211065 - Asehpryanto Rari Parinding <asehpryantorari@gmail.com>
  *
  */
+import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class MatricesPad {
         int start = bk.nextInt();
         int end = bk.nextInt();
         int size = bk.nextInt();
+
         int range = end - start;
         int temp = start;
         bk.close();
@@ -99,6 +101,6 @@ public class MatricesPad {
             }
         }
 
-
+        
     }
 }
