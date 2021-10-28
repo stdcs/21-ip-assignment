@@ -22,6 +22,7 @@ public class Eyes {
         Scanner in = new Scanner(System.in);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         int n;
 
         try {
@@ -52,17 +53,41 @@ public class Eyes {
             System.out.printf("\n");
 =======
         int n = in.nextInt();
+=======
+        int n;
+>>>>>>> 0955c9c (fix(loop/Eyes): fix condition of if block from printing spaces)
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i == j) {
-                    System.out.print(1 + " ");
+        try {
+            n = in.nextInt();
+            in.close();
+
+            if (n <= 0){
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Input Error");
+            return;
+            //TODO: handle exception
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == i) {
+                    System.out.printf("%d", 1); 
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.printf("%d", 0);
+                }
+                
+                if ( j < (n - 1)){
+                    System.out.print(" ");
                 }
             }
+<<<<<<< HEAD
             System.out.println();
 >>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+            System.out.printf("\n");
+>>>>>>> 0955c9c (fix(loop/Eyes): fix condition of if block from printing spaces)
         }
     }
 }
