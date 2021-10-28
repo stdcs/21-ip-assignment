@@ -5,9 +5,10 @@ package ip.syssrc.loop;
  *
  * Assignment 2.3
  *
- * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
+ * @author H071211065 - Asehpryanto Rari Parinding <asehpryantorari@gmail.com>
  *
  */
+import java.util.Scanner;
 public class Eyes {
 
     public static void main(String[] args) {
@@ -24,7 +25,6 @@ public class Eyes {
                 }
             }
             System.out.println();
-        } 
-    } 
+        }
+    }
 }
-
