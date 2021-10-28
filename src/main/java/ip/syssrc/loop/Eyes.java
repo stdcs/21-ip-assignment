@@ -60,6 +60,7 @@ public class Eyes {
       
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
+<<<<<<< HEAD
                 if( i == j) {
                     System.out.print("1 ");
                 }
@@ -67,10 +68,13 @@ public class Eyes {
 >>>>>>> 25a8219 (feature(loop/Eyes): Initialize Variable And Scanner object)
                     System.out.print("0 ");
                 }
+=======
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j < n - 1) ? " " : "\n");
+>>>>>>> 8907cf3 (feature(loop/MatricesPad): Delete space in the end of each line and add Ternary Operator inside 'for' looping block)
             }
-            System.out.print("\n");
             sc.close();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -80,3 +84,8 @@ public class Eyes {
     }
 }
 >>>>>>> ef38dbc (feature(looping/Eyes): Add Scanner object)
+=======
+    }
+ }
+       
+>>>>>>> 8907cf3 (feature(loop/MatricesPad): Delete space in the end of each line and add Ternary Operator inside 'for' looping block)
