@@ -34,6 +34,7 @@ public class FactorialSequence {
             System.out.println("1");
         } else {
             System.out.println("Error");
+            
         }
     }
 }
