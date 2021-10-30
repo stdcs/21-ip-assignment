@@ -19,17 +19,14 @@ public class MatricesPad {
 
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
+        int j = 1;
         
         while (biggest > 0) {
             biggest /= 10;
             leadingZero++;
         }
-        for (int i = start; (start < end ? i <= end : i >= end); ) {
-            if (((i - start) % size == 0 || (start - i) % size == 0) && (i != start)) {
-                System.out.printf("\n");
-            }
-
-            System.out.printf("%0" + leadingZero + "d ", i);
+        for (int i = start; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
             if (start < end) {
                 i++;
             } else {
