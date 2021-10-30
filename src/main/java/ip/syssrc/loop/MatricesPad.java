@@ -34,11 +34,11 @@ public class MatricesPad {
         //PaddingDigit
         if (end > start) {
             for (paddingSize = 1; paddingSize <= end; paddingSize++) {
-            end = end/10;
+                end = end / 10;
             }
         } else {
             for (paddingSize = 1; paddingSize <= start; paddingSize++) {
-                start = start/10;
+                start = start / 10;
             }
         }
         
@@ -46,7 +46,7 @@ public class MatricesPad {
         if (range >= 0) {
             for (int i = 1; i <= range / size; i++) {
                 for (int j = 1; j <= size; j++) {
-                    System.out.printf("%0" + paddingSize + "d ", temp);
+                    System.out.printf("%0" + paddingSize + "d" + temp + "%s", (temp < size)? " " : "\n");
                     temp++;
                 }
                 System.out.println("");
