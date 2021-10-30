@@ -41,11 +41,11 @@ public class Eyes {
                     System.out.print("0");
                 }
                 if (t == (number - 1)){
+                    System.out.print("\n");
                     break;
                 }
                 System.out.print(" ");
             }
-            System.out.printf("\n");
         }
     }
 }
