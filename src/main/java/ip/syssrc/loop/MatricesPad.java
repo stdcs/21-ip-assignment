@@ -37,7 +37,8 @@ public class MatricesPad {
         // Pre-statements :
         int length = (start > end) ? start : end;
         int d = 0;
-
+        int opt = 1;
+        
         // Digit of zero(s) calculation inside the range :
         while (length != 0) {
             length /= 10;
@@ -50,7 +51,13 @@ public class MatricesPad {
             
             // Line output by selections
             if ((i != start) && ((i - start) % size == 0 || (start - i) % size == 0)) {
+                // Spacing or Newlines detector
+                if (opt != 0 && opt % size == 0){
+                System.out.println("\n");
+                ++opt;
+                } else {
                 System.out.println(" ");
+                } 
             }
 
             // Numbers output
