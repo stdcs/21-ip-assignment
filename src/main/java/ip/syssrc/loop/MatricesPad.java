@@ -48,21 +48,18 @@ public class MatricesPad {
         // Output Result :
         System.out.println("\nResult :");
         for (int i = start; (start < end ? i <= end : i >= end); ) {
-            
-            // Line output by selections
-            if ((i != start) && ((i - start) % size == 0 || (start - i) % size == 0)) {
-                // Spacing or Newlines detector
-                if (opt != 0 && opt % size == 0){
-                System.out.println("\n");
-                ++opt;
-                } else {
-                System.out.println(" ");
-                } 
-            }
 
             // Numbers output
-            System.out.printf("%0" + d + "d ", i);
+            System.out.printf("%0" + d + "d", i);
 
+            // Spacing or Newlines detector
+            if (i == end || (opt != 0 && opt % size == 0)) {
+            System.out.print("\n");
+            } else {
+            System.out.print(" ");
+            } 
+            ++opt;
+            
             // Increment by condition 
             if (start > end) {
                 --i;
