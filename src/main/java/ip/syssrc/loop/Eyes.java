@@ -40,7 +40,7 @@ public class Eyes {
                 } else {
                     System.out.print("0");
                 }
-                if (t==(number-1)){
+                if (t == (number - 1)){
                     break;
                 }
                 System.out.print(" ");
