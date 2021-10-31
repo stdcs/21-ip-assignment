@@ -13,35 +13,23 @@ import java.util.Scanner;
 public class Eyes {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int start = sc.nextInt();
-        int end = sc.nextInt();
-        int size = sc.nextInt();
-        int digit = start > end ? Integer.parseInt(String.valueOf(String.valueOf(start).length()))
-                : Integer.parseInt(String.valueOf(String.valueOf(end).length()));
-        int dummy = 0;
 
-        if (start < end) {
-            for (int j = start; j <= end; j++) {
-                System.out.printf("%0" + digit + "d\t", j);
-                dummy++;
-                if (dummy == size) {
-                    dummy = 0;
-                    System.out.println();
-                }
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int dummy = 0, n = 1;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (j == dummy)
+                    System.out.printf("%d ", n);
+                else
+                    System.out.printf("0 ");
             }
-        } else {
-            for (int j = start; j >= end; j--) {
-                System.out.printf("%0" + digit + "d\t", j);
-                dummy++;
-                if (dummy == size) {
-                    dummy = 0;
-                    System.out.println();
-                }
-            }
+            dummy++;
+            System.out.println();
         }
 
         sc.close();
-
     }
+
 }
