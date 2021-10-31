@@ -46,13 +46,17 @@ public class MatricesPad {
         if (range >= 0) {
             for (int i = 1; i <= range / size; i++) {
                 for (int j = 1; j <= size; j++) {
-                    System.out.printf("%0" + paddingSize + "d" + temp + "%s", (temp < size)? " " : "\n");
+                    System.out.printf("%0" + paddingSize + "d ", temp);
                     temp++;
                 }
                 System.out.println("");
             }
             for (int k = 0; k <= range % size; k++) {
-                System.out.printf("%0" + paddingSize + "d ", temp);
+                if (k <= range % size) {
+                    System.out.printf("%0" + paddingSize + "d ", temp);    
+                } else {
+                    System.out.printf("%0" + paddingSize + "d%s", temp, "\n" );
+                }
                 temp++;
             }
         } else if (range <= 0) {
@@ -64,7 +68,11 @@ public class MatricesPad {
                 System.out.println("");
             }
             for (int k = 0; k <= -range % size; k++) {
-                System.out.printf("%0" + paddingSize + "d ", temp);
+                if (k <= -range % size) {
+                   System.out.printf("%0" + paddingSize + "d ", temp); 
+                } else {
+                   System.out.printf("%0" + paddingSize + "d%s", temp, "\n" );
+                }
                 temp--;
             }
         }
