@@ -39,20 +39,14 @@ public class MatricesPad {
             leadZero++;
         }
         /**OUTPUT */
-        for (int i = start; (start < end ? i <= end : i >= end); ){
-            if((i - start) % size == 0 || (start - i) % size == 0 
-            && (i != start)){
-                System.out.printf("\n");
-            }
-
-            System.out.printf("%0" + leadZero + "d ", i);
-            if (start < end ){
+        for (int i = start, j = 1; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadZero + "d%s", i
+            , ((j % size == 0 && j != 0) || i == end) ? "\n" : " ");
+            if (start < end) {
                 i++;
-            }else {
+            } else {
                 i--;
             }
-            
         }
-       
     }
 }
