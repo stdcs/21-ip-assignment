@@ -54,9 +54,9 @@ public class MatricesPad {
 
             // Spacing or Newlines detector
             if (i == end || (opt != 0 && opt % size == 0)) {
-            System.out.print("\n");
+                System.out.print("\n");
             } else {
-            System.out.print(" ");
+                System.out.print(" ");
             } 
             ++opt;
             
@@ -67,7 +67,6 @@ public class MatricesPad {
                 ++i;
             }
         }
-        System.out.println("\n");
     }
 }
 
