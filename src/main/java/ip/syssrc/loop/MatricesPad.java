@@ -146,22 +146,17 @@ public class MatricesPad {
             leadZero++;
         }
         /**OUTPUT */
-        for (int i = start; (start < end ? i <= end : i >= end); ){
-            if((i - start) % size == 0 || (start - i) % size == 0 
-            && (i != start)){
-                System.out.printf("\n");
-            }
-
-            System.out.printf("%0" + leadZero + "d ", i);
-            if (start < end ){
+        for (int i = start, j = 1; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadZero + "d%s", i
+            , ((j % size == 0 && j != 0) || i == end) ? "\n" : " ");
+            if (start < end) {
                 i++;
-            }else {
+            } else {
                 i--;
             }
-            
         }
-       
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -172,3 +167,13 @@ public class MatricesPad {
 =======
 }
 >>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+}
+<<<<<<< HEAD
+=======
+>>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
+=======
+}
+>>>>>>> 5d9c4a0 (fix(loop/MatricesPad): removed spaces in last line)
+>>>>>>> 13f35b8 (fix(loop/MatricesPad): removed spaces in last line)
+>>>>>>> f6a0379 (fix(loop/MatricesPad): removed spaces in last line)
