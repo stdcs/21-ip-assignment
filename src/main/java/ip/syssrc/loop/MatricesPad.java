@@ -13,10 +13,24 @@ public class MatricesPad {
 
     public static void main(String[] args) {
         Scanner dede = new Scanner (System.in);
-        int start = dede.nextInt();
-        int end = dede.nextInt();
-        int size = dede.nextInt();
-
+        
+        int start, end, size;
+        try {
+            start = dede.nextInt();
+            end = dede.nextInt();
+            size = dede.nextInt();
+            if (start < 0 || end < 0 || size <= 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Masukkan bilangan bulat diatas nol");
+            return;
+        }
+        if (start == 0 && end == 0) {
+            System.out.println(0);
+            System.exit(0);
+        }
+    
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         int j = 1;
