@@ -34,6 +34,13 @@ public class MatricesPad {
             return;
         }
 
+        // Exception Filtering
+        if ((start == end) && size > 0 ? size == 1 : size == 0) {
+            System.out.println("\nResult :");
+            System.out.println(0 + "\n");
+            System.exit(0);
+        }
+        
         // Pre-statements :
         int length = (start > end) ? start : end;
         int d = 0;
@@ -48,6 +55,12 @@ public class MatricesPad {
         // Output Result :
         System.out.println("\nResult :");
         for (int i = start; (start < end ? i <= end : i >= end); ) {
+
+            if (start == end) { // The loop will stop if start = end
+                System.out.println("Start dan End yang di-input berhimpit, sehingga");
+                System.out.println("tidak terdapat bilangan bulat diantara keduanya.\n");
+                break;
+            }
 
             // Numbers output
             System.out.printf("%0" + d + "d", i);
