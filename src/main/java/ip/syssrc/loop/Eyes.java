@@ -11,21 +11,39 @@ import java.util.Scanner;
 public class Eyes {
 
     public static void main(String[] args) {
+        
         Scanner scan = new Scanner(System.in);
 
-        int n = scan.nextInt();
+        int size;
 
-        scan.close();
+        try {
+            size = scan.nextInt();
+            
+            scan.close();
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i == j) {
-                    System.out.print(1 + " ");
+            if (size <= 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Masukkan input bilangan bulat >= 0");
+            return;
+        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (j == i) {
+                    System.out.printf("%d", 1);
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.printf("%d", 0);
+                }
+
+                if (j < (size - 1)) {
+                    System.out.print(" ");
                 }
             }
-            System.out.println();
+            System.out.printf("\n");
         }
     }
 }
+
+        
