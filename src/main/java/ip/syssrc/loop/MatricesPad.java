@@ -15,7 +15,7 @@ public class MatricesPad {
         
         Scanner sc = new Scanner(System.in);
 
-        int start,end,i,size;
+        int start,end,i,size,j;
         System.out.print("Start (Bilangan Bulat >= 0 ) = ");
         start = sc.nextInt();
         System.out.print("End (Bilangan Bulat >= 0 ) = ");
@@ -32,13 +32,9 @@ public class MatricesPad {
             leadingZero++;
         }
         
-        for (i = start; (start < end ? i <= end : i >= end);) {
-            if (((start - i ) % size == 0 || (i - start) % size == 0)
-            && (i != start)) {
-                System.out.printf("\n");
-            }
-
-            System.out.printf("%0" + leadingZero+ "d ", i);
+        for (i = start, j = 1; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0"+ leadingZero + "d%s", i
+            , ((j % size == 0 && j != 0) || i == end) ? "\n" : " ");
             if(start < end){
                 i++;
             } else {
