@@ -57,8 +57,7 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); ) {
 
             if (start == end) { // The loop will stop if start = end
-                System.out.println("Start dan End yang di-input berhimpit, sehingga");
-                System.out.println("tidak terdapat bilangan bulat diantara keduanya.\n");
+                System.out.println(start - end + "\n\n[Keterangan!] Start dan End berhimpit.\n");
                 break;
             }
 
