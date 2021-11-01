@@ -15,93 +15,87 @@ public class MatrixWithPad {
 
         Scanner t2 = new Scanner(System.in);
 
-        int start = t2.nextInt();
-        int end = t2.nextInt();
-        int size = t2.nextInt();
+        int start, end, size, awal;
+        start   = t2.nextInt();
+        end     = t2.nextInt();
+        size    = t2.nextInt();
+        awal    = t2.nextInt();
 
-        int range = end - start;
-        int temp = start;
-
-        if (start <= 9 && end <= 9) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%01d ", temp);
-                        temp++;
+        if (end >= start){
+            while(end >= start) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
                     }
-                    System.out.println("");
-                }
-                for (int n = 0; n <= range % size; n++) {
-                    System.out.printf("%01d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%01d ", temp);
-                        temp--;
+                    if (start < 10) {
+                        System.out.println("0" + start + "");
+                    } else {
+                        System.out.println(start + " ");
                     }
-                    //okeyyy
-                    System.out.println("");
+                    start++;
                 }
-                for (int n = 0; n <= -range % size; n++) {
-                    System.out.printf("%01d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 99 && end <= 99) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%02d ", temp);
-                        temp++;
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
                     }
-                    System.out.println("");
                 }
-                for (int n = 0; n <= range % size; n++) {
-                    System.out.printf("%02d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%02d ", temp);
-                        temp--;
+                System.out.println();
+            }  
+        }
+        else {
+            while(start >= end) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
                     }
-                    System.out.println("");
-                }
-                for (int n = 0; n <= -range % size; n++) {
-                    System.out.printf("%02d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 999 && end <= 999) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%03d ", temp);
-                        temp++;
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
                     }
-                    System.out.println("");
+                    start--;
                 }
-                for (int n = 0; n <= range % size; n++) {
-                    System.out.printf("%03d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int s = 1; s <= size; s++) {
-                        System.out.printf("%03d ", temp);
-                        temp--;
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {  
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
                     }
-                    System.out.println("");
                 }
-                for (int n = 0; n <= -range % size; n++) {
-                    System.out.printf("%03d ", temp);
-                    temp--;
-                }
+                System.out.println();
             }
         }
+
 
         t2.close();
     }
