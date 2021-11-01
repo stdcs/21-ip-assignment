@@ -40,25 +40,23 @@ public class MatricesPad {
             if (range >= 0) {
                 for (int i = 1; i <= range / size; i++) {
                     for (int j = 1; j <= size; j++) {
-                        System.out.printf("%0" + leadingZero + "d ", temp);
+                        System.out.printf("%0" + leadingZero + "d%s", temp , ((j % size == 0 && j != 0) || temp == end) ? "\n" : " ");
                         temp++;
                     }
-                    System.out.printf("%n");
                 }
                 for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%0" + leadingZero + "d ", temp);
+                    System.out.printf("%0" + leadingZero + "d%s", temp , ((k % size == 0 && k != 0) || temp == end) ? "\n" : " ");
                     temp++;
                 }
             } else if (range <= 0) {
                 for (int i = 1; i <= -range / size; i++) {
                     for (int j = 1; j <= size; j++) {
-                        System.out.printf("%0" + leadingZero + "d ", temp);
+                        System.out.printf("%0" + leadingZero + "d%s", temp , ((j % size == 0 && j != 0) || temp == end) ? "\n" : " ");
                         temp--;
                     }
-                    System.out.printf("%n");
                 }
                 for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%0" + leadingZero + "d ", temp);
+                    System.out.printf("%0" + leadingZero + "d%s", temp , ((k % size == 0 && k != 0) || temp == end) ? "\n" : " ");
                     temp--;
                 }
             }
