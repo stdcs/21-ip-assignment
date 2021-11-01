@@ -56,8 +56,8 @@ public class MatricesPad {
         System.out.println("\nResult :");
         for (int i = start; (start < end ? i <= end : i >= end); ) {
 
-            if (start == end) { // The loop will stop if start = end
-                System.out.println(start - end + "\n\n[Keterangan!] Start dan End berhimpit.\n");
+            if (start == end) { 
+                System.out.println(start + "\n");
                 break;
             }
 
