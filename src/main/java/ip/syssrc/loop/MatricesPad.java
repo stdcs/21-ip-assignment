@@ -35,7 +35,7 @@ public class MatricesPad {
         }
 
         // Exception Filtering
-        if ((start == end) && size > 0 ? size == 1 : size == 0) {
+        if ((start == 0 && size == 0) && size > 0 ? size == 1 : size == 0) {
             System.out.println("\nResult :");
             System.out.println(0 + "\n");
             System.exit(0);
@@ -57,7 +57,7 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); ) {
 
             if (start == end) { 
-                System.out.println(start + "\n");
+                System.out.println(i + "\n");
                 break;
             }
 
