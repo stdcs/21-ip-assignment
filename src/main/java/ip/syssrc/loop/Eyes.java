@@ -15,19 +15,35 @@ public class Eyes {
         
         Scanner in = new Scanner(System.in);
 
-        int n = in.nextInt();
+        int x;
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i == j) {
-                    System.out.print(1 + " ");
-                } 
-                else {
-                    System.out.print(0 + " ");
+        try {
+            x = scan.nextInt();
+
+            scan.close();
+
+            if (x <= 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Masukkan input bilangan bulat >= 0");
+            return;
+        }
+
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < x; j++) {
+                if (j == i) {
+                    System.out.printf("%d", 1);
+                } else {
+                    System.out.printf("%d", 0);
+                }
+
+                if (j < (x - 1)) {
+                    System.out.print(" ");
                 }
             }
-            System.out.println();
-        }         
-        in.close();                   
+            System.out.printf("\n");
+        }
+        scan.close();
     }
 }
