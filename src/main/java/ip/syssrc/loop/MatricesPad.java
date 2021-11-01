@@ -22,6 +22,7 @@ public class MatricesPad {
         end = sc.nextInt();
         System.out.print("Size (Bilangan Bulat >= 0 ) = ");
         size = sc.nextInt();
+        sc.close();
 
         int terbesar = (start > end) ? start : end;
         int leadingZero = 0;
@@ -43,7 +44,6 @@ public class MatricesPad {
             } else {
                 i--;
             }
-            sc.close();
         }
     }
 }
