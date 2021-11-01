@@ -20,13 +20,19 @@ public class Eyes {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-                if (i == j) {
+                if (i == j && j == n) {
+                    System.out.println(1);
+                } 
+                else if (i == j) {
                     System.out.print(1 + " ");
-                } else {
+                }
+                else if (j == n) {
+                    System.out.println(0);
+                }
+                else {
                     System.out.print(0 + " ");
                 }
             }
-            System.out.println();
         }
     }
 }
