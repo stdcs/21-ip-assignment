@@ -12,95 +12,42 @@ import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
-
+        
         Scanner scan = new Scanner(System.in);
+        
+        int start;
+        int end;
+        int size;
 
-        int start = scan.nextInt();
-        int end = scan.nextInt();
-        int size = scan.nextInt();
+        try {
+            start = scan.nextInt();
+            end = scan.nextInt();
+            size = scan.nextInt();
 
-        scan.close();
+            scan.close();
 
-        int range = end - start;
-        int temp = start;
-
-        if (start <= 9 && end <= 9) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp--;
-                }
+            if (start < 0 || end < 0 || size < 0) {
+                throw new Exception();
             }
-        } else if (start <= 99 && end <= 99) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp--;
-                }
-            }
-        } else {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp--;
-                }
+        } catch (Exception e) {
+            System.out.println("Masukkan bilangan bulat >= 0");
+            return;
+        }
+
+        int largest = (start > end) ? start : end;
+        int leadingZero = 0;
+        
+        while (largest > 0) {
+            largest /= 10;
+            leadingZero++;
+        }
+        for (int i = start, j = 1; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadingZero + "d%s", i
+                , ((j % size == 0 && j != 0) || i == end) ? "\n" : " ");
+            if (start < end) {
+                i++;
+            } else {
+                i--;
             }
         }
     }
