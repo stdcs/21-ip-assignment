@@ -1,7 +1,5 @@
 package ip.syssrc.conditional;
 
-import java.util.Scanner;
-
 /**
  * Cashier
  *
