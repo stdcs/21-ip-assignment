@@ -82,5 +82,19 @@ public class MatricesPad {
                             System.out.println(start);
                             break;
                         }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
+                    }
+                }
+                System.out.println();
+            }
+        }
+
     }
 }
