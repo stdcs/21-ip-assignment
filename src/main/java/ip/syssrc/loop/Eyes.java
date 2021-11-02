@@ -19,7 +19,12 @@ public class Eyes {
             for (int j = 0; j < n; j++) {
                 if (i == j) {
                     System.out.print("1 ");
-                
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
 
