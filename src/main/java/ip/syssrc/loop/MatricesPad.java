@@ -54,46 +54,41 @@ public class MatricesPad {
                 }
                 System.out.println();
             }
-        }
-
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp--;
+        } else {
+            while(start >= end) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
                     }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 999 && end <= 999) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp++;
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
                     }
-                    System.out.println("");
+                    start--;
                 }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp--;
+                if (start == end) {
+                    if ((temp - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
                     }
-                    System.out.println("");
                 }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp--;
-                }
+                System.out.println();
             }
         }
         in.close();
