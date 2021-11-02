@@ -19,5 +19,12 @@ public class MatricesPad {
         int end = in.nextInt();
         int size = in.nextInt();
         int awal = start;
+
+        if (end >= start) {
+            while(end >= start) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
+                    }
     }
 }
