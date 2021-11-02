@@ -24,8 +24,6 @@ public class MatricesPad {
             end = scan.nextInt();
             size = scan.nextInt();
 
-            scan.close();
-
             if (start < 0 || end < 0 || size < 0) {
                 throw new Exception();
             }
@@ -33,6 +31,7 @@ public class MatricesPad {
             System.out.println("Masukkan bilangan bulat >= 0");
             return;
         }
+        scan.close();
 
         int largest = (start > end) ? start : end;
         int leadingZero = 0;
