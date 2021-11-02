@@ -14,19 +14,22 @@ public class Eyes {
 
     public static void main(String[] args) {
 
-        Scanner t2 = new Scanner(System.in);
-
-        int n = t2.nextInt();
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
+        Scanner san = new Scanner(System.in);
+        int n = san.nextInt();
+        san.close();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n-1; j++) {
                 if (i == j) {
-                    System.out.print(1 + " ");
+                    System.out.print("1 ");
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.print("0 ");
                 }
             }
-            System.out.println();
+            if (i == n-1) {
+                System.out.printf("1\n");
+            } else {
+                System.out.printf("0\n");
+            }
         }
     }
 }
