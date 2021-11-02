@@ -13,8 +13,7 @@ public class Eyes {
 
     public static void main(String[] args) {
         Scanner bk = new Scanner(System.in);
-
-        int n = bk.nextInt();
+        int bk = bk.nextInt();
         bk.close();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n-1; j++) {
