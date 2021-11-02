@@ -19,9 +19,9 @@ public class Eyes {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; i <= n; j++) {
                 if (i == j) {
-                    System.out.print(1 + " ");
+                    System.out.print("1 ");
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.print("0 ");
                 }
             }
             System.out.println();
