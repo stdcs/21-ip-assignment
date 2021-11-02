@@ -71,5 +71,16 @@ public class MatricesPad {
                     }
                     start--;
                 }
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
     }
 }
