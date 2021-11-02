@@ -5,7 +5,7 @@ package ip.syssrc.loop;
  *
  * Assignment 2.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211041 - Fathur Rachman Alamsyag <sembarangm135@gmail.com>
  *
  */
 import java.util.Scanner;
