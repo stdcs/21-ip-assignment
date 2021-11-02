@@ -9,101 +9,92 @@ package ip.syssrc.loop;
  *
  */
 
-public class MatricesPad {
+import java.util.Scanner;
+ public class MatricesPad {
 
     public static void main(String[] args) {
 
-        Scanner tugas2 = new Scanner(System.in);
-
-        int start = tugas2.nextInt();
-        int end = tugas2.nextInt();
-        int size = tugas2.nextInt();
-
-        int range = end - start;
-        int temp = start;
-
-        if (start <= 9 && end <= 9) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp++;
+        Scanner kyy = new Scanner(System.in);
+        int start,end,size,awal;
+        start = bk.nextInt();
+        end = bk.nextInt();
+        size = bk.nextInt();
+        awal = start;
+        bk.close();
+        if (end >= start) {
+            while(end >= start) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
                     }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp--;
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
                     }
-                    System.out.println("");
+                    start++;
                 }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp--;
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
+                    }
                 }
+                System.out.println();
             }
-        } else if (start <= 99 && end <= 99) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp++;
+        } 
+
+        else {
+            while(start >= end) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
                     }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp--;
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
                     }
-                    System.out.println("");
+                    start--;
                 }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 999 && end <= 999) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp++;
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
                     }
-                    System.out.println("");
                 }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp--;
-                }
+                System.out.println();
             }
         }
-
-        tugas2.close();
     }
 }
-    
-
