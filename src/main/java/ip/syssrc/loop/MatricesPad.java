@@ -58,6 +58,18 @@ public class MatricesPad {
             }
         } 
 
-        
+        else {
+            while(start >= end) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
+                    }
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
+                    }
+                    start--;
+                }
     }
 }
