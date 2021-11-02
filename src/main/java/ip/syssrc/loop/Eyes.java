@@ -18,9 +18,7 @@ public class Eyes {
 
         try {
             size = scan.nextInt();
-            
-            scan.close();
-
+        
             if (size <= 0) {
                 throw new Exception();
             }
@@ -28,6 +26,7 @@ public class Eyes {
             System.out.println("Masukkan input bilangan bulat >= 0");
             return;
         }
+        scan.close();
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
