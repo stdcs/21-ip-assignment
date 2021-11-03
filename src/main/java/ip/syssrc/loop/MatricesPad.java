@@ -14,44 +14,88 @@ public class MatricesPad {
 
     public static void main(String[] args) {
 
-        Scanner t2 = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+        int start,end,size,awal;
+        start = in.nextInt();
+        end = in.nextInt();
+        size = in.nextInt();
+        awal = start;
+        if (end >= start) {
+            while(end >= start) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
+                    }
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
+                    }
+                    start++;
+                }
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
+                    }
+                }
+                System.out.println();
+            }
+        } 
 
-        int start = t2.nextInt();
-        int end = t2.nextInt();
-        int size = t2.nextInt();
-
-        int range = end - start;
-        int temp = start;
-
-        int leadingZero = 0;
-        while (end!=0){
-            leadingZero++;
-            end/=10;
+        else {
+            while(start >= end) {
+                for(int i=0; i < size; i++) {
+                    if (start == end) {
+                        break;
+                    }
+                    if (start < 10) {
+                        System.out.print("0" + start + " ");
+                    } else {
+                        System.out.print(start + " ");
+                    }
+                    start--;
+                }
+                if (start == end) {
+                    if ((awal - end) % size == 0) {
+                        if (start < 10) {
+                            System.out.println("");
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println("");
+                            System.out.println(start);
+                            break;
+                        }
+                    } else {
+                        if (start < 10) {
+                            System.out.println("0" + start);
+                            break;
+                        } else {
+                            System.out.println(start);
+                            break;
+                        }
+                    }
+                }
+                System.out.println();
+            }
         }
 
-        if (range >= 0) {
-            for (int i = 1; i <= range / size; i++) {
-                for (int j = 1; j <= size; j++) {
-                    System.out.printf("%0" + leadingZero + "d ", temp);
-                    temp++;
-                }
-                System.out.println("");
-            }
-            for (int k = 0; k <= range % size; k++) {
-                System.out.printf("%0" + leadingZero + "d ", temp);
-                temp++;
-            }
-        } else if (range <= 0) {
-            for (int i = 1; i <= -range / size; i++) {
-                for (int j = 1; j <= size; j++) {
-                    System.out.printf("%0" + leadingZero + "d ", temp);
-                    temp--;
-                }
-                System.out.println("");
-            }
-            for (int k = 0; k <= -range % size; k++) {
-                System.out.printf("%0" + leadingZero + "d ", temp);
-                temp--;
-            
-            }
-        }
+        in.close();
+    }
+}
