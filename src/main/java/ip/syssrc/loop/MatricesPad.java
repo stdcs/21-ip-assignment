@@ -5,7 +5,7 @@ package ip.syssrc.loop;
  *
  * Assignment 2.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211001 - Indah Kurnia Ilahi <indahkurnia399@gmail.com>
  *
  */
 

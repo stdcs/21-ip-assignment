@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * Assignment 2.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
+ * @author H071211001 - Indah Kurnia Ilahi <indahkurnia399@gmail.com>
  *
  */
 public class Eyes {
