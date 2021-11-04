@@ -15,7 +15,6 @@ public class CountEach {
 
         Scanner sc = new Scanner(System.in);
         int ukuran,i,j,hitung;
-
         System.out.print("Input Size N = ");
         ukuran = sc.nextInt();
         int a[] = new int[ukuran];
@@ -42,6 +41,6 @@ public class CountEach {
                 System.out.println(jumlah[i]+" Angka "+a[i]);
             }
         }
-        
+
     }
 }
