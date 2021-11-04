@@ -41,5 +41,6 @@ public class CountEach {
                 System.out.println(frekuensi[i] + " Angka " + array[i]);
             }
         }
+        in.close();
     }
 }
