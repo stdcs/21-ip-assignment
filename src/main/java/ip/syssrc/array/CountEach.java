@@ -18,5 +18,28 @@ public class CountEach {
         int[] array = new int[100];
         int[] frekuensi = new int[100];
         int hitung;
+
+        for (int i = 0; i < N; i++) {
+            array[i] = in.nextInt();
+            frekuensi[i] = -1;
+        }
+
+        for (int i = 0; i < N; i++){
+            hitung = 1;
+            for (int j = i + 1; j < N; j++){
+                if (array[i] == array[j]){
+                    hitung++;
+                    frekuensi[j] = 0;
+                }
+            }
+            if (frekuensi[i] != 0) {
+                frekuensi[i] = hitung;
+            }
+        }
+        for (int i = 0; i < N; i++){
+            if (frekuensi[i] != 0) {
+                System.out.println(frekuensi[i] + " Angka " + array[i]);
+            }
+        }
     }
 }
