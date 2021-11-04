@@ -28,22 +28,22 @@ public class SumOneThird {
 
             for (int j = 0; j <3; j++){
                 jumlah += arr[i];
-                System.out.printf("%s%"+spasi+"d", (i!=index)?"+":"",arr[i]);
+                System.out.printf("%s%"+spasi+"d", (i!=index) ?" +" : "",arr[i]);
                 i +=oneThird;
             }
-            System.out.printf("%d\n", jumlah);
+            System.out.printf(" = %d\n", jumlah);
 
             if (index ==(oneThird - 1)){
                 jumlah = 0;
                 for(int k = oneThird * 3; k < arr.length; k++){
                     jumlah += arr[k];
-                    System.out.printf("%"+spasi+"d%s",arr[k],(k!=arr.length - 1) ? "+":"="+jumlah+"\n");
+                    System.out.printf("%"+spasi+"d%s",arr[k],(k!=arr.length - 1) ? "+":"="+ jumlah +"\n");
                 }
-            System.out.printf("n");
+            System.out.printf("\n");
 
             System.out.print("Jumlah ");
             jumlah = 0;
-            for(int x = 0; x < arr.length; x++;){
+            for(int x = 0; x < arr.length; x++){
                 System.out.printf("[%d]",arr[x]);
                 jumlah +=arr[x];
             }
@@ -51,4 +51,4 @@ public class SumOneThird {
          }
      }
   }
-
+}
