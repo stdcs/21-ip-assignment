@@ -11,6 +11,85 @@ import java.util.Scanner;
 public class RadixConverter {
 
     public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            System.out.println("Masukkan angka");
+            int n = in.nextInt();
+            int m = n;
+            int o = n;
+
+            in.close();
+            
+            int[] twoMultiplier = new int[8];
+            int[] eightMultiplier = new int[8];
+            int[] sixTeenMultiplier = new int[8];
+            int[] base2 = new int[8];
+            int[] base8 = new int[8];
+            int[] base16 = new int[8];
+            int sum;
+    
+            for(int i = 0; i < 8; i++) {
+                sum = 1;
+                for (int j = 0; j < i; j++) {
+                    sum = sum * 2;
+                }
+                twoMultiplier[i] = sum;
+            }
+
+            while (n >= 1) {
+                for(int i = 7; i >= 0; i--) {
+                    while (n >= twoMultiplier[i]) {
+                        n = n-twoMultiplier[i];
+                        base2[7-i]++;
+                    }
+                }
+            }
+            System.out.print("Base 2: ");
+
+            for (int i = 0; i < twoMultiplier.length; i++) {
+                System.out.print(base2[i]);
+            }
+            System.out.println();
+    
+            for(int i = 0; i < 8; i++) {
+                sum = 1;
+                for (int j = 0; j < i; j++) {
+                    sum = sum * 8;
+                }
+                eightMultiplier[i] = sum;
+            }
+
+            while (m >= 1) {
+                for(int i = 7; i >= 0; i--) {
+                    while (m >= eightMultiplier[i]) {
+                        m = m - eightMultiplier[i];
+                        base8[7-i]++;
+                    }
+                }
+            }
+            System.out.print("Base 8: ");
+
+            for (int i = 0; i < eightMultiplier.length; i++) {
+                System.out.print(base8[i]);
+            }
+            System.out.println();
+    
+            for(int i = 0; i < 8; i++) {
+                sum = 1;
+                for (int j = 0; j < i; j++) {
+                    sum = sum * 16;
+                }
+                sixTeenMultiplier[i] = sum;
+            }
+    
+            while (o >= 1) {
+                for(int i = 7; i >= 0; i--) {
+                    while (o >= sixTeenMultiplier[i]) {
+                        o = o-sixTeenMultiplier[i];
+                        base16[7-i]++;
+                    }
+                }
+            }
+            System.out.print("Base 16: ");
 
         Scanner scan = new Scanner(System.in);
 
