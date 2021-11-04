@@ -11,7 +11,7 @@ package ip.syssrc.loop;
 
 import java.util.Scanner;
 
-public class MatricesPad {
+    public class MatricesPad {
 
     public static void main(String[] args) {
 

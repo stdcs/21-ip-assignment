@@ -9,9 +9,9 @@ package ip.syssrc.loop;
  *
  */
 
-import java.util.Scanner;
-
-public class Eyes {
+ import java.util.Scanner;
+ 
+    public class Eyes {
 
     public static void main(String[] args) {
 

@@ -11,7 +11,7 @@ package ip.syssrc.loop;
 
 import java.util.Scanner;
 
-public class FactorialSequence {
+    public class FactorialSequence {
 
     public static void main(String[] args) {
 
