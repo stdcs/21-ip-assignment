@@ -1,4 +1,4 @@
-package main.java.ip.syssrc.loop;
+package main.java.ip.syssrc.Loop;
 // error jika menggunakan package ip.syssrc.loop;
 /**
  * FactorialSequence
