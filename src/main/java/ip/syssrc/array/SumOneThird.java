@@ -5,7 +5,7 @@ package ip.syssrc.array;
  *
  * Assignment 3.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211059 - Muhammad Erwin Arif <muherwinarif31@gmail.com>
  *
  */
 public class SumOneThird {
