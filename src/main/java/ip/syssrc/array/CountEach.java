@@ -13,5 +13,10 @@ public class CountEach {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
+        int N = in.nextInt();
+        int[] array = new int[100];
+        int[] frekuensi = new int[100];
+        int hitung;
     }
 }
