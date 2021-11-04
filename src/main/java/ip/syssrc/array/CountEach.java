@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class CountEach {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         int ukuran,i,j,hitung;
         System.out.print("Input Size N = ");
