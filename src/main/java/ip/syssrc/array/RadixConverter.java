@@ -13,5 +13,18 @@ public class RadixConverter {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Masukkan Angka");
+
+        int a = in.nextInt();
+        int b = a;
+        int c = a;
+        int[] twoMultiplier = new int[8];
+        int[] eightMultiplier = new int[8];
+        int[] sixTeenMultiplier = new int[8];
+        int[] basis2 = new int[8];
+        int[] basis8 = new int[8];
+        int[] basis16 = new int[8];
+        int sum;
     }
 }
