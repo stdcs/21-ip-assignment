@@ -18,6 +18,11 @@ public class SumOneThird {
             for (int j = 0; j < 3; j++) {
                 int deret = index + (j * (arr.length/3));
                 sum = sum + arr[deret];
+                if (j == 2) {
+                    System.out.println(arr[deret] + " " + sum);
+                } else {
+                    System.out.println(arr[deret] + " + ");
+                }
             }
         }
         
