@@ -1,5 +1,7 @@
 package ip.syssrc.array;
 
+import java.util.Scanner;
+
 /**
  * CountEach
  *
@@ -12,6 +14,12 @@ package ip.syssrc.array;
 public class CountEach {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int n;
+        int[] numbers;
+        int[] frequency;
+        int included = -1;
 
     }
 }
