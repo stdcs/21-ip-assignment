@@ -36,11 +36,19 @@ public class SumOneThird {
             if (index ==(oneThird - 1)){
                 jumlah = 0;
                 for(int k = oneThird * 3; k < arr.length; k++){
-                    sjumlah += arr[j];
-                    System.out.printf("%"+spasi+"d%s",arr[k],(j!=arr.length - 1)) ? "+":"="+jumlah+"\n");
+                    jumlah += arr[k];
+                    System.out.printf("%"+spasi+"d%s",arr[k],(k!=arr.length - 1) ? "+":"="+jumlah+"\n");
                 }
+            System.out.printf("n");
+
+            System.out.print("Jumlah ");
+            jumlah = 0;
+            for(int x = 0; x < arr.length; x++;){
+                System.out.printf("[%d]",arr[x]);
+                jumlah +=arr[x];
             }
-            }
-        }
-    }
-}
+            System.out.printf(" = %d",jumlah);
+         }
+     }
+  }
+
