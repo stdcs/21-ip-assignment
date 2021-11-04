@@ -35,5 +35,25 @@ public class CountEach {
         } finally {
             scan.close();
         }
+
+        for (int i = 0; i < numbers.length; i++) {
+            int counter = 1;
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] == numbers[j]) {
+                    counter++;
+                    frequency[j] = included;
+                }
+            }
+
+            if (frequency[i] != included) {
+                frequency[i] = counter;
+            }
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (frequency[i] != included) {
+                System.out.printf("%d Angka %d\n", frequency[i], numbers[i]);
+            }
+        }
     }
 }
