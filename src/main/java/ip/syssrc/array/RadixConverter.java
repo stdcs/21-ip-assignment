@@ -14,7 +14,6 @@ public class RadixConverter {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
         int a,i,desimal,hasilbagi;
         int[]b;
         int[]pembagi = {2, 8, 16 };
