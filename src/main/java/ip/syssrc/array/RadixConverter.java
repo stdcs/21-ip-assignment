@@ -22,20 +22,20 @@ public class RadixConverter {
         a = sc.nextInt();
         sc.close();
 
-        for(i = 0; i < divider.length; i++){
+        for(i = 0; i < pembagi.length; i++){
             b = new int[8];
             desimal = a;
             System.out.printf("Base %2d: ", pembagi[i]);
-            for(int j = (b.length - 1); decimal > 0; j--) {
-                hasilbagi = (decimal % pembagi[i]);
+            for(int j = (b.length - 1); desimal > 0; j--) {
+                hasilbagi = (desimal % pembagi[i]);
                 b[j] = (hasilbagi > 9) ? (hasilbagi + 55) : hasilbagi;
                 desimal /= pembagi[i];
             }
             for (int z : b){
                 if(z > 9){
-                    System.out.printf("%c", (char) d);
+                    System.out.printf("%c", (char) z);
                 } else {
-                    System.out.printf("%d", d);
+                    System.out.printf("%d", z);
                 }
             }
             System.out.printf("%s", (i !=pembagi.length -1) ? "\n" : "");
