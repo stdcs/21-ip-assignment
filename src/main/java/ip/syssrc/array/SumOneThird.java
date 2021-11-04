@@ -22,8 +22,30 @@ public class SumOneThird {
             array[i] = in.nextInt();
         }
 
-        for (int index = 0; index < (arr.length / 3); index++) {
-            // Your magic is here
+        for(int i = 0; i < n/3; i++) {
+            sum = 0;
+            for (int j = 0; j < 3; j++ ) {
+                int deret = i + (j * aritmetika);
+                sum = sum + array[deret];
+                if (j == 2) {
+                    System.out.println(array[deret] + " = " + sum);;
+                } else {
+                    System.out.print(array[deret] + " + ");
+                }
+            }
         }
+
+        if (n%3 > 0) {
+            sum = 0;
+            for (int i = ((n/3) * 3); i < n; i++) {
+                sum = sum + array[i];
+                if (i == n-1) {
+                    System.out.print(array[i] + " = " + sum);
+                } else {
+                    System.out.print(array[i] + " + ");
+                }
+            }
+        }
+        in.close();
     }
 }
