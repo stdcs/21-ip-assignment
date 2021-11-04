@@ -12,10 +12,9 @@ public class RadixConverter {
 
     public static void main(String[] args) {
         Scanner in = new Scanner (System.in);
-        int a, b, c;
-        a = in.nextInt();
-        b = in.nextInt();
-        c = in.nextInt();
+        int a = in.nextInt();
+        int b = a;
+        int c = a;
 
         int[] twoMultiplier = new int[8];
         int[] eightMultiplier = new int[8];
@@ -59,8 +58,10 @@ public class RadixConverter {
 
         while (b >= 1) {
             for (int i = 7; i >= 0 ; i--) {
-                b = b - eightMultiplier[i];
-                base8[7 - i]++;
+                while (b >= eightMultiplier[i]) {
+                    b = b - eightMultiplier[i];
+                    base8[7 - i]++;
+                }
             }
         }
         System.out.print("Base  8: ");
@@ -68,5 +69,37 @@ public class RadixConverter {
             System.out.print(base8[i]);
         }
         System.out.println();
+
+        // Base 16 // 
+        for (int i = 0; i < 8; i++) {
+            sum = 1;
+            for (int j = 0; j < i; j++) {
+                sum = sum * 16;
+            }
+            sixTeenMultiplier[i] = sum;
+        }
+
+        while (c >= 1) {
+            for (int i = 7; i >= 0 ; i--) {
+                while (c >= sixTeenMultiplier[i]) {
+                    c = c - sixTeenMultiplier[i];
+                    base16[7 - i]++;
+                }
+            }
+        }
+        System.out.print("Base 16: ");
+        for (int i = 0; i < 8; i++) {
+            if (base16[i] > 9) {
+                if (base16[i] == 10) System.out.print("A");
+                if (base16[i] == 11) System.out.print("B");
+                if (base16[i] == 12) System.out.print("C");
+                if (base16[i] == 13) System.out.print("D");
+                if (base16[i] == 14) System.out.print("E");
+                if (base16[i] == 15) System.out.print("F");
+            } else {
+                System.out.print(base16[i]);
+            }
+        }
+        in.close();
     }
 }
