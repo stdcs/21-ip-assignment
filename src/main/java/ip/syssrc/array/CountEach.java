@@ -16,5 +16,16 @@ public class CountEach {
         int n = in.nextInt();
         int[] array = new int[10000000];
         
+        for (int i = 0; i < n; i++) {
+            int src = in.nextInt();
+            array[src]++;
+        }
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+            } else {
+                System.out.println(array[i] + " Angka " + i);
+            }
+        }
+        in.close();
     }
 }
