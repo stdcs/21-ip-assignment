@@ -1,5 +1,7 @@
 package ip.syssrc.array;
 
+import java.util.Scanner;
+
 /**
  * RadixConverter
  *
@@ -11,6 +13,10 @@ package ip.syssrc.array;
 public class RadixConverter {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
+        int n;
+        int[] arr;
+        int[] divider = { 2, 8, 16 };
     }
 }
