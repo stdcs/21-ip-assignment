@@ -19,12 +19,17 @@ public class SumOneThird {
                 int deret = index + (j * (arr.length/3));
                 sum = sum + arr[deret];
                 if (j == 2) {
-                    System.out.println(arr[deret] + " " + sum);
+                    System.out.println(arr[deret] + " = " + sum);
                 } else {
-                    System.out.println(arr[deret] + " + ");
+                    System.out.print(arr[deret] + " + ");
                 }
             }
         }
-        
+        System.out.print("\nSum of ");
+            for (int i = 0; i < arr.length; i++) {
+                sum += arr[i];
+                System.out.print("[" + arr[i] + "]");
+            }
+            System.out.println(" = " + sum);
     }
 }
