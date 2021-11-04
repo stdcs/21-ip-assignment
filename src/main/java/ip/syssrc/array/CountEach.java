@@ -5,7 +5,7 @@ package ip.syssrc.array;
  *
  * Assignment 3.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211064 - Agung Kartika Ardhiyanda <agungardhiyanda25@gmail.com>
  *
  */
 
