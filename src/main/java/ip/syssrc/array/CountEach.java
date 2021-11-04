@@ -1,5 +1,6 @@
 package ip.syssrc.array;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -21,5 +22,18 @@ public class CountEach {
         int[] frequency;
         int included = -1;
 
+        try {
+            n = scan.nextInt();
+            numbers = new int[n];
+            frequency = new int[n];
+            for (int i = 0; i < n; i++) {
+                numbers[i] = scan.nextInt();
+            }
+        } catch (InputMismatchException e) {
+            scan.close();
+            return;
+        } finally {
+            scan.close();
+        }
     }
 }
