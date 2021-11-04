@@ -8,7 +8,9 @@ package ip.syssrc.loop;
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
-public class FactorialSequence {
+
+ import java.util.Scanner;
+ public class FactorialSequence {
 
     public static void main(String[] args) {
         Scanner Diza = new Scanner(System.in);
