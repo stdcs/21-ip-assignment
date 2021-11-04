@@ -35,6 +35,7 @@ public class CountEach {
                 if(jumlah[i] !=0){
                     jumlah[i] = hitung;
                 }
+            sc.close();
         }
         for (i = 0; i < ukuran; i++){
             if(jumlah[i] !=0){
