@@ -13,6 +13,13 @@ public class CountEach {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[100000000];
+        for (int i = 0; i < n; i++) {
+            int var = in.nextInt();
+            arr[var]++;
+        }
         
+        in.close();
     }
 }
