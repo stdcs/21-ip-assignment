@@ -19,7 +19,13 @@ public class CountEach {
             int var = in.nextInt();
             arr[var]++;
         }
-        
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+
+            } else {
+                System.out.println(arr[i] + " angka " + i);
+            }
+        }
         in.close();
     }
 }
