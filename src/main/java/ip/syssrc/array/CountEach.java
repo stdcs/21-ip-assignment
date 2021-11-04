@@ -42,9 +42,6 @@ public class CountEach {
                 System.out.println(jumlah[i]+" Angka "+a[i]);
             }
         }
-        }
-
-    
-
+        
     }
 }
