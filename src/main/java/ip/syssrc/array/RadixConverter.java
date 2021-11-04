@@ -105,7 +105,6 @@ public class RadixConverter {
             } else {
                 System.out.print(base16[i]);
             }
-        }
-        in.close();
+        }in.close();
     }
 }

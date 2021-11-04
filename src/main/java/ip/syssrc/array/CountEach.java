@@ -23,7 +23,6 @@ public class CountEach {
             } else {
                 System.out.println(array[i] + " angka " + i);
             }
-        }
-        in.close();
+        }in.close();
     }
 }
