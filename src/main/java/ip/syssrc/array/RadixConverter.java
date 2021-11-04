@@ -36,8 +36,10 @@ public class RadixConverter {
 
         while (a >= 1) {
             for (int i = 7; i >= 0 ; i--) {
-                a = a - twoMultiplier[i];
-                base2[7 - i]++;
+                while (a >= twoMultiplier[i]) {
+                    a = a - twoMultiplier[i];
+                    base2[7 - i]++;
+                }
             }
         }
         System.out.print("Base  2: ");
@@ -45,6 +47,26 @@ public class RadixConverter {
             System.out.print(base2[i]);
         }
         System.out.println();
-        
+
+        // Base 8 // 
+        for (int i = 0; i < 8; i++) {
+            sum = 1;
+            for (int j = 0; j < i; j++) {
+                sum = sum * 8;
+            }
+            eightMultiplier[i] = sum;
+        }
+
+        while (b >= 1) {
+            for (int i = 7; i >= 0 ; i--) {
+                b = b - eightMultiplier[i];
+                base8[7 - i]++;
+            }
+        }
+        System.out.print("Base  8: ");
+        for (int i = 0; i < eightMultiplier.length; i++) {
+            System.out.print(base8[i]);
+        }
+        System.out.println();
     }
 }
