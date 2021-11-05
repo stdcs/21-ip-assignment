@@ -5,7 +5,7 @@ package ip.syssrc.array;
  *
  * Assignment 3.1
  *
- *@author H071211080 - Dirgantry Lenard Nugrah Boro <dirgantryleonardnugrahboro@gmail.com>
+ *@author H071211080 - Dirgantry Leoonard Nugrah Boro <dirgantryleonardnugrahboro@gmail.com>
  *
  */
 
