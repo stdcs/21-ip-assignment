@@ -45,5 +45,31 @@ public class RadixConverter {
             System.out.println(base2[i]);
         }
         System.out.println();
+
+        // Base 8
+        for (int i = 0; i < 8; i++) {
+            sum = 1;
+            for (int j = 0; j < i; j++) {
+                sum = sum * 8;
+            }
+            eightMultiplier[i] = sum;
+        }
+
+        while (m >= 1 ) {
+            for (int i = 7; i >= 0; i++) {
+                while (m >= eightMultiplier[i]) {
+                    m = m - eightMultiplier[i];
+                    base8[7-i]++;
+                }
+            }
+        } 
+        System.out.println("Base 8: ");
+        for (int i = 0; i < eightMultiplier.length; i++) {
+            System.out.println(base8[i]);
+        }
+        System.out.println();
+
+        // Base 16
+        
     }
 }
