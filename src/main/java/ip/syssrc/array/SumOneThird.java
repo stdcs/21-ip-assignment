@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 3.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  *
  */
 public class SumOneThird {
@@ -18,6 +18,19 @@ public class SumOneThird {
         int[] array = new int[n];
         for (int i=0; i < array.length; i++) {
             array[i] = in.nextInt();
+        }
+
+        for(int i = 0; i < n/3; i++) {
+            sum = 0;
+            for (int j = 0; j < 3; j++ ) {
+                int deret = i + (j * aritmatika);
+                sum = sum + array[deret];
+                if (j == 2) {
+                    System.out.println(array[deret] + " = " + sum);;
+                } else {
+                    System.out.print(array[deret] + " + ");
+                }
+            }
         }
     }
 }
