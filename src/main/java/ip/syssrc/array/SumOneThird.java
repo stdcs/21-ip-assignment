@@ -1,5 +1,5 @@
 package ip.syssrc.array;
-
+import java.util.Scanner; 
 /**
  * SumOneThird
  *
@@ -11,10 +11,13 @@ package ip.syssrc.array;
 public class SumOneThird {
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-
-        for (int index = 0; index < (arr.length / 3); index++) {
-            // Your magic is here
+        Scanner in = new Scanner (System.in);
+        int sum;
+        int n = in.nextInt();
+        int aritmatika = (n/3);
+        int[] array = new int[n];
+        for (int i=0; i < array.length; i++) {
+            array[i] = in.nextInt();
         }
     }
 }
