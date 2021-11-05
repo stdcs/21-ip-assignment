@@ -5,9 +5,9 @@ package ip.syssrc.array;
  *
  * Assignment 3.3
  *
- * @author H071211080 - Dirgantry Leonard Nugrah Boro
+ * @author H071211080 - Dirgantry Lenard Nugrah Boro
  *         <dirgantryleonardnugrahboro@gmail.com>
- *
+ * 
  */
 
 public class SumOneThird {
