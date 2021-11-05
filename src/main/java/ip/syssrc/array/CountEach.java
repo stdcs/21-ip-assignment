@@ -28,5 +28,6 @@ public class CountEach {
                 System.out.println(array[i] + " angka " + i);
             }
         }
+        in.close(); 
     }
 }
