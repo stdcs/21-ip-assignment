@@ -21,5 +21,12 @@ public class CountEach {
             int var = in.nextInt();
             array[var]++;
         }
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+
+            } else {
+                System.out.println(array[i] + " angka " + i);
+            }
+        }
     }
 }
