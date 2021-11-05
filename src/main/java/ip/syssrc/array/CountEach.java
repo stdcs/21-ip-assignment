@@ -16,5 +16,10 @@ public class CountEach {
 
         int n = in.nextInt();
         int[] array = new int[10000000];
+
+        for (int i = 0; i < n; i++) {
+            int var = in.nextInt();
+            array[var]++;
+        }
     }
 }
