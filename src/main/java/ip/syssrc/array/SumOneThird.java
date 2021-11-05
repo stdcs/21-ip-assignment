@@ -32,5 +32,16 @@ public class SumOneThird {
                 }
             }
         }
+        if (n%3 > 0) {
+            sum = 0;
+            for (int i = ((n/3) * 3); i < n; i++) {
+                sum = sum + array[i];
+                if (i == n-1) {
+                    System.out.print(array[i] + " = " + sum);
+                } else {
+                    System.out.print(array[i] + " + ");
+                }
+            }
+        }
     }
 }
