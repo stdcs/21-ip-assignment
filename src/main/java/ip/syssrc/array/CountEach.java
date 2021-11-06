@@ -35,13 +35,13 @@ public class CountEach {
 
         // Intialize pre-statements
         occurence = new int[size];
-        int opt = 1;
         int fit = -1;
+        int opt = 1;
 
         // Find the exact same numbers
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size - 1; i++) {
             for (int t = i + 1; t < size; t++) {
-                if (index[i] == index[t]) {
+                if (index[i] == index[t] && i != t) {
                     occurence[t] = fit;
                     ++opt;
                 }
@@ -49,6 +49,7 @@ public class CountEach {
             if (occurence[i] != fit) {
                 occurence[i] = opt;
             }
+            opt = 1;
         }
 
         // Prints the result
