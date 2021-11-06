@@ -55,7 +55,7 @@ public class CountEach {
         System.out.println("Terdapat : ");
         for (int i = 0; i < size; i++) {
             if (occurence[i] != fit) {
-                System.out.print( occurence[i] + " Angka " + index[i] + "\n");
+                System.out.print(occurence[i] + " Angka " + index[i] + "\n");
             }
         }
              
