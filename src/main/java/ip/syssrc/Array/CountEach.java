@@ -1,13 +1,13 @@
-package ip.syssrc.Array;
+package ip.syssrc.array;
 
 import java.util.Scanner;
 
 /**
  * CountEach
  *
- * Assignment 1.1
+ * Assignment 3.1
  *
- * @author H071211057 - AndiRajaZulfaqar <andiraja954@gmail.com>
+ * @author H071171512 - AndiRajaZulfaqar <andiraja954@gmail.com>
  *
  */
 public class CountEach {
