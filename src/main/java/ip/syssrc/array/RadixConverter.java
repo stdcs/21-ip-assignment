@@ -20,6 +20,7 @@ public class RadixConverter {
         int[] divider = { 2, 8, 16 };
 
         n = scan.nextInt();
+        scan.close();
 
         for (int i = 0; i < divider.length; i++) {
             arr = new int[8];
