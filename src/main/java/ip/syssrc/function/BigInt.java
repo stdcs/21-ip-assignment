@@ -5,7 +5,7 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
- * @author H071171512 - Fitrah MUhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
  *
  */
 public class BigInt {
