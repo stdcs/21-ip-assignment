@@ -1,16 +1,17 @@
-package ip.syssrc.Array;
+package ip.syssrc.array;
 
 import java.util.Scanner;
 
 /**
- * CountEach
+ * SumOneThird
  *
- * Assignment 1.1
+ * Assignment 3.3
  *
  * @author H071211057 - AndiRajaZulfaqar <andiraja954@gmail.com>
  *
  */
 public class SumOneThird {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int sum;
@@ -47,3 +48,4 @@ public class SumOneThird {
         in.close();
     }
 }
+      
