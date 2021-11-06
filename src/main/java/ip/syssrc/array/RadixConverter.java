@@ -19,18 +19,7 @@ public class RadixConverter {
         int[] arr;
         int[] divider = { 2, 8, 16 };
 
-        try {
-            n = scan.nextInt();
-            if (n < 0 || n > 255) {
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            System.out.println("Masukkan input >= 0 dan <= 255 !");
-            scan.close();
-            return;
-        } finally {
-            scan.close();
-        }
+        n = scan.nextInt();
 
         for (int i = 0; i < divider.length; i++) {
             arr = new int[8];
