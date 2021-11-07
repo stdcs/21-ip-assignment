@@ -42,7 +42,7 @@ public class CountEach {
             }  
             
             if(freq[i] != visited) {
-             freq[i] = count;  
+                freq[i] = count;  
             }  
         
             if(freq[i] != visited) {  
@@ -50,6 +50,7 @@ public class CountEach {
             }
 
         }
+        
         Obj.close();
     }
 }
