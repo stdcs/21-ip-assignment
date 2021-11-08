@@ -12,7 +12,7 @@ public class SumOneThird {
 
     public static void main(String[] args) {
         // Our first statements (the array is changeable)
-        int[] arr = { 55, 60, 75, 80, 95, 100, 95, 80, 75, 60, 55, 45, 65 , 70};
+        int[] arr = { 55, 60, 75, 80, 95, 100, 95, 80, 75, 60, 55, 45, 65, 70 };
         int arrayEnd = arr[arr.length - 1];
         int arrayTotal = 0;
         int max = arr[0];
