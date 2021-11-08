@@ -5,7 +5,7 @@ package ip.syssrc.array;
  *
  * Assignment 3.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211066 - Syifa Ur Rahmi < sifasisi3@gmail.com>
  *
  */
 import java.util.Scanner;
@@ -15,8 +15,8 @@ public class CountEach {
         Scanner in = new Scanner(System.in);
 
         int N = in.nextInt();
-        int[] array = new int[100];
-        int[] frekuensi = new int[100];
+        int[] array = new int[N];
+        int[] frekuensi = new int[N];
         int hitung;
 
         for (int i = 0; i < N; i++) {
