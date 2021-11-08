@@ -11,59 +11,56 @@ package ip.syssrc.array;
 public class SumOneThird {
 
     public static void main(String[] args) {
-        // First statements
-        int[] arr = { 55, 60, 75, 80, 95, 100, 95, 80, 75, 60, 55, 45 };
-        int length = arr[arr.length - 1];
-        int arrangedArray;
-        int arrayIndex = 0;
+        // Our first statements (the array is changeable)
+        int[] arr = { 55, 60, 75, 80, 95, 100, 95, 80, 75, 60, 55, 45, 65 , 70};
+        int arrayEnd = arr[arr.length - 1];
         int arrayTotal = 0;
-        int preTotal = 0;
+        int max = arr[0];
         int opt = 0;
-    
-        // Sorting out array
-        for (int i = 0; i < arr.length; i++) {
-            
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    arrangedArray = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = arrangedArray;
-                }
+
+        // Searching out for the biggest number
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
 
-        // Align the array by the right side
-        while (length > 0) {
-            length /= 10;
+        // Align the numbers to right side according to the biggest number
+        while (max > 0) {
+            max/= 10;
             ++opt;
         }
         
-        // Array operation
+        // Array Sum operation
         for (int i = 0; i < (arr.length / 3); i++) {
             int oneThird = (arr.length / 3);
-            arrayIndex = i; // Return the arrayIndex to become i for every increment
-            for (int t = 0; t < 3; t++) {
-                preTotal += arr[arrayIndex];
-                System.out.printf("%s%" + opt + "d", (arrayIndex != i) ? " + " : "", arr[arrayIndex]);
-                arrayIndex += oneThird;
-            }
+            int secNumber = oneThird + i;
+            int thirdNumber = (2 * oneThird) + i;
+            int preTotal = arr[i] + arr[secNumber] + arr[thirdNumber];
             arrayTotal += preTotal;
+
+            // Printout for every first 3 length of the array
+            System.out.printf("%" + opt + "d + %" + opt + "d + ", arr[i], arr[secNumber]);
+            System.out.printf("%" + opt + "d", arr[thirdNumber]);
             System.out.print(" = " + preTotal + "\n");
 
-            if ((i + 1) == oneThird) { // The possible outcome calculations for every index
-                preTotal = 0;
-                for (int t = oneThird * 3; t < arr.length; t++) {
-                    preTotal += arr[t];
-                    System.out.printf("%" + opt + "d%s", arr[t], (t != arr.length - 1) ? " + " : " = " + preTotal + "\n");
+            // Prinout for the last one or two length of the array
+            if (arr.length % 3 > 0 && i + 1 == oneThird) {
+                i = thirdNumber + 1;
+                if (arr.length % 3 == 2) {
+                    preTotal = arr[i] + arrayEnd;
+                    System.out.printf("%" + opt + "d + %" + opt + "d = %s\n", arr[i], arr[i+1], preTotal);
+                } else {
+                    preTotal = arr[i];
+                    System.out.printf("%" + opt + "d = %s\n", arr[i], preTotal);
+
                 }
-                System.out.print("\n");
                 arrayTotal += preTotal;
             }
         }
-
         // Result
-        System.out.print("Sum of ");
-        for (int i = 1; i < arr.length; i++) { // Showing every array index by print out
+        System.out.print("\nSum of ");
+        for (int i = 1; i < arr.length; i++) {
             System.out.print("[" + i + "]");
         }
         System.out.print(" = " + arrayTotal);
