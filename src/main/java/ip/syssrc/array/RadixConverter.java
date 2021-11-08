@@ -5,7 +5,7 @@ package ip.syssrc.array;
  *
  * Assignment 3.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211066 - Syifa Ur Rahmi <sifasisi3@gmail.com>
  *
  */
 import java.util.Scanner;
