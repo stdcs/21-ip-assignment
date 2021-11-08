@@ -17,13 +17,13 @@ public class RadixConverter {
         
         // Variables
         char[] hexChar = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+        char[] hexa = new char[8];
         int[] binary = new int[8];
         int[] octal = new int[8];
         int indexOfBinary = 0;
         int indexOfOctal = 0;
         int indexOfHexa = 0;
         int decimalNumber;
-        String hexa = "";
 
         // Input-Interface
         System.out.print("\nInput (Bilangan Desimal) : ");
@@ -70,18 +70,18 @@ public class RadixConverter {
 
         // Hexa Numbers
         int z = decimalNumber;
+        int hexaIndex = indexOfHexa;
         while (z > 0) {
             indexOfHexa = z % 16;
-            hexa = hexChar[indexOfHexa] + hexa;
+            hexa[hexaIndex++] = hexChar[indexOfHexa];
             z /= 16;
         }
         System.out.print("Base 16 : ");
-        System.out.print(convert(hexa, '0', 8));
-    }
-    
-    // Making new method to printout only 8-digit pad
-    public static String convert(String input, char ch, int L) {
-        String result = String.format("%" + L + "s", input).replace(' ', ch);
-        return result;
+        for (int t = hexa.length - 1; t >= 0; t--) {
+            if (hexa[t] == '\0') {
+                hexa[t] = '0';
+            }
+            System.out.print(hexa[t]);
+        }
     }
 }
