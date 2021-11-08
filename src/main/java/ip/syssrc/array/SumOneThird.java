@@ -1,50 +1,55 @@
 package ip.syssrc.array;
-import java.util.Scanner;
 /**
  * SumOneThird
  *
  * Assignment 3.3
  *
  * @author H071211068 - Michael Gabriel Bida <michaelgabriel663@gmail.com> *
+ *
  */
 public class SumOneThird {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int sum;
-        int n = in.nextInt();
-        int aritmatika = (n/3);
-        int[] array = new int[n];
+       
+        int[] arr = { 2, 3, 5, 4, 8, 7, 11, 13, 15, 19, 25, 22};
 
-        for (int i=0; i < array.length; i++) {
-            array[i] = in.nextInt();
+        int sumOfOneThirdLength = 0;
+
+        int space = 0;
+        int biggestNumber = arr[arr.length - 1];
+        while (biggestNumber > 0) {
+            biggestNumber /= 10;
+            space++;
         }
 
-        in.close();
+        for (int i = 0; i < (arr.length / 3); i++) {
+            
+            int oneThirdOfArr = arr.length / 3;
+            int second = i + oneThirdOfArr;
+            int third = i + 2 * oneThirdOfArr;
 
-        for(int i = 0; i < n/3; i++) {
-            sum = 0;
-            for (int j = 0; j < 3; j++ ) {
-                int deret = i + (j * aritmatika);
-                sum = sum + array[deret];
-                if (j == 2) {
-                    System.out.println(array[deret] + " = " + sum);;
-                } else {
-                    System.out.print(array[deret] + " + ");
-                }
+            int sum = arr[i] + arr[second] + arr[(third)];
+
+            System.out.printf("%" + space + "d + " + "%" + space + "d + " + "%" + space + "d = %d\n", arr[i],
+                    arr[second], arr[third], sum);
+            sumOfOneThirdLength += sum;
+
+            if (i == oneThirdOfArr - 1 && arr.length % 3 >= 1) {
+                i = ++third;
+                boolean finished = (arr.length % 3 == 2) ? false : true;
+                sum = (!finished) ? arr[i] + arr[arr.length - 1] : arr[i];
+
+                System.out.printf("%" + space + "d%s%d\n", arr[i],
+                        (!finished) ? " + " + arr[++i] + " = " : " = ", sum);
+
+                sumOfOneThirdLength += sum;
             }
         }
 
-        if (n%3 > 0) {
-            sum = 0;
-            for (int i = ((n/3) * 3); i < n; i++) {
-                sum = sum + array[i];
-                if (i == n-1) {
-                    System.out.print(array[i] + " = " + sum);
-                } else {
-                    System.out.print(array[i] + " + ");
-                }
-            }
+        System.out.print("\nSum of ");
+        for (int j = 0; j < arr.length; j++) {
+            System.out.printf("[%d]", arr[j]);
         }
+        System.out.printf(" = %d", sumOfOneThirdLength);
     }
 }
