@@ -27,7 +27,7 @@ public class SumOneThird {
 
         // Align the numbers to right side according to the biggest number
         while (max > 0) {
-            max/= 10;
+            max /= 10;
             ++opt;
         }
         
