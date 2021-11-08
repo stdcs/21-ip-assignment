@@ -1,5 +1,6 @@
 package ip.syssrc.array;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 /**
  * CountEach
  *
@@ -8,26 +9,48 @@ import java.util.Scanner;
  * @author H071211068 - Michael Gabriel Bida <michaelgabriel663@gmail.com>
  *
  */
-
 public class CountEach {
 
     public static void main(String[] args) {
         
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int[] array = new int[10000000];
+        
+        int n;
+        int included = -1;
+        int [] numbers;
+        int [] frequency;
 
-        for (int i = 0; i < n; i++) {
-            int var = in.nextInt();
-            array[var]++;
+        try {
+            n = scan.nextInt();
+            numbers = new int[n];
+            frequency = new int[n];
+            for (int i = 0; i < n; i++) {
+                numbers[i] = scan.nextInt();
+            }
+        } catch (InputMismatchException e) {
+            scan.close();
+            return;
+        } finally {
+            scan.close();
         }
 
-        in.close();
+        for (int i = 0; i < numbers.length; i++) {
+            int counter = 1;
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] == numbers[j]) {
+                    counter++;
+                    frequency[j] = included;
+                }
+            }
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
-            } else {
-                System.out.println(array[i] + " angka " + i);
+            if (frequency[i] != included) {
+                frequency[i] = counter;
+            }
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (frequency[i] != included) {
+                System.out.printf("%d Angka %d\n", frequency[i], numbers[i]);
             }
         }
     }
