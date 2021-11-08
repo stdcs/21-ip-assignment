@@ -32,8 +32,6 @@ public class RadixConverter {
             }
             twoMultiplier[i] = sum;
         }
-        
-
 
         while (n >= 1) {
             for(int i = 7; i >= 0; i--) {
@@ -58,9 +56,6 @@ public class RadixConverter {
             }
             eightMultiplier[i] = sum;
         }
-
-
-        
         while (m >= 1) {
             for(int i = 7; i >= 0; i--) {
                 while (m >= eightMultiplier[i]) {
@@ -84,7 +79,6 @@ public class RadixConverter {
             }
             sixTeenMultiplier[i] = sum;
         }
-
         while (o >= 1) {
             for(int i = 7; i >= 0; i--) {
                 while (o >= sixTeenMultiplier[i]) {
@@ -104,7 +98,7 @@ public class RadixConverter {
                 if (base16[i] == 15) System.out.print("F"); 
             } else {
                 System.out.print(base16[i]);
-            }
-        }in.close();
+            }in.close();
+        }
     }
 }
