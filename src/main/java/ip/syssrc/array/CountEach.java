@@ -13,17 +13,34 @@ public class CountEach {
 
     public static void main(String[] args) {
         Scanner in = new Scanner (System.in);
-        int n = in.nextInt();
-        int[] array = new int[10000000];
-        
+
+        int n;
+        n = in.nextInt();
+        int[] array = new int[n];
+
         for (int i = 0; i < n; i++) {
-            int src = in.nextInt();
-            array[src]++;
+            array[i] = in.nextInt();
         }
+
+        int[] fr = new int[array.length];
+        int visited = -1;
+
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
-            } else {
-                System.out.println(array[i] + " Angka " + i);
+            int count = 1;
+
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    count++;
+                    fr[j] = visited;
+                }
+            }
+
+            if (fr[i] != visited) {
+                fr[i] = count;
+            }
+            
+            if(fr[i] != visited) {
+                System.out.println(fr[i] + " Angka " + array[i]);
             }
         }
         in.close();
