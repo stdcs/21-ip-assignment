@@ -12,7 +12,7 @@ public class RadixConverter {
 
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         int n;
         int[] array;
