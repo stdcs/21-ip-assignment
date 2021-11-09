@@ -13,7 +13,7 @@ public class CountEach {
 
     public static void main(String[] args) {
         
-        Scanner in = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         
         int n;
         int included = -1;
