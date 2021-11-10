@@ -119,6 +119,9 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.printf("%d%s", nums[i], (i == nums.length - 1) ? "\n" : "");
+        }
     }
 
     /**
