@@ -29,7 +29,11 @@ public class BigInt {
                 sum[arrIndex] += n[n.length- i];
             }
 
-            if (sum[arrIndex] >= 10 && arrIndex !=0 ){
+            if (m.length - i >= 0 ){
+                sum[arrIndex] += n[n.length - i];
+            }
+
+            if (sum[arrIndex] >= 10 && arrIndex !=0 ) {
                 sum[arrIndex - 1] += sum[arrIndex] / 10;
                 sum[arrIndex] = sum[arrIndex] % 10;
             }
@@ -39,6 +43,13 @@ public class BigInt {
             int[] temp = new int[sum.length];
             for(int i = 0; i < sum.length; i++){
                 temp[i] = sum[i];
+            }
+
+            sum = new int[temp.length + 1];
+            sum[0] = temp[0] / 10;
+            sum[1] = temp[0] % 10;
+            for (int i = 2; i < sum.length; i++) {
+                sum[i] = temp [i - 1];
             }
         }
         return sum;
@@ -52,15 +63,15 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums) {
         int arrLength = nums.length;
-        if(nums.length % 3 == 0) {
+        if (nums.length % 3 == 0) {
             arrLength += (nums.length / 3) - 1;
 
         } else {
             arrLength += (nums.length / 3);
         }
         char[] arr = new char[arrLength];
-        for(int i = 0, j = 0, index = 0; i < arr.length; i++){
-            if (index == 3 || (i == nums.length % 3 &* i ! = 0)){
+        for (int i = 0, j = 0, index = 0; i < arr.length; i++) {
+            if (index == 3 || (i == nums.length % 3 &* i ! = 0)) {
                 arr[i] = '.';
                 index = 0;
             } else {
