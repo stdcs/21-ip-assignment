@@ -65,23 +65,22 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums) {
         int arrLength = nums.length;
-        if (nums.length % 3 == 0) {
-            arrLength += (nums.length / 3) - 1;
-        } else {
-            arrLength += (nums.length / 3);
-        }
+        arrLength = nums.length + ((nums.length - 1) / 3);
+
         char[] arr = new char[arrLength];
-        for (int i = 0, j = 0, index = 0; i < arr.length; i++) {
-            if (index == 3 || (i == nums.length % 3 && i != 0)) {
-                arr[i] = '.';
-                index = 0;
+
+        for (int i = 1, j = 1; i < arr.length + 1; i++) {
+            int indexArr = arr.length - i;
+            int indexNums = nums.length - j;
+            if ((i % 4) == 0) {
+                arr[indexArr] = '.';
             } else {
-                arr[i] = (char) (nums[j] + '0');
+                arr[indexArr] = (char) (nums[indexNums] + '0');
                 j++;
-                index++;
             }
         }
         return arr;
+
     }
 
     /**
@@ -93,20 +92,18 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums, char sparator) {
         int arrLength = nums.length;
-        if (nums.length % 3 == 0) {
-            arrLength += (nums.length / 3) - 1;
-        } else {
-            arrLength += (nums.length / 3);
-        }
+        arrLength = nums.length + ((nums.length - 1) / 3);
+
         char[] arr = new char[arrLength];
-        for (int i = 0, j = 0, index = 0; i < arr.length; i++) {
-            if (index == 3 || (i == nums.length % 3 && i != 0)) {
-                arr[i] = sparator;
-                index = 0;
+
+        for (int i = 1, j = 1; i < arr.length + 1; i++) {
+            int indexArr = arr.length - i;
+            int indexNums = nums.length - j;
+            if ((i % 4) == 0) {
+                arr[indexArr] = sparator;
             } else {
-                arr[i] = (char) (nums[j] + '0');
+                arr[indexArr] = (char) (nums[indexNums] + '0');
                 j++;
-                index++;
             }
         }
         return arr;
