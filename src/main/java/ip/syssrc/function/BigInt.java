@@ -117,5 +117,8 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+        for (int i = 0; i < chars.length; i++){
+            System.out.printf("%c%s", chars[i], (i == chars.length - 1) ? "\n" : "";)
+        }
     }
 }
