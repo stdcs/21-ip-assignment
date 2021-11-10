@@ -107,12 +107,12 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+        for (int i = 0; i < nums.length; i++){
+            System.out.printf("%d%s", nums[i], (i == nums.length - 1) ? "\n" : "");
+        }
     }
 
     /**
-     * Print an array into a human readable format of numbers
-     * .e.g. {'1', '_', 0, 0, 0} printed as 1_000
-     *
      * @param nums the array to be printed as number
      * @return void
      */
