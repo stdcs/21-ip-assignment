@@ -32,5 +32,17 @@ public class Vigesimal {
      * @return void
      */
     public static void table() {
+        for (int i = 1; i < 20; i++) {
+            for (int j = 1; j < 20; j++) {
+                char[] arr = toVigesimal((i * j));
+                System.out.printf("%s", (j != 1) ? "\t" : "");
+
+                /** Print Char Array */
+                for (char c : arr) {
+                    System.out.printf("%s", c);
+                }
+            }
+            System.out.printf("\n");
+        }
     }
 }
