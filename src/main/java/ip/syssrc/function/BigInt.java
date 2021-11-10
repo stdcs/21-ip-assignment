@@ -5,7 +5,7 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211064 -Agung Kartika Ardhiyanda  <agungardhiyanda25@gmail.com>
  *
  */
 public class BigInt {
@@ -19,28 +19,30 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        int jumlahPanjang = (n.length > m.length) ? n.length : m.length;
-        int[] jumlah = new int[jumlahPanjang];
+        int sumLength = (n.length > m.length) ? n.length : m.length;
+        int[] sum = new int[sumLength];
 
-        for(int i = 1; i <= jumlah.length; i++)
-            int arrIndex = jumlahPanjang - i;
+        for(int i = 1; i <= sum.length; i++)
+            int arrIndex = sumLength - i;
 
             if (n.length - i >= 0){
-                jumlah[arrIndex] += n[n.length - i];
+                sum[arrIndex] += n[n.length- i];
             }
 
             if (sum[arrIndex] >= 10 && arrIndex !=0 ){
-                jumlah[arrIndex - 1] += jumlah[arrIndex] / 10;
-                jumlah[arrIndex] = jumlah[arrIndex] % 10;
+                sum[arrIndex - 1] += sum[arrIndex] / 10;
+                sum[arrIndex] = sum[arrIndex] % 10;
             }
-    }
+        }
 
-        if (jumlah[0] >= 10){
-            int[] temp = new int[jumlah.length];
+        if (sum[0] >= 10){
+            int[] temp = new int[sum.length];
             for(int i = 0; i < sum.length; i++){
                 temp[i] = sum[i];
             }
         }
+        return sum;
+    }
 
     /**
      * Format number using human readable format, separated by dot(.)
