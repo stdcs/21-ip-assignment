@@ -26,9 +26,8 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
-            }
-            
-            if (isValidRole) {
+        }
+            if (isValidRole == true) {
                 switch (args[0] ) {
                     case "Super Admin":
                         menuIndex = menuIndex + 1;
