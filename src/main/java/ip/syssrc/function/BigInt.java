@@ -19,8 +19,28 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        return new int[] {};
+        int jumlahPanjang = (n.length > m.length) ? n.length : m.length;
+        int[] jumlah = new int[jumlahPanjang];
+
+        for(int i = 1; i <= jumlah.length; i++)
+            int arrIndex = jumlahPanjang - i;
+
+            if (n.length - i >= 0){
+                jumlah[arrIndex] += n[n.length - i];
+            }
+
+            if (sum[arrIndex] >= 10 && arrIndex !=0 ){
+                jumlah[arrIndex - 1] += jumlah[arrIndex] / 10;
+                jumlah[arrIndex] = jumlah[arrIndex] % 10;
+            }
     }
+
+        if (jumlah[0] >= 10){
+            int[] temp = new int[jumlah.length];
+            for(int i = 0; i < sum.length; i++){
+                temp[i] = sum[i];
+            }
+        }
 
     /**
      * Format number using human readable format, separated by dot(.)
