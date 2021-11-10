@@ -19,7 +19,42 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        return new int[] {};
+        int sumLength = (n.length > m.length) ? n.length : m.length;
+        int[] sum = new int[sumLength];
+
+        for (int i = 1; i <= sum.length; i++) {
+            int arrIndex = sumLength - i;
+
+            if (n.length - i >= 0) {
+                sum[arrIndex] += n[n.length - i];
+            }
+
+            if (m.length - i >= 0) {
+                sum[arrIndex] += m[(m.length - i)];
+            }
+
+            if (sum[arrIndex] >= 10 && arrIndex != 0) {
+                sum[arrIndex - 1] += sum[arrIndex] / 10;
+                sum[arrIndex] = sum[arrIndex] % 10;
+            }
+        }
+
+        /** If sum[0] more than 10 */
+        if (sum[0] >= 10) {
+            /** Array to store old sum value */
+            int[] temp = new int[sum.length];
+            for (int i = 0; i < sum.length; i++) {
+                temp[i] = sum[i];
+            }
+
+            sum = new int[temp.length + 1];
+            sum[0] = temp[0] / 10;
+            sum[1] = temp[0] % 10;
+            for (int i = 2; i < sum.length; i++) {
+                sum[i] = temp[i - 1];
+            }
+        }
+        return sum;
     }
 
     /**
@@ -53,8 +88,8 @@ public class BigInt {
     }
 
     /**
-     * Print an array into a human readable format of numbers
-     * .e.g. {'1', '_', 0, 0, 0} printed as 1_000
+     * Print an array into a human readable format of numbers .e.g. {'1', '_', 0, 0,
+     * 0} printed as 1_000
      *
      * @param nums the array to be printed as number
      * @return void
