@@ -40,9 +40,12 @@ public class Cashier {
             kembalian = kembalian % 100000;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> 45a162b (feat(conditional/Cashier.java):fix if else statement)
+=======
+>>>>>>> aaa69ec (feat(conditional/Cashier.java):fix if else format)
         if (kembalian >= 50000 ){
             int limaPuluh = kembalian / 50000;
             System.out.printf("%d Lembar uang Rp. 50.000\n", limaPuluh);
