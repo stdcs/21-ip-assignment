@@ -64,7 +64,24 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
-        return new char[] {};
+        int arrLength = nums.length;
+        if (nums.length % 3 == 0) {
+            arrLength += (nums.length / 3) - 1;
+        } else {
+            arrLength += (nums.length / 3);
+        }
+        char[] arr = new char[arrLength];
+        for (int i = 0, j = 0, index = 0; i < arr.length; i++) {
+            if (index == 3 || (i == nums.length % 3 && i != 0)) {
+                arr[i] = '.';
+                index = 0;
+            } else {
+                arr[i] = (char) (nums[j] + '0');
+                j++;
+                index++;
+            }
+        }
+        return arr;
     }
 
     /**
