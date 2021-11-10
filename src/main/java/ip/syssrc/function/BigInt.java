@@ -5,7 +5,7 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211045 - MUHAMMAD SOFYAN DAUD PUJAS <gaero38@gmail.com>
  *
  */
 public class BigInt {
@@ -19,7 +19,36 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        return new int[] {};
+        int capacity = Math.max(n.length, m.length);
+        int[] total = new int[capacity];
+        int[] sum = n.length < m.length ? n : m;
+        System.arraycopy(n.length < m.length ? m : n, 0, total, 0, capacity);
+
+        for (int i = 1; i <= capacity; i++) {
+            if (sum.length - i < 0) {
+                break;
+            }
+            int opt = capacity - i;
+            total[opt] += (int) sum[sum.length - i];
+            if (opt > 0 && total[opt] > 9) { // move the remainder to previous index
+                total[opt - 1] += (total[opt] / 10);
+                total[opt] %= 10;
+            }
+        }
+
+        if (total[0] > 9) { // as remainder require need previous index, this will add more one
+            int[] opt = new int[capacity];
+            for (int i = 0; i < capacity; i++) {
+                opt[i] = total[i];
+            }
+            total = new int[capacity + 1];
+            total[0] = opt[0] / 10;
+            total[1] = opt[0] % 10;
+            for (int i = 2; i < total.length; i++) {
+                total[i] = opt[i - 1];
+            }
+        }
+        return total;
     }
 
     /**
@@ -29,7 +58,21 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
-        return new char[] {};
+        int index = 0;
+        int size = nums.length;
+        char[] separator = new char[size];
+        size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
+        for (int i = 0, t = 0; i < separator.length; i++) {
+            if (i != nums.length % 3 && i == 0 || index != 3) {
+                separator[i] = (char) (nums[t] + '0');
+                ++index;
+                ++t;
+            } else {
+                separator[i] = '.';
+                index = 0;
+            }
+        }
+        return separator;
     }
 
     /**
@@ -40,7 +83,22 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
-        return new char[] {};
+        int index = 0;
+        int size = nums.length;
+        char[] separator = new char[size];
+        size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
+        for (int i = 0, t = 0; i < separator.length; i++) {
+            if (i != nums.length % 3 && i == 0 || index != 3) {
+                separator[i] = (char) (nums[t] + '0');
+                ++index;
+                ++t;
+            } else {
+                separator[i] = sparator;
+                index = 0;
+            }
+        }
+        return separator;
+
     }
 
     /**
@@ -50,6 +108,10 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.printf("%d", nums[i]);
+            System.out.print((i != nums.length - 1) ? "" : "\n");
+        }
     }
 
     /**
@@ -60,5 +122,9 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+        for (int i = 0; i < chars.length; i++) {
+            System.out.printf("%c", chars[i]);
+            System.out.print((i != chars.length - 1) ? "" : "\n");
+        }
     }
 }
