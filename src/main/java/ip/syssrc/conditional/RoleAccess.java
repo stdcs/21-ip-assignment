@@ -30,8 +30,12 @@ public class RoleAccess {
                 case "User":
                     isValidRole = true;
                     break;
+<<<<<<< HEAD
                 
             }
+=======
+        }
+>>>>>>> 7cbdb32 (fix(conditional/RoleAccess.java))
             if (isValidRole == true) {
                 switch (args[0] ) {
                 case "Super Admin":
