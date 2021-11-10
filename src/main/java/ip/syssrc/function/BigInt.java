@@ -36,7 +36,7 @@ public class BigInt {
             }
         }
 
-        if (total[0] > 9) { // as remainder require need previous index, this will add more one
+        if (total[0] > 9) { // as remainder require previous index, this will add more one
             int[] opt = new int[capacity];
             for (int i = 0; i < capacity; i++) {
                 opt[i] = total[i];
