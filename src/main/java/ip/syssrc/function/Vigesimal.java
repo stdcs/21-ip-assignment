@@ -38,8 +38,11 @@ public class Vigesimal {
                 char[] arr = toVigesimal((i * j));
                 System.out.printf("%s", (j !=1) ? "\t" : "");
 
+                for (char c : arr){
+                    System.out.printf("%s", c);
                 }
             }
+            System.out.printf("\n");
         }
     }
 }
