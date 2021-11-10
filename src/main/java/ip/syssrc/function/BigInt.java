@@ -50,8 +50,7 @@ public class BigInt {
                 }
                 finale[i + 1] = sum[i];
             }
-        }
-        else {
+        } else {
             finale = sum;
         }
         return new int[] {};
@@ -74,8 +73,7 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = '.';
-            }
-            else {
+            } else {
                 arr[indexSum] = (char) (nums[indexNums]+'0');
                 j++;
             } 
@@ -101,8 +99,7 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = sparator;
-            }
-            else {
+            } else {
                 arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
             } 
