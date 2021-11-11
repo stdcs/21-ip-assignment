@@ -8,7 +8,6 @@ package ip.syssrc.function;
  * @author H071211053 - Aditya Erlangga Bagaskara <aditya.erlangga0206@gmail.com>
  */
 public class Vigesimal { 
-    
     public static void main(String[] args) {
         table();
     }
