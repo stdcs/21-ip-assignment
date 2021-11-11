@@ -99,7 +99,23 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
-        return new char[] {};
+        int arrLength = nums.length;
+        arrLength = nums.length + ((nums.length - 1) / 3);
+
+        char[] arr = new char[arrLength];
+
+        for (int i = 1, j = 1; i < arr.length + 1; i++) {
+            int indexSum = arr.length - i;
+            int indexNums = nums.length - j;
+            if ((i % 4) == 0) {
+                arr[indexSum] = sparator;
+            } else {
+                arr[indexSum] = (char) (nums[indexNums] + '0');
+                j++;
+            }
+        }
+        return arr;
+    
     }
 
     /**
