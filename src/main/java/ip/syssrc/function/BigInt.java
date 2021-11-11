@@ -5,7 +5,7 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
- * @author H071211080 - Dirgantry Leonard Nugrah Boro <futarokum6@gmail.com>
+ * @author H071211080 - Dirgan Leonard Nugrah Boro <futarokum6@gmail.com>
  *
  */
 import java.util.Arrays;
