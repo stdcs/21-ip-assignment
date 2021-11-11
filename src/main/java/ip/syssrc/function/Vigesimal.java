@@ -10,6 +10,7 @@ package ip.syssrc.function;
  */
 public class Vigesimal {
 
+    
     /**
      * Convert a radix-10 (decimal) number into radix-20 (vigesimal) number
      *
