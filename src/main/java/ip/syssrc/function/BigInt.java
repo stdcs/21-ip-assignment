@@ -139,5 +139,8 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+        for (char i : chars) {
+            System.out.print(i);
+        }
     }
 }
