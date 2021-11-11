@@ -5,9 +5,12 @@ package ip.syssrc.function;
  *
  * Assignment 4.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  */
 public class Vigesimal {
+    public static void main(String[] args) {
+        table();
+    }
 
     /**
      * Convert a radix-10 (decimal) number into radix-20 (vigesimal) number
