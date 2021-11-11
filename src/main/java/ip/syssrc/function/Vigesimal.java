@@ -17,7 +17,7 @@ public class Vigesimal {
      */
     public static char[] toVigesimal(int n) {
         int length = (n >= 20) ? 2 : 1;
-        char[] arr = new char[length];
+        char[] arr = new char[length]; 
         for (int i = arr.length - 1; i >= 0; i--) {
             int modulo = (n % 20);
             arr[i] = (modulo > 9) ? (char) (modulo + 55) : (char) (modulo + '0');
