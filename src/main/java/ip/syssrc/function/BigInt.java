@@ -24,7 +24,7 @@ public class BigInt {
 
         for (int i = 1; i <= sum.length; i++) {
             int arrIndex = sumLength - i;
-
+            
             if (n.length - i >= 0) {
                 sum[arrIndex] += n[n.length - i];
             }
