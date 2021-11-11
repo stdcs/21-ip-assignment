@@ -76,7 +76,6 @@ public class BigInt {
                 j++;
             } 
         }
-        
         return arr;
     }
 }
