@@ -36,5 +36,16 @@ public class Vigesimal {
      * @return void
      */
     public static void table() {
+        for (int i = 1; i < 20; i++) {
+            for (int j = 1; j < 20; j++) {
+                char[] vigecimal = toVigesimal(i*j);
+                String vig = "";
+                for(char k:vigecimal) {
+                    vig += k;
+                }
+                System.out.printf("%3s",vig);
+            }
+            System.out.println("");
+        }
     }
 }
