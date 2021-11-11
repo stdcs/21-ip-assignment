@@ -1,15 +1,24 @@
 package ip.syssrc.function;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * BigInt
  *
  * Assignment 4.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  *
  */
 public class BigInt {
-
+    public static void main(String[] args) {
+        int[] a = {2,3,4,5};
+        int[] b = {9,4,6,9};
+        System.out.println();
+        for (char i:humanFormat(a)) {
+            System.out.print(i);
+        }
+    }
     /**
      * Adds two arrays as the sum of two numbers, this method is akin to the add
      * method from BigInteger class
