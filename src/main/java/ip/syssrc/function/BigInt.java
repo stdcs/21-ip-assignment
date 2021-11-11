@@ -125,6 +125,10 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+        for (int i : nums) {
+            System.out.print(i);
+        }
+
     }
 
     /**
