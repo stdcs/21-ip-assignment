@@ -5,18 +5,17 @@ package ip.syssrc.loop;
  *
  * Assignment 2.2
  *
- * @author H071211065 - Asehpryanto Rari Parinding <asehpryantorari@gmail.com>
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
  *
  */
-import java.util.Scanner;
 public class FactorialSequence {
 
     public static void main(String[] args) {
-        Scanner bk = new Scanner(System.in);
+        Scanner t2 = new Scanner(System.in);
         
         long fact = 1;
-        int n = bk.nextInt();
-        bk.close();
+        int n = t2.nextInt();
+        t2.close();
         if (n > 0) {
             System.out.print(n + "! = ");
 
