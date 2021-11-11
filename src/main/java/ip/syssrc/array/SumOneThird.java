@@ -12,35 +12,40 @@ public class SumOneThird {
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        int SumOneThird = 0;
 
+        /**Menghitung sum digit terbesar */
+        int space = 0;
+        int biggest = arr[arr.length - 1];
+        while (biggest > 0) {
+            biggest /= 10;
+            space++;
+        }
         for (int index = 0; index < (arr.length / 3); index++) {
-            // Your magic is here
-        }
-        for(int i =0; i<n/3; i++) {
-            sum = 0;
-            for (int j =0; j<3; j++) {
-                int deret = i + (j * aritmatika);
-                sum = sum + array[deret];
-                if (j == 2){
-                    System.out.println(array[deret] + "=" + sum);
-                }else{
-                    System.out.print(array[deret] + "+");
+            int OneThird = arr.length / 3;
+            int second = index + OneThird;
+            int third = index + 2 * OneThird;
 
-                }
+            int sum = arr[index] + arr[second] + arr[(third)];
+
+            System.out.printf("%" + space + "d + " + "%" + space + "d + " + "%" + space + "d = %d\n", arr[index],
+                arr[second], arr[third], sum);
+            SumOneThird += sum; 
+
+            if (index == OneThird - 1 && arr.length % 3 >= 1) {
+                index = ++third;
+                boolean finish = (arr.length % 3 == 2) ? false : true;
+                sum = (!finish) ? arr[index] + arr[arr.length - 1] : arr[index];
+
+                System.out.printf("%" + space + "d%s%d\n", arr[index], (!finish) ? " + " + arr[++index] + " = " : " = ", sum);
+
+                SumOneThird += sum;
             }
         }
-            if (n%3 > 0){
-                sum = 0;
-                for (int i = ((n/3) * 3); i<n; i++){
-                    sum = sum + array[i];
-                    if (i == n-1){
-                        System.out.print(array[i] + " = " + sum);
-                    }else{
-                        System.out.print(array[i] + "+");
-
-                    }
-                    in.close();
-                }
-            }
+        System.out.print("\nSum of ");
+        for(int i = 0; i < arr.length; i++){
+                System.out.printf("[%d]", arr[i]);
+        }
+        System.out.printf(" = %d", SumOneThird);
     }
 }
