@@ -20,6 +20,7 @@ public class BigInt {
             System.out.print(i);
         }
     }
+
     public static int[] add(int[] n, int[] m) {
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
@@ -40,6 +41,7 @@ public class BigInt {
                 sum[arrIndex] = sum[arrIndex] % 10;
             }
         }
+
         int [] finale;
         if (sum[0] > 9){
             finale = new int[sum.length + 1];
@@ -56,6 +58,7 @@ public class BigInt {
         }
         return finale;
     }
+
     public static char[] humanFormat(int[] nums) {
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
@@ -73,6 +76,7 @@ public class BigInt {
                 j++;
             } 
         }
+        
         return arr;
     }
 }
