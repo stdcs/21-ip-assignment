@@ -19,34 +19,33 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        int sumLeght = (n.leght > m.leght) ? n.length : m.length;
-        int[] sum = new int[sumLeght];
+        int sumLength = (n.length > m.length) ? n.length : m.length;
+        int[] sum = new int[sumLength];
 
         for (int i = 1; i <= sum.length; i++) {
-            int arrIndex = sumLeght - i;
-            if (n.leght - i >= 0 ) {
+            int arrIndex = sumLength - i;
+            if (n.length - i >= 0) {
                 sum[arrIndex] += n[n.length - i];
             }
-            if (m.leght - i >= 0 ) {
+            if (m.length - i >= 0) {
                 sum[arrIndex] += m[(m.length - i)];
             }
-            if(sum[arrIndex] >= 10 && arrIndex != 0) {
+            if (sum[arrIndex] >= 10 && arrIndex != 0) {
                 sum[arrIndex - 1] += sum[arrIndex] / 10;
                 sum[arrIndex] = sum[arrIndex] % 10;
             }
         }
         int[] finale;
-        if(sum[0] > 9) {
-            finale = new int[sum.leght+1];
+        if (sum[0] > 9) {
+            finale = new int[sum.length + 1];
             finale[0] = 1;
-            for (int i = 0; i < finale.leght - 1; i++) {
-                if(sum[i] > 9) {
+            for (int i = 0; i < finale.length - 1; i++) {
+                if (sum[i] > 9) {
                     sum[i] %= 10;
                 }
-                finale[i+1] = sum[i];
+                finale[i + 1] = sum[i];
             }
-        }
-        else {
+        } else {
             finale = sum;
         }
         return finale;
@@ -59,24 +58,23 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
-        int arrLenght = nums.leght;
-        arrLenght = nums.leght + ((nums.length - 1) / 3);
+        int arrLength = nums.length;
+        arrLength = nums.length + ((nums.length - 1) / 3);
 
-        char[] arr = new char[arrLenght];
+        char[] arr = new char[arrLength];
 
-        for(int i = 1, j = 1; i < arr.length + 1; i++) {
+        for (int i = 1, j = 1; i < arr.length + 1; i++) {
             int indexSum = arr.length - i;
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = '.';
-            }
-            else {
-                arr[indexSum] = (char)(nums[indexNums] + '0');
+            } else {
+                arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
             }
         }
         return arr;
-        
+
     }
 
     /**
@@ -87,7 +85,23 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
-        return new char[] {};
+        int arrLength = nums.length;
+
+        arrLength = nums.length + ((nums.length - 1) / 3);
+
+        char[] arr = new char[arrLength];
+
+        for (int i = 1, j = 1; i < arr.length + 1; i++) {
+            int indexSum = arr.length - i;
+            int indexNums = nums.length - j;
+            if ((i % 4) == 0) {
+                arr[indexSum] = sparator;
+            } else {
+                arr[indexSum] = (char) (nums[indexNums] + '0');
+                j++;
+            }
+        }
+        return arr;
     }
 
     /**
@@ -97,15 +111,21 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+        for (int i : nums) {
+            System.out.println(i);
+        }
     }
 
     /**
-     * Print an array into a human readable format of numbers
-     * .e.g. {'1', '_', 0, 0, 0} printed as 1_000
+     * Print an array into a human readable format of numbers .e.g. {'1', '_', 0, 0,
+     * 0} printed as 1_000
      *
      * @param nums the array to be printed as number
      * @return void
      */
     public static void print(char[] chars) {
+        for (char i : chars) {
+            System.out.println(i);
+        }
     }
 }
