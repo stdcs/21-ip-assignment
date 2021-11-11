@@ -28,7 +28,41 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-        return new int[] {};
+        int sumLength = (n.length > m.length) ? n.length : m.length;
+        int[] sum = new int[sumLength];
+
+        for (int i = 1; i <= sum.length; i++) {
+            int arrIndex = sumLength - i;
+
+            if (n.length - i >= 0) {
+                sum[arrIndex] += n[n.length - i];
+            }
+
+            if (m.length - i >= 0) {
+                sum[arrIndex] += m[(m.length - i)];
+            }
+
+            if (sum[arrIndex] >= 10 && arrIndex != 0) {
+                sum[arrIndex - 1] += sum[arrIndex] / 10;
+                sum[arrIndex] = sum[arrIndex] % 10;
+            }
+        }
+        int [] finale;
+        if (sum[0] > 9){
+            finale = new int[sum.length + 1];
+            finale[0] = 1;
+            for (int i = 0 ;i < finale.length-1; i++) {
+                if (sum[i] > 9) {
+                    sum[i] %= 10;
+                }
+                finale[i+1] = sum[i];
+            }
+        }
+        else {
+            finale = sum;
+        }
+        return finale;
+
     }
 
     /**
