@@ -10,9 +10,9 @@ package ip.syssrc.function;
  */
 public class BigInt {
     public static void main(String[] args) {
-        int[] n = {5, 9, 1, 9, 9, 9, 1, 9, 9, 9, 9, 9, 9, 9, 9, 9};
+        int[] n = {5, 9, 1, 9, 9, 9, 1, 9, 9, 9, 9, 9, 9, 9, 9,9};
         int[] m = {1, 3, 5, 7, 3, 4, 5, 1, 3, 2, 1, 8, 9, 0, 9};
-        print(humanFormat(add(n, m))); 
+        print(humanFormat(add(n, m), '-')); 
     }
     /**
      * Adds two arrays as the sum of two numbers, this method is akin to the add
@@ -64,17 +64,31 @@ public class BigInt {
     public static char[] humanFormat(int[] nums) {
         int index = 0;
         int size = nums.length;
-        size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
-        char[] separator = new char[size];
+        int opt = nums.length - 1;
+        size += (nums.length % 3 != 0) ? ((nums.length - 1) / 3) : (nums.length / 3);
 
-        for (int i = 0, t = 0; i < separator.length; i++) {
-            if (i != nums.length % 3 && i == 0 || index != 3) {
-                separator[i] = (char) (nums[t] + '0');
-                ++index;
-                ++t;
-            } else {
-                separator[i] = '.';
+        char[] separator = new char[size];
+        for (int i = 1, t = index + 1; i < separator.length + 1; i++) {
+            if (separator[size - 1] == '.') {
+                break;
+            }
+            // Re-state while decreasing the statements
+            index = separator.length - i;
+            opt = nums.length - t;
+
+            if (i % 4 != 0) {
+                separator[index] = (char) (nums[opt] + '0');
                 index = 0;
+                opt = 0;
+                ++t;
+
+            } else {
+                separator[index] = '.';
+                index = 0;
+            }
+
+            if (separator[0] == '.') { // Reform the separator when first index shows sparate object
+                separator[0] = '\0';
             }
         }
         return separator;
@@ -90,17 +104,31 @@ public class BigInt {
     public static char[] humanFormat(int[] nums, char sparator) {
         int index = 0;
         int size = nums.length;
-        size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
-        char[] separator = new char[size];
+        int opt = nums.length - 1;
+        size += (nums.length % 3 != 0) ? ((nums.length - 1) / 3) : (nums.length / 3);
 
-        for (int i = 0, t = 0; i < separator.length; i++) {
-            if (i != nums.length % 3 && i == 0 || index != 3) {
-                separator[i] = (char) (nums[t] + '0');
-                ++index;
-                ++t;
-            } else {
-                separator[i] = sparator;
+        char[] separator = new char[size];
+        for (int i = 1, t = index + 1; i < separator.length + 1; i++) {
+            if (separator[size - 1] == '.') {
+                break;
+            }
+            // Re-state while decreasing the statements
+            index = separator.length - i;
+            opt = nums.length - t;
+
+            if (i % 4 != 0) {
+                separator[index] = (char) (nums[opt] + '0');
                 index = 0;
+                opt = 0;
+                ++t;
+
+            } else {
+                separator[index] = sparator;
+                index = 0;
+            }
+
+            if (separator[0] == sparator) { // Reform the separator when first index shows sparate object
+                separator[0] = '\0';
             }
         }
         return separator;
