@@ -9,11 +9,7 @@ package ip.syssrc.function;
  *
  */
 public class BigInt {
-    public static void main(String[] args) {
-        int[] n = {5, 9, 1, 9, 9, 9, 1, 9, 9, 9, 9, 9, 9, 9, 9,9};
-        int[] m = {1, 3, 5, 7, 3, 4, 5, 1, 3, 2, 1, 8, 9, 0, 9};
-        print(humanFormat(add(n, m), '-')); 
-    }
+
     /**
      * Adds two arrays as the sum of two numbers, this method is akin to the add
      * method from BigInteger class
@@ -69,10 +65,11 @@ public class BigInt {
 
         char[] separator = new char[size];
         for (int i = 1, t = index + 1; i < separator.length + 1; i++) {
+
             if (separator[size - 1] == '.') {
                 break;
             }
-            // Re-state while decreasing the statements
+            // Re-state while decreasing indicator values
             index = separator.length - i;
             opt = nums.length - t;
 
@@ -81,7 +78,6 @@ public class BigInt {
                 index = 0;
                 opt = 0;
                 ++t;
-
             } else {
                 separator[index] = '.';
                 index = 0;
@@ -109,10 +105,11 @@ public class BigInt {
 
         char[] separator = new char[size];
         for (int i = 1, t = index + 1; i < separator.length + 1; i++) {
+
             if (separator[size - 1] == '.') {
                 break;
             }
-            // Re-state while decreasing the statements
+            // Re-state while decreasing indicator values
             index = separator.length - i;
             opt = nums.length - t;
 
@@ -121,7 +118,6 @@ public class BigInt {
                 index = 0;
                 opt = 0;
                 ++t;
-
             } else {
                 separator[index] = sparator;
                 index = 0;
