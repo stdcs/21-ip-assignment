@@ -9,7 +9,11 @@ package ip.syssrc.function;
  *
  */
 public class BigInt {
-
+    public static void main(String[] args) {
+        int[] n = {5, 9, 1, 9, 9, 9, 1, 9, 9, 9, 9, 9, 9, 9, 9, 9};
+        int[] m = {1, 3, 5, 7, 3, 4, 5, 1, 3, 2, 1, 8, 9, 0, 9};
+        print(humanFormat(add(n, m))); 
+    }
     /**
      * Adds two arrays as the sum of two numbers, this method is akin to the add
      * method from BigInteger class
@@ -60,8 +64,9 @@ public class BigInt {
     public static char[] humanFormat(int[] nums) {
         int index = 0;
         int size = nums.length;
-        char[] separator = new char[size];
         size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
+        char[] separator = new char[size];
+
         for (int i = 0, t = 0; i < separator.length; i++) {
             if (i != nums.length % 3 && i == 0 || index != 3) {
                 separator[i] = (char) (nums[t] + '0');
@@ -85,8 +90,9 @@ public class BigInt {
     public static char[] humanFormat(int[] nums, char sparator) {
         int index = 0;
         int size = nums.length;
-        char[] separator = new char[size];
         size += (nums.length % 3 != 0) ? ((nums.length / 3) - 1) : (nums.length / 3);
+        char[] separator = new char[size];
+
         for (int i = 0, t = 0; i < separator.length; i++) {
             if (i != nums.length % 3 && i == 0 || index != 3) {
                 separator[i] = (char) (nums[t] + '0');
