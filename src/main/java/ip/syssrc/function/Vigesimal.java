@@ -19,7 +19,7 @@ public class Vigesimal {
             int modulo = (n % 20);
             arr[i] = (modulo > 9) ? (char) (modulo + 55) : (char) (modulo + '0');
             n /= 20;
-        } 
+        }
         return arr;
 
     }

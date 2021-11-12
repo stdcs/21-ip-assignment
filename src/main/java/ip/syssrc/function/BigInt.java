@@ -73,7 +73,7 @@ public class BigInt {
             else {
                 arr[indexSum] = (char)(nums[indexNums]+'0');
                 j++;
-            } 
+            }
         }
         return arr;
     }
