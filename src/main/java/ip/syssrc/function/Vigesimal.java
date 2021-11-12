@@ -48,10 +48,16 @@ public class Vigesimal {
                 char[] arr = toVigesimal((i * j));
 
                 /** Print Char Array */
-                for (char c : arr) {
-                    System.out.printf("%c", c);
+                if (arr.length == 1) {
+                    System.out.printf("%5c", arr[0]);
                 }
-                System.out.printf("\t");
+
+                if (arr.length > 1) {
+                    System.out.printf("%3c", ' ');
+                    for (int k = 0; k < arr.length; k++) {
+                        System.out.printf("%c", arr[k]);
+                    }
+                }
 
             }
             System.out.printf("\n");
