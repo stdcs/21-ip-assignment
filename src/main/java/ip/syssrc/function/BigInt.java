@@ -10,7 +10,6 @@ package ip.syssrc.function;
  */
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class BigInt {
     public static void main(String[] args) {
         int[] a = {2,3,4,5};
