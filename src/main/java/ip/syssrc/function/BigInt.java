@@ -106,7 +106,7 @@ public class BigInt {
         char[] separator = new char[size];
         for (int i = 1, t = index + 1; i < separator.length + 1; i++) {
 
-            if (separator[size - 1] == '.') {
+            if (separator[size - 1] == sparator) {
                 break;
             }
             // Re-state while decreasing indicator values
