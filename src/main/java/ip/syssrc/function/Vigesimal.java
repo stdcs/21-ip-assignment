@@ -41,7 +41,9 @@ public class Vigesimal {
                     System.out.printf("%s", c);
                 }
             }
-            System.out.printf("\n");
+
+        }
+        System.out.printf("\n");
         }
     }
 }
