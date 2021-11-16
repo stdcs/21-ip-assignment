@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.1
  *
- * @author H071211045 - MUHAMMAD SOFYAN DAUD PUJAS <gaero38@gmail.com>
+ * @author H071211045 - Muhammad Sofyan Daud Pujas <gaero38@gmail.com>
  *
  */
 public class URLParser {
