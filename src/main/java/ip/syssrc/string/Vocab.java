@@ -17,6 +17,7 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
+        word = "Un" + word;
         return new String();
     }
 
@@ -29,7 +30,16 @@ public class Vocab {
      *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
-        return new String();
+        String uni = new String(prefix + "::");
+        int i = 0;
+        
+        while( i < groups.length){
+            groups[i] = prefix.concat(groups[i]);
+            i++;
+        }
+        
+        uni += String.join("::", groups);
+        return new String(uni);
     }
 
     /**
