@@ -23,7 +23,7 @@ public class MatricesPad {
         int biggest;
         int leadingZero = 0;
 
-        biggest = (start > end) ? start : end;
+        biggest = (start > end) ? start : end;     //2 5 10
         leadingZero = 0;
         while (biggest > 0) {
             biggest /= 10;
@@ -31,7 +31,9 @@ public class MatricesPad {
         }
 
         for (int i = start, j = 1; (start < end ? i <= end : i >= end); j++) {
-            System.out.printf("%0" + leadingZero + "d%s", i, ((j % size == 0 && j != 0) || i == end) ? "\n" : "");
+            System.out.printf("%0" + leadingZero + "d", i);
+            // .printf("%03d", i);
+            System.out.printf("%s", (j % size == 0 || i == end) ? "\n" : "");
             if (start < end) {
                 i++;
             } else {

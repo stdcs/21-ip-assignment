@@ -8,6 +8,7 @@ package ip.syssrc.function;
  * @author H071211080 - Dirgantry Leonard Nugrah Boro <futarokum6@gmail.com>
  */
 public class Vigesimal {
+    
 
     public static void main(String[] args) {
         table();

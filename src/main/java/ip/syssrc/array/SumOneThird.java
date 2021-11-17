@@ -1,4 +1,4 @@
-package ip.syssrc.array;
+ package ip.syssrc.array;
 
 /**
  * SumOneThird

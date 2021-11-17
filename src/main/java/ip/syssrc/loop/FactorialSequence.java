@@ -18,21 +18,18 @@ public class FactorialSequence {
 
         int fac = sc.nextInt();
         long result = 1;
-        String kal = "";
-
-        for (int i = fac; i > 0; i--) {
-            result *= i;
-
-            if (i > 1)
-                kal += i + " x ";
-            else
-                kal += i;
-
+        System.out.printf("%d! = ", fac);
+        if (fac < 2) {
+            System.out.printf("%d = 1\n", fac);
+            return;
         }
-        if (fac != 0)
-            System.out.printf("%d! = %s = %d", fac, kal, result);
-        else
-            System.out.printf("%d! = %d", fac, result);
+        
+        for (int i = fac; i >= 2; i--) {
+            result *= i;
+            System.out.printf("%d x ", i);        
+        }
+
+        System.out.printf("1 = %d\n", result);
 
     }
 
