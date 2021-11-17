@@ -68,10 +68,11 @@ public class Vocab {
             }
         }
 
-        /* if (opt[opt.length - SuffixNess.length() - 1] == 'i') {
-            opt[opt.length - SuffixNess.length() - 1] = 'y';
-        } */
-        
+        /*
+         * if (opt[opt.length - SuffixNess.length() - 1] == 'i') { opt[opt.length -
+         * SuffixNess.length() - 1] = 'y'; }
+         */
+
         String removed = new String(opt);
         return removed;
     }
