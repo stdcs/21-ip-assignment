@@ -22,6 +22,15 @@ public class URLParser {
         String[] urlEncode = { "%24", "%26", "%2b", "%2c", "%2f", "%3a", "3b", 
         "%3b", "%3d", "%3f", "%40", "%20", "%22", "%3c", "%3e", "%23", "%25", 
         "%7b", "%7d", "%5c", "%5e", "%7e", "%5b", "%5d", "%60"};
+        int index = 0;
+
+        while (index < Character.length){
+            if (rawURL.contains(Character[index])){
+                urlEncode[index] = urlEncode[index].toUpperCase();
+                rawURL = rawURL.replaceAll(Character[index], urlEncode[index]);
+            }
+            index++;
+        }
         return new String();
     }
 
