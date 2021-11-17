@@ -100,9 +100,4 @@ public class Vocab {
         }
         return parts[index];
     }
-
-    public static void main(String[] args) {
-        System.out.println(removeSuffixNess("Business"));
-
-    }
 }
