@@ -9,11 +9,6 @@ package ip.syssrc.string;
  */
 public class FizzBuzz {
 
-    public static void main(String[] args) {
-        String fizz = new String("Babatunde");
-        System.out.println(format(fizz));
-    }
-
     /**
      * Format a word into Fizz for each F or f and Buzz for each B or b
      *
@@ -22,15 +17,14 @@ public class FizzBuzz {
      *         doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
-        /** Menghitung jumalah Ff dan Bb */
-        String fChar = word.replace("f", "");
-        fChar = fChar.replace("F", "");
+        /** Menghitung jumlah Ff dan Bb */
+        String fChar = word.replace("f", "").replace("F", "");
         int fCount = word.length() - fChar.length();
 
-        String bChar = word.replace("b", "");
-        bChar = bChar.replace("B", "");
+        String bChar = word.replace("b", "").replace("B", "");
         int bCount = word.length() - bChar.length();
 
+        /** Membuat String FizzBuzz berdasarkan jumlah Ff dan Bb */
         String fizzBuzz = new String();
 
         if (fCount == 0 && bCount == 0) {
