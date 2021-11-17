@@ -68,6 +68,18 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        return new String();
+        String[] sentences = sentence.split(" ");
+        if (index == -1) {
+            index = sentences.length - 1;
+        }
+
+        String adj = new String(sentences[index]);
+        if (adj.endsWith(".")) {
+            adj = adj.replace(".", "");
+        }
+
+        String verb = new String(adj.concat("en"));
+
+        return new String(verb);
     }
 }
