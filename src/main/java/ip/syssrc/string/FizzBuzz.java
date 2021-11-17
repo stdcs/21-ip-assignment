@@ -40,6 +40,6 @@ public class FizzBuzz {
             converted = converted.concat("Buzz");
         }
 
-        return converted;
+        return new String(converted);
     }
 }
