@@ -22,6 +22,7 @@ public class FizzBuzz {
      *         doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
+        /** Menghitung jumalah Ff dan Bb */
         String fChar = word.replace("f", "");
         fChar = fChar.replace("F", "");
         int fCount = word.length() - fChar.length();
