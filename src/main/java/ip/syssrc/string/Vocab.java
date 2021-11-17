@@ -48,7 +48,15 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
-        return new String();
+        if (word.endsWith("ness")) {
+            word = word.replace("ness", "");
+        }
+
+        if (word.endsWith("i")) {
+            word = word.replace(word.charAt((word.length() - 1)), 'y');
+        }
+
+        return new String(word);
     }
 
     /**
