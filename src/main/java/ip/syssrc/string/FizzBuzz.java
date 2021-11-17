@@ -1,22 +1,50 @@
 package ip.syssrc.string;
 
+import static java.lang.String.valueOf;
+
 /**
  * FizzBuzz
  *
  * Assignment 5.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211073 - Djulizah Bonita L
  */
 public class FizzBuzz {
+
+    public static void main(String[] args) {
+        System.out.println(format("mas Mukhtar"));
+    }
 
     /**
      * Format a word into Fizz for each F or f and Buzz for each B or b
      *
      * @param word the word to be converted into FIzzBuzz
-     * @return string of the FizzBuzz format of the word or the word it self if
-     *         it doesn't contain 'Ff' or 'Bb'
+     * @return string of the FizzBuzz format of the word or the word it self if it
+     *         doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
-        return new String();
+                
+        String charFf = word.replaceAll("f", "").replaceAll("F", "");
+        int freqFf = word.length() - charFf.length();
+
+        String charBb = word.replaceAll("b", "").replaceAll("B", "");
+        int freqBb = word.length() - charBb.length();
+
+
+        String fizzBuzz = new String();
+        if (freqBb == 0 && freqFf == 0) {
+            fizzBuzz = word;
+        }
+
+        for (int i = 0; i < freqFf; i++) {
+            fizzBuzz = fizzBuzz.concat("Fizz");
+        }
+
+        for (int i = 0; i < freqBb; i++) {
+            fizzBuzz = fizzBuzz.concat("Buzz");
+        }
+      
+
+        return new String(fizzBuzz);
     }
-}
+} 
