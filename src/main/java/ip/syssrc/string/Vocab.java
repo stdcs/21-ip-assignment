@@ -32,7 +32,7 @@ public class Vocab {
     public static String prefixes(String prefix, String... groups) {
         String uni = new String(prefix + "::");
         int i = 0;
-        
+
         while( i < groups.length){
             groups[i] = prefix.concat(groups[i]);
             i++;
@@ -49,6 +49,13 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
+        if (word.endsWith("ness")){
+            word = word.replace("ness", "");
+
+            if (word.endsWith("i")){
+                word = word.replace("i", "y");
+            }
+        }
         return new String();
     }
 
