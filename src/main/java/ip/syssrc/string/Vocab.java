@@ -59,15 +59,21 @@ public class Vocab {
      */
     public static String removeSuffixNess(String word) {
         String SuffixNess = new String("ness");
-        StringBuffer removed = new StringBuffer(word);
+        char[] opt = word.toCharArray();
 
         if (word.endsWith(SuffixNess)) {
-            for (int i = 1; i <= SuffixNess.length(); i++) {
-                word = removed.deleteCharAt(removed.length() - 1).toString();
+            for (int i = opt.length - 1; i > opt.length - 5; i--) {
+                opt[i] = '\0';
                 /* word = word.replaceAll(SuffixNess, ""); */
             }
         }
-        return word;
+
+        /* if (opt[opt.length - SuffixNess.length() - 1] == 'i') {
+            opt[opt.length - SuffixNess.length() - 1] = 'y';
+        } */
+        
+        String removed = new String(opt);
+        return removed;
     }
 
     /**
@@ -92,5 +98,10 @@ public class Vocab {
             parts[index] = parts[index].concat(converter);
         }
         return parts[index];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(removeSuffixNess("Business"));
+
     }
 }
