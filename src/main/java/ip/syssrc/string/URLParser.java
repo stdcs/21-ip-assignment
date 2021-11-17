@@ -30,7 +30,7 @@ public class URLParser {
             }
         }
 
-        return rawURL;
+        return new String(rawURL);
     }
 
     /**
@@ -53,6 +53,6 @@ public class URLParser {
             }
         }
 
-        return encodedURL;
+        return new String(encodedURL);
     }
 }
