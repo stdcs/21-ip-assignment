@@ -23,7 +23,7 @@ public class Vocab {
         if (!word.startsWith(prefixUn)) {
             word = prefixUn + word;
         }
-        return word;
+        return new String(word);
     }
 
     /**
@@ -48,7 +48,7 @@ public class Vocab {
             merged = merged.concat(separator);
             ++opt;
         }
-        return merged;
+        return new String(merged);
     }
 
     /**
@@ -71,8 +71,7 @@ public class Vocab {
             opt[opt.length - SuffixNess.length() - 1] = 'y';
         }
 
-        String removed = new String(opt);
-        return removed;
+        return new String(opt);
     }
 
     /**
