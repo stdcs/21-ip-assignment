@@ -18,7 +18,7 @@ public class Vocab {
      */
     public static String addPrefixUn(String word) {
         word = "Un" + word;
-        return new String();
+        return new String(word);
     }
 
     /**
@@ -56,7 +56,7 @@ public class Vocab {
                 word = word.replace("i", "y");
             }
         }
-        return new String();
+        return new String(word);
     }
 
     /**
@@ -68,6 +68,20 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        return new String();
+        String[] dum = sentence.split(" ");
+
+        if(index == -1){
+            index = dum.length - 1;
+        }
+
+        String dom = new String(dum[index]);
+
+        if(dom.endsWith(".")){
+            dom = dom.replace(".", "");
+        }
+
+        dom = dom.concat("en");
+
+        return new String(dom);
     }
 }
