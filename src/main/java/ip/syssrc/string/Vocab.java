@@ -17,7 +17,9 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        return new String();
+        String prefixUn = new String("un");
+        String prefixWord = new String(prefixUn + word);
+        return new String(prefixWord);
     }
 
     /**
