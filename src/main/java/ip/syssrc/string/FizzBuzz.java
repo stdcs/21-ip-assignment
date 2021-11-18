@@ -23,17 +23,17 @@ public class FizzBuzz {
         String charBb = word.replaceAll("b", "").replaceAll("B", "");
         int freqBb = word.length() - charBb.length();
         
-        String fizzBuzz = newString();
+        String fizzBuzz = new String();
         if (freqBb == 0 && freqFf == 0) {
             fizzBuzz = word;
         }
 
         for (int i = 0; i < freqFf; i++) {
-            fizzBuzz = FizzBuzz.concat("Fizz");
+            fizzBuzz = fizzBuzz.concat("Fizz");
         }
 
         for (int i = 0; i < freqBb; i++) {
-            fizzBuzz = FizzBuzz.concat("Buzz");
+            fizzBuzz = fizzBuzz.concat("Buzz");
         }
         
         return new String(fizzBuzz);
