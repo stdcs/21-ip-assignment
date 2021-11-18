@@ -20,6 +20,9 @@ public class FizzBuzz {
         String charFf = word.replaceAll("f", "").replaceAll("F", "");
         int freqFf = word.length() - charFf.length();
 
+        String charBb = word.replaceAll("b", "").replaceAll("B", "");
+        int freqBb = word.length() - charBb.length();
+
         return new String();
     }
 }
