@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
  */
 public class FizzBuzz {
 
@@ -17,6 +17,27 @@ public class FizzBuzz {
      *         it doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
-        return new String();
+        int fizzCount = word.length() - word.toLowerCase().replace("f", "").length();
+            int buzzCount = word.length() - word.toLowerCase().replace("b", "").length();
+            String converted = "";
+            Boolean convert = true;
+            if (fizzCount <= 0 && buzzCount <= 0) {
+                convert = false;
+                converted = word;
+            }
+            for (int i = 0; i < fizzCount; i++) {
+                if (!convert) {
+                    break;
+                }
+                converted = converted.concat("Fizz");
+            }
+            for (int i = 0; i < buzzCount; i++) {
+                if (!convert) {
+                    break;
+                }
+                converted = converted.concat("Buzz");
+            }
+            return converted;
+        }
     }
 }
