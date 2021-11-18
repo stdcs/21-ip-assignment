@@ -41,17 +41,24 @@ public class Eyes {
 =======
         int n = li.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i == j) {
-                    System.out.print(1 + " ");
-                } else {
-                    System.out.print(0 + " ");
-                }
-            }
-            System.out.println();
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n; j++){
+                    System.out.printf("%d%s", (i == j) ? 1 :0, (j <= n) ? " " : "\n");
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+        
         }
-    }
+        
+        System.out.println();
     
+     }
+     
+    }
 }
+<<<<<<< HEAD
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+
+
+        
+    
+>>>>>>> 04f809b (fix (loop/Eyes): add change)
