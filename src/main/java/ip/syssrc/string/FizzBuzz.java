@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211087 - Syarif Hidayat <syarifdayat119@gmail.com>
  */
 public class FizzBuzz {
 
@@ -17,6 +17,29 @@ public class FizzBuzz {
      *         it doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
-        return new String();
+        
+        //Ff
+        String charFf = word.replaceAll("f","").replaceAll("F","");
+        int freqFf = word.length()-charBb.length();
+
+        //Bb
+        String charBb = word.replaceAll("b","").replaceAll("B","");
+        int freqBb = word.length()-charBb.length();
+
+        String fizzbuzz = new String();
+        if (freqBb == 0 && freqFf == 0){
+            fizzBuzz = word;
+        }
+
+        //Fizz
+        for(int i = 0; i<freqFf; i++){
+            fizzBuzz = fizzBuzz.concat("Fizz");
+        }
+
+        //Buzz
+        for(int i = 0; i<freqBb; i++){
+            fizzBuzz = fizzBuzz.concat("Buzz");
+        }
+        return new String(FizzBuzz);
     }
 }
