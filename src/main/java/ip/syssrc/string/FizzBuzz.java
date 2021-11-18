@@ -36,6 +36,6 @@ public class FizzBuzz {
             fizzBuzz = fizzBuzz.concat("Buzz");
         }
 
-        return new String();
+        return new String(fizzBuzz);
     }
 }
