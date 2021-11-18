@@ -63,9 +63,13 @@ public class RoleAccess {
                     subMenuIndex = subMenuIndex + 1;
                     System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex);
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 >>>>>>> d036487 (feat(conditional/cashier): add 'java.util.Scanner' object)
+=======
+                    
+>>>>>>> dd048ed (feat (conditional/RoleAccess): add 'switch' object)
                 default:
                     menuIndex = menuIndex + 1;
                     subMenuIndex = 0;
