@@ -30,7 +30,14 @@ public class Vocab {
      *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
-        return new String();
+        String uni = new String(prefix + "::");
+
+        for (int i = 0; i < groups.length; i++) {
+            groups[i] = prefix.concat(groups[i]);
+        }
+
+        uni += String.join("::", groups);
+        return new String(uni);
     }
 
     /**
