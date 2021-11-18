@@ -1,29 +1,10 @@
 package ip.syssrc.function;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import javax.swing.JPopupMenu.Separator;
-
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
-import javax.swing.JPopupMenu.Separator;
-
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
 /**
  * BigInt
  *
  * Assignment 4.2
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
-=======
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
- * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
  *
  */
 public class BigInt {
@@ -37,11 +18,6 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
 
@@ -74,10 +50,6 @@ public class BigInt {
         } else {
             finale = sum;
         }
-<<<<<<< HEAD
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         return new int[] {};
     }
 
@@ -88,11 +60,6 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -108,10 +75,6 @@ public class BigInt {
                 j++;
             } 
         }
-<<<<<<< HEAD
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         return new char[] {};
     }
 
@@ -123,11 +86,6 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -143,10 +101,6 @@ public class BigInt {
                 j++;
             } 
         }
-<<<<<<< HEAD
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         return new char[] {};
     }
 
@@ -157,18 +111,9 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         for (int i : nums) {
             System.out.println(i);
         }
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
-        for (int i : nums) {
-            System.out.println(i);
-        }
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
     }
 
     /**
@@ -179,17 +124,8 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         for (char i : chars) {
             System.out.println(i);
         }
->>>>>>> eea20b5 (feat(function/BigInt): add code)
-=======
-        for (char i : chars) {
-            System.out.println(i);
-        }
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
     }
 }

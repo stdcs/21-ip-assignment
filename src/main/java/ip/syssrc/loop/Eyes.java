@@ -18,27 +18,14 @@ public class Eyes {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
-=======
                 if (i == j) {
                     System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
                 } else {
                     System.out.printf("%d%s", (i != j) ? 0 : 1, (j <= n) ? " " : "\n");;
                 }
->>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
-=======
                     System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
->>>>>>> 9c1dfb9 (fix(loop/Eyes): delete 'if')
-=======
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
->>>>>>> 4e7114f (fix(loop/Eyes): delete space)
-=======
-                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
->>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
             }
             System.out.println();
         }
