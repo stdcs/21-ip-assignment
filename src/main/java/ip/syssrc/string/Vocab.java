@@ -21,7 +21,7 @@ public class Vocab {
         word = word.toLowerCase();
 
         if (!word.startsWith(prefixUn)) {
-            word = prefixUn + word;
+            word = prefixUn.concat(word);
         }
         return new String(word);
     }
@@ -56,20 +56,13 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
-        String SuffixNess = new String("ness");
-        char[] opt = word.toCharArray();
-
-        if (word.endsWith(SuffixNess)) {
-            for (int i = opt.length - 1; i > opt.length - 5; i--) {
-                opt[i] = '\0';
-            }
+        if (word.endsWith("ness")) {
+            word = word.replaceAll("ness", "");
         }
-
-        if (opt[opt.length - SuffixNess.length() - 1] == 'i') {
-            opt[opt.length - SuffixNess.length() - 1] = 'y';
+        if (word.endsWith("i")) {
+            word = word.replace(word.charAt((word.length() - 1)), 'y');
         }
-
-        return new String(opt);
+        return new String(word);
     }
 
     /**
