@@ -13,6 +13,7 @@ public class MatricesPad {
 
     public static void main(String[] args) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -40,6 +41,12 @@ public class MatricesPad {
         int start = nanda.nextInt();
         int end = nanda.nextInt();
         int size = nanda.nextInt();
+=======
+        Scanner dede = new Scanner (System.in);
+        int start = dede.nextInt();
+        int end = dede.nextInt();
+        int size = dede.nextInt();
+>>>>>>> 2e04a02 (feat(loop/MatricesPad): add format 'for' and 'if')
 
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
