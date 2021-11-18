@@ -8,6 +8,7 @@ package ip.syssrc.array;
  * @author H071211071 - Muhammad Dzacky Ilham <dzackyilham01@gmail.com>
  *
  */
+ 
 import java.util.Scanner;
 public class CountEach {
 
