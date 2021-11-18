@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <Unnisadhiyaa25@gmail.com>
  *
  */
 public class Vocab {
@@ -17,7 +17,10 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        return new String();
+        word = "Un" + word;
+
+        return new String(word);
+        
     }
 
     /**
