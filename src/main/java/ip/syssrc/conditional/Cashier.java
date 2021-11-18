@@ -22,6 +22,7 @@ public class Cashier {
         try {
             System.out.print("Berapakah total harga belanja anda ? ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             totalBelanja = nanda.nextInt();
             System.out.print("Berapakah total uang anda bayaran ? ");
             uang = nanda.nextInt();
@@ -103,8 +104,11 @@ public class Cashier {
         }else {
 =======
             totalBelanja = nanda.next();
+=======
+            totalBelanja = nanda.nextInt();
+>>>>>>> b9b44d1 (fix(conditional/Cashier): change method 'next()' to 'nextInt()')
             System.out.print("Berapakah total uang anda bayaran ? ");
-            uang = nanda.next();
+            uang = nanda.nextInt();
         } catch (Exception e) {
 >>>>>>> 6ee24d0 (fix(conditional/Cashier): change String to int)
             System.out.println("Maaf, pastikan inputan anda adalah angka");
