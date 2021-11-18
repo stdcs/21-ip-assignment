@@ -86,6 +86,7 @@ public class RoleAccess {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -101,3 +102,6 @@ public class RoleAccess {
 >>>>>>> 917fb71 (fix(conditional/RoleAccess): change indentasi)
 
 >>>>>>> c141e38 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
+=======
+}
+>>>>>>> ee756d9 (fix(conditional/RoleAccess): add 'change code' object)
