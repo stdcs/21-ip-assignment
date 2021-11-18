@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
  *
  */
 public class Vocab {
@@ -17,7 +17,12 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        return new String();
+        String prefixUn = new String("un");
+        word = word.toLowerCase();
+        if (!word.startsWith(prefixUn)) {
+            word = prefixUn + word;
+        }
+        return word;
     }
 
     /**
@@ -29,7 +34,18 @@ public class Vocab {
      *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
-        return new String();
+        String merged = "";
+    String separator = new String(" :: ");
+    int opt = 1;
+    for (String element : groups) {
+        merged = merged.concat(prefix).concat(element);
+        if (opt >= groups.length) {
+            break;
+        }
+        merged = merged.concat(separator);
+        ++opt;
+    }
+    return merged;
     }
 
     /**
@@ -39,7 +55,16 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
-        return new String();
+        String SuffixNess = new String("ness");
+    char[] opt = word.toCharArray();
+    if (word.endsWith(SuffixNess)) {
+        for (int i = opt.length - 1; i > opt.length - 5; i--) {
+            opt[i] = '\0';
+            /* word = word.replaceAll(SuffixNess, ""); */
+        }
+    }
+    String removed = new String(opt);
+    return removed;
     }
 
     /**
@@ -51,6 +76,21 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        return new String();
+        String converter = new String("en");
+        String[] parts = sentence.split(" ");
+        if (index < 0) {
+            index = parts.length + index;
+        } else if (index > parts.length - 1) { // Improved condition
+            index = Math.abs(parts.length - index);
+        }
+        if (!parts[index].endsWith(converter)) {
+            parts[index] = parts[index].concat(converter);
+        }
+        return parts[index];
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(removeSuffixNess("Business"));
+    
     }
 }
