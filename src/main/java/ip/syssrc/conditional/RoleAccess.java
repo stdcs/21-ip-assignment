@@ -22,11 +22,25 @@ public class RoleAccess {
 
             switch (args[0]) {
                 case "Super Admin":
+<<<<<<< HEAD
                 case "Admin":    
                 case "User":
                     isValidRole = true;
                     break;
                 
+=======
+                    isValidRole = true;
+                    break;
+                case "Admin":
+                    isValidRole = true;
+                    break;
+                case "User":
+                    isValidRole = true;
+                    break;
+                default:
+                    isValidRole = false;
+                    break;
+>>>>>>> d036487 (feat(conditional/cashier): add 'java.util.Scanner' object)
             }
             if (isValidRole == true) {
                 switch (args[0] ) {
@@ -48,7 +62,10 @@ public class RoleAccess {
                     System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
                     subMenuIndex = subMenuIndex + 1;
                     System.out.printf("%2d.%d. CRUD User\n\n", menuIndex, subMenuIndex);
+<<<<<<< HEAD
                     
+=======
+>>>>>>> d036487 (feat(conditional/cashier): add 'java.util.Scanner' object)
                 default:
                     menuIndex = menuIndex + 1;
                     subMenuIndex = 0;
