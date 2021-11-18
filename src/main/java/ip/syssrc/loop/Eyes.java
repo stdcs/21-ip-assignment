@@ -1,10 +1,15 @@
 package ip.syssrc.loop;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Scanner;
 
 =======
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+import java.util.Scanner;
+
+>>>>>>> 5e6f70a (fix (loop/Eyes): add change)
 /**
  * Eyes
  *
@@ -18,6 +23,7 @@ public class Eyes {
     public static void main(String[] args) {
         Scanner li = new Scanner(System.in);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
        int n = li.nextInt();
 
@@ -40,6 +46,9 @@ public class Eyes {
     
 =======
         int n = li.nextInt();
+=======
+       int n = li.nextInt();
+>>>>>>> 5e6f70a (fix (loop/Eyes): add change)
 
         for (int i = 1; i <= n; i++){
             for (int j = 1; j <= n; j++){
