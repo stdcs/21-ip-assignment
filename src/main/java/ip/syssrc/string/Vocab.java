@@ -37,16 +37,14 @@ public class Vocab {
     public static String prefixes(String prefix, String... groups) {
         String merged = "";
         String separator = new String(" :: ");
-        int opt = 1;
 
-        for (String element : groups) {
+        for (int i = 0; i < groups.length; i++) {
+            String element = groups[i];
             merged = merged.concat(prefix).concat(element);
-
-            if (opt >= groups.length) {
+            if (i >= groups.length - 1) {
                 break;
             }
             merged = merged.concat(separator);
-            ++opt;
         }
         return new String(merged);
     }
