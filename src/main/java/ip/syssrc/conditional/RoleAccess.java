@@ -87,5 +87,10 @@ public class RoleAccess {
 =======
 }
 
+<<<<<<< HEAD
     
 >>>>>>> 54c43bf (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
+=======
+    }
+
+>>>>>>> c141e38 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
