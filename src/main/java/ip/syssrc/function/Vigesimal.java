@@ -10,6 +10,7 @@ package ip.syssrc.function;
 public class Vigesimal {
     public static void main(String[] args) {
         table();
+        //tina
     }
     /**
      * Convert a radix-10 (decimal) number into radix-20 (vigesimal) number
@@ -45,6 +46,7 @@ public class Vigesimal {
                 System.out.printf("%3s",vig);
             }
             System.out.println("");
+            //tina
         }
     }
 }
