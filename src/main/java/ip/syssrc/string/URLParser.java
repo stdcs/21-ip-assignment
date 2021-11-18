@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.1
  *
- * @author H0711211083 - Liska Dewi Rombe <rombeliska@gmail.com>
+ * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
  *
  */
 public class URLParser {
