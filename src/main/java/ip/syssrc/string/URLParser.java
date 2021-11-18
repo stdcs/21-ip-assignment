@@ -1,5 +1,7 @@
 package ip.syssrc.string;
 
+import java.net.URL;
+
 /**
  * URLParser
  *
@@ -17,7 +19,17 @@ public class URLParser {
      * @return string of encoded URL
      */
     public static String encode(String rawURL) {
-        return new String();
+
+        String[] symbol = {"$", "&", "+", ",", "/", ":", ";", "=", "?", "@", " ", "\"", "<", ">", "#", "%", "{", "}", "\\", "^", "~", "[", "]", "`" };
+        String[] URL = {"%24", "%26", "%2b", "%2c", "%2f", "%3a", "%3b", "%3d", "%3f", "%40", "%20", "%22", "%3c", "%3e", "%23","%25", "%7b", "%7d", "%5c", "%5e", "%7e", "%5b", "%5d", "%60"};
+
+        for(int i = 0; i < symbol.length; i++) {
+            if(rawURL.contains(symbol[i])) {
+                rawURL = rawURL.replaceAll(symbol[i], URL[i]);
+            }
+        }
+        
+        return new String(rawURL);
     }
 
     /**
@@ -27,6 +39,16 @@ public class URLParser {
      * @return string of decoded URL
      */
     public static String decode(String encodedURL) {
-        return new String();
+
+        String[] symbol = {"$", "&", "+", ",", "/", ":", ";", "=", "?", "@", " ", "\"", "<", ">", "#", "%", "{", "}", "\\", "^", "~", "[", "]", "`" };
+        String [] URL = {"%24", "%26", "%2b", "%2c", "%2f", "%3a", "%3b", "%3d", "%3f", "%40", "%20", "%22", "%3c", "%3e", "%23","%25", "%7b", "%7d", "%5c", "%5e", "%7e", "%5b", "%5d", "%60"};
+
+        for(int i = 0; i < URL.length; i++) {
+            if(encodedURL.contains(URL[i])) {
+                encodedURL = encodedURL.replaceAll(URL[i], symbol[i]);
+            }
+        }
+        
+        return new String(encodedURL);
     }
 }
