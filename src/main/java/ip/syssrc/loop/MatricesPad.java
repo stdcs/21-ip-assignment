@@ -13,6 +13,7 @@ public class MatricesPad {
 
     public static void main(String[] args) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner li = new Scanner(System.in);
 
         int start = li.nextInt();
@@ -25,6 +26,13 @@ public class MatricesPad {
         int end = lio.nextInt();
         int size = lio.nextInt();
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        Scanner li = new Scanner(System.in);
+
+        int start = li.nextInt();
+        int end = li.nextInt();
+        int size = li.nextInt();
+>>>>>>> 316d1d2 (feat (loop/MatricesPad): add code2)
 
         int range = end - start;
         int temp = start;
@@ -110,10 +118,14 @@ public class MatricesPad {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         li.close();
 =======
         lio.close();
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        li.close();
+>>>>>>> 316d1d2 (feat (loop/MatricesPad): add code2)
     }
     
     }
