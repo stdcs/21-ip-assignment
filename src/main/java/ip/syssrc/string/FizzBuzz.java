@@ -23,6 +23,11 @@ public class FizzBuzz {
         String charBb = word.replaceAll("b", "").replaceAll("B", "");
         int freqBb = word.length() - charBb.length();
 
+        String fizzBuzz = new String();
+        if (freqBb == 0 && freqFf == 0) {
+            fizzBuzz = word;
+        }
+
         return new String();
     }
 }
