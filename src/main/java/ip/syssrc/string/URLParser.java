@@ -26,8 +26,8 @@ public class URLParser {
                 rawURL = rawURL.replaceAll(symbol[i], URL[i]);
             }
         }
-        
-        return new String();
+
+        return new String(rawURL);
     }
 
     /**
