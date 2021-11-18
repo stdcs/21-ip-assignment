@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211074- Wd. Ananda Lesmono <nandalesmono@gmail.com>
  *
  */
 public class Vocab {
@@ -17,7 +17,9 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        return new String();
+        String prefixUn = new String("un");
+        String prefixWord = new String(prefixUn + word);
+        return new String(prefixWord);
     }
 
     /**
@@ -29,7 +31,14 @@ public class Vocab {
      *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
-        return new String();
+        String str = new String(prefix + " :: ");
+
+        for (int i = 0; i < groups.length; i++) {
+            groups[i] = prefix.concat(groups[i]);
+        }
+
+        str += String.join(" :: ", groups);
+        return new String(str);
     }
 
     /**
@@ -39,7 +48,14 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
-        return new String();
+        if (word.endsWith("ness")) {
+            word = word.replace("ness", "");
+        }
+
+        if (word.endsWith("i")) {
+            word = word.replace(word.charAt((word.length() - 1)), 'y');
+        }
+        return new String(word);
     }
 
     /**
@@ -51,6 +67,17 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        return new String();
+        String[] sentences = sentence.split(" ");
+        if (index == -1) {
+            index = sentences.length - 1;
+        }
+
+        String adj = new String(sentences[index]);
+        if (adj.endsWith(".")) {
+            adj = adj.replace(".", "");
+        }
+
+        String verb = new String(adj.concat("en"));
+        return new String(verb);
     }
 }
