@@ -13,6 +13,7 @@ public class Cashier {
     public static void main(String[] args) {
         Scanner In = new Scanner(System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         int uang, totalBelanja;
         try {
@@ -106,11 +107,23 @@ public class Cashier {
         
         System.out.println("Berapa total uang anda bayarkan ? ");
         int pembayaran = In.nextInt();
+=======
+
+        int uang, totalBelanja;     
+         try {
+            System.out.println("Berapa total harga belanja anda ? ");
+             totalBelanja = In.nextInt();
+            System.out.println("Berapa total uang anda bayarkan ? ");
+            uang = In.nextInt();
+        } catch (Exception e) {
+            System.out.println("maaf, pastikan inputan anda adalah angka");
+            in.close();
+            return;
+        }
+       
+
+>>>>>>> 3d04943 (feat (conditional/Cashier): add 'tryCatch' object)
         int kembalian = pembayaran - totalBelanja;
-        System.out.println("Total kembalian anda = " + kembalian);
-        System.out.println("Dengan dengan rincian sebagai berikut :");
-        System.out.println();
-        System.out.println();
         int al,b2,c3,d4,e5,f6,g7,h8,i9,jh;
         al = 0;
         b2 = 0;
