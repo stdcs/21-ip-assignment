@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
+ * @author H071211083 - Liska Dewi ROmbe <rombeliska@gmail.com>
  *
  */
 public class Vocab {
