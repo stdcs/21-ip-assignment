@@ -104,6 +104,7 @@ public class BigInt {
             } else {
                 arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
+                //st
             }
         }
         return arr;
@@ -128,6 +129,7 @@ public class BigInt {
      * @param nums the array to be printed as number
      * @return void
      */
+    
     public static void print(char[] chars) {
         for (char i : chars) {
             System.out.println(i);
