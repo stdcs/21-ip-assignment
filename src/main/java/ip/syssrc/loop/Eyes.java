@@ -21,6 +21,7 @@ public class Eyes {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 =======
                 if (i == j) {
@@ -35,6 +36,9 @@ public class Eyes {
 =======
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 >>>>>>> 4e7114f (fix(loop/Eyes): delete space)
+=======
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
             }
             System.out.println();
         }

@@ -15,14 +15,20 @@ public class Cashier {
         Scanner nanda = new Scanner(System.in);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6ee24d0 (fix(conditional/Cashier): change String to int)
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
 
         int uang, totalBelanja;
         try {
             System.out.print("Berapakah total harga belanja anda ? ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
             totalBelanja = nanda.nextInt();
             System.out.print("Berapakah total uang anda bayaran ? ");
             uang = nanda.nextInt();
@@ -31,6 +37,9 @@ public class Cashier {
             return;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         int kembalian = uang - totalBelanja;
         if (uang > totalBelanja) {
             System.out.println("Total kembalian anda: Rp. " +kembalian);
@@ -95,6 +104,7 @@ public class Cashier {
             System.out.println("Maaf, pembayaran anda belum mencukupi");
         } else {
             System.out.println("Terimakasih telah membayar dengan uang pas");
+<<<<<<< HEAD
 =======
         
         System.out.print("Berapakah total harga belanja anda ? ");
@@ -189,6 +199,8 @@ public class Cashier {
         } else {
             System.out.println("Terimakasih telah membayar dengan uang pas");
 >>>>>>> 038194f (fix(conditional/Cashier): change code and 'if' block)
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         }
     }
 }

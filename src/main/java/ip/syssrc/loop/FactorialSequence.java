@@ -14,6 +14,7 @@ public class FactorialSequence {
     public static void main(String[] args) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         long fact = 1;
         int n = dede.nextInt();
@@ -27,6 +28,11 @@ public class FactorialSequence {
         long fact = 1;
         int n = dede.nextInt();
 >>>>>>> 05efe90 (feat(loop/FactorialSequence): add format 'if' and 'for')
+=======
+        Scanner dede = new Scanner (System.in);
+        long fact = 1;
+        int n = dede.nextInt();
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
 
         if (n > 0) {
             System.out.print(n + "! = ");

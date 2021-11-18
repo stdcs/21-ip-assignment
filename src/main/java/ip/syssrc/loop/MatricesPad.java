@@ -14,6 +14,9 @@ public class MatricesPad {
     public static void main(String[] args) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -36,6 +39,7 @@ public class MatricesPad {
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         int j = 1;
+<<<<<<< HEAD
 =======
         Scanner nanda = new Scanner (System.in);
         int start = nanda.nextInt();
@@ -76,11 +80,14 @@ public class MatricesPad {
 =======
         int j = 1;
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
+=======
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
         
         while (biggest > 0) {
             biggest /= 10;
             leadingZero++;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
@@ -97,6 +104,10 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
+=======
+        for (int i = start; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
+>>>>>>> 6acfac4418971f1a7bd72a63978b49ae464deb5a
             if (start < end) {
                 i++;
             } else {
