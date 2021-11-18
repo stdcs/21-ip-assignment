@@ -18,7 +18,7 @@ public class BigInt {
      * @param m the array to be used as addend, second operand
      * @return array of integer that represents the sum of 2 numbers
      */
-    //1
+    //01
     public static int[] add(int[] n, int[] m) {
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
@@ -62,7 +62,7 @@ public class BigInt {
      * @param nums the array that represent a big number of integer
      * @return array of char that represent the formatted number
      */
-    //2
+    //02
     public static char[] humanFormat(int[] nums) {
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
@@ -90,7 +90,7 @@ public class BigInt {
      * @param separator the character to be used as separator
      * @return array of char that represent the formatted number
      */
-    //3
+    //03
     public static char[] humanFormat(int[] nums, char sparator) {
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
