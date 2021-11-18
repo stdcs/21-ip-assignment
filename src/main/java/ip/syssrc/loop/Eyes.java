@@ -20,6 +20,7 @@ public class Eyes {
             for (int j = 1; j <= n; j++) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 =======
                 if (i == j) {
@@ -31,6 +32,9 @@ public class Eyes {
 =======
                     System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 >>>>>>> 9c1dfb9 (fix(loop/Eyes): delete 'if')
+=======
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+>>>>>>> 4e7114f (fix(loop/Eyes): delete space)
             }
             System.out.println();
         }
