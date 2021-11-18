@@ -5,7 +5,7 @@ package ip.syssrc.string;
  *
  * Assignment 5.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  *
  */
 public class URLParser {
@@ -17,6 +17,10 @@ public class URLParser {
      * @return string of encoded URL
      */
     public static String encode(String rawURL) {
+        
+        String[] symbol = {"$", "&", "+", ",", "/", ":", ";", "=", "?", "@", " ", "\"", "<", ">", "#", "%", "{", "}", "\\", "^", "~", "[", "]", "`"}; 
+        String[] URL = {"%24", "%26", "%2b", "%2c", "%2f", "%3a", "%3b", "%3d", "%3f", "%40", "%20", "%22", "%3c", "%3e", "%23", "%25", "%7b", "%7d", "%5c", "%5e", "%7e", "%5b", "%5d", "%60"};
+        
         return new String();
     }
 
