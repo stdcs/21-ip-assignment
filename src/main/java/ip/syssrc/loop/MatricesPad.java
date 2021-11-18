@@ -100,11 +100,11 @@ public class MatricesPad {
 public class MatricesPad {
 
     public static void main(String[] args) {
-        Scanner Dz = new Scanner(System.in);
+        Scanner Diza = new Scanner(System.in);
 
-        int start = Dz.nextInt();
-        int end = Dz.nextInt();
-        int size = Dz.nextInt();
+        int start = Diza.nextInt();
+        int end = Diza.nextInt();
+        int size = Diza.nextInt();
 
         int range = end - start;
         int temp = start;
@@ -189,7 +189,11 @@ public class MatricesPad {
             }
         }
 
+<<<<<<< HEAD
         Dz.close();
 >>>>>>> 638cbda (feat(loop/Eyes):add code)
+=======
+        Diza.close();
+>>>>>>> f2ddb16 (feat(loop/MatricesPad): add code)
     }
 }
