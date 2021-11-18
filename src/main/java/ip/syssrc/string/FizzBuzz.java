@@ -28,6 +28,10 @@ public class FizzBuzz {
             fizzBuzz = word;
         }
 
+        for (int i = 0; i < freqFf; i++) {
+            fizzBuzz = fizzBuzz.concat("Fizz");
+        }
+
         return new String();
     }
 }
