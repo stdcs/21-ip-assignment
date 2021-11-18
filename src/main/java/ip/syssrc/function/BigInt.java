@@ -5,7 +5,7 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
- * @author H071211084 - Suhastina <suhastina88@gmail.com>
+ * @author H071211084 - Suhastina <Suhastina88@gmail.com>
  *
  */
 public class BigInt {
