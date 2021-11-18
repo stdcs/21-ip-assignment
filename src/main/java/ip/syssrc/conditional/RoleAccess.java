@@ -22,8 +22,6 @@ public class RoleAccess {
 
             switch (args[0]) {
                 case "Super Admin":
-<<<<<<< HEAD
-<<<<<<< HEAD
                 case "Admin":
                 case "User":
                 isValidRole = true;
@@ -31,23 +29,16 @@ public class RoleAccess {
                 
             }
             if (isValidRole) {
-=======
-                    isValidRole = true;
-                    break;
-=======
->>>>>>> 58418f4 (fix(conditional/RoleAccess): change code)
+
                 case "Admin":
                 case "User":
                 isValidRole = true;
                 break;
                 
             }
-<<<<<<< HEAD
+
             if (isValidRole == true) {
->>>>>>> 54c43bf (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
-=======
             if (isValidRole) {
->>>>>>> 917fb71 (fix(conditional/RoleAccess): change indentasi)
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
@@ -85,23 +76,3 @@ public class RoleAccess {
             System.out.println("Too many argument");
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
->>>>>>> 54c43bf (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
-=======
-    }
-=======
-    
->>>>>>> 917fb71 (fix(conditional/RoleAccess): change indentasi)
-
->>>>>>> c141e38 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
-=======
-}
->>>>>>> ee756d9 (fix(conditional/RoleAccess): add 'change code' object)

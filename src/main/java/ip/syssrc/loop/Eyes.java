@@ -8,38 +8,24 @@ package ip.syssrc.loop;
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 import java.util.Scanner;
  public class Eyes {
 
     public static void main(String[] args) {
         Scanner Diza = new Scanner (System.in);
-=======
-public class Eyes {
-
-    public static void main(String[] args) {
-        Scanner Diza = new Scanner(System.in);
-
->>>>>>> 638cbda (feat(loop/Eyes):add code)
-=======
 import java.util.Scanner;
  public class Eyes {
 
     public static void main(String[] args) {
         Scanner Diza = new Scanner (System.in);
->>>>>>> 8d8df0f (feat(loop/MatricesPad): change code)
         int n = Diza.nextInt();
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
             }
             System.out.println();
         }
-=======
                 if (i == j) {
                     System.out.print(1 + " ");
                 } else {
@@ -49,12 +35,8 @@ import java.util.Scanner;
             System.out.println();
         }
         Diza.close();
->>>>>>> 638cbda (feat(loop/Eyes):add code)
-=======
+
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
             }
             System.out.println();
         }
->>>>>>> 8d8df0f (feat(loop/MatricesPad): change code)
-    }
-}

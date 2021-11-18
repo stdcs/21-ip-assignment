@@ -8,29 +8,16 @@ package ip.syssrc.conditional;
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import java.util.Scanner;
-=======
-import java.util.*;
-<<<<<<< HEAD
->>>>>>> 9cf1f8c (feat(conditional/Cashier): add 'java.util.Scanner' object)
-=======
 import java.util.InputMismatchException;
->>>>>>> 04366a9 (feat(conditional/Cashier): add 'trycatch' object)
-=======
-import java.util.Scanner;
->>>>>>> 7d7d8f8 (fix(conditional/Cashier): change code)
+
  public class Cashier {
 
     public static void main(String[] args) {
         Scanner Dz = new Scanner(System.in);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         System.out.println("Berapa total harga belanja anda ? ");
         int totalBelanja = Dz.nextInt();
-=======
 
         try {
             System.out.println("Berapa total harga belanja anda ? ");
@@ -42,7 +29,6 @@ import java.util.Scanner;
             return;
             Dz.close();    
         }
->>>>>>> 04366a9 (feat(conditional/Cashier): add 'trycatch' object)
         
 
 
@@ -123,9 +109,7 @@ import java.util.Scanner;
         
     }
 
-<<<<<<< HEAD
 }
->>>>>>> 9cf1f8c (feat(conditional/Cashier): add 'java.util.Scanner' object)
 
         try {
             System.out.println("Berapa total harga belanja anda ? ");
@@ -218,9 +202,3 @@ import java.util.Scanner;
     }
 
    }
-
-=======
-   }
-
->>>>>>> 7f03d15 (fix(conditional/Cashier): add 'change code' object)
-}
