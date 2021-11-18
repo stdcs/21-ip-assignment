@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class MatricesPad {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -34,13 +35,31 @@ public class MatricesPad {
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         int j = 1;
+=======
+        Scanner nanda = new Scanner (System.in);
+        int start = nanda.nextInt();
+        int end = nanda.nextInt();
+        int size = nanda.nextInt();
+
+        int biggest = (start > end) ? start : end;
+        int leadingZero = 0;
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
         
         while (biggest > 0) {
             biggest /= 10;
             leadingZero++;
         }
+<<<<<<< HEAD
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
+=======
+        for (int i = start; (start < end ? i <= end : i >= end); ) {
+            if (((i - start) % size == 0 || (start - i) % size == 0) && (i != start)) {
+                System.out.printf("\n");
+            }
+
+            System.out.printf("%0" + leadingZero + "d ", i);
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
             if (start < end) {
                 i++;
             } else {
