@@ -46,7 +46,7 @@ public class URLParser {
                 encodedURL = encodedURL.replaceAll(URL[i],symbol[i]);
             }
         }
-        
-        return new String();
+
+        return new String(encodedURL);
     }
 }
