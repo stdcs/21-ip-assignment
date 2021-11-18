@@ -32,6 +32,10 @@ public class FizzBuzz {
             fizzBuzz = fizzBuzz.concat("Fizz");
         }
 
+        for (int i = 0; i < freqBb; i++) {
+            fizzBuzz = fizzBuzz.concat("Buzz");
+        }
+
         return new String();
     }
 }
