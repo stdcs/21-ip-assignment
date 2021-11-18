@@ -5,19 +5,21 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211058 - Eka Hanny Oktavia <ekahnny@gmail.com>
  *
  */
 public class Vocab {
-
-    /**
+	
+/**
      * Add 'un' prefixes to a word, e.g. happy -> unhappy
      *
      * @param word the word to be prefixed
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        return new String();
+        word = "Un" + word;
+
+        return new String(word);
     }
 
     /**
@@ -25,11 +27,19 @@ public class Vocab {
      *
      * @param prefix the prefix to be added to each word
      * @param groups the groups of vocabulary words to be prefixed
-     * @return string in the form of:
-     *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
+     * @return string in the form of: `prefix :: prefixword_1 :: prefixword_2 :: ...
+     *         :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
-        return new String();
+        String uni = new String(prefix + "::");
+
+        for (int i = 0; i < groups.length; i++) {
+            groups[i] = prefix.concat(groups[i]);
+        }
+
+        uni += String.join("::", groups);
+
+        return new String(uni);
     }
 
     /**
@@ -39,7 +49,16 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
-        return new String();
+        
+        if (word.endsWith("ness")) {
+            word = word.replace("ness", "");
+
+            if (word.endsWith("i")) {
+                word = word.replace("i", "y");
+            }
+        }
+
+        return new String(word);
     }
 
     /**
@@ -51,6 +70,22 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        return new String();
+
+        String[] dum = sentence.split(" ");
+
+        if (index == -1) {
+            index = dum.length - 1;
+        }
+
+        String dom = new String(dum[index]);  
+
+        if(dom.endsWith(".")){
+            dom = dom.replace(".", "");
+        }
+
+        dom = dom.concat("en");
+        
+        return new String(dom);
     }
+
 }
