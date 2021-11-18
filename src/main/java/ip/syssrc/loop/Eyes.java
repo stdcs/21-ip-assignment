@@ -20,15 +20,21 @@ public class Eyes {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - 1; j++) {
                 if (i == j) {
 =======
+=======
+>>>>>>> ca5cb89ea2cfe1e485790b102e9b6b90693e0ec9
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - 1; j++) {
                 if (i == j) {
                     System.out.print("1 ");
+<<<<<<< HEAD
 >>>>>>> 789d6f7 (feat(loop): fix)
+=======
+>>>>>>> ca5cb89ea2cfe1e485790b102e9b6b90693e0ec9
                 } else {
                     System.out.print("0 ");
                 }
@@ -42,8 +48,12 @@ public class Eyes {
         t2.close();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> 3455b10 (feat(loop): add assignment)
 =======
 }
 >>>>>>> 789d6f7 (feat(loop): fix)
+=======
+}
+>>>>>>> ca5cb89ea2cfe1e485790b102e9b6b90693e0ec9

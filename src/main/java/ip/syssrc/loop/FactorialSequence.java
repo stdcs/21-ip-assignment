@@ -7,6 +7,7 @@ package ip.syssrc.loop;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211041 - Fathur Rachman Alamsyag <sembarangm135@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
@@ -14,6 +15,9 @@ package ip.syssrc.loop;
 =======
  * @author H071211041 - Fathur Rachman Alamsyag <sembarangm135@gmail.com>
 >>>>>>> 67bad11 (feat(loop):fix)
+=======
+ * @author H071211041 - Fathur Rachman Alamsyag <sembarangm135@gmail.com>
+>>>>>>> ca5cb89ea2cfe1e485790b102e9b6b90693e0ec9
  *
  */
 import java.util.Scanner;
