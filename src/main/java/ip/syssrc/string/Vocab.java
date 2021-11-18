@@ -90,7 +90,6 @@ public class Vocab {
     }
     
     public static void main(String[] args) {
-        System.out.println(removeSuffixNess("Business"));
-    
+        System.out.println(removeSuffixNess("Business"));    
     }
 }
