@@ -6,10 +6,14 @@ package ip.syssrc.function;
  * Assignment 4.2
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 =======
  * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+ * @author H071211083 - Liska Dewi Rombe <rombeliska@gmail.com>
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
  *
  */
 public class BigInt {
@@ -24,8 +28,11 @@ public class BigInt {
      */
     public static int[] add(int[] n, int[] m) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new int[] {};
 =======
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
         rint sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
 
@@ -59,7 +66,10 @@ public class BigInt {
             finale = sum;
         }
         return finale;
+<<<<<<< HEAD
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 
     /**
@@ -70,8 +80,11 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new char[] {};
 =======
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -88,7 +101,10 @@ public class BigInt {
             }
         }
         return arr;
+<<<<<<< HEAD
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 
     /**
@@ -100,8 +116,11 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums, char sparator) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new char[] {};
 =======
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -118,7 +137,10 @@ public class BigInt {
             }
         }
         return arr;
+<<<<<<< HEAD
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 
     /**
@@ -129,11 +151,17 @@ public class BigInt {
      */
     public static void print(int[] nums) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         for (int i : nums) {
             System.out.print(i);
         }
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+        for (int i : nums) {
+            System.out.print(i);
+        }
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 
     /**
@@ -145,10 +173,16 @@ public class BigInt {
      */
     public static void print(char[] chars) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         for (char i : chars) {
             System.out.print(i);
         }
 >>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+        for (char i : chars) {
+            System.out.print(i);
+        }
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 }

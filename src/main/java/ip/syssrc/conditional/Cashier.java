@@ -14,6 +14,9 @@ public class Cashier {
         Scanner In = new Scanner(System.in);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
 
         int uang, totalBelanja;
         try {
@@ -101,6 +104,7 @@ public class Cashier {
         } else {
             System.out.println("Terimakasih telah membayar dengan uang pas");
         }
+<<<<<<< HEAD
 =======
         System.out.println("Berapa total harga belanja anda ? ");
         int totalBelanja = In.nextInt();
@@ -331,5 +335,7 @@ public class Cashier {
 >>>>>>> c955f73 (fix (conditional/Cashier): add 'change code' object)
 =======
 >>>>>>> dc9b96c (fix (conditional/cashier): add 'change code' object)
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 }

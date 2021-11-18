@@ -14,11 +14,15 @@ public class MatricesPad {
     public static void main(String[] args) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
         Scanner li = new Scanner(System.in);
 
         int start = li.nextInt();
         int end = li.nextInt();
         int size = li.nextInt();
+<<<<<<< HEAD
 =======
         Scanner lio = new Scanner(System.in);
 
@@ -33,6 +37,8 @@ public class MatricesPad {
         int end = li.nextInt();
         int size = li.nextInt();
 >>>>>>> 316d1d2 (feat (loop/MatricesPad): add code2)
+=======
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
 
         int range = end - start;
         int temp = start;
@@ -119,6 +125,7 @@ public class MatricesPad {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         li.close();
 =======
         lio.close();
@@ -126,6 +133,9 @@ public class MatricesPad {
 =======
         li.close();
 >>>>>>> 316d1d2 (feat (loop/MatricesPad): add code2)
+=======
+        li.close();
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
     
     }
