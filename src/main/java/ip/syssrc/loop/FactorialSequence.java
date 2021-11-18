@@ -13,10 +13,14 @@ public class FactorialSequence {
     public static void main(String[] args) {
         long fact = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
         int n = li.nextInt();
 =======
         int n = lio.nextInt();
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        int n = li.nextInt();
+>>>>>>> 520ea29 (feat (loop/FactorialSequence):add code2)
 
         if (n > 0) {
             System.out.print(n + "! = ");
@@ -37,10 +41,14 @@ public class FactorialSequence {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         li.close();
 =======
         lio.close();
 >>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        li.close();
+>>>>>>> 520ea29 (feat (loop/FactorialSequence):add code2)
     }
 
     }
