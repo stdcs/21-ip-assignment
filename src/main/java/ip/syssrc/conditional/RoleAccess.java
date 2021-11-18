@@ -23,6 +23,7 @@ public class RoleAccess {
             switch (args[0]) {
                 case "Super Admin":
 <<<<<<< HEAD
+<<<<<<< HEAD
                 case "Admin":
                 case "User":
                 isValidRole = true;
@@ -33,15 +34,13 @@ public class RoleAccess {
 =======
                     isValidRole = true;
                     break;
+=======
+>>>>>>> 58418f4 (fix(conditional/RoleAccess): change code)
                 case "Admin":
-                    isValidRole = true;
-                    break;
                 case "User":
-                    isValidRole = true;
-                    break;
-                default:
-                    isValidRole = false;
-                    break;
+                isValidRole = true;
+                break;
+                
             }
             if (isValidRole == true) {
 >>>>>>> 54c43bf (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
