@@ -22,11 +22,15 @@ package ip.syssrc.loop;
 public class FactorialSequence {
 
     public static void main(String[] args) {
-        Scanner Dz = new Scanner(System.in);
+        Scanner Diza = new Scanner(System.in);
 
         long fact = 1;
+<<<<<<< HEAD
         int n = Dz.nextInt();
 >>>>>>> 638cbda (feat(loop/Eyes):add code)
+=======
+        int n = Diza.nextInt();
+>>>>>>> 31f9158 (feat(loop/FactorialSequence): add code)
 
         if (n > 0) {
             System.out.print(n + "! = ");
@@ -47,9 +51,13 @@ public class FactorialSequence {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Diza.close();
 =======
         Dz.close();
 >>>>>>> 638cbda (feat(loop/Eyes):add code)
+=======
+        Diza.close();
+>>>>>>> 31f9158 (feat(loop/FactorialSequence): add code)
     }
 }
