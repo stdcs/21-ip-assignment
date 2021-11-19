@@ -37,7 +37,7 @@ public class Vocab {
             groups[i] = prefix.concat(groups[i]);
         }
 
-        uni += String.join(":: ", groups);
+        uni += String.join(" :: ", groups);
 
         return new String(uni);
     }
