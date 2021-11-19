@@ -6,39 +6,13 @@ import java.util.Scanner;
  *
  * Assignment 2.1
  *
-<<<<<<< HEAD
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @author H071211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
->>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
-=======
- * @author H071211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
->>>>>>> 9cf23f9 (Update MatricesPad.java)
-<<<<<<< HEAD
->>>>>>> ebbaf64 (Update MatricesPad.java)
-=======
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
->>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
->>>>>>> fa26fc3 (feat(loop) : add assigment 2.1 2.2 2.3)
  *
  */
 public class MatricesPad {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b2bc0b4 (feat(loop): input no longer be limited to 3 digits)
         int start = 0;
         int end = 0;
         int size = 0;
@@ -47,7 +21,6 @@ public class MatricesPad {
             end = in.nextInt();
             size = in.nextInt();
             in.close();
-<<<<<<< HEAD
 
             if(start < 0 || end < 0 || size <0){
                 throw new Exception();
@@ -77,118 +50,3 @@ public class MatricesPad {
         }
     }
 }
-=======
-=======
->>>>>>> b2bc0b4 (feat(loop): input no longer be limited to 3 digits)
-<<<<<<< HEAD
->>>>>>> 196a7bf (feat(loop): input no longer be limited to 3 digits)
-=======
-=======
->>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
->>>>>>> fa26fc3 (feat(loop) : add assigment 2.1 2.2 2.3)
-
-        int start = in.nextInt();
-        int end = in.nextInt();
-        int size = in.nextInt();
-
-        int range = end - start;
-        int temp = start;
-
-        if (start <= 9 && end <= 9) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%01d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%01d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 99 && end <= 99) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%02d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%02d ", temp);
-                    temp--;
-                }
-            }
-        } else if (start <= 999 && end <= 999) {
-            if (range >= 0) {
-                for (int i = 1; i <= range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp++;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp++;
-                }
-            } else if (range <= 0) {
-                for (int i = 1; i <= -range / size; i++) {
-                    for (int j = 1; j <= size; j++) {
-                        System.out.printf("%03d ", temp);
-                        temp--;
-                    }
-                    System.out.println("");
-                }
-                for (int k = 0; k <= -range % size; k++) {
-                    System.out.printf("%03d ", temp);
-                    temp--;
-                }
-            }
-        }
-
-        in.close();
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-<<<<<<< HEAD
-=======
->>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
-=======
-}
->>>>>>> 5d9c4a0 (fix(loop/MatricesPad): removed spaces in last line)
-<<<<<<< HEAD
->>>>>>> 13f35b8 (fix(loop/MatricesPad): removed spaces in last line)
-=======
-=======
-}
->>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
->>>>>>> fa26fc3 (feat(loop) : add assigment 2.1 2.2 2.3)
