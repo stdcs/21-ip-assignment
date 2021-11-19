@@ -10,6 +10,7 @@ import java.util.Scanner;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
@@ -34,12 +35,16 @@ import java.util.Scanner;
 >>>>>>> 9cf23f9 (Update MatricesPad.java)
 >>>>>>> ebbaf64 (Update MatricesPad.java)
 >>>>>>> 1392ebd (Update MatricesPad.java)
+=======
+ * @author H071211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
  *
  */
 public class MatricesPad {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,6 +54,8 @@ public class MatricesPad {
 <<<<<<< HEAD
 =======
 >>>>>>> b2bc0b4 (feat(loop): input no longer be limited to 3 digits)
+=======
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
         int start = 0;
         int end = 0;
         int size = 0;
@@ -59,6 +66,9 @@ public class MatricesPad {
             in.close();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
 
             if(start < 0 || end < 0 || size <0){
                 throw new Exception();
@@ -88,6 +98,7 @@ public class MatricesPad {
         }
     }
 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b2bc0b4 (feat(loop): input no longer be limited to 3 digits)
@@ -177,3 +188,5 @@ public class MatricesPad {
 >>>>>>> 5d9c4a0 (fix(loop/MatricesPad): removed spaces in last line)
 >>>>>>> 13f35b8 (fix(loop/MatricesPad): removed spaces in last line)
 >>>>>>> f6a0379 (fix(loop/MatricesPad): removed spaces in last line)
+=======
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)

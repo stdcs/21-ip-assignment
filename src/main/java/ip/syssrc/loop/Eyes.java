@@ -9,6 +9,7 @@ import java.util.Scanner;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrhm17h@student.unhas.ac.id>
@@ -33,6 +34,9 @@ import java.util.Scanner;
 >>>>>>> 800fcc6 (Update Eyes.java)
 >>>>>>> 9ef5a78 (Update Eyes.java)
 >>>>>>> e305609 (Update Eyes.java)
+=======
+ * @author H071211078 - Muh Fajar Siddiq <fsiddiq072@gmail.com>
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
  *
  */
 public class Eyes {
@@ -42,11 +46,14 @@ public class Eyes {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 537e9b9 (fix(loop/Eyes): fix condition of if block from printing spaces)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
         int n;
 
         try {
@@ -69,12 +76,13 @@ public class Eyes {
                 } else {
                     System.out.printf("%d", 0);
                 }
-                
+
                 if ( j < (n - 1)){
                     System.out.print(" ");
                 }
             }
             System.out.printf("\n");
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -137,6 +145,8 @@ public class Eyes {
 >>>>>>> 0955c9c (fix(loop/Eyes): fix condition of if block from printing spaces)
 >>>>>>> 4a60a21 (fix(loop/Eyes): fix condition of if block from printing spaces)
 >>>>>>> 537e9b9 (fix(loop/Eyes): fix condition of if block from printing spaces)
+=======
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
         }
     }
 }

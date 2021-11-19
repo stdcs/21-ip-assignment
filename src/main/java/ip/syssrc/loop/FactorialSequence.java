@@ -9,6 +9,7 @@ import java.util.Scanner;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
@@ -33,6 +34,9 @@ import java.util.Scanner;
 >>>>>>> aca5ce6 (Update FactorialSequence.java)
 >>>>>>> f2ae1a1 (Update FactorialSequence.java)
 >>>>>>> 00ded2c (Update FactorialSequence.java)
+=======
+ * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
+>>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
  *
  */
 public class FactorialSequence {
@@ -62,6 +66,6 @@ public class FactorialSequence {
         }
 
         in.close();
- 
+
     }
 }
