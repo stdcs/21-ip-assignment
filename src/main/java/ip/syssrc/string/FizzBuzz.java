@@ -10,11 +10,7 @@ import static java.lang.String.valueOf;
  * @author H071211073 - Djulizah Bonita L
  */
 public class FizzBuzz {
-
-    public static void main(String[] args) {
-        System.out.println(format("mas Mukhtar"));
-    }
-
+    
     /**
      * Format a word into Fizz for each F or f and Buzz for each B or b
      *

@@ -5,10 +5,11 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211073 - Djulizah Bonita L
  *
  */
 public class Vocab {
+    
     /**
      * Add 'un' prefixes to a word, e.g. happy -> unhappy
      *
@@ -36,7 +37,7 @@ public class Vocab {
             groups[i] = prefix.concat(groups[i]);
         }
 
-        uni += String.join("::", groups);
+        uni += String.join(":: ", groups);
 
         return new String(uni);
     }
@@ -70,24 +71,20 @@ public class Vocab {
      */
     public static String nounToVerb(String sentence, int index) {
 
-        String[] dum = sentence.split(" ");
+        String[] arr = sentence.split(" ");
 
         if (index == -1) {
-            index = dum.length - 1;
+            index = arr.length - 1;
         }
 
-        String dom = new String(dum[index]);  
+        String verbing = new String(arr[index]);  
 
-        if(dom.endsWith(".")){
-            dom = dom.replace(".", "");
+        if(verbing.endsWith(".")){
+            verbing = verbing.replace(".", "");
         }
 
-        dom = dom.concat("en");
+        verbing = verbing.concat("en");
         
-        return new String(dom);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(nounToVerb("It got dark as the sun set.", 2));
+        return new String(verbing);
     }
 }
