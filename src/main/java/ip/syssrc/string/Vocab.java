@@ -74,7 +74,6 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
-        String converter = new String("en");
         String[] parts = sentence.split(" ");
 
         if (index < 0) {
@@ -83,8 +82,11 @@ public class Vocab {
             index = Math.abs(parts.length - index);
         }
 
-        if (!parts[index].endsWith(converter)) {
-            parts[index] = parts[index].concat(converter);
+        if (parts[index].endsWith(".")) {
+            parts[index] = parts[index].replace(".", "");
+        }
+        if (!parts[index].endsWith("en")) {
+            parts[index] = parts[index].concat("en");
         }
         return parts[index];
     }
