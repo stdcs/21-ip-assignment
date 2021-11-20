@@ -26,7 +26,7 @@ public class FizzBuzz {
         bWord = word.replace("B", "");
         bWord = word.replace("b", "");
         int bCount;
-        bCount = word.length() = bWord.length();
+        bCount = word.length() - bWord.length();
 
         String fizzBuzz = new String();
 
@@ -40,6 +40,7 @@ public class FizzBuzz {
         }
         while (i <= bCount){
             fizzBuzz = fizzBuzz.concat ("Buzz");
+            i++;
         }
         return new String(fizzBuzz);
     }
