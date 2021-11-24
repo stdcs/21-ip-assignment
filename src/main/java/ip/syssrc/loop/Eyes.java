@@ -17,6 +17,7 @@ public class Eyes {
         Scanner bk = new Scanner(System.in);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         int n = bk.nextInt();
         bk.close();
         for (int i = 0; i < n; i++) {
@@ -31,6 +32,9 @@ public class Eyes {
 =======
         int bk = bk.nextInt();
 >>>>>>> e32699d (feat(loop/Eyes): add code)
+=======
+        int n = bk.nextInt();
+>>>>>>> 56c679a (feat(loop/Eyes): add code)
         bk.close();
 <<<<<<< HEAD
         for (int i = 1; i <= n; i++) {
