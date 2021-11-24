@@ -8,7 +8,7 @@ package ip.syssrc.string;
  * @author H01211065 - Asehpryanto Rari Parinding < asehpryantorari@gmail.com>
  *   
  */
-public class Vocab { 
+public class Vocab {    
     
 
     /**
