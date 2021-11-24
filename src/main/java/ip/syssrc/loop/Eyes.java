@@ -5,14 +5,14 @@ package ip.syssrc.loop;
  *
  * Assignment 2.3
  *
- * @author H071211065 - Asehpryanto Rari Parinding <asehpryantorari@gmail.com>
+ * @author H071211065 - Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
-import java.util.Scanner;
 public class Eyes {
 
     public static void main(String[] args) {
         Scanner bk = new Scanner(System.in);
+<<<<<<< HEAD
         int n = bk.nextInt();
         bk.close();
         for (int i = 0; i < n; i++) {
@@ -20,14 +20,12 @@ public class Eyes {
                 if (i == j) {
                     System.out.print("1 ");
                 } else {
-                    System.out.print("0 ");
+                    System.out.print(0 + " ");
                 }
             }
-            if (i == n-1) {
-                System.out.printf("1\n");
-            } else {
-                System.out.printf("0\n");
-            }
-        }
-    }
+            System.out.println();
+        } 
+    } 
 }
+
+>>>>>>> 9a9d39e (feat(loop): add assigment)
