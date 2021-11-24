@@ -8,7 +8,7 @@ package ip.syssrc.string;
  * @author H01211065 - Asehpryanto Rari Parinding < asehpryantorari@gmail.com>
  *   
  */
-public class Vocab {
+public class Vocab { 
     
 
     /**
@@ -18,7 +18,7 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
-        word = "Un" + word;
+        word = "Un" + word; 
 
         return new String(word);
     }
