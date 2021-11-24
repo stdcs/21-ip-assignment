@@ -12,6 +12,7 @@ package ip.syssrc.conditional;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
 import java.util.Scanner;
@@ -153,6 +154,8 @@ import java.util.Scanner;
 }
 >>>>>>> beaa986 (Update src/main/java/ip/syssrc/conditional/RoleAccess.java)
 =======
+=======
+>>>>>>> 202ed44 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
 import java.util.Scanner;
  public class RoleAccess {
     public static void main(String[] args) {
