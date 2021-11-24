@@ -16,7 +16,7 @@ public class FizzBuzz {
      * @return string of the FizzBuzz format of the word or the word it self if
      *         it doesn't contain 'Ff' or 'Bb'
      */
-    public static String format(String word) {
+    public static String format(String word) { 
         String charFf = word.replaceAll("f", "").replaceAll("F", "");
         int freqFf = word.length() - charFf.length();  
 
