@@ -15,6 +15,7 @@ public class RoleAccess {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
 import java.util.Scanner;
@@ -243,6 +244,14 @@ import java.util.Scanner;
         int subMenuIndex = 0;
         boolean isValidRole = false;
 >>>>>>> 1b56c9d (Update src/main/java/ip/syssrc/conditional/RoleAccess.java)
+=======
+ 
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int menuIndex = 0;
+        int subMenuIndex = 0;
+        boolean isValidRole = false;
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
 
         if (args.length == 0) {
 
@@ -250,8 +259,11 @@ import java.util.Scanner;
             System.out.println("For example, try 'Admin'.");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1eb5b0a (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
         } else if (args.length == 1) {
 
             switch (args[0]) {
@@ -299,5 +311,9 @@ import java.util.Scanner;
             System.out.println("Too many argument");
         }
     }
+<<<<<<< HEAD
 }
 >>>>>>> 1b56c9d (Update src/main/java/ip/syssrc/conditional/RoleAccess.java)
+=======
+}
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1

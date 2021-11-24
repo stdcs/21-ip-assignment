@@ -14,14 +14,19 @@ public class Eyes {
     public static void main(String[] args) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner bk = new Scanner(System.in);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+        Scanner bk = new Scanner(System.in);
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
         int n = bk.nextInt();
         bk.close();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n-1; j++) {
+<<<<<<< HEAD
 =======
         Scanner in = new Scanner(System.in);
 =======
@@ -44,6 +49,8 @@ public class Eyes {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n-1; j++) {
 >>>>>>> 2b50be3 (feat(loop/MatricesPad): add code)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
                 if (i == j) {
                     System.out.print("1 ");
                 } else {
@@ -59,7 +66,10 @@ public class Eyes {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> 9a9d39e (feat(loop): add assigment)
 =======
 >>>>>>> 39898f2 (feat(loop/Eyes): add code)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1

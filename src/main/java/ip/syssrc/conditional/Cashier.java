@@ -15,14 +15,18 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 434e3c4 (Update src/main/java/ip/syssrc/conditional/Cashier.java)
 =======
 >>>>>>> f1a3eba (Update src/main/java/ip/syssrc/conditional/Cashier.java)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
         Scanner In = new Scanner(System.in);
         int kembalian = 0;
         int totalBelanja = 0;
         int pembayaran = 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -144,6 +148,8 @@ public class Cashier {
 =======
 =======
 >>>>>>> f1a3eba (Update src/main/java/ip/syssrc/conditional/Cashier.java)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
 
         try {
             System.out.println("Berapa total harga belanja anda ? ");
@@ -157,6 +163,7 @@ public class Cashier {
             System.out.println("Maaf, pastikan inputan anda adalah angka");
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1eb5b0a (feat(conditional/Cashier): add 'java.util.Scanner' object)
         if (kembalian > 0) {
             System.out.println("Rp. " + kembalian + " didonasikan");
@@ -167,6 +174,8 @@ public class Cashier {
 =======
 =======
 >>>>>>> f1a3eba (Update src/main/java/ip/syssrc/conditional/Cashier.java)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
             if (totalBelanja > pembayaran) {
                 System.out.println("Uang Anda Kurang");
             } else {
@@ -247,10 +256,13 @@ public class Cashier {
             }          
         In.close();
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 434e3c4 (Update src/main/java/ip/syssrc/conditional/Cashier.java)
 =======
 >>>>>>> 1eb5b0a (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 >>>>>>> f1a3eba (Update src/main/java/ip/syssrc/conditional/Cashier.java)
+=======
+>>>>>>> 5688ecfe1275a8107dda06ede1a475727c3ca2c1
     }
 }
