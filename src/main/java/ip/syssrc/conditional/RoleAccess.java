@@ -13,11 +13,14 @@ package ip.syssrc.conditional;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
 import java.util.Scanner;
 =======
 >>>>>>> 2ac0b73 (update src/main/java/ip/syssrc/conditional/RoleAccess.java)
+=======
+>>>>>>> 6a5b8f8 (update src/main/java/ip/syssrc/conditional/RoleAccess.java)
  public class RoleAccess {
 >>>>>>> 6289f98 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
     public static void main(String[] args) {
@@ -231,6 +234,8 @@ import java.util.Scanner;
                 boolean isValidRole = false;
             
                 if (args.length == 0) {
+
+                    
                   System.out.println("What role you want to see ?");
                   System.out.println("For example, try 'Admin'.");
                 } else if (args.length == 1) {
