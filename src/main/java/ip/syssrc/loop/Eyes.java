@@ -12,6 +12,7 @@ public class Eyes {
 
     public static void main(String[] args) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner bk = new Scanner(System.in);
 <<<<<<< HEAD
         int n = bk.nextInt();
@@ -20,9 +21,12 @@ public class Eyes {
             for (int j = 0; j < n-1; j++) {
 =======
         Scanner in = new Scanner(System.in);
+=======
+        Scanner bk = new Scanner(System.in);
+>>>>>>> a089113 (feat(loop/MatricesPad): add code)
 
-        int n = in.nextInt();
-        in.close();
+        int n = bk.nextInt();
+        bk.close();
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
 >>>>>>> dc0ff31 (feat(loop): add assingment)
