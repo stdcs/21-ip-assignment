@@ -28,16 +28,25 @@ public class Eyes {
 
         int n = bk.nextInt();
         bk.close();
+<<<<<<< HEAD
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
 >>>>>>> dc0ff31 (feat(loop): add assingment)
+=======
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n-1; j++) {
+>>>>>>> 2b50be3 (feat(loop/MatricesPad): add code)
                 if (i == j) {
                     System.out.print("1 ");
                 } else {
-                    System.out.print(0 + " ");
+                    System.out.print("0 ");
                 }
             }
-            System.out.println();
+            if (i == n-1) {
+                System.out.printf("1\n");
+            } else {
+                System.out.printf("0\n");
+            }
         }
     }
 }
