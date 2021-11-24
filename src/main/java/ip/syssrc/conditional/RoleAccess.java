@@ -8,7 +8,12 @@ public class RoleAccess {
  * @author H071211065- Asehpryanto Rari Parinding <Asehpryantorari@gmail.com>
  *
  */
+<<<<<<< HEAD
  
+=======
+import java.util.Scanner;
+ public class RoleAccess {
+>>>>>>> 6289f98 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
