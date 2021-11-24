@@ -6,7 +6,7 @@ package ip.syssrc.string;
  * Assignment 5.2
  *
  * @author H01211065 - Asehpryanto Rari Parinding < asehpryantorari@gmail.com>
- *
+ *   
  */
 public class Vocab {
     
