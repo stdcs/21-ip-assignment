@@ -18,7 +18,7 @@ public class FizzBuzz {
      */
     public static String format(String word) {
         String charFf = word.replaceAll("f", "").replaceAll("F", "");
-        int freqFf = word.length() - charFf.length();
+        int freqFf = word.length() - charFf.length();  
 
         String charBb = word.replaceAll("b", "").replaceAll("B", "");
         int freqBb = word.length() - charBb.length();
