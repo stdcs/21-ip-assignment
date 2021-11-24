@@ -7,7 +7,7 @@ package ip.syssrc.string;
  *
  * @author H01211065 - Asehpryanto Rari Parinding < asehpryantorari@gmail.com>
  */
-public class FizzBuzz {
+public class FizzBuzz { 
 
     /**
      * Format a word into Fizz for each F or f and Buzz for each B or b
