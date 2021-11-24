@@ -20,7 +20,7 @@ public class Vocab {
     public static String addPrefixUn(String word) {
         word = "Un" + word; 
 
-        return new String(word);
+        return new String(word);  
     }
 
     /**
