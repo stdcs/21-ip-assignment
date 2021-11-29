@@ -24,6 +24,14 @@ public class Vigesimal {
      *
      * @return void
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public static void table() {
+=======
     public static void table() { 
+>>>>>>> 902af8d (feat (function/Vigesimal):add code)
+=======
+    public static void table() { 
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 }

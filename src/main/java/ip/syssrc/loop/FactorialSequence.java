@@ -12,7 +12,19 @@ public class FactorialSequence {
 
     public static void main(String[] args) {
         long fact = 1;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         int n = li.nextInt();
+=======
+        int n = lio.nextInt();
+>>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        int n = li.nextInt();
+>>>>>>> 520ea29 (feat (loop/FactorialSequence):add code2)
+=======
+        int n = li.nextInt();
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
 
         if (n > 0) {
             System.out.print(n + "! = ");
@@ -32,7 +44,19 @@ public class FactorialSequence {
             System.out.println("Error");
         }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         li.close();
+=======
+        lio.close();
+>>>>>>> d8ab39a (feat (loop/Eyes):add code2)
+=======
+        li.close();
+>>>>>>> 520ea29 (feat (loop/FactorialSequence):add code2)
+=======
+        li.close();
+>>>>>>> 911945ebeb7ab89f2288e27a05b66a102742839e
     }
 
     }
