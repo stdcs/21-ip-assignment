@@ -1,7 +1,4 @@
 package ip.syssrc.function;
-
-import javax.swing.JPopupMenu.Separator;
-
 /**
  * BigInt
  *

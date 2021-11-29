@@ -13,7 +13,7 @@ public class MatricesPad {
 
     public static void main(String[] args) {
         Scanner dede = new Scanner (System.in);
-        
+
         int start, end, size;
         try {
             start = dede.nextInt();
@@ -30,7 +30,7 @@ public class MatricesPad {
             System.out.println(0);
             System.exit(0);
         }
-    
+        
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         int j = 1;
@@ -39,6 +39,7 @@ public class MatricesPad {
             biggest /= 10;
             leadingZero++;
         }
+ 
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
             if (start < end) {

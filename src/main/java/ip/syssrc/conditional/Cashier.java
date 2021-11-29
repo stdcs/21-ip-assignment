@@ -13,7 +13,6 @@ public class Cashier {
 
     public static void main(String[] args) {
         Scanner nanda = new Scanner(System.in);
-
         int uang, totalBelanja;
         try {
             System.out.print("Berapakah total harga belanja anda ? ");
