@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211073 - Djulizah Bonita L
  *
  */
 public class DataManipulation {
@@ -25,13 +25,22 @@ public class DataManipulation {
     }
 
     public static Map<String, String> insert(/* signatures */) {
+        //get student
+        //INSERT INTO <table_name> <column(s)> VALUES (value(s))
+
         return new HashMap<>();
     }
 
     public static List<String> select(/* signatures */) {
+        //get student
+        //SELECT <column(s)> from <table_name>
+
         return new ArrayList<>();
     }
 
-    public static void prettify(List<String> strings) {}
+    public static void prettify(List<String> strings) {
+        //print table
+        
+    }
 
 }
