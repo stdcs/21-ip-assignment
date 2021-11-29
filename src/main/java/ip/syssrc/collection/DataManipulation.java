@@ -73,14 +73,37 @@ public class DataManipulation {
          return new ArrayList<>(selectedMap);
     }
 
-    public static Map<String, String> insert(/* signatures */) {
-        return new HashMap<>();
-    }
+    public static void prettify(List<String> strings) {
+        /** Menghitung panjang kolom */
+        int columnLength = 0;
+        for (int i = 0; i < strings.size(); i++) {
+            String[] rowNth = strings.get(i).split(";");
+            for (int j = 0; j < rowNth.length; j++) {
+                if (columnLength < rowNth[j].length()) {
+                    columnLength = rowNth[j].length();
+                }
+            }
+        }
 
-    public static List<String> select(/* signatures */) {
-        return new ArrayList<>();
-    }
+        for (int i = 0; i < strings.size(); i++) {
+            /** Membuat baris dari elemen strings */
+            String[] rowNth = strings.get(i).split(";");
+            String rows = "";
+            for (int j = 0; j < rowNth.length; j++) {
+                rows = rows.concat(String.format("%s %" + (-columnLength) + "s |",
+                        j == 0 ? "|" : "", i == 0 ? rowNth[j].toUpperCase() : rowNth[j]));
+            }
 
-    public static void prettify(List<String> strings) {}
+            /** Print baris */
+            System.out.printf("%s\n", rows);
+
+            /** Print separator */
+            int rowLength = rows.length();
+            if (i == 0 || i == strings.size() - 1) {
+                String separator = "-";
+                System.out.printf(" %s\n", separator.repeat((rowLength - 2)));
+            }
+        }
+    }
 
 }
