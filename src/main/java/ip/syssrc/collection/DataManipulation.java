@@ -45,8 +45,32 @@ public class DataManipulation {
 
         return new HashMap<>(studentInformation);
     }
-        // prettify(select(student, "id", "first_name", "last_name", "gender"));
 
+    public static List<String> select(List<Map<String, String>> list, String... keys) {
+         /** ArrayList untuk menyimpan elemnen per baris */
+         List<String> selectedMap = new ArrayList<>();
+
+         /** Baris dari keys (Kolom) */
+         String columns = new String("");
+         for (int i = 0; i < keys.length; i++) {
+             columns = columns.concat(String.format("%s%s", i == 0 ? "" : ";", keys[i]));
+         }
+         selectedMap.add(columns);
+ 
+         /** Baris values sesuai dengan kolom */
+         for (int i = 0; i < list.size(); i++) {
+             String rows = new String("");
+             for (int j = 0; j < keys.length; j++) {
+                 String values = list.get(i).get(keys[j]);
+                 if (!list.get(i).containsKey(keys[j])) {
+                     values = "NONE";
+                 }
+                 rows = rows.concat(String.format("%s%s", j == 0 ? "" : ";", values));
+             }
+             selectedMap.add(rows);
+         }
+ 
+         return new ArrayList<>(selectedMap);
     }
 
     public static Map<String, String> insert(/* signatures */) {
