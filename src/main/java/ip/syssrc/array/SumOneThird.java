@@ -6,6 +6,7 @@ package ip.syssrc.array;
  * Assignment 3.3
  *
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
+
  *
  */
 public class SumOneThird {

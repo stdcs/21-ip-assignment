@@ -8,19 +8,20 @@ package ip.syssrc.loop;
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
-<<<<<<< HEAD
 
  import java.util.Scanner;
  public class FactorialSequence {
-=======
-public class FactorialSequence {
->>>>>>> 7cb0749e321ae9457187a88d63ee46f64d176ebf
 
     public static void main(String[] args) {
         Scanner Diza = new Scanner(System.in);
 
         long fact = 1;
         int n = Diza.nextInt();
+
+    public static void main(String[] args) {
+        Scanner Diza = new Scanner(System.in);
+        int n = Diza.nextInt();
+
 
         if (n > 0) {
             System.out.print(n + "! = ");
@@ -40,6 +41,3 @@ public class FactorialSequence {
             System.out.println("Error");
         }
 
-        Diza.close();
-    }
-}

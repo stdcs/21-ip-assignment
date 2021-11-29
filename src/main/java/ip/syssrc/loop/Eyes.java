@@ -13,6 +13,11 @@ import java.util.Scanner;
 
     public static void main(String[] args) {
         Scanner Diza = new Scanner (System.in);
+import java.util.Scanner;
+ public class Eyes {
+
+    public static void main(String[] args) {
+        Scanner Diza = new Scanner (System.in);
         int n = Diza.nextInt();
 
         for (int i = 1; i <= n; i++) {
@@ -21,5 +26,17 @@ import java.util.Scanner;
             }
             System.out.println();
         }
-    }
-}
+                if (i == j) {
+                    System.out.print(1 + " ");
+                } else {
+                    System.out.print(0 + " ");
+                }
+            }
+            System.out.println();
+        }
+        Diza.close();
+
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+            }
+            System.out.println();
+        }
