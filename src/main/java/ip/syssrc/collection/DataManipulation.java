@@ -23,8 +23,28 @@ public class DataManipulation {
         // student.add(insert("id,first_name,last_name,gender", "H071171504, Rabia,Adaw,Female"));
         // student.add(insert("id,first_name, last_name, gender", "H071171308,Babang,Arizk,Male"));
 
-        // select(student, "first_name", "last_name").forEach(System.out::println);
+    public static Map<String, String> insert(String keys, String values) {
+        /** Mengekstrak elemen dari keys dan values menjadi sebuah array */
+        String[] keysArr = keys.replaceAll(" ", "").toLowerCase().split(",");
+        String[] valuesArr = values.replaceAll(" ", "").split(",");
 
+        /** Mengecek kesesuaian jumlah elemen keys dan values */
+        try {
+            if (keysArr.length != valuesArr.length) {
+                throw new IllegalArgumentException();
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
+
+        /** Membuat sebuah map dari keys dan values */
+        Map<String, String> studentInformation = new HashMap<>();
+        for (int i = 0; i < valuesArr.length; i++) {
+            studentInformation.put(keysArr[i], valuesArr[i]);
+        }
+
+        return new HashMap<>(studentInformation);
+    }
         // prettify(select(student, "id", "first_name", "last_name", "gender"));
 
     }
