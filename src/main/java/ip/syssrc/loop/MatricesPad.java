@@ -84,11 +84,32 @@ public class MatricesPad {
 =======
 =======
         Scanner dede = new Scanner (System.in);
+<<<<<<< HEAD
         int start = dede.nextInt();
         int end = dede.nextInt();
         int size = dede.nextInt();
 >>>>>>> 9e6b349 (feat(loop/MatricesPad): add format 'for' and 'if')
 
+=======
+        
+        int start, end, size;
+        try {
+            start = dede.nextInt();
+            end = dede.nextInt();
+            size = dede.nextInt();
+            if (start < 0 || end < 0 || size <= 0) {
+                throw new Exception();
+            }
+        } catch (Exception e) {
+            System.out.println("Masukkan bilangan bulat diatas nol");
+            return;
+        }
+        if (start == 0 && end == 0) {
+            System.out.println(0);
+            System.exit(0);
+        }
+    
+>>>>>>> fd2df4e (fix(loop/MatricesPad): add 'try catch' for exception)
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
 <<<<<<< HEAD
