@@ -1,5 +1,9 @@
 package ip.syssrc.collection;
-
+import java.util.Arrays;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
 /**
  * TemplateParse
  *
@@ -38,7 +42,19 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
-        return new ArrayList<>();
+        String[] str = template.split("\n");
+        List<String> stringlist = new ArrayList<>(Arrays.asList(str));
+        
+        for(int i = 0; i < stringList.size(); i++){
+            for(String key : data.keySet()){
+                if (stringList.get(i).contains(key)){
+                    String placeholder = String.format("\\{%s\\}", key);
+                    stringList.set(i,
+                                    stringList.get(i).replaceAll(placeholder, data.get(key)));
+                }
+            }
+        }
+        return new ArrayList<>(stringList);
     }
 
     /**
