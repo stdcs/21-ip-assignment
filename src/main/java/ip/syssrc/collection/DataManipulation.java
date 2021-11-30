@@ -106,7 +106,7 @@ public class DataManipulation {
                 i == 0 ? rowNth[j].toUpperCase() : rowNth[j]));
                 j++;
             }
-            i++;
+           
 
             System.out.printf("%s\n", rows);
 
@@ -115,6 +115,7 @@ public class DataManipulation {
                 String separator = "-";
                 System.out.printf(" %s\n", separator.repeat((rowLength - 2)));
             }
+            i++;
         }
     }
 }
