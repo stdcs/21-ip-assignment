@@ -82,6 +82,7 @@ public class BigInt {
                 finale[i + 1] = sum[i];
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         } else {
             finale = sum;
         }
@@ -91,6 +92,9 @@ public class BigInt {
 =======
         }
         else {
+=======
+        } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
             finale = sum;
         }
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
@@ -124,11 +128,15 @@ public class BigInt {
             if ((i % 4) == 0) {
                 arr[indexSum] = '.';
 <<<<<<< HEAD
+<<<<<<< HEAD
             } else {
 =======
             }
             else {
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+            } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
                 arr[indexSum] = (char) (nums[indexNums]+'0');
                 j++;
             } 
@@ -170,11 +178,15 @@ public class BigInt {
             if ((i % 4) == 0) {
                 arr[indexSum] = sparator;
 <<<<<<< HEAD
+<<<<<<< HEAD
             } else {
 =======
             }
             else {
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+            } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
                 arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
             } 
