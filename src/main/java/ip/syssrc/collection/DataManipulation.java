@@ -56,6 +56,7 @@ public class DataManipulation {
 
         String columns = new String("");
         int i = 0;
+        int j = 0;
         while( i < keys.length){
             columns = columns.concat(String.format("%s%s", i == 0 ? "" : "?", keys[i]));
             i++;
@@ -63,7 +64,7 @@ public class DataManipulation {
         selectedMap.add(columns);
         while(i < list.size()){
             String rows = new String("");
-            while (int j = 0; < keys.length) {
+            while (j < keys.length) {
                 String values = list.get(i).get(keys[j]);
                 if(!list.get(i).containsKey(keys[j])) {
                     values = "NONE";
@@ -77,6 +78,41 @@ public class DataManipulation {
         return new ArrayList<>(selectedMap);
     }
 
-    public static void prettify(List<String> strings) {}
+    public static void prettify(List<String> strings) {
+        int columnLength= 0;
+        int i = 0;
+        int j = 0;
+        while ( i < strings.size()){
+            String[] rowNth = strings.get(i).split(";");
+            while (j < rowNth.length ){
+                if( columnLength < rowNth[j].length()) {
+                    columnLength = rowNth[j].length();
+                }
+                j++;
+            }
+            i++;
+        }
+        
+        while ( i < strings.Size()) {
+            String[] rowNth = strings.get(i).split(";");
+            String rows = "";
+            while ( j < rowNth.length){
+                rows = rows.concat(String.format("%s %" + (-columnLength) + "s |",
+                j == 0 ? "|" : "",
+                i == 0 ? rowNth[j].toUpperCase() : rowNth[j]));
+                j++;
+            }
+            i++;
+        }
+
+        System.out.printf("%s\n", rows);
+
+        int rowLength = rows.length();
+        if ( i == 0 || i == strings.size() - 1){
+            String separator = "-";
+            System.out.printf(" %s\n", separator.repeat((rowLength - 2)));
+            }
+        }
+    }
 
 }
