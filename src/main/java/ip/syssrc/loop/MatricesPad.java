@@ -40,6 +40,7 @@ public class MatricesPad {
             System.exit(0);
         }
     
+<<<<<<< HEAD
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
         int j = 1;
@@ -136,6 +137,8 @@ public class MatricesPad {
         int size = dede.nextInt();
 >>>>>>> 2e04a02 (feat(loop/MatricesPad): add format 'for' and 'if')
 
+=======
+>>>>>>> cece394 (fix(loop/MatricesPad): add 'try catch' for exception)
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
 <<<<<<< HEAD
