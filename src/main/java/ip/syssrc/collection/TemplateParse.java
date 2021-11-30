@@ -33,34 +33,25 @@ public class TemplateParse {
     }
 
     /**
-     * Replace all the placeholders in the template with the coreesponding values in
-     * the data
+     * Replace all the placeholders in the template with the coreesponding values in the data
      *
-     * @param template the string with placeholder, placeholder is a word inside
-     *                 curly braces e.g. {name}, a placeholder with "name" as key
-     * @param data     the map of key-value, value is the data that will replace the
-     *                 placeholder in the template, key is a placeholder without
-     *                 curly braces.
+     * @param template the string with placeholder, placeholder is a word inside curly braces e.g.
+     *        {name}, a placeholder with "name" as key
+     * @param data the map of key-value, value is the data that will replace the placeholder in the
+     *        template, key is a placeholder without curly braces.
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
+
+        for (String key : data.keySet()) {
+            String placeholder = String.format("\\{%s\\}", key);
+            template = template.replaceAll(placeholder, data.get(key));
+        }
+
         String[] str = template.split("\n");
         List<String> stringList = new ArrayList<>(Arrays.asList(str));
 
-        /** Perulangan untuk tiap baris */
-        for (int index = 0; index < stringList.size(); index++) {
-            /** Perulangan untuk tiap key */
-            for (String key : data.keySet()) {
-                if (stringList.get(index).contains(key)) {
-                    String placeholder = String.format("\\{%s\\}", key);
-                    stringList.set(index,
-                            stringList.get(index).replaceAll(placeholder, data.get(key)));
-                }
-
-            }
-        }
-
-        return new ArrayList<>(stringList);
+        return stringList;
     }
 
     /**
