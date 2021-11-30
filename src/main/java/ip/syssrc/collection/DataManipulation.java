@@ -51,8 +51,30 @@ public class DataManipulation {
                 return new HashMap<>(studentInformation);
     }
 
-    public static List<String> select(/* signatures */) {
-        return new ArrayList<>();
+    public static List<String> select(List<Map<String, String>> list, String... keys) {
+        List<String> selectedMap = new ArrayList<>();
+
+        String columns = new String("");
+        int i = 0;
+        while( i < keys.length){
+            columns = columns.concat(String.format("%s%s", i == 0 ? "" : "?", keys[i]));
+            i++;
+        }
+        selectedMap.add(columns);
+        while(i < list.size()){
+            String rows = new String("");
+            while (int j = 0; < keys.length) {
+                String values = list.get(i).get(keys[j]);
+                if(!list.get(i).containsKey(keys[j])) {
+                    values = "NONE";
+                }
+                rows = rows.concat(String.format("%s%s", j == 0 ? "" : ";", values));
+                j++;
+            }
+            selectedMap.add(rows);
+            i++;
+        }
+        return new ArrayList<>(selectedMap);
     }
 
     public static void prettify(List<String> strings) {}
