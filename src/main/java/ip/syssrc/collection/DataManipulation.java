@@ -38,12 +38,8 @@ public class DataManipulation {
         String[] keysArr = keys.replaceAll(" ", "").toLowerCase().split(",");
         String[] argsArr = args.replaceAll(" ", "").split(",");
 
-        try {
-            if (keysArr.length != argsArr.length) {
-                throw new IllegalArgumentException();
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println(e);
+        if (keysArr.length != argsArr.length) {
+            throw new IllegalArgumentException("Invalid Argument.");
         }
 
         Map<String, String> student = new HashMap<>();
