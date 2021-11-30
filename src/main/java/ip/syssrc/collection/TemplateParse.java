@@ -46,8 +46,8 @@ public class TemplateParse {
      */
     public static List<String> parse(String template, Map<String, String> data) {
         for (String key : data.keySet()) { // ..for each key set of data, we replace the placeholder
-            String placeholder = String.format("\\{%s\\}", key);
-            template = (template.replaceAll(placeholder, data.get(key)));
+            String placeholder = String.format("{%s}", key);
+            template = (template.replace(placeholder, data.get(key)));
         }
 
         String[] args = template.split("\n"); // split after
