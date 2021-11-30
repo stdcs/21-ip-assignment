@@ -11,13 +11,19 @@ package ip.syssrc.collection;
 public class DataManipulation {
 
     public static void main(String[] args) {
-        // List<Map<String, String>> student = new ArrayList<>();
-
+        List<Map<String, String>> student = new ArrayList<>();
+        
+        student.add(insert("id, first_name, last name, gender", "H071171512, Fitrah, Muhammad, Male"));
+        student.add(insert("id, first_name, last name, gender", "H071171510, Amalia, Dwi, Female"));
+        student.add(insert("id, first_name, last name, gender", "H071171512, Rabia, Adaw, Male"));
+        student.add(insert("id, first_name, last name, gender", "H071171308, Babang, Arizk, Male"));
         // student.add(insert("id, first_name, last_name, gender", "H071171512, Fitrah, Muhammad, Male"));
         // student.add(insert("id, first_name, last_name, gender", "H071171510, Amalia, Dwi, Female"));
         // student.add(insert("id,first_name,last_name,gender", "H071171504, Rabia,Adaw,Female"));
         // student.add(insert("id,first_name, last_name, gender", "H071171308,Babang,Arizk,Male"));
-
+        select(student, "first_name", "last_name").forEach(System.out::println);
+        System.out.println();
+        prettify(select(student, "id", "first_name", "last_name", "gender"));
         // select(student, "first_name", "last_name").forEach(System.out::println);
 
         // prettify(select(student, "id", "first_name", "last_name", "gender"));
@@ -25,6 +31,7 @@ public class DataManipulation {
     }
 
     public static Map<String, String> insert(/* signatures */) {
+
         return new HashMap<>();
     }
 
