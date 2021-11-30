@@ -35,6 +35,10 @@ public class FactorialSequence {
         }
 
         in.close();
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> c1f7cd40f4304067a7a133d14add23ccbde10b2a
     }
 }

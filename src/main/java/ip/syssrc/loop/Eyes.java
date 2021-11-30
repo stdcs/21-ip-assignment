@@ -35,7 +35,11 @@ public class Eyes {
                 } else {
                     System.out.printf("%d", 0);
                 }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c1f7cd40f4304067a7a133d14add23ccbde10b2a
                 if ( j < (n - 1)){
                     System.out.print(" ");
                 }
