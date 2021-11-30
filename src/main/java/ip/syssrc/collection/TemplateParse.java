@@ -60,8 +60,6 @@ public class TemplateParse {
      * @param template the list to be printed
      **/
     public static void render(List<String> template) {
-        for (int i = 0; i < template.size(); i++) {
-            System.out.println(template.get(i));
-        }
+        template.forEach(System.out::println);
     }
 }
