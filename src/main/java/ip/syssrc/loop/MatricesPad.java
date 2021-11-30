@@ -18,6 +18,7 @@ public class MatricesPad {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -81,6 +82,12 @@ public class MatricesPad {
 =======
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
 =======
+=======
+        Scanner dede = new Scanner (System.in);
+        int start = dede.nextInt();
+        int end = dede.nextInt();
+        int size = dede.nextInt();
+>>>>>>> 9e6b349 (feat(loop/MatricesPad): add format 'for' and 'if')
 
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
