@@ -97,7 +97,7 @@ public class DataManipulation {
             i++;
         }
         
-        while ( i < strings.Size()) {
+        while ( i < strings.size()) {
             String[] rowNth = strings.get(i).split(";");
             String rows = "";
             while ( j < rowNth.length){
@@ -107,16 +107,16 @@ public class DataManipulation {
                 j++;
             }
             i++;
-        }
 
-        System.out.printf("%s\n", rows);
+            System.out.printf("%s\n", rows);
 
-        int rowLength = rows.length();
-        if ( i == 0 || i == strings.size() - 1){
-            String separator = "-";
-            System.out.printf(" %s\n", separator.repeat((rowLength - 2)));
+            int rowLength = rows.length();
+            if ( i == 0 || i == strings.size() - 1){
+                String separator = "-";
+                System.out.printf(" %s\n", separator.repeat((rowLength - 2)));
             }
         }
     }
-
 }
+
+
