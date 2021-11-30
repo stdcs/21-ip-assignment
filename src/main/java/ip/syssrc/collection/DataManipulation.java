@@ -43,7 +43,7 @@ public class DataManipulation {
             studentInformation.put(keysArr[i], valuesArr[i]);
         }
 
-        return new HashMap<>(studentInformation);
+        return studentInformation;
     }
 
     public static List<String> select(List<Map<String, String>> list, String... keys) {
@@ -70,7 +70,7 @@ public class DataManipulation {
              selectedMap.add(rows);
          }
  
-         return new ArrayList<>(selectedMap);
+         return selectedMap;
     }
 
     public static void prettify(List<String> strings) {
