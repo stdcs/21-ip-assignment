@@ -5,38 +5,7 @@ import java.util.Scanner;
  *
  * Assignment 2.2
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
->>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
-=======
- * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
->>>>>>> aca5ce6 (Update FactorialSequence.java)
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
->>>>>>> c9b229e (feat(loop) : add assigment 2.1 2.2 2.3)
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
-=======
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
->>>>>>> 509d200 (feat(loop) : add assigment 2.1 2.2 2.3)
-=======
- * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
->>>>>>> aca5ce6 (Update FactorialSequence.java)
->>>>>>> f2ae1a1 (Update FactorialSequence.java)
->>>>>>> 00ded2c (Update FactorialSequence.java)
-=======
- * @author H0711211078 Muh Fajar Siddiq <fsiddiq072@gmail.com>
->>>>>>> c1f7cd4 (fix(conditional);(loop) resolved merge conflict)
  *
  */
 public class FactorialSequence {
@@ -66,6 +35,6 @@ public class FactorialSequence {
         }
 
         in.close();
-
+ 
     }
 }
