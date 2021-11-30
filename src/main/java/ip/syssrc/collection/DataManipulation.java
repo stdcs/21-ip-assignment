@@ -18,37 +18,19 @@ public class DataManipulation {
 
     public static void main(String[] args) {
 
-        List<Map<String, String>> student = new ArrayList<>();
-        // TRY 1
-        /*
-         * student.add(insert("id, first_name, last_name, gender",
-         * "H071171512, Fitrah, Muhammad, Male"));
-         * student.add(insert("id, first_name, last_name, gender",
-         * "H071171510, Amalia, Dwi, Female"));
-         * student.add(insert("id, first_name,last_name,gender",
-         * "H071171504, Rabia,Adaw,Female"));
-         * student.add(insert("id, first_name, last_name, gender",
-         * "H071171308,Babang,Arizk,Male"));
-         * 
-         * select(student, "first_name", "last_name").forEach(System.out::println);
-         * prettify(select(student, "id", "first_name", "last_name", "gender"));
-         * select(student, "first_name", "i").forEach(System.out::println);
-         */
+        // List<Map<String, String>> student = new ArrayList<>();
 
-        // TRY 2
-        /*
-        student.add(insert("id, first_name, last_name, gender",
-                "H071171512, Fitrah, Muhammad, Male"));
-        student.add(insert("id, first_name, last_name, gender",
-                "H071171510, Amalia, Dwi, Female"));
-        student.add(insert("id,first_name,last_name,gender",
-                "H071171504, Rabia,Adaw,Female"));
-        student.add(insert("id,first_name, last_name, gender",
-                "H071171308,Babang,Arizk,Male"));
-
-        select(student, "first_name", "last_name", "i").forEach(System.out::println);
-        System.out.println();
-        prettify(select(student, "id", "first_name", "last_name", "gender"));*/
+        // student.add(insert("id, first_name, last_name, gender",
+        // "H071171512, Fitrah, Muhammad, Male"));
+        // student.add(insert("id, first_name, last_name, gender",
+        // "H071171510, Amalia, Dwi, Female"));
+        // student.add(insert("id,first_name,last_name,gender",
+        // "H071171504, Rabia,Adaw,Female"));
+        // student.add(insert("id,first_name, last_name, gender",
+        // "H071171308,Babang,Arizk,Male"));
+        // select(student, "first_name", "last_name", "i").forEach(System.out::println);
+        // System.out.println();
+        // prettify(select(student, "id", "first_name", "last_name", "gender"));
 
     }
 
@@ -75,7 +57,7 @@ public class DataManipulation {
         List<String> selectedMap = new ArrayList<>();
 
         String cols = new String("");
-        for (int i = 0; i < args.length; i++) { //..loop to form the columns
+        for (int i = 0; i < args.length; i++) { // ..loop to form the columns
             String separator = (i != 0) ? ";" : "";
             cols = cols.concat(String.format("%s%s", separator, args[i]));
         }
@@ -97,10 +79,10 @@ public class DataManipulation {
     }
 
     public static void prettify(List<String> strings) {
-        int rowLength = 0;
         int colsLength = 0;
         String separator = "-";
-        
+        String header = "";
+
         for (int i = 0; i < strings.size(); i++) {
             String[] row = strings.get(i).split(";");
             for (int j = 0; j < row.length; j++) {
@@ -110,27 +92,32 @@ public class DataManipulation {
             }
         }
 
-        for (int i = 0; i < strings.size(); i++) {
+        String opt = ("| %" + (-colsLength) + "s ");
+
+        String[] cols = strings.get(0).split(";"); // Set the name in columns into array
+        for (String str : cols) {
+            header = header.concat(String.format(opt, str)).toUpperCase();
+        }
+
+        System.out.print(header); // Printout the table's header
+        System.out.println("|"); // Printout the column's seperator
+
+        System.out.print(" ".concat(separator.repeat(header.length() - 1)).concat("\n")); // The seperator line
+
+        for (int i = 1; i < strings.size(); i++) {
 
             String rows = "";
             String[] row = strings.get(i).split(";");
 
-            String opt = "%s %" + (-colsLength) + ("s |");
-
             for (int t = 0; t < row.length; t++) {
-                rows = rows.concat(String.format(opt, t != 0 ? "" : "|", i != 0 ? row[t] : row[t].toUpperCase()));
+                rows = rows.concat(String.format(opt, row[t]));
             }
-            rowLength = rows.length();
-            
-            System.out.println(rows); // Print out the rows
-            if (i == 0) {
-                System.out.println(" ".concat(separator.repeat(rowLength - 2)));
-            }
-            
-            
+
+            System.out.print(rows); // Print out the rows
+            System.out.println("|");
         }
-        
-        System.out.println(" ".concat(separator.repeat(rowLength - 2)));
+
+        System.out.print(" ".concat(separator.repeat(header.length() - 1)).concat("\n")); // The seperator line
 
     }
 }
