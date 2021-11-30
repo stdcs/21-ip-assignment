@@ -30,9 +30,25 @@ public class DataManipulation {
 
     }
 
-    public static Map<String, String> insert(/* signatures */) {
+    public static Map<String, String> insert(String keys, String values) {
+        String[] keysArr = keys.replaceAll(" ", "").toLowerCase().split(",");
+        String[] valuesArr = values.replaceAll(" ", "").split(",");
+        
+        try{
+            if (keysArr.length != valuesArr.length){
+                throw new IllegalArgumentException();
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
 
-        return new HashMap<>();
+        Map<String, String> studentInformation = new HashMap<>();
+        int i = 0;
+        while (i < valuesArr.length){
+            studentInformation.put(keysArr[i], valuesArr[i]);
+            i++;
+        }
+                return new HashMap<>(studentInformation);
     }
 
     public static List<String> select(/* signatures */) {
