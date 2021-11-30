@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211066 - Syifa Ur Rahmi <sifasisi3@gmail.com>
  *
  */
 public class TemplateParse {
@@ -38,6 +38,12 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
+        template.replace("{alpha}", get.data("alpha"))
+            .replace("{do}", get.data("do"))
+            .replace("{animal}", get.data("animal"))
+            .replace("{who}", get.data("who"))
+            .replace("{where}", get.data("where"))
+            .replace("{with}", get.data("with"));
         return new ArrayList<>();
     }
 
