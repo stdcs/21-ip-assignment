@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211052 - MUHAMMAD ARYA RAMDANI <mhmdaryaramdani@gmail.com>
  *
  */
 public class DataManipulation {
