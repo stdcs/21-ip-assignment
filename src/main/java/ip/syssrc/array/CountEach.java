@@ -15,6 +15,7 @@ public class CountEach {
         Scanner dede = new Scanner(System.in);
         int n = dede.nextInt();
 <<<<<<< HEAD
+<<<<<<< HEAD
         int[] array = new int[n];
         
         for (int i = 0; i < n; i++) {
@@ -39,14 +40,36 @@ public class CountEach {
                 System.out.println(freq[i] + " angka " + array[i]);
 =======
         int[] array = new int[10000000];
+=======
+        int[] array = new int[n];
+        
+>>>>>>> cb98aa2 (fix(array/CountEach): change code)
         for (int i = 0; i < n; i++) {
-            int var = in.nextInt();
-            array[var]++;
+            array[i] = dede.nextInt();
         }
+
+        int[] freq = new int[array.length];
+        int included = -1;
+
         for (int i = 0; i < array.length; i++) {
+<<<<<<< HEAD
             if (array[i] != 0) {
                 System.out.println(array[i] + " angka " + i);
 >>>>>>> 4fba450 (feat(array/CountEach): add code)
+=======
+            int counter = 1;
+            for (int j = i + 1; j < array.length; j++) {
+               if (array[i] == array[j]) {
+                   counter++;
+                   freq[j] = included;
+               }
+            }
+            if (freq[i] != included) {
+                freq[i] = counter;
+            }
+            if (freq[i] != included) {
+                System.out.println(freq[i] + " angka " + array[i]);
+>>>>>>> cb98aa2 (fix(array/CountEach): change code)
             }
         }
     }
