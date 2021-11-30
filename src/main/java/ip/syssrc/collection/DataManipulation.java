@@ -29,12 +29,8 @@ public class DataManipulation {
         String[] valuesArr = values.replaceAll(" ", "").split(",");
 
         /** Mengecek kesesuaian jumlah elemen keys dan values */
-        try {
-            if (keysArr.length != valuesArr.length) {
-                throw new IllegalArgumentException();
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println(e);
+        if (keysArr.length != valuesArr.length) {
+            throw new IllegalArgumentException("Argumen tidak valid.");
         }
 
         /** Membuat sebuah map dari keys dan values */
