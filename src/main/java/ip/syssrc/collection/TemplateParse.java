@@ -11,7 +11,8 @@ import java.util.Arrays;
  *
  * Assignment 6.1
  *
- * @author H071171512 - Muhammad Sofyan Daud Pujas <pujasmsd21h@student.unhas.ac.id>
+ * @author H071171512 - Muhammad Sofyan Daud Pujas
+ *         <pujasmsd21h@student.unhas.ac.id>
  *
  */
 public class TemplateParse {
@@ -44,15 +45,13 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
-        String[] args = template.split("\n");
-        List<String> list = new ArrayList<>(Arrays.asList(args));
-
-        for (int i = 0; i < list.size(); i++) {
-            for (String key : data.keySet()) {
-                    String placeholder = String.format("\\{%s\\}", key);
-                    list.set(i, list.get(i).replaceAll(placeholder, data.get(key)));
-            }
+        for (String key : data.keySet()) { // ..for each key set of data, we replace the placeholder
+            String placeholder = String.format("\\{%s\\}", key);
+            template = (template.replaceAll(placeholder, data.get(key)));
         }
+
+        String[] args = template.split("\n"); // split after
+        List<String> list = new ArrayList<>(Arrays.asList(args));
 
         return list;
     }
