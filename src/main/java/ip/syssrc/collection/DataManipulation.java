@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
  *
  */
 public class DataManipulation {
@@ -33,7 +33,6 @@ public class DataManipulation {
          if (keysArr.length != argsArr.length) {
              throw new IllegalArgumentException("Invalid Argument.");
          }
- 
          Map<String, String> student = new HashMap<>();
          for (int i = 0; i < argsArr.length; i++) {
              student.put(keysArr[i], argsArr[i]);
@@ -97,6 +96,6 @@ public class DataManipulation {
              System.out.println("|");
          }
          System.out.print(" ".concat(separator.repeat(header.length() - 1)).concat("\n")); 
-     }
- }
+    }
+ 
 }
