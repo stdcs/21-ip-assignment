@@ -23,6 +23,9 @@ public class RoleAccess {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15df50e (delete)
 
         if (args.length == 0) {
             System.out.println("What role you want to see ?");
@@ -33,10 +36,13 @@ public class RoleAccess {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5eb0d90 (delete)
 =======
 =======
 >>>>>>> d01c992 (delete)
+=======
+>>>>>>> f98dc4b (delete)
 <<<<<<< HEAD
             switch (args[0]) {
                 case "Super Admin":
@@ -277,10 +283,15 @@ public class RoleAccess {
         
         } else if (args.length == 1) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           if (args[0].equals("Super Admin") || args[0].equals("Admin") || args[0].equals("User")){
               isValidRole = true;
           } if (isValidRole == true) {
 =======
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
           switch (args[0]) {
               case "Super Admin":
               case "Admin":
@@ -290,6 +301,7 @@ public class RoleAccess {
           } 
           
         if (isValidRole) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 07a8b51 (delete')
             switch (args[0]) {
@@ -326,6 +338,8 @@ public class RoleAccess {
 =======
 =======
 >>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
+=======
+>>>>>>> f98dc4b (delete)
             switch (args[0]) {
                 case "Super Admin":
                 case "Admin":
@@ -334,8 +348,7 @@ public class RoleAccess {
 >>>>>>> d01c992 (delete)
                     break;
             } 
-        
-          
+            
             if (isValidRole) {
                 switch (args[0]) {
                     case "Super Admin":
@@ -359,8 +372,13 @@ public class RoleAccess {
                         System.out.printf("%2d.%d. Edit\n", menuIndex, ++subMenuIndex);
                 
                         break;
+                    }
+                } else {
+                    System.out.println("Invalid Role");
+                    System.out.println("Valid Role : Super Admin, Admin, User");
                 }
             } else {
+<<<<<<< HEAD
                 System.out.println("Invalid Role");
                 System.out.println("Valid Role : Super Admin, Admin, User");
             }
@@ -379,9 +397,18 @@ public class RoleAccess {
 >>>>>>> 07a8b51 (delete')
 =======
 =======
+=======
+>>>>>>> f98dc4b (delete)
             System.out.println("Too many argument");
+<<<<<<< HEAD
 >>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
+<<<<<<< HEAD
 >>>>>>> d01c992 (delete)
+=======
+=======
+            }
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         }
     }
 }

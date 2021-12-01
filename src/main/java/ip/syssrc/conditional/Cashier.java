@@ -21,6 +21,7 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6ee24d0 (fix(conditional/Cashier): change String to int)
 =======
@@ -406,21 +407,18 @@ public class Cashier {
 =======
             totalBelanja = nanda.next();
 =======
+=======
+        int uang, totalBelanja;
+        try {
+            System.out.print("Berapakah total harga belanja anda ? ");
+>>>>>>> 15df50e (delete)
             totalBelanja = nanda.nextInt();
->>>>>>> b9b44d1 (fix(conditional/Cashier): change method 'next()' to 'nextInt()')
             System.out.print("Berapakah total uang anda bayaran ? ");
             uang = nanda.nextInt();
         } catch (Exception e) {
->>>>>>> 6ee24d0 (fix(conditional/Cashier): change String to int)
             System.out.println("Maaf, pastikan inputan anda adalah angka");
             return;
         }
-      
-        
-        
-        
-=======
->>>>>>> dc99099 (fix(conditional/Cahsier): delete space)
         int kembalian = uang - totalBelanja;
         if (kembalian == 0) {
             System.out.println("Terimakasih telah membayar dengan uang pas");
@@ -511,11 +509,14 @@ public class Cashier {
             }if (kembalian > 0) {
                 System.out.println("Dan sebanyak Rp. " +kembalian+ " didonasikan");
             }
+<<<<<<< HEAD
 >>>>>>> bf8cc79 (feat(conditional/Cashier) : add 'switch' object)
 <<<<<<< HEAD
 >>>>>>> 700d9da (delete)
 =======
 =======
+=======
+>>>>>>> f98dc4b (delete)
             if (kembalian > 0) {
                 System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
             }
@@ -523,8 +524,14 @@ public class Cashier {
             System.out.println("Maaf, pembayaran anda belum mencukupi");
         } else {
             System.out.println("Terimakasih telah membayar dengan uang pas");
+<<<<<<< HEAD
 >>>>>>> 038194f (fix(conditional/Cashier): change code and 'if' block)
+<<<<<<< HEAD
 >>>>>>> 84d6570 (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         }
     }
 }

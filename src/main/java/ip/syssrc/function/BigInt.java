@@ -1,6 +1,9 @@
 package ip.syssrc.function;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,12 +15,18 @@ import javax.swing.JPopupMenu.Separator;
 import javax.swing.JPopupMenu.Separator;
 
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
 /**
  * BigInt
  *
  * Assignment 4.2
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
 =======
@@ -25,12 +34,20 @@ import javax.swing.JPopupMenu.Separator;
 <<<<<<< HEAD
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 =======
+=======
+>>>>>>> f98dc4b (delete)
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+<<<<<<< HEAD
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
  *
  */
 public class BigInt {
@@ -48,10 +65,16 @@ public class BigInt {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
 
@@ -87,7 +110,10 @@ public class BigInt {
             finale = sum;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
         }
@@ -98,7 +124,12 @@ public class BigInt {
             finale = sum;
         }
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new int[] {};
     }
 
@@ -113,10 +144,16 @@ public class BigInt {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -142,12 +179,20 @@ public class BigInt {
             } 
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
 <<<<<<< HEAD
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new char[] {};
     }
 
@@ -163,10 +208,16 @@ public class BigInt {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -192,12 +243,20 @@ public class BigInt {
             } 
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
 <<<<<<< HEAD
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new char[] {};
     }
 
@@ -209,19 +268,27 @@ public class BigInt {
      */
     public static void print(int[] nums) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
         for (int i : nums) {
             System.out.println(i);
         }
+<<<<<<< HEAD
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
         for (int i : nums) {
             System.out.println(i);
         }
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
     }
 
     /**
@@ -233,18 +300,26 @@ public class BigInt {
      */
     public static void print(char[] chars) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f98dc4b (delete)
         for (char i : chars) {
             System.out.println(i);
         }
+<<<<<<< HEAD
 >>>>>>> eea20b5 (feat(function/BigInt): add code)
 =======
+<<<<<<< HEAD
 >>>>>>> 1ae828f (delete)
         for (char i : chars) {
             System.out.println(i);
         }
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
     }
 }

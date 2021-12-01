@@ -31,22 +31,29 @@ public class Eyes {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 5562406 (delete)
+=======
+>>>>>>> 15df50e (delete)
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+>>>>>>> f98dc4b (delete)
                 if (i == j) {
                     System.out.print("1 ");
                 } else {
                     System.out.print("0 ");
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
 =======
-                    System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
->>>>>>> 9c1dfb9 (fix(loop/Eyes): delete 'if')
 =======
+>>>>>>> f98dc4b (delete)
+                    System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+<<<<<<< HEAD
 >>>>>>> 4e7114f (fix(loop/Eyes): delete space)
 =======
                 if (i == j) {
@@ -89,7 +96,12 @@ public class Eyes {
 =======
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 >>>>>>> 4e7114f (fix(loop/Eyes): delete space)
+<<<<<<< HEAD
 >>>>>>> ae9adcc (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
             }
             System.out.println();
         }
