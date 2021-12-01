@@ -21,6 +21,7 @@ public class MatricesPad {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -62,7 +63,13 @@ public class MatricesPad {
         int end = dede.nextInt();
         int size = dede.nextInt();
 >>>>>>> 2e04a02 (feat(loop/MatricesPad): add format 'for' and 'if')
+<<<<<<< HEAD
 >>>>>>> 5562406 (delete)
+=======
+=======
+        Scanner dede = new Scanner (System.in);
+>>>>>>> b83a662 (delete)
+>>>>>>> ee9ef23 (delete)
 
         int start, end, size;
         try {
@@ -85,7 +92,10 @@ public class MatricesPad {
         int leadingZero = 0;
         int j = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9ef23 (delete)
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
 =======
 =======
@@ -149,7 +159,12 @@ public class MatricesPad {
 =======
         int j = 1;
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
+<<<<<<< HEAD
 >>>>>>> 31d46e0 (delete)
+=======
+=======
+>>>>>>> b83a662 (delete)
+>>>>>>> ee9ef23 (delete)
         
         while (biggest > 0) {
             biggest /= 10;
@@ -160,6 +175,7 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -207,7 +223,15 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
+<<<<<<< HEAD
 >>>>>>> 31d46e0 (delete)
+=======
+=======
+ 
+        for (int i = start; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
+>>>>>>> b83a662 (delete)
+>>>>>>> ee9ef23 (delete)
             if (start < end) {
                 i++;
             } else {

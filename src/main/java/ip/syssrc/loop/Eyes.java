@@ -17,9 +17,12 @@ public class Eyes {
         int n = dede.nextInt();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i=0; i < n; i++) {
             for (int j = 0; j < n; j++) {
 =======
+=======
+>>>>>>> ee9ef23 (delete)
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
 <<<<<<< HEAD
@@ -38,7 +41,14 @@ public class Eyes {
 =======
 >>>>>>> 15df50e (delete)
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+<<<<<<< HEAD
 >>>>>>> f98dc4b (delete)
+=======
+=======
+        for (int i=0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+>>>>>>> b83a662 (delete)
+>>>>>>> ee9ef23 (delete)
                 if (i == j) {
                     System.out.print("1 ");
                 } else {
@@ -46,11 +56,14 @@ public class Eyes {
                 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
 =======
 =======
 >>>>>>> f98dc4b (delete)
+=======
+>>>>>>> ee9ef23 (delete)
                     System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 <<<<<<< HEAD
@@ -101,7 +114,12 @@ public class Eyes {
 =======
 =======
 >>>>>>> 15df50e (delete)
+<<<<<<< HEAD
 >>>>>>> f98dc4b (delete)
+=======
+=======
+>>>>>>> b83a662 (delete)
+>>>>>>> ee9ef23 (delete)
             }
             System.out.println();
         }

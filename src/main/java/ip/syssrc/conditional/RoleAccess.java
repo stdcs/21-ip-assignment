@@ -379,6 +379,7 @@ public class RoleAccess {
                 }
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 System.out.println("Invalid Role");
                 System.out.println("Valid Role : Super Admin, Admin, User");
             }
@@ -399,6 +400,8 @@ public class RoleAccess {
 =======
 =======
 >>>>>>> f98dc4b (delete)
+=======
+>>>>>>> ee9ef23 (delete)
             System.out.println("Too many argument");
 <<<<<<< HEAD
 >>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
@@ -406,6 +409,9 @@ public class RoleAccess {
 >>>>>>> d01c992 (delete)
 =======
 =======
+=======
+                System.out.println("Too many argument");
+>>>>>>> b83a662 (delete)
             }
 >>>>>>> 15df50e (delete)
 >>>>>>> f98dc4b (delete)
