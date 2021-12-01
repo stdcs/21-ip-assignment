@@ -66,6 +66,45 @@ public class DataManipulation {
         return selectedMap;
     }
 
-    public static void prettify(List<String> strings) {}
+    public static void prettify(List<String> strings) {
+        int columnLength = 0;
 
+        for (int i = 0; i < strings.size(); i++) {
+            String[] rowNth = strings.get(i).split(";");
+            for (int j = 0; j < rowNth.length; j++) {
+                if (columnLength < rowNth[j].length()) {
+                    columnLength = rowNth[j].length();
+                }
+            }
+        }
+
+        String formatter = "| %" + (-columnLength) + "s ";
+        String separator = "-";
+
+        strings.set(0, strings.get(0).toUpperCase());
+        String[] columnName = strings.get(0).split(";");
+        String firstRows = "";
+
+        for (int i = 0; i < columnName.length; i++) {
+            firstRows = firstRows.concat(String.format(formatter, columnName[i]));
+        }
+
+        int rowLength = firstRows.length() - 1;
+        System.out.printf("%s", firstRows);
+        System.out.println("|");
+
+        System.out.printf(" %s\n", separator.repeat(rowLength));
+
+        for (int i = 1; i < strings.size(); i++) {
+            String[] rowNth = strings.get(i).split(";");
+            String rows = "";
+            for (int j = 0; j < rowNth.length; j++) {
+                rows = rows.concat(String.format(formatter, rowNth[j]));
+            }
+            System.out.printf("%s", rows);
+            System.out.println("|");
+        }
+
+        System.out.printf(" %s\n", separator.repeat(rowLength));
+    }
 }
