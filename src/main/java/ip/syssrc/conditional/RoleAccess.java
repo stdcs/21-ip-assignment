@@ -19,6 +19,16 @@ public class RoleAccess {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+        if (args.length == 0) {
+            System.out.println("What role you want to see ?");
+            System.out.println("For example, try 'Admin'.");
+        
+        } else if (args.length == 1) {
+>>>>>>> b224690 (delete)
+<<<<<<< HEAD
 >>>>>>> 5eb0d90 (delete)
 
         if (args.length == 0) {
@@ -89,14 +99,29 @@ public class RoleAccess {
 >>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
 =======
     
+=======
+
+>>>>>>> 0a3399e (fix (conditional/RoleAcces): change indentasi to '4 space')
         if (args.length == 0) {
-          System.out.println("What role you want to see ?");
-          System.out.println("For example, try 'Admin'.");
+            System.out.println("What role you want to see ?");
+            System.out.println("For example, try 'Admin'.");
         
         } else if (args.length == 1) {
+<<<<<<< HEAD
           if (args[0].equals("Super Admin") || args[0].equals("Admin") || args[0].equals("User")){
               isValidRole = true;
           } if (isValidRole == true) {
+=======
+          switch (args[0]) {
+              case "Super Admin":
+              case "Admin":
+              case "User":
+              isValidRole = true;
+              break;
+          } 
+          
+        if (isValidRole) {
+>>>>>>> b224690 (delete)
             switch (args[0]) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
@@ -131,13 +156,20 @@ public class RoleAccess {
                     break;
             }
           } else {
-            System.out.println("Invalid Role");
-            System.out.println("Valid Role : Super Admin, Admin, User");
+                System.out.println("Invalid Role");
+                System.out.println("Valid Role : Super Admin, Admin, User");
           }
         } else {
+<<<<<<< HEAD
           System.out.println("Too many argument");
 >>>>>>> d942e9b (feat(conditional/Cashier) : add 'switch' object)
+<<<<<<< HEAD
 >>>>>>> 5eb0d90 (delete)
+=======
+=======
+              System.out.println("Too many argument");
+>>>>>>> 0a3399e (fix (conditional/RoleAcces): change indentasi to '4 space')
+>>>>>>> b224690 (delete)
         }
     }
 }
