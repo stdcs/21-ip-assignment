@@ -91,8 +91,15 @@ public class MatricesPad {
 
         int biggest = (start > end) ? start : end;
         int leadingZero = 0;
+<<<<<<< HEAD
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
+<<<<<<< HEAD
 >>>>>>> 5562406 (delete)
+=======
+=======
+        int j = 1;
+>>>>>>> 2dc3ab0 (fix(loop/MatricesPad): change sysout)
+>>>>>>> a7925f0 (delete)
         
         while (biggest > 0) {
             biggest /= 10;
@@ -103,6 +110,7 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,7 +133,14 @@ public class MatricesPad {
 >>>>>>> ed91612 (fix(loop/MatricesPad): change sysout)
 =======
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
+<<<<<<< HEAD
 >>>>>>> 5562406 (delete)
+=======
+=======
+        for (int i = start; (start < end ? i <= end : i >= end); j++) {
+            System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
+>>>>>>> 2dc3ab0 (fix(loop/MatricesPad): change sysout)
+>>>>>>> a7925f0 (delete)
             if (start < end) {
                 i++;
             } else {
