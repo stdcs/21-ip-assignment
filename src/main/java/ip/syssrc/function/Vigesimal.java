@@ -5,7 +5,19 @@ package ip.syssrc.function;
  *
  * Assignment 4.1
  *
+<<<<<<< HEAD
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail.com>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+=======
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail.com>
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail.com>
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
  */
 public class Vigesimal {
 
@@ -16,6 +28,14 @@ public class Vigesimal {
      * @return array of char that represent the radix-20 format
      */
     public static char[] toVigesimal(int n) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         int length = (n >= 20) ? 2 : 1;
         char[] arr = new char[length];
         for (int i = arr.length - 1; i >= 0; i--) {
@@ -23,6 +43,13 @@ public class Vigesimal {
             arr[i] = (modulo > 9) ? (char) (modulo + 55) : (char) (modulo + '0');
             n /= 20;
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         return new char[] {};
     }
 
@@ -32,6 +59,14 @@ public class Vigesimal {
      * @return void
      */
     public static void table() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         for (int i = 1; i < 20; i++) {
             for (int j = 1; j < 20; j++) {
                 char[] vigecimal = toVigecimal(i * j);
@@ -43,5 +78,12 @@ public class Vigesimal {
             }
             System.out.println("");
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
     }
 }

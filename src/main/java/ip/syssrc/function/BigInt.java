@@ -1,10 +1,36 @@
 package ip.syssrc.function;
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import javax.swing.JPopupMenu.Separator;
+
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+import javax.swing.JPopupMenu.Separator;
+
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
 /**
  * BigInt
  *
  * Assignment 4.2
  *
+<<<<<<< HEAD
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+=======
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
  *
  */
 public class BigInt {
@@ -18,6 +44,14 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
 
@@ -47,9 +81,20 @@ public class BigInt {
                 }
                 finale[i + 1] = sum[i];
             }
+<<<<<<< HEAD
         } else {
             finale = sum;
         }
+<<<<<<< HEAD
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+        }
+        else {
+            finale = sum;
+        }
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         return new int[] {};
     }
 
@@ -60,6 +105,14 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -70,11 +123,23 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = '.';
+<<<<<<< HEAD
             } else {
+=======
+            }
+            else {
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
                 arr[indexSum] = (char) (nums[indexNums]+'0');
                 j++;
             } 
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         return new char[] {};
     }
 
@@ -86,6 +151,14 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -96,11 +169,23 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = sparator;
+<<<<<<< HEAD
             } else {
+=======
+            }
+            else {
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
                 arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
             } 
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+>>>>>>> 1ae828f (delete)
         return new char[] {};
     }
 
@@ -111,6 +196,17 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        for (int i : nums) {
+            System.out.println(i);
+        }
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> 1ae828f (delete)
         for (int i : nums) {
             System.out.println(i);
         }
@@ -124,6 +220,17 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        for (char i : chars) {
+            System.out.println(i);
+        }
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> 1ae828f (delete)
         for (char i : chars) {
             System.out.println(i);
         }
