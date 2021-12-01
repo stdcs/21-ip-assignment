@@ -33,7 +33,11 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 104e389 (delete)
+=======
+<<<<<<< HEAD
+>>>>>>> b03076a (delete)
             totalBelanja = nanda.nextInt();
             System.out.print("Berapakah total uang anda bayaran ? ");
             uang = nanda.nextInt();
@@ -118,8 +122,11 @@ public class Cashier {
         }else {
 =======
             totalBelanja = nanda.next();
+=======
+            totalBelanja = nanda.nextInt();
+>>>>>>> d519dec (fix(conditional/Cashier): change method 'next()' to 'nextInt()')
             System.out.print("Berapakah total uang anda bayaran ? ");
-            uang = nanda.next();
+            uang = nanda.nextInt();
         } catch (Exception e) {
 >>>>>>> 5300d50 (fix(conditional/Cashier): change String to int)
             System.out.println("Maaf, pastikan inputan anda adalah angka");
