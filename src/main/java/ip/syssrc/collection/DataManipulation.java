@@ -1,11 +1,15 @@
 package ip.syssrc.collection;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /**
  * DataManipulation
  *
  * Assignment 6.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211079 - Dhiyaa Unnisa <unnisadhiyaa25@gmail.com>
  *
  */
 public class DataManipulation {
