@@ -1,11 +1,17 @@
 package ip.syssrc.collection;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Arrays;
+
 /**
  * TemplateParse
  *
  * Assignment 6.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ *  @author H071211080 - dirgantry leonard nugrah boro <dirgantryleonardnugrahboro@gmail.com>
  *
  */
 public class TemplateParse {
@@ -27,18 +33,25 @@ public class TemplateParse {
     }
 
     /**
-     * Replace all the placeholders in the template with the coreesponding values in
-     * the data
+     * Replace all the placeholders in the template with the coreesponding values in the data
      *
-     * @param template the string with placeholder, placeholder is a word inside
-     *                 curly braces e.g. {name}, a placeholder with "name" as key
-     * @param data     the map of key-value, value is the data that will replace the
-     *                 placeholder in the template, key is a placeholder without
-     *                 curly braces.
+     * @param template the string with placeholder, placeholder is a word inside curly braces e.g.
+     *        {name}, a placeholder with "name" as key
+     * @param data the map of key-value, value is the data that will replace the placeholder in the
+     *        template, key is a placeholder without curly braces.
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
-        return new ArrayList<>();
+
+        for (String key : data.keySet()) {
+            String placeholder = String.format("{%s}", key);
+            template = template.replace(placeholder, data.get(key));
+        }
+
+        String[] str = template.split("\n");
+        List<String> stringList = new ArrayList<>(Arrays.asList(str));
+
+        return stringList;
     }
 
     /**
@@ -46,5 +59,7 @@ public class TemplateParse {
      *
      * @param template the list to be printed
      **/
-    public static void render(List<String> template) {}
+    public static void render(List<String> template) {
+        template.forEach(System.out::println);
+    }
 }
