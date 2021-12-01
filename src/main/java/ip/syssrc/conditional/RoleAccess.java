@@ -32,8 +32,11 @@ public class RoleAccess {
 >>>>>>> b224690 (delete)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5eb0d90 (delete)
 =======
+=======
+>>>>>>> d01c992 (delete)
 <<<<<<< HEAD
             switch (args[0]) {
                 case "Super Admin":
@@ -287,6 +290,7 @@ public class RoleAccess {
           } 
           
         if (isValidRole) {
+<<<<<<< HEAD
 >>>>>>> 07a8b51 (delete')
             switch (args[0]) {
                 case "Super Admin":
@@ -319,13 +323,49 @@ public class RoleAccess {
                     subMenuIndex = subMenuIndex + 1;
                     System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
             
+=======
+=======
+>>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
+            switch (args[0]) {
+                case "Super Admin":
+                case "Admin":
+                case "User":
+                    isValidRole = true;
+>>>>>>> d01c992 (delete)
                     break;
-            }
-          } else {
+            } 
+        
+          
+            if (isValidRole) {
+                switch (args[0]) {
+                    case "Super Admin":
+                        System.out.printf("%d. Super Admin\n", ++menuIndex);
+                        System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex , ++subMenuIndex);
+                        System.out.printf("%2d.%d. CRUD Admin\n", menuIndex , ++subMenuIndex);
+                        System.out.printf("%2d.%d. CRUD User\n", menuIndex , ++subMenuIndex);
+                        System.out.println();
+                    
+                    case "Admin":
+                        subMenuIndex = 0;
+                        System.out.printf("%d. Admin\n", ++menuIndex);
+                        System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, ++subMenuIndex);
+                        System.out.printf("%2d.%d. CRUD User\n", menuIndex, ++subMenuIndex);
+                        System.out.println();
+            
+                    default:
+                        subMenuIndex = 0;
+                        System.out.printf("%d. User\n", ++menuIndex);
+                        System.out.printf("%2d.%d. View\n", menuIndex, ++subMenuIndex);
+                        System.out.printf("%2d.%d. Edit\n", menuIndex, ++subMenuIndex);
+                
+                        break;
+                }
+            } else {
                 System.out.println("Invalid Role");
                 System.out.println("Valid Role : Super Admin, Admin, User");
-          }
+            }
         } else {
+<<<<<<< HEAD
 <<<<<<< HEAD
           System.out.println("Too many argument");
 >>>>>>> bf8cc79 (feat(conditional/Cashier) : add 'switch' object)
@@ -335,7 +375,13 @@ public class RoleAccess {
 =======
               System.out.println("Too many argument");
 >>>>>>> b42662b (fix (conditional/RoleAcces): change indentasi to '4 space')
+<<<<<<< HEAD
 >>>>>>> 07a8b51 (delete')
+=======
+=======
+            System.out.println("Too many argument");
+>>>>>>> 391b6fd (fix(conditional/RoleAccess): change indentasi)
+>>>>>>> d01c992 (delete)
         }
     }
 }
