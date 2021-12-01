@@ -53,8 +53,11 @@ public class Cashier {
 >>>>>>> b9940fa (delete)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 104e389 (delete)
 =======
+=======
+>>>>>>> 84d6570 (delete)
 <<<<<<< HEAD
         int kembalian = uang - totalBelanja;
         if (uang > totalBelanja) {
@@ -416,6 +419,8 @@ public class Cashier {
         
         
         
+=======
+>>>>>>> dc99099 (fix(conditional/Cahsier): delete space)
         int kembalian = uang - totalBelanja;
         if (kembalian == 0) {
             System.out.println("Terimakasih telah membayar dengan uang pas");
@@ -425,6 +430,7 @@ public class Cashier {
             System.out.println("Total kembalian anda: Rp. " +kembalian);
             System.out.println("Dengan rincian sebagai berikut:");
             System.out.println();
+<<<<<<< HEAD
             System.out.println();
 
             int a,b,c,d,e,f,g,h,i,j;
@@ -439,6 +445,10 @@ public class Cashier {
             i = 0;
             j = 0;
 
+=======
+            System.out.println();        
+            int pecahan;
+>>>>>>> 84d6570 (delete)
             if (kembalian >= 100000) {
                 kembalian = kembalian - 100000;
                 a = a + 1;
@@ -502,7 +512,19 @@ public class Cashier {
                 System.out.println("Dan sebanyak Rp. " +kembalian+ " didonasikan");
             }
 >>>>>>> bf8cc79 (feat(conditional/Cashier) : add 'switch' object)
+<<<<<<< HEAD
 >>>>>>> 700d9da (delete)
+=======
+=======
+            if (kembalian > 0) {
+                System.out.println("Dan sebanyak Rp. " + kembalian + " didonasikan");
+            }
+        } else if (uang < totalBelanja) {
+            System.out.println("Maaf, pembayaran anda belum mencukupi");
+        } else {
+            System.out.println("Terimakasih telah membayar dengan uang pas");
+>>>>>>> 038194f (fix(conditional/Cashier): change code and 'if' block)
+>>>>>>> 84d6570 (delete)
         }
     }
 }
