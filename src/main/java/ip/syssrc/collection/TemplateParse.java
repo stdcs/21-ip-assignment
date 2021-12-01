@@ -40,7 +40,6 @@ public class TemplateParse {
     public static List<String> parse(String template, Map<String, String> data) {
         return new ArrayList<>();
     }
-
     /**
      * Print each element of template with new line
      *
