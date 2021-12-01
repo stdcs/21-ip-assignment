@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
 public class TemplateParse {
@@ -38,13 +38,24 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
-        return new ArrayList<>();
-    }
+        for (String key : data.keySet()) { 
+            String placeholder = String.format("{%s}", key);
+            template = (template.replace(placeholder, data.get(key)));
+        }
+
+        String[] args = template.split("\n"); 
+        List<String> List = new ArrayList<>(Arrays.asList(args));
+
+        return List;
+        }
+    
 
     /**
      * Print each element of template with new line
      *
      * @param template the list to be printed
      **/
-    public static void render(List<String> template) {}
+    public static void render(List<String> template) {
+        template.forEach(System.out::println);
+    }
 }
