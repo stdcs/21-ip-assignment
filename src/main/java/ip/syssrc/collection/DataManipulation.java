@@ -28,7 +28,18 @@ public class DataManipulation {
 
     }
 
-    public static Map<String, String> insert(/* signatures */) {
+    public static Map<String, String> insert(String keys, String args) {
+        String[] keysArr = keys.replaceAll(" ", "").toLowerCase().split(",");
+        String[] argsArr = args.replaceAll(" ", "").split(",");
+
+        if (keysArr.length != argsArr.length) {
+            throw new IllegalArgumentException("Invalid Argument.");
+        }
+
+        Map<String, String> student = new HashMap<>();
+        for (int i = 0; i < argsArr.length; i++) {
+            student.put(keysArr[i], argsArr[i]);
+        }
         return new HashMap<>();
     }
 
