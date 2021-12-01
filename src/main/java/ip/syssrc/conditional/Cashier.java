@@ -18,13 +18,22 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6ee24d0 (fix(conditional/Cashier): change String to int)
+=======
+>>>>>>> 5300d50 (fix(conditional/Cashier): change String to int)
 
 >>>>>>> 5eb0d90 (delete)
         int uang, totalBelanja;
         try {
             System.out.print("Berapakah total harga belanja anda ? ");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 104e389 (delete)
             totalBelanja = nanda.nextInt();
             System.out.print("Berapakah total uang anda bayaran ? ");
             uang = nanda.nextInt();
@@ -107,12 +116,20 @@ public class Cashier {
         String uang = nanda.next();
         if (totalBelanja.equals(uang)) {
         }else {
+=======
+            totalBelanja = nanda.next();
+            System.out.print("Berapakah total uang anda bayaran ? ");
+            uang = nanda.next();
+        } catch (Exception e) {
+>>>>>>> 5300d50 (fix(conditional/Cashier): change String to int)
             System.out.println("Maaf, pastikan inputan anda adalah angka");
+            return;
         }
+      
         
         
         
-        int kembalian = Integer.parseInt(uang) - Integer.parseInt(totalBelanja);
+        int kembalian = uang - totalBelanja;
         if (kembalian == 0) {
             System.out.println("Terimakasih telah membayar dengan uang pas");
         }else if (kembalian < 0){
