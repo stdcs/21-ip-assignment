@@ -1,11 +1,18 @@
 package ip.syssrc.loop;
+
 import java.util.Scanner;
+
+
+
 /**
  * FactorialSequence
  *
  * Assignment 2.2
  *
+ *
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+ *
+ *
  *
  */
 public class FactorialSequence {
