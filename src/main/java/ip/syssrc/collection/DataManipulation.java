@@ -39,11 +39,31 @@ public class DataManipulation {
         for (int i = 0; i < valuesArr.length; i++) {
             student.put(keysArr[i], valuesArr[i]);
         }
-        return new HashMap<>(student);
+        return student;
     }
 
-    public static List<String> select(/* signatures */) {
-        return new ArrayList<>();
+    public static List<String> select(List<Map<String, String>> list, String... keys) {
+        List<String> selectedMap = new ArrayList<>();
+        String columns = new String("");
+
+        for (int i = 0; i < keys.length; i++) {
+            columns = columns.concat(String.format("%s%s", i == 0 ? "" : ";", keys[i]));
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            String rows = new String("");
+            for (int j = 0; j < keys.length; j++) {
+                String values = list.get(i).get(keys[j]);
+                if (!list.get(i).containsKey(keys[j])) {
+                    values = "NONE";
+                }
+                rows = rows.concat(String.format("%s%s", j == 0 ? "" : ";", values));
+            }
+            selectedMap.add(rows);
+        }
+        selectedMap.add(columns);
+
+        return selectedMap;
     }
 
     public static void prettify(List<String> strings) {}
