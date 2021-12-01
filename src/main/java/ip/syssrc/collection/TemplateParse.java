@@ -59,7 +59,7 @@ public class TemplateParse {
 
             }
         }
-        
+
         return new ArrayList<>();
     }
 
@@ -68,5 +68,10 @@ public class TemplateParse {
      *
      * @param template the list to be printed
      **/
-    public static void render(List<String> template) {}
+    public static void render(List<String> template) {
+        for (int i = 0; i < template.size(); i++) {
+        System.out.println(template.get(i));
+        }
+    }
+
 }
