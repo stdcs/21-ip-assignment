@@ -7,7 +7,10 @@ import java.util.Scanner;
  * Assignment 2.1
  *
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
+<<<<<<< HEAD
  * 
+=======
+>>>>>>> f63244b (feat(loop/MatricesPad.java):rename the author)
  *
  */
 
