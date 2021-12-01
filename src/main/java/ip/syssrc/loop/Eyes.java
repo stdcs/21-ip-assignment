@@ -29,6 +29,7 @@ public class Eyes {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 =======
 >>>>>>> 5562406 (delete)
@@ -75,7 +76,13 @@ public class Eyes {
                     System.out.printf("%d%s", (i != j) ? 0 : 1, (j <= n) ? " " : "\n");;
                 }
 >>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
+<<<<<<< HEAD
 >>>>>>> 74466dd (delete)
+=======
+=======
+                    System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+>>>>>>> 9c1dfb9 (fix(loop/Eyes): delete 'if')
+>>>>>>> b12ae9f (delete)
             }
             System.out.println();
         }
