@@ -5,7 +5,7 @@ package ip.syssrc.collection;
  *
  * Assignment 6.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211071 - Muhammad Dzacky Ilham <dzackyilham01@gmail.com>
  *
  */
 public class TemplateParse {
