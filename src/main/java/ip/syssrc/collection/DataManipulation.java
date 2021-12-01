@@ -68,6 +68,48 @@ public class DataManipulation {
         return new ArrayList<>(selectedMap);
     }
 
-    public static void prettify(List<String> strings) {}
+    public static void prettify(List<String> strings) {
+        int colsLength = 0;
+        String separator = "-";
+        String header = "";
+
+        for (int i = 0; i < strings.size(); i++) {
+            String[] row = strings.get(i).split(";");
+            for (int j = 0; j < row.length; j++) {
+                if (colsLength < row[j].length()) {
+                    colsLength = row[j].length();
+                }
+            }
+        }
+
+        String opt = ("| %" + (-colsLength) + "s ");
+
+        String[] cols = strings.get(0).split(";"); // Set the name in columns into array
+        for (String str : cols) {
+            header = header.concat(String.format(opt, str)).toUpperCase();
+        }
+
+        System.out.print(header); // Printout the table's header
+        System.out.println("|"); // Printout the column's seperator
+
+        System.out.print(" ".concat(separator.repeat(header.length() - 1)).concat("\n")); // The seperator line
+
+        for (int i = 1; i < strings.size(); i++) {
+
+            String rows = "";
+            String[] row = strings.get(i).split(";");
+
+            for (int t = 0; t < row.length; t++) {
+                rows = rows.concat(String.format(opt, row[t]));
+            }
+
+            System.out.print(rows); // Print out the rows
+            System.out.println("|");
+        }
+
+        System.out.print(" ".concat(separator.repeat(header.length() - 1)).concat("\n")); // The seperator line
+
+    }
+    
 
 }
