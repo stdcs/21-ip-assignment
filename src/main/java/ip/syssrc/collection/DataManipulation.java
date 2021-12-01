@@ -9,7 +9,7 @@ import java.util.Map;
  *
  * Assignment 6.2
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211064- Agung Kartika Ardhiyanda <agungardhiyanda25@gmail.com>
  *
  */
 public class DataManipulation {
