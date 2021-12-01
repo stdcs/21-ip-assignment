@@ -10,7 +10,7 @@ import java.util.HashMap;
  * @author H071211087 - Syarif Hidayat <syarifdayat119@gmail.com>
  *
  */
-public class DataManipulation {
+public class DataManipulation { //6.2
 
     public static void main(String[] args) {
         // List<Map<String, String>> student = new ArrayList<>();

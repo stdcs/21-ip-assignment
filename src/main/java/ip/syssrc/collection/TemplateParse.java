@@ -11,7 +11,7 @@ import java.util.Map;
  * @author H071211087 - Syarif Hidayat <syarifdayat119@gmail.com>
  *
  */
-public class TemplateParse {
+public class TemplateParse { //6.1
 
     public static void main(String[] args) {
         String template = new String("The {alpha} {do} over the {animal}\n")
