@@ -20,6 +20,7 @@ public class FactorialSequence {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         long fact = 1;
         int n = dede.nextInt();
@@ -38,7 +39,15 @@ public class FactorialSequence {
         long fact = 1;
         int n = nanda.nextInt();
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
+<<<<<<< HEAD
 >>>>>>> 5562406 (delete)
+=======
+=======
+        Scanner dede = new Scanner (System.in);
+        long fact = 1;
+        int n = dede.nextInt();
+>>>>>>> 4d33902 (feat(loop/FactorialSequence): add format 'if' and 'for')
+>>>>>>> 41cf754 (delete)
 
         if (n > 0) {
             System.out.print(n + "! = ");
