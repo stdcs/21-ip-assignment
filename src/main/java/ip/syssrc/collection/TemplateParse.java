@@ -56,7 +56,7 @@ public class TemplateParse {
 
         }
 
-        return new ArrayList<>();
+        return new ArrayList<>(stringList);
     }
 
     /**
