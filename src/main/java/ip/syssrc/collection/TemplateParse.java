@@ -48,7 +48,6 @@ public class TemplateParse {
         
          
          for (int i = 0; i < stringList.size(); i++) {
-            
             for (String key : data.keySet()) {
                 if (stringList.get(i).contains(key)) {
                     String placeholder = String.format("\\{%s\\}", key);
@@ -57,7 +56,7 @@ public class TemplateParse {
                 }
             }
         }
-        return new ArrayList<>(stringList);
+        return stringList;
     }
 
     /**
