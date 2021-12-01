@@ -28,8 +28,18 @@ public class DataManipulation {
 
     }
 
-    public static Map<String, String> insert(/* signatures */) {
-        return new HashMap<>();
+    public static Map<String, String> insert(String keys, String values) {
+        String[] keysArr = keys.replaceAll(" ", "").toLowerCase().split(",");
+        String[] valuesArr = values.replaceAll(" ", "").split(",");
+
+        if (keysArr.length != valuesArr.length){
+            throw new IllegalArgumentException("invalid argument");
+        }
+        Map<String, String> student = new HashMap<>();
+        for (int i = 0; i < valuesArr.length; i++) {
+            student.put(keysArr[i], valuesArr[i]);
+        }
+        return new HashMap<>(student);
     }
 
     public static List<String> select(/* signatures */) {
