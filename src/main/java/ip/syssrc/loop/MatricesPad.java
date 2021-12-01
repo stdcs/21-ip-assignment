@@ -7,10 +7,7 @@ import java.util.Scanner;
  * Assignment 2.1
  *
  * @author H071211085 - Hafiedz Hasmy Hamid <hasmy41@gmail.com>
-<<<<<<< HEAD
  * 
-=======
->>>>>>> f63244b (feat(loop/MatricesPad.java):rename the author)
  *
  */
 
@@ -23,8 +20,11 @@ public class MatricesPad {
         int start = in.nextInt();
         int end = in.nextInt();
         int size = in.nextInt();
+
+        int range = end - start;
+        int temp = start;
         
-        int start, size, end;
+        
 
         try{
             System.out.println("Input nilai awal");
@@ -42,8 +42,7 @@ public class MatricesPad {
             return;
         }
         
-        int range = end - start;
-        int temp = start;
+        
         
         if (start < 10 && end < 10 ){
             if (range >= 0 ){
