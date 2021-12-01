@@ -43,6 +43,8 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
+        String[] str = template.split("\n");
+        List<String> stringList = new ArrayList<>(Arrays.asList(str));
         return new ArrayList<>();
     }
 
