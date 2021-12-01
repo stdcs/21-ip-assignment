@@ -22,6 +22,7 @@ public class RoleAccess {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         if (args.length == 0) {
             System.out.println("What role you want to see ?");
@@ -264,14 +265,29 @@ public class RoleAccess {
 =======
 =======
     
+=======
+
+>>>>>>> b42662b (fix (conditional/RoleAcces): change indentasi to '4 space')
         if (args.length == 0) {
-          System.out.println("What role you want to see ?");
-          System.out.println("For example, try 'Admin'.");
+            System.out.println("What role you want to see ?");
+            System.out.println("For example, try 'Admin'.");
         
         } else if (args.length == 1) {
+<<<<<<< HEAD
           if (args[0].equals("Super Admin") || args[0].equals("Admin") || args[0].equals("User")){
               isValidRole = true;
           } if (isValidRole == true) {
+=======
+          switch (args[0]) {
+              case "Super Admin":
+              case "Admin":
+              case "User":
+              isValidRole = true;
+              break;
+          } 
+          
+        if (isValidRole) {
+>>>>>>> 07a8b51 (delete')
             switch (args[0]) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
@@ -306,13 +322,20 @@ public class RoleAccess {
                     break;
             }
           } else {
-            System.out.println("Invalid Role");
-            System.out.println("Valid Role : Super Admin, Admin, User");
+                System.out.println("Invalid Role");
+                System.out.println("Valid Role : Super Admin, Admin, User");
           }
         } else {
+<<<<<<< HEAD
           System.out.println("Too many argument");
 >>>>>>> bf8cc79 (feat(conditional/Cashier) : add 'switch' object)
+<<<<<<< HEAD
 >>>>>>> 700d9da (delete)
+=======
+=======
+              System.out.println("Too many argument");
+>>>>>>> b42662b (fix (conditional/RoleAcces): change indentasi to '4 space')
+>>>>>>> 07a8b51 (delete')
         }
     }
 }
