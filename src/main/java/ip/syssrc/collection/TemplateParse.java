@@ -45,6 +45,21 @@ public class TemplateParse {
     public static List<String> parse(String template, Map<String, String> data) {
         String[] str = template.split("\n");
         List<String> stringList = new ArrayList<>(Arrays.asList(str));
+
+         /** Perulangan untuk tiap baris */
+         for (int index = 0; index < stringList.size(); index++) {
+
+            /** Perulangan untuk tiap key */
+            for (String key : data.keySet()) {
+                if (stringList.get(index).contains(key)) {
+                    String placeholder = String.format("\\{%s\\}", key);
+                    stringList.set(index,
+                            stringList.get(index).replaceAll(placeholder, data.get(key)));
+                }
+
+            }
+        }
+        
         return new ArrayList<>();
     }
 
