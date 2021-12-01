@@ -19,6 +19,7 @@ public class MatricesPad {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Scanner dede = new Scanner (System.in);
         
         int start, end, size;
@@ -44,10 +45,13 @@ public class MatricesPad {
 =======
 =======
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
+=======
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
         Scanner nanda = new Scanner (System.in);
         int start = nanda.nextInt();
         int end = nanda.nextInt();
         int size = nanda.nextInt();
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         Scanner dede = new Scanner (System.in);
@@ -120,7 +124,15 @@ public class MatricesPad {
 =======
         int j = 1;
 >>>>>>> 2dc3ab0 (fix(loop/MatricesPad): change sysout)
+<<<<<<< HEAD
 >>>>>>> a7925f0 (delete)
+=======
+=======
+
+        int biggest = (start > end) ? start : end;
+        int leadingZero = 0;
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
+>>>>>>> 74466dd (delete)
         
         while (biggest > 0) {
             biggest /= 10;
@@ -135,17 +147,21 @@ public class MatricesPad {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 =======
 =======
 >>>>>>> 192d72a (feat(loop/Eyes): add format 'for')
+=======
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
         for (int i = start; (start < end ? i <= end : i >= end); ) {
             if (((i - start) % size == 0 || (start - i) % size == 0) && (i != start)) {
                 System.out.printf("\n");
             }
 
             System.out.printf("%0" + leadingZero + "d ", i);
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
 =======
@@ -161,7 +177,12 @@ public class MatricesPad {
         for (int i = start; (start < end ? i <= end : i >= end); j++) {
             System.out.printf("%0" + leadingZero + "d%s", i, (j != 0 && j % size == 0  || (i == end)) ? "\n" : " ");
 >>>>>>> 2dc3ab0 (fix(loop/MatricesPad): change sysout)
+<<<<<<< HEAD
 >>>>>>> a7925f0 (delete)
+=======
+=======
+>>>>>>> c61ffb5 (feat(loop/Eyes): add format 'for')
+>>>>>>> 74466dd (delete)
             if (start < end) {
                 i++;
             } else {
