@@ -18,6 +18,7 @@ public class MatricesPad {
         int end = in.nextInt();
         int size = in.nextInt();
 <<<<<<< HEAD
+<<<<<<< HEAD
         in.close();
 
         int biggest = (start > end) ? start : end;
@@ -44,6 +45,8 @@ public class MatricesPad {
 
 =======
         
+=======
+>>>>>>> 1b09600 (feat(loop/MatricesPad): add code)
         in.close();
 
         int range = end - start;
