@@ -18,6 +18,7 @@ public class Eyes {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
 =======
                 if (i == j) {
@@ -26,6 +27,9 @@ public class Eyes {
                     System.out.print(0 + " ");
                 }
 >>>>>>> a15b8de (feat(loop/Eyes): add code)
+=======
+                System.out.printf("%d%s", (i == j) ? 1 : 0, (j <= n) ? " " : "\n");
+>>>>>>> 4ef77f4 (feat(loop/Eyes): add 'changecode' object)
             }
             System.out.println();
         }
