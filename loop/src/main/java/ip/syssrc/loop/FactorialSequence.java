@@ -34,7 +34,10 @@ public class FactorialSequence {
             System.out.println("1");
         } else {
             System.out.println("Error");
+<<<<<<< HEAD
             
+=======
+>>>>>>> a15b8de (feat(loop/Eyes): add code)
         }
     }
 }
