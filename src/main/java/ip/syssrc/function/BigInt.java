@@ -6,10 +6,14 @@ package ip.syssrc.function;
  * Assignment 4.2
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
 =======
  * @author H071171512 - Fitrah MUhammad <fitrahm17h@student.unhas.ac.id>
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 9bf9d8d (fix(function/BigInt): wrong upppercase character)
  *
  */
 public class BigInt {
