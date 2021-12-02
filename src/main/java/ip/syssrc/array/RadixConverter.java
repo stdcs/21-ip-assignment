@@ -1,20 +1,29 @@
 package ip.syssrc.array;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+>>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
 /**
  * RadixConverter
  *
  * Assignment 3.2
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 =======
  * @author H071211051 - Febi Fiantika  <febifian23@gmail.com>
 >>>>>>> 7ccbec8 (feat(array):add Assignment3)
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
  *
  */
 public class RadixConverter {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         System.out.println("Masukkan angka");
         int n = in.nextInt();
@@ -113,5 +122,8 @@ public class RadixConverter {
         }
 
         in.close();
+=======
+
+>>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
     }
 }
