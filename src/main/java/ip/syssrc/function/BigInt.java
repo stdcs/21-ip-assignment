@@ -5,7 +5,11 @@ package ip.syssrc.function;
  *
  * Assignment 4.2
  *
+<<<<<<< HEAD
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
+=======
+ * @author H071171512 - Fitrah MUhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
  *
  */
 public class BigInt {
@@ -19,6 +23,7 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
+<<<<<<< HEAD
         int sumLength = (n.length > m.length) ? n.length : m.length;
             int[] sum = new int[sumLength];
     
@@ -52,6 +57,9 @@ public class BigInt {
                 finale = sum;
             }
             return finale;
+=======
+        return new int[] {};
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
     }
 
     /**
@@ -61,6 +69,7 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
+<<<<<<< HEAD
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -77,6 +86,9 @@ public class BigInt {
             }
         }
         return arr;
+=======
+        return new char[] {};
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
     }
 
     /**
@@ -87,6 +99,7 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
+<<<<<<< HEAD
         int arrLength = nums.length;
             arrLength = nums.length + ((nums.length - 1) / 3);
     
@@ -103,6 +116,9 @@ public class BigInt {
                 }
             }
             return arr;
+=======
+        return new char[] {};
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
     }
 
     /**
@@ -112,9 +128,12 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+<<<<<<< HEAD
         for (int i : nums) {
             System.out.print(i);
         }
+=======
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
     }
 
     /**
@@ -125,8 +144,11 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+<<<<<<< HEAD
         for (char i : chars) {
             System.out.print(i);
         }
+=======
+>>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
     }
 }
