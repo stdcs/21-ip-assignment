@@ -8,21 +8,27 @@ package ip.syssrc.conditional;
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
  *
  */
-import java.util.Scanner;
+import java.util.*;
+import java.util.InputMismatchException;
 public class Cashier {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 <<<<<<< HEAD
+<<<<<<< HEAD
         int totalBelanja = 0;
         int jumlahBayar = 0;
         int kembalian = 0;
+=======
+        int totalBelanja, jumlahBayar;
+>>>>>>> 831a788 (feat(conditional/Cashier): add 'TryCatch' object)
         try {
             System.out.println("Total Belanja : ");
             totalBelanja = in.nextInt();
             System.out.println("Jumlah yang dibayarkan : ");
             jumlahBayar = in.nextInt();
             in.close();
+<<<<<<< HEAD
         } catch (Exception e) {
             System.out.println("Maaf, pastikan inputan anda adalah angka");
             return;
@@ -98,9 +104,15 @@ public class Cashier {
         int totalBelanja = in.nextInt();
         System.out.println("Jumlah yang dibayarkan : ");
         int jumlahBayar = in.nextInt();
+=======
+        } catch (InputMismatchException e) {
+            System.out.println("Maaf, pastikan inputan anda adalah angka");
+            return;
+        } 
+        
+>>>>>>> 831a788 (feat(conditional/Cashier): add 'TryCatch' object)
         int kembalian = jumlahBayar - totalBelanja;
-
-        System.out.println("Total Kembalian : " +kembalian);
+        System.out.println("Total Kembalian : " + kembalian);
         System.out.println("Dengan rincian sebagai berikut : ");
         int a,b,c,d,e,f,g,h,i,j;
 
