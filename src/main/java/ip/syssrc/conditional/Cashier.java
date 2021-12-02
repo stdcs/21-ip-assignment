@@ -19,12 +19,15 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 >>>>>>> 498354b (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 >>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
         // output dan variabel //
         int total = 0;
         int bayar = 0;
@@ -49,10 +52,13 @@ public class Cashier {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0d1d11c (feat(conditional/Cashier.java): fix the print condition)
 =======
 >>>>>>> 1bcefb2 (feat(conditional/Cashier.java):fix if else format)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
         }
         if (kembalian >= 100000){
             int seratus = kembalian / 100000;
@@ -127,6 +133,7 @@ public class Cashier {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // output dan variabel //
 <<<<<<< HEAD
@@ -140,20 +147,28 @@ public class Cashier {
 =======
 =======
 =======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
+=======
         // output dan variabel //
 <<<<<<< HEAD
 >>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
+<<<<<<< HEAD
 >>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
         System.out.printf("Berapa total harga belanja anda ? " );
         int total = in.nextInt();
         System.out.printf("Berapa total uang yang anda bayarkan ? ");
         int bayar = in.nextInt();
         int kembalian = bayar - total;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ea7d0bb (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 <<<<<<< HEAD
 >>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
         
             // jika uang mencukupi //
         if (bayar > total){
@@ -225,6 +240,9 @@ public class Cashier {
     in.close();
 >>>>>>> f8ee011 (feat(conditional/Cashier): add 'java.util.Scanner' object)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
     }
 }
          
@@ -233,6 +251,7 @@ public class Cashier {
 >>>>>>> 7fa6cda (feat(conditional/Cashier): add 'java.util.Scanner' object)
 =======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -349,6 +368,9 @@ public class Cashier {
 >>>>>>> 10d4011 (feat(conditional/Cashier): add variable and scanner input to variable)
 =======
 
+=======
+
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
 >>>>>>> 673760f (feat(conditional/Cashier): add variable and scanner input to variable)
 =======
 =======
@@ -486,4 +508,7 @@ public class Cashier {
 }
          
 >>>>>>> 2e9fae7 (feat(conditional/Cashier): add if else condition)
+<<<<<<< HEAD
 >>>>>>> 33b73d2 (feat(conditional/Cashier): add if else condition)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
