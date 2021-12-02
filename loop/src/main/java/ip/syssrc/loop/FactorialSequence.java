@@ -35,9 +35,13 @@ public class FactorialSequence {
         } else {
             System.out.println("Error");
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 >>>>>>> a15b8de (feat(loop/Eyes): add code)
+=======
+            
+>>>>>>> 9d4524e (feat(loop/FactorialSequence): add code)
         }
     }
 }
