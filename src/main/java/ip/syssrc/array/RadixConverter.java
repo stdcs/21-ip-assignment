@@ -1,9 +1,13 @@
 package ip.syssrc.array;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Scanner;
 =======
 
 >>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
+=======
+import java.util.Scanner;
+>>>>>>> e3807c6 (feat(array): add Assignment3)
 /**
  * RadixConverter
  *
@@ -30,6 +34,9 @@ public class RadixConverter {
 
     public static void main(String[] args) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e3807c6 (feat(array): add Assignment3)
         Scanner in = new Scanner(System.in);
         System.out.println("Masukkan angka");
         int n = in.nextInt();
@@ -126,10 +133,15 @@ public class RadixConverter {
                 System.out.print(base16[i]);
             }
         }
+<<<<<<< HEAD
 
         in.close();
 =======
 
 >>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
+=======
+
+        in.close();
+>>>>>>> e3807c6 (feat(array): add Assignment3)
     }
 }

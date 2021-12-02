@@ -29,6 +29,9 @@ public class SumOneThird {
 
         for (int index = 0; index < (arr.length / 3); index++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e3807c6 (feat(array): add Assignment3)
             sum = 0;
             for (int j = 0; j < 3; j++ ) {
                 int deret = index + (j * (arr.length/3));
@@ -46,9 +49,12 @@ public class SumOneThird {
                     System.out.print("[" + arr[i] + "]");
             }
             System.out.println(" = " + sum);
+<<<<<<< HEAD
 =======
             // Your magic is here
 >>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
+=======
+>>>>>>> e3807c6 (feat(array): add Assignment3)
         }
     }
 }

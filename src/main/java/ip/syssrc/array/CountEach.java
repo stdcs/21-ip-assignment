@@ -1,9 +1,13 @@
 package ip.syssrc.array;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Scanner;
 =======
 
 >>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
+=======
+import java.util.Scanner;
+>>>>>>> e3807c6 (feat(array): add Assignment3)
 /**
  * CountEach
  *
@@ -31,6 +35,9 @@ public class CountEach {
 
     public static void main(String[] args) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e3807c6 (feat(array): add Assignment3)
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] array = new int[10000000];
@@ -40,6 +47,7 @@ public class CountEach {
         }
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
+<<<<<<< HEAD
 
             } else {
                 System.out.println(array[i] + " angka " + i);
@@ -49,5 +57,13 @@ public class CountEach {
 =======
 
 >>>>>>> d53c340 (feat(array): add assignment 3 placeholder files)
+=======
+
+            } else {
+                System.out.println(array[i] + " angka " + i);
+            }
+        }
+        in.close();
+>>>>>>> e3807c6 (feat(array): add Assignment3)
     }
 }
