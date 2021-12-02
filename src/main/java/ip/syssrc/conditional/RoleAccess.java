@@ -13,6 +13,7 @@ public class RoleAccess {
     public static void main(String[] args) {
         int menuIndex = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
         int subMenuIndex = 0;
         boolean isValidRole = false;
 
@@ -43,13 +44,21 @@ public class RoleAccess {
 =======
     int subMenuIndex = 0;
     boolean isValidRole = false;
+=======
+        int subMenuIndex = 0;
+        boolean isValidRole = false;
+>>>>>>> ae48871 (fix(conditional/RoleAccess): add 'switch' and change indentasi)
 
     if (args.length == 0){
-      System.out.println("What role you want to see ?");
-      System.out.println("For example, try 'Admin'.");
+        System.out.println("What role you want to see ?");
+        System.out.println("For example, try 'Admin'.");
     }else if(args.length == 1){
-      if (args[0].equals("Super Admin") || args[0].equals("Admin") || args[0].equals("User")) {
-        isValidRole = true;
+      switch (args[0]) {
+          case "Super Admin":
+          case "Admin":
+          case "User":
+          isValidRole = true;
+          break;
       }
       if(isValidRole == true){
           switch (args[0] ){
