@@ -6,10 +6,14 @@ package ip.syssrc.function;
  * Assignment 4.1
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+ * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
+>>>>>>> e41ab3f (feat(function/Vigesimal): add code)
  */
 public class Vigesimal {
 
@@ -21,6 +25,9 @@ public class Vigesimal {
      */
     public static char[] toVigesimal(int n) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e41ab3f (feat(function/Vigesimal): add code)
         int length = (n >= 20) ? 2 : 1;
         char[] arr = new char[length];
         for (int i = arr.length - 1; i >= 0; i--) {
@@ -28,8 +35,11 @@ public class Vigesimal {
             arr[i] = (modulo > 9) ? (char) (modulo + 55) : (char) (modulo + '0');
             n /= 20;
         }
+<<<<<<< HEAD
 =======
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+>>>>>>> e41ab3f (feat(function/Vigesimal): add code)
         return new char[] {};
     }
 
@@ -40,6 +50,9 @@ public class Vigesimal {
      */
     public static void table() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e41ab3f (feat(function/Vigesimal): add code)
         for (int i = 1; i < 20; i++) {
             for (int j = 1; j < 20; j++) {
                 char[] vigecimal = toVigecimal(i*j);
@@ -51,7 +64,10 @@ public class Vigesimal {
             }
             System.out.println("");
         }
+<<<<<<< HEAD
 =======
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+>>>>>>> e41ab3f (feat(function/Vigesimal): add code)
     }
 }
