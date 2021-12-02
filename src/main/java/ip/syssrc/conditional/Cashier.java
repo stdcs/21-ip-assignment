@@ -124,12 +124,19 @@ public class Cashier {
             return;
         } 
         if (jumlahBayar > totalBelanja) {
+<<<<<<< HEAD
         kembalian = jumlahBayar - totalBelanja;
 >>>>>>> 2b3b674 (Update Cashier.java)
         System.out.println("Total Kembalian : " + kembalian);
         System.out.println("Dengan rincian sebagai berikut : ");
         }
+=======
+            kembalian = jumlahBayar - totalBelanja;
+            System.out.println("Total Kembalian : " + kembalian);
+            System.out.println("Dengan rincian sebagai berikut : ");
+>>>>>>> ead000b (fix (conditional/Cashier): add 'changecode' object)
 
+        }
         if (kembalian >= 100000) {
             int pecahan = (kembalian / 100000);
             kembalian -= (100000 * pecahan);
@@ -146,7 +153,7 @@ public class Cashier {
             int pecahan = (kembalian / 20000);
             kembalian -= (20000 * pecahan);
             System.out.println(pecahan + " lembar uang Rp. 20.000");
-
+            
         }
         if (kembalian >= 10000) {
             int pecahan = (kembalian / 10000);
@@ -190,10 +197,13 @@ public class Cashier {
             System.out.println(pecahan + " buah uang Rp. 100");
 
         }
+<<<<<<< HEAD
         
 
         
         in.close();
 >>>>>>> f7b9840 (feat(conditional/Cashier): add 'java.util.Scanner' object)
+=======
+>>>>>>> ead000b (fix (conditional/Cashier): add 'changecode' object)
     }
 }

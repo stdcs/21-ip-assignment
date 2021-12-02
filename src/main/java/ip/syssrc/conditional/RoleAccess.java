@@ -18,6 +18,7 @@ public class RoleAccess {
         boolean isValidRole = false;
 
     if (args.length == 0) {
+<<<<<<< HEAD
         System.out.println("What role you want to see ?");
         System.out.println("For example, try 'Admin'.");
     } else if (args.length == 1) {
@@ -50,30 +51,35 @@ public class RoleAccess {
 >>>>>>> ae48871 (fix(conditional/RoleAccess): add 'switch' and change indentasi)
 
     if (args.length == 0){
+=======
+>>>>>>> ead000b (fix (conditional/Cashier): add 'changecode' object)
         System.out.println("What role you want to see ?");
         System.out.println("For example, try 'Admin'.");
-    }else if(args.length == 1){
-      switch (args[0]) {
-          case "Super Admin":
-          case "Admin":
-          case "User":
-          isValidRole = true;
-          break;
-      }
-      if(isValidRole == true){
-          switch (args[0] ){
+    } else if (args.length == 1) {
+          switch (args[0]) {
               case "Super Admin":
-                menuIndex = menuIndex + 1;
-                System.out.printf("%d. Super Admin\n", menuIndex);
-                subMenuIndex = subMenuIndex + 1;
-                System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, subMenuIndex);
-                subMenuIndex = subMenuIndex + 1;
-                System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
-                subMenuIndex = subMenuIndex + 1;
-                System.out.printf("%2d.%d. CRUD User \n", menuIndex, subMenuIndex);
-                System.out.println();
               case "Admin":
+<<<<<<< HEAD
 >>>>>>> 9a107a0 (feat(conditional/RoleAccess): add 'java.util.Scanner' object)
+=======
+              case "User":
+                  isValidRole = true;
+                  break;
+      }
+      if (isValidRole == true) {
+          switch (args[0] ) {
+            case "Super Admin":
+              menuIndex = menuIndex + 1;
+              System.out.printf("%d. Super Admin\n", menuIndex);
+              subMenuIndex = subMenuIndex + 1;
+              System.out.printf("%2d.%d. CRUD Super Admin\n", menuIndex, subMenuIndex);
+              subMenuIndex = subMenuIndex + 1;
+              System.out.printf("%2d.%d. CRUD Admin\n", menuIndex, subMenuIndex);
+              subMenuIndex = subMenuIndex + 1;
+              System.out.printf("%2d.%d. CRUD User \n", menuIndex, subMenuIndex);
+               System.out.println();
+            case "Admin":
+>>>>>>> ead000b (fix (conditional/Cashier): add 'changecode' object)
                 menuIndex = menuIndex + 1;
                 subMenuIndex = 0;
                 System.out.printf("%d. Admin\n", menuIndex);
