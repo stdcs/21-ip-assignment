@@ -80,14 +80,7 @@ public class Cashier {
                     System.out.println(pecahan + " buah uang Rp. 100");
                 }
                 In.close();
-<<<<<<< HEAD
-        
-            }
-        }
-        In.close();
-=======
 
             }
->>>>>>> c1f7cd40f4304067a7a133d14add23ccbde10b2a
     }
 }
