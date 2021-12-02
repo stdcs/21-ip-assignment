@@ -7,6 +7,7 @@ package ip.syssrc.function;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
 =======
  * @author H071171512 - Fitrah MUhammad <fitrahm17h@student.unhas.ac.id>
@@ -14,6 +15,9 @@ package ip.syssrc.function;
 =======
  * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
 >>>>>>> 9bf9d8d (fix(function/BigInt): wrong upppercase character)
+=======
+ * @author H071211051 - Febi Fiantika <febifian23@gmail.com>
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
  *
  */
 public class BigInt {
@@ -28,6 +32,9 @@ public class BigInt {
      */
     public static int[] add(int[] n, int[] m) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
         int sumLength = (n.length > m.length) ? n.length : m.length;
             int[] sum = new int[sumLength];
     
@@ -61,9 +68,12 @@ public class BigInt {
                 finale = sum;
             }
             return finale;
+<<<<<<< HEAD
 =======
         return new int[] {};
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
     }
 
     /**
@@ -74,6 +84,9 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -90,9 +103,12 @@ public class BigInt {
             }
         }
         return arr;
+<<<<<<< HEAD
 =======
         return new char[] {};
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
     }
 
     /**
@@ -104,6 +120,9 @@ public class BigInt {
      */
     public static char[] humanFormat(int[] nums, char sparator) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
         int arrLength = nums.length;
             arrLength = nums.length + ((nums.length - 1) / 3);
     
@@ -120,9 +139,12 @@ public class BigInt {
                 }
             }
             return arr;
+<<<<<<< HEAD
 =======
         return new char[] {};
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
     }
 
     /**
@@ -133,11 +155,17 @@ public class BigInt {
      */
     public static void print(int[] nums) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i : nums) {
             System.out.print(i);
         }
 =======
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+        for (int i : nums) {
+            System.out.print(i);
+        }
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
     }
 
     /**
@@ -149,10 +177,16 @@ public class BigInt {
      */
     public static void print(char[] chars) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (char i : chars) {
             System.out.print(i);
         }
 =======
 >>>>>>> 773b808 (feat(function): add assignment 4 placeholder files)
+=======
+        for (char i : chars) {
+            System.out.print(i);
+        }
+>>>>>>> 33ccefb (feat(function/BigInt): add code)
     }
 }
