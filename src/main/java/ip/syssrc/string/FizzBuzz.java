@@ -5,7 +5,11 @@ package ip.syssrc.string;
  *
  * Assignment 5.3
  *
+<<<<<<< HEAD
  * @author H071211070 - Firmansyah <frmnsyah33@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
  */
 public class FizzBuzz {
 
@@ -17,6 +21,7 @@ public class FizzBuzz {
      *         it doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
+<<<<<<< HEAD
         String fChar = word.replace("f", "").replace("F", "");
         int fCount = word.length() - fChar.length();
 
@@ -36,6 +41,8 @@ public class FizzBuzz {
         for (int i = 1; i <= bCount; i++) {
             fizzBuzz = fizzBuzz.concat("Buzz");
         }
+=======
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
         return new String();
     }
 }

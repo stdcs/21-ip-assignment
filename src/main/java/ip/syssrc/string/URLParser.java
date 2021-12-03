@@ -5,7 +5,11 @@ package ip.syssrc.string;
  *
  * Assignment 5.1
  *
+<<<<<<< HEAD
  * @author H071211070 - Firmansyah <frmnsyah33@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
  *
  */
 public class URLParser {
@@ -17,6 +21,7 @@ public class URLParser {
      * @return string of encoded URL
      */
     public static String encode(String rawURL) {
+<<<<<<< HEAD
         String[] character = {"%", "$", "&", "+", ",", "/", ":", ";", "=", "?", "@", " ", "\"", "<",
                 ">", "#", "{", "}", "\\", "^", "~", "[", "]", "`"};
         String[] hex = {"%25", "%24", "%26", "%2B", "%2C", "%2F", "%3A", "%3B", "%3D", "%3F", "%40",
@@ -28,6 +33,8 @@ public class URLParser {
                 rawURL = rawURL.replaceAll(character[i], hex[i]);
             }
         }
+=======
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
         return new String();
     }
 
@@ -38,6 +45,7 @@ public class URLParser {
      * @return string of decoded URL
      */
     public static String decode(String encodedURL) {
+<<<<<<< HEAD
         String[] character = {"%", "$", "&", "+", ",", "/", ":", ";", "=", "?", "@", " ", "\"", "<",
                 ">", "#", "{", "}", "\\", "^", "~", "[", "]", "`"};
         String[] hex = {"%25", "%24", "%26", "%2B", "%2C", "%2F", "%3A", "%3B", "%3D", "%3F", "%40",
@@ -49,6 +57,8 @@ public class URLParser {
                 encodedURL = encodedURL.replaceAll(hex[i], character[i]);
             }
         }
+=======
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
         return new String();
     }
 }

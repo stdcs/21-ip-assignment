@@ -5,7 +5,11 @@ package ip.syssrc.string;
  *
  * Assignment 5.2
  *
+<<<<<<< HEAD
  * @author H071211070 - Firmansyah <frmnsyah33@gmail.com>
+=======
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
  *
  */
 public class Vocab {
@@ -17,9 +21,13 @@ public class Vocab {
      * @return string of prefixes word
      */
     public static String addPrefixUn(String word) {
+<<<<<<< HEAD
         String prefixUn = new String("un");
         String prefixWord = new String(prefixUn + word);
         return new String(prefixWord);
+=======
+        return new String();
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
     }
 
     /**
@@ -31,6 +39,7 @@ public class Vocab {
      *         `prefix :: prefixword_1 :: prefixword_2 :: ... :: prefixword_n`
      */
     public static String prefixes(String prefix, String... groups) {
+<<<<<<< HEAD
         String str = new String(prefix + " :: ");
 
         for (int i = 0; i < groups.length; i++) {
@@ -39,6 +48,9 @@ public class Vocab {
 
         str += String.join(" :: ", groups);
         return new String(str);
+=======
+        return new String();
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
     }
 
     /**
@@ -48,6 +60,7 @@ public class Vocab {
      * @return string of word without 'ness' suffix
      */
     public static String removeSuffixNess(String word) {
+<<<<<<< HEAD
         if (word.endsWith("ness")) {
             word = word.replace("ness", "");
         }
@@ -56,6 +69,9 @@ public class Vocab {
             word = word.replace(word.charAt((word.length() - 1)), 'y');
         }
         return new String(word);
+=======
+        return new String();
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
     }
 
     /**
@@ -67,6 +83,7 @@ public class Vocab {
      * @return string of extracted adjective as a verb
      */
     public static String nounToVerb(String sentence, int index) {
+<<<<<<< HEAD
         String[] sentences = sentence.split(" ");
         if (index == -1) {
             index = sentences.length - 1;
@@ -79,5 +96,8 @@ public class Vocab {
 
         String verb = new String(adj.concat("en"));
         return new String(verb);
+=======
+        return new String();
+>>>>>>> 301f65a7c016f2cf0816854edea50df832a6bce7
     }
 }
