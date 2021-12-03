@@ -5,9 +5,14 @@ package ip.syssrc.collection;
  *
  * Assignment 6.1
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211070 - Firmansyah <frmsnayh33@gmail.com>
  *
  */
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 public class TemplateParse {
 
     public static void main(String[] args) {
@@ -38,7 +43,20 @@ public class TemplateParse {
      * @return list of strings with parsed placeholder
      */
     public static List<String> parse(String template, Map<String, String> data) {
-        return new ArrayList<>();
+        String[] args = template.split("\n");
+        List<String> list = new ArrayList<>(Arrays.asList(args));
+
+        for (int i = 0; i < list.size(); i++) {
+            for (String key : data.keySet()) {
+                    String placeholder = String.format("\\{%s\\}", key);
+                    list.set(i, list.get(i).replaceAll(placeholder, data.get(key)));
+            }
+        }
+        for (String key : data.keySet()) { 
+            String placeholder = String.format("\\{%s\\}", key);
+            template = (template.replaceAll(placeholder, data.get(key)));
+        }
+        return new list;
     }
 
     /**
@@ -46,5 +64,7 @@ public class TemplateParse {
      *
      * @param template the list to be printed
      **/
-    public static void render(List<String> template) {}
+    public static void render(List<String> template) {
+        template.forEach(System.out :: println):
+    }
 }
