@@ -28,27 +28,23 @@ public class DataManipulation {
 
     }
 
-    public static Map<String, String> insert(/String key, String value) {
+    public static Map<String, String> insert(String key, String value) {
         //Mengekstrak elemen dari key dan value menjadi array
-        String [] keyArr = key.replaceAll(" ". "").toLowerCase().split(",");
+        String [] keyArr = key.replaceAll(" ", "").toLowerCase().split(",");
         String [] valueArr = value.replaceAll(" ", "").split(",");
 
         //Mengecek kesesuaian jumlah key dan value
-        try {
-            if(keyArr.length != valueArr.length){
-                throw new IllegalArgumentException();
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println(e);
-            //TODO: handle exception
+        
+        if(keyArr.length != valueArr.length){
+            throw new IllegalArgumentException("Invalid Argument");
         }
 
         //Membuat map dari key dan value
         Map<String, String> studentInfo = new HashMap<>();
-        for (int i = 0l i < valueArr.length; i++) {
+        for (int i = 0; i < valueArr.length; i++) {
             studentInfo.put(keyArr[i], valueArr[i]);
         }
-        return (studentInfo);
+        return studentInfo;
     }
 
     public static List<String> select(List<Map<String, String>> list, String... key) {
@@ -56,23 +52,23 @@ public class DataManipulation {
 
         String collumn = new String("");
         for (int i = 0; i < key.length; i++) {
-            collumn = collumn.concat(String.format("%s%s", j == 0 ? "" : ";", value));
+            collumn = collumn.concat(String.format("%s%s", i == 0 ? "" : ";", value));
         }
-        selecMap.add(collumns);
+        selectMap.add(collumn);
 
-        for (int i = 0; i <list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             String row = new String("");
-            for (int j = 0; j<key.length; j++){
+            for (int j = 0; j < key.length; j++){
                 String value = list.get(i).get(key[j]);
-                if (!list.get(i).containsKey(keys[j])) {
+                if (!list.get(i).containsKey(key[j])) {
                     value = "NONE";
                 }
-                rows = rows.concat(String.format("%s%s",j == 0 ? : ";", value));
+                row = row.concat(String.format("%s%s", j == 0 ? "" : ";", value));
             }
-            selecMap.add(rows);
+            selectMap.add(row);
         }
 
-        return (selectMap);
+        return selectMap;
     }
 
     public static void prettify(List<String> strings) {
@@ -80,32 +76,44 @@ public class DataManipulation {
         int collumnLength = 0;
         for (int i = 0; i < strings.size(); i++) {
             String [] rowNth = strings.get(i).split(";");
-            for (int j = 0; rowNth.length; j++) {
+            for (int j = 0; j < rowNth.length; j++) {
                 if (collumnLength < rowNth[j].length()) {
                     collumnLength = rowNth[j].length();
                 }
             }
         }
+        String formatter = "| %" + (-collumnLength) + "s ";
+        String separator = "-";
 
-        for (int i = 0; i < strings.size(); i++) {
-            //Membuat baris dari strings
-            String [] rowNth = strings.get(i).split(";");
+        //Print nama kolom
+        strings.set(0, strings.get(0).toUpperCase());
+        String[] collumnName = strings.get(0).split(";");
+        String firstRow = "";
+
+        for (int i = 0; i < collumnName.length; i++) {
+            firstRow = firstRow.concat(String.format(formatter, collumnName[i]));
+        }
+
+        int rowLength = firstRow.length() - 1;
+        System.out.printf("s", firstRow);
+        System.out.println("|");
+
+        //Separator
+        System.out.printf(" %s\n", separator.repeat(rowLength));
+        
+        //Value tiap kolom
+        for (int i = 1; i < strings.size(); i++) {
+            String[] rowNth = strings.get(i).split(";");
             String rows = "";
             for (int j = 0; j < rowNth.length; j++) {
-                rows = rows.concat(Stirng.format("%s %" + (-collumnLength) + "s |",
-                j == 0 ? "|" : "", i == 0 ? rowNth[j].toUpperCase() : rowNth[j]));
+                rows = rows.concat(String.format(formatter, rowNth[j]));
             }
-            
-            //Print baris
-            System.out.printf("%s\n", rows);
-
-            //Separator
-            int rowLength = rows.length();
-            if (i == 0 || i == string.size() - 1) {
-                String separator = "-";
-                System.out.printf("%s\n", separator.repeat((rowLength - 2)));
-            }
+            System.out.printf("%s", rows);
+            System.out.println("|");
         }
+
+        //Separator
+        System.out.printf(" %s\n", separator.repeat(rowLength));
     }
 
 }
