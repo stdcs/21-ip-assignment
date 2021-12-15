@@ -8,6 +8,8 @@ package ip.syssrc.loop;
  * @author H071211086 - Diza Alysha Zahra <dizalysha@gmail.com>
  *
  */
+
+
 import java.util.Scanner;
 public class MatricesPad {
 
@@ -96,8 +98,8 @@ public class MatricesPad {
         }
 
 
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class MatricesPad {
 
 
@@ -183,3 +185,4 @@ public class MatricesPad {
                 System.out.println();
             }
         }
+

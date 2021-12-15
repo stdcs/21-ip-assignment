@@ -9,6 +9,7 @@ package ip.syssrc.loop;
  *
  */
 
+
  import java.util.Scanner;
  public class FactorialSequence {
 
@@ -18,9 +19,24 @@ package ip.syssrc.loop;
         long fact = 1;
         int n = Diza.nextInt();
 
+
+public class FactorialSequence {
+
+    public static void main(String[] args) {
+        Scanner Diza = new Scanner(System.in);
+
+        long fact = 1;
+
+        int n = Dz.nextInt();
+
+
+        int n = Diza.nextInt();
+
+
     public static void main(String[] args) {
         Scanner Diza = new Scanner(System.in);
         int n = Diza.nextInt();
+
 
 
         if (n > 0) {

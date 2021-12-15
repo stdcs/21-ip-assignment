@@ -22,6 +22,7 @@ public class RoleAccess {
 
             switch (args[0]) {
                 case "Super Admin":
+
                 case "Admin":
                 case "User":
                 isValidRole = true;
@@ -38,7 +39,13 @@ public class RoleAccess {
             }
 
             if (isValidRole == true) {
+
             if (isValidRole) {
+
+
+            if (isValidRole == true) {
+            if (isValidRole) {
+
                 switch (args[0] ) {
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
@@ -76,3 +83,4 @@ public class RoleAccess {
             System.out.println("Too many argument");
         }
     }
+

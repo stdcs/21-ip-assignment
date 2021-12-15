@@ -10,12 +10,74 @@ package ip.syssrc.conditional;
  */
 
 import java.util.Scanner;
+
+
+
 import java.util.InputMismatchException;
+
+
+import java.util.Scanner;
+
+
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
 
  public class Cashier {
 
     public static void main(String[] args) {
         Scanner Dz = new Scanner(System.in);
+
+
+        System.out.println("Berapa total harga belanja anda ? ");
+        int totalBelanja = Dz.nextInt();
+
+
+        try {
+            System.out.println("Berapa total harga belanja anda ? ");
+            int totalBelanja = Dz.nextInt();
+            System.out.println("Berapa total uang anda bayarkan ? ");
+            int pembayaran = Dz.nextInt();   
+        } catch (Exception e) {
+            System.out.println("maaf pastikan inputan anda adalah angka");
+            return;
+            Dz.close();    
+        }
+
+        
+
+
+        int kembalian = pembayaran - totalBelanja;
+            System.out.println("Total kembalian anda = " + kembalian);
+            System.out.println("Dengan rincian sebagai berikut :");
+            System.out.println();
+            System.out.println();
+        
+        }
+        if (kembalian >= 100000) {
+            int pecahan = (Kembalian / 100000);
+            Kembalian -= (100000 * pecahan);
+            System.out.println(pecahan + " lembar uang Rp. 100.000");
+
+        }
+        if (kembalian >= 50000) {
+            int pecahan = (Kembalian / 50000);
+            Kembalian -= (50000 * pecahan);
+            System.out.println(pecahan + " lembar uang Rp. 50.000");
+
+        }
+        if (kembalian >= 20000) {
+            int pecahan = (Kembalian / 20000);
+            Kembalian -= (20000 * pecahan);
+            System.out.println(pecahan + " lembar uang Rp. 20.000");
+
+        }
+        if (kembalian >= 10000) {
+            int pecahan = (Kembalian / 10000);
+            Kembalian -= (10000 * pecahan);
+            System.out.println(pecahan + " lembar uang Rp. 10.000");
+
+
         System.out.println("Berapa total harga belanja anda ? ");
         int totalBelanja = Dz.nextInt();
 
@@ -109,7 +171,7 @@ import java.util.InputMismatchException;
         
     }
 
-}
+
 
         try {
             System.out.println("Berapa total harga belanja anda ? ");
@@ -201,4 +263,4 @@ import java.util.InputMismatchException;
         
     }
 
-   }
+
