@@ -17,6 +17,25 @@ public class RoleAccess {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+=======
+>>>>>>> 3a64fa5 (feat(conditional/RoleAccess): add 'MenuIndex' 'subMenuIndex' 'isValidRole' as variable)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1202a78 (feat(conditional/RoleAccess): add if else conditional and add switch)
+>>>>>>> 942d9dd (feat(conditional/RoleAccess): add if else conditional and add switch)
+
+>>>>>>> 6cd1c3e (feat(conditional/RoleAccess): add int menuIndex = 0;)
+        if (args.length == 0) {
+          System.out.println("What role you want to see ?");
+          System.out.println("For example, try 'Admin'.");
+        } else if (args.length == 1) {
+
+=======
 =======
 >>>>>>> 1202a78 (feat(conditional/RoleAccess): add if else conditional and add switch)
 
@@ -25,10 +44,46 @@ public class RoleAccess {
             System.out.println("For example, try 'Admin'.");
         } else if (args.length == 1) {
   
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
             switch (args[0]) {
                 case "Super Admin":
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+                    isValidRole = true;
+                    break;
+=======
+<<<<<<< HEAD
+>>>>>>> 942d9dd (feat(conditional/RoleAccess): add if else conditional and add switch)
+=======
+<<<<<<< HEAD
+>>>>>>> d460b85 (feat(conditional/RoleAccess.java): fix switch case)
+                case "Admin":
+                    isValidRole = true;
+                    break;
+                case "User":
+                    isValidRole = true;
+                    break;
+<<<<<<< HEAD
+<<<<<<< HEAD
+                
+            }
+=======
+        }
+<<<<<<< HEAD
+>>>>>>> 7cbdb32 (fix(conditional/RoleAccess.java))
+            if (isValidRole == true) {
+=======
+=======
+            }
+            
+>>>>>>> 30803eb (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
+            if (isValidRole) {
+>>>>>>> 6a503c4 (feat(conditional/RoleAccess.java): fix git status)
+                switch (args[0] ) {
+<<<<<<< HEAD
+=======
+=======
                 case "Admin":
                 case "User":
                     isValidRole = true;
@@ -37,6 +92,7 @@ public class RoleAccess {
             
             if (isValidRole) {
                 switch (args[0] ) {
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
                     case "Super Admin":
                         menuIndex = menuIndex + 1;
                         System.out.printf("%d. Super Admin\n", menuIndex);
@@ -86,6 +142,13 @@ public class RoleAccess {
 >>>>>>> 6c9e8a9 (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
                 switch (args[0] ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 942d9dd (feat(conditional/RoleAccess): add if else conditional and add switch)
+=======
+<<<<<<< HEAD
+>>>>>>> ccc8ce9 (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
                 case "Super Admin":
                     menuIndex = menuIndex + 1;
                     System.out.printf("%d. Super Admin\n", menuIndex);
@@ -113,7 +176,16 @@ public class RoleAccess {
                     subMenuIndex = subMenuIndex + 1;
                     System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
                     break;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> 1202a78 (feat(conditional/RoleAccess): add if else conditional and add switch)
+<<<<<<< HEAD
+>>>>>>> 942d9dd (feat(conditional/RoleAccess): add if else conditional and add switch)
+=======
+=======
+>>>>>>> 1202a78 (feat(conditional/RoleAccess): add if else conditional and add switch)
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
 =======
                     case "Super Admin":
                         menuIndex = menuIndex + 1;
@@ -143,6 +215,10 @@ public class RoleAccess {
                         System.out.printf("%2d.%d. Edit\n", menuIndex, subMenuIndex);
                         break;
 >>>>>>> 27afa1b (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
+<<<<<<< HEAD
+>>>>>>> ccc8ce9 (feat(conditional\RoleAccess.java): fix 'if (isValidRole)' space indent)
+=======
+>>>>>>> 073f47ca99f6d63647b6b99496446ae6668210d4
                 }
             } else {
                 System.out.println("Invalid Role");
