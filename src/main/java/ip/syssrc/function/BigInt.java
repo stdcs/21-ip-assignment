@@ -1,10 +1,53 @@
 package ip.syssrc.function;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import javax.swing.JPopupMenu.Separator;
+
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+import javax.swing.JPopupMenu.Separator;
+
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
 /**
  * BigInt
  *
  * Assignment 4.2
  *
+<<<<<<< HEAD
+<<<<<<< HEAD
  * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+=======
+=======
+>>>>>>> f98dc4b (delete)
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+ * @author H071211074 - Wd. Ananda Lesmono <nandalesmono@gmail>
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
  *
  */
 public class BigInt {
@@ -18,6 +61,20 @@ public class BigInt {
      * @return array of integer that represents the sum of 2 numbers
      */
     public static int[] add(int[] n, int[] m) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int sumLength = (n.length > m.length) ? n.length : m.length;
         int[] sum = new int[sumLength];
 
@@ -47,9 +104,32 @@ public class BigInt {
                 }
                 finale[i + 1] = sum[i];
             }
+<<<<<<< HEAD
+<<<<<<< HEAD
         } else {
             finale = sum;
         }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+        }
+        else {
+=======
+        } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
+            finale = sum;
+        }
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new int[] {};
     }
 
@@ -60,6 +140,20 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -70,11 +164,35 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = '.';
+<<<<<<< HEAD
+<<<<<<< HEAD
             } else {
+=======
+            }
+            else {
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+            } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
                 arr[indexSum] = (char) (nums[indexNums]+'0');
                 j++;
             } 
         }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new char[] {};
     }
 
@@ -86,6 +204,20 @@ public class BigInt {
      * @return array of char that represent the formatted number
      */
     public static char[] humanFormat(int[] nums, char sparator) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         int arrLength = nums.length;
         arrLength = nums.length + ((nums.length - 1) / 3);
 
@@ -96,11 +228,35 @@ public class BigInt {
             int indexNums = nums.length - j;
             if ((i % 4) == 0) {
                 arr[indexSum] = sparator;
+<<<<<<< HEAD
+<<<<<<< HEAD
             } else {
+=======
+            }
+            else {
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+            } else {
+>>>>>>> bf1cbd2 (fix(function/BigInt): delete some space)
                 arr[indexSum] = (char) (nums[indexNums] + '0');
                 j++;
             } 
         }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+=======
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
         return new char[] {};
     }
 
@@ -111,9 +267,28 @@ public class BigInt {
      * @return void
      */
     public static void print(int[] nums) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
         for (int i : nums) {
             System.out.println(i);
         }
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+        for (int i : nums) {
+            System.out.println(i);
+        }
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
     }
 
     /**
@@ -124,8 +299,27 @@ public class BigInt {
      * @return void
      */
     public static void print(char[] chars) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f98dc4b (delete)
         for (char i : chars) {
             System.out.println(i);
         }
+<<<<<<< HEAD
+>>>>>>> eea20b5 (feat(function/BigInt): add code)
+=======
+<<<<<<< HEAD
+>>>>>>> 1ae828f (delete)
+        for (char i : chars) {
+            System.out.println(i);
+        }
+=======
+>>>>>>> 15df50e (delete)
+>>>>>>> f98dc4b (delete)
     }
 }
